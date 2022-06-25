@@ -263,9 +263,17 @@ As I had anticipated, I was suggested to add more depth to the snowstorm. The id
 * The wind material created earlier is added to the trail emitter.
 * The scale is made to represent a long trail.
 * The direction of velocity is made to ribbon over its lifetime to make the trail follow a wave-like pattern.
-* The particles are made to spawn around a sphere with controllable radius to contol the spread.
+* The particles are made to spawn around a sphere with controllable radius to contol the spread. <br><br>
 <img src="https://aniketrajnish.github.io/files/WindPart.gif" style="width:100%">
 
 ### Fog Texture
-* A smooth noise texture (obtained online) was used as the fog texture for smooth light absorption (extinction).
+* A smooth noise texture (obtained online) was used as the fog texture for smooth light absorption (extinction). <br><br>
 <img src="https://aniketrajnish.github.io/files/FogTex.png" style="width:100%">
+
+### Fog Material
+* A volume-based material with additive blending is created for the fog to be volumetric.
+* A sphere mask between world and particle position with particle radius as the mask's radius is used to control the rate of light absorption (extinction) of the material.
+* The mask is parametrically controlled by a hardness and extinction value multiplied by RGB value of the texture we obtained earlier.
+* The albedo of the material takes in the mutiplication of the sphere mask and the blend overlay between our texture and a RGB value parameter which we can control in the instance of that material.
+* Thus we can control the hardness, light absorption and color of the fog. <br><br>
+<img src="https://aniketrajnish.github.io/files/FogMat.png" style="width:100%">
