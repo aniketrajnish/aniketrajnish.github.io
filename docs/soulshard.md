@@ -249,3 +249,9 @@ My next task was to design and develop a snowstorm system for the yard area. I w
 * The gravity was decreased and drag was increased to make the snowfall appear more natural. <br><br>
 <img src="https://aniketrajnish.github.io/files/Snow1.gif" style="width:100%">
 
+### Wind Material
+As I had anticipated, I was suggested to add more depth to the snowstorm. The idea was to make the snow more dramatic by introducing a wind system. They provided a [reference video](https://www.youtube.com/watch?v=sGkh1W5cbH4) aswell.
+* A translucent unlit material was chosen for the wind particles.
+* The emissive color was made to be driven by the particle color. 
+* The opacity was controlled by the multiplication of the alpha value of the particle with a RadialGradientExponential to introduce a smooth gradient fall-off that would make the wind look natural. <br><br>
+<img src="https://aniketrajnish.github.io/files/WindMat.png" style="width:100%">
