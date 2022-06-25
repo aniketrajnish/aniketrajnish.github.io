@@ -265,3 +265,7 @@ As I had anticipated, I was suggested to add more depth to the snowstorm. The id
 * The direction of velocity is made to ribbon over its lifetime to make the trail follow a wave-like pattern.
 * The particles are made to spawn around a sphere with controllable radius to contol the spread.
 <img src="https://aniketrajnish.github.io/files/WindPart.gif" style="width:100%">
+
+### Fog Texture
+* A smooth noise texture (obtained online) was used as the fog texture for smooth light absorption (extinction).
+<img src="https://aniketrajnish.github.io/files/FogTex.png" style="width:100%">
