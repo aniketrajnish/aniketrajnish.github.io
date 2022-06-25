@@ -15,11 +15,11 @@ sass:
 
 nav:
  - name: "About"
-   link: "index" 
+   link: "/index" 
  - name: "CV"
-   link: "files/Aniket Rajnish - CV.pdf"
+   link: "/files/Aniket Rajnish - CV.pdf"
  - name: "Contact"
-   link: "contact"
+   link: "/contact"
  - name: "Docs"
-   link: "docs"
+   link: "/docs"
  
