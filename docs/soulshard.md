@@ -249,3 +249,19 @@ My next task was to design and develop a snowstorm system for the yard area. I w
 * The gravity was decreased and drag was increased to make the snowfall appear more natural. <br><br>
 <img src="https://aniketrajnish.github.io/files/Snow1.gif" style="width:100%">
 
+### Wind Material
+As I had anticipated, I was suggested to add more depth to the snowstorm. The idea was to make the snow more dramatic by introducing a wind system. They provided a [reference video](https://www.youtube.com/watch?v=sGkh1W5cbH4) aswell.
+* A translucent unlit material was chosen for the wind particles.
+* The emissive color was made to be driven by the particle color. 
+* The opacity was controlled by the multiplication of the alpha value of the particle with a RadialGradientExponential to introduce a smooth gradient fall-off that would make the wind look natural. <br><br>
+<img src="https://aniketrajnish.github.io/files/WindMat.png" style="width:100%">
+
+### Wind Particles
+* A new Cascade particle system is created and the rendering for the default emitter is turned off.
+* The particle is given random horizontal velocity with minor deviations in the other directions.
+* An emitter for trails is added and it's made to follow the first emitter and spawn alongside it.
+* The wind material created earlier is added to the trail emitter.
+* The scale is made to represent a long trail.
+* The direction of velocity is made to ribbon over its lifetime to make the trail follow a wave-like pattern.
+* The particles are made to spawn around a sphere with controllable radius to contol the spread.
+<img src="https://aniketrajnish.github.io/files/WindPart.gif" style="width:100%">
