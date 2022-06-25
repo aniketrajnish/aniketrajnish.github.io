@@ -298,3 +298,14 @@ As I had anticipated, I was suggested to add more depth to the snowstorm. The id
 ### Final Output
 Finally the snow niagara system, wind cascade system, fog cascade system & an exponential height fog (with volumetric fog enabled) are added into a single bluperint actor to be used in the yard scene as a snowstorm system. <br><br>
 <img src="../files/SnowStormFinal.gif" style="width:100%">
+
+## Cable system
+My next task was to come up with a physics-based cable system that was mostly to be used for cosmetic purposes in the game.
+
+### Cable Actors
+Fortunately, Unreal comes preloaded with cable actors with rope physics for on-the-go usage. 
+* These cables implement the traditional way for rope physics i.e. using a series of particles with motion constraints between them.
+* The texture maps were obtained from the Quixel Megascans.
+* The physics is constrained between objects that the cable is attached to by using Physics constraint actor between the two objects.
+* Cable's end is attached to any one of the objects. <br><br>
+<img src="../files/Cable.gif" style="width:100%">
