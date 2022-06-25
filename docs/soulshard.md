@@ -275,5 +275,22 @@ As I had anticipated, I was suggested to add more depth to the snowstorm. The id
 * A sphere mask between world and particle position with particle radius as the mask's radius is used to control the rate of light absorption (extinction) of the material.
 * The mask is parametrically controlled by a hardness and extinction value multiplied by RGB value of the texture we obtained earlier.
 * The albedo of the material takes in the mutiplication of the sphere mask and the blend overlay between our texture and a RGB value parameter which we can control in the instance of that material.
-* Thus we can control the hardness, light absorption and color of the fog. <br><br>
+* Thus we can control the hardness, light absorption rate and the color of the fog. <br><br>
 <img src="../files/FogMat.png" style="width:100%">
+
+### Fog Particle
+* A new Cascade particle system is created and an instance of the fog material is assigned to it. 
+* The particle is scaled only along the X-aixs & Z-axis to represent a flat surface and its velocity is set to zero.
+* This particle needs to be paired with an exponential height fog (with volumetric fog enabled) to render over the screen.
+* The particles are spawned around a cylinder (having zero thickness) with its flat edge in the X-Z plane.
+
+<table border="0">
+ <tr>
+    <td><img src="../files/FogEH.gif" style="width:100%"></td>
+    <td><img src="../files/FogCol.gif" style="width:100%"></td>
+ </tr>
+ <tr>
+    <td>Fog Extinction & Hardness</td>
+    <td>Fog Color</td>
+ </tr>
+</table>
