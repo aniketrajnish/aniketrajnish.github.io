@@ -5,6 +5,7 @@ layout: default
 ## Two Opposites
 Two opposites is a game about the journey of two opposites (characters with mirrored controls) separated by a mirror. They need to solve puzzles to escape the mirror world and finally meet each other. However, the challenge lies in the fact that they can only solve these puzzles together. You can play it in your browser [here](https://makra.itch.io/two-opposites) <br><br>
 The game was made in a week (by three of us) for the Brackeys Game Jam (participated by 10k+ people worldwide) and ranked #22 in the innovation category. <br><br>
+
 <img src="../files/TwoOppLogo.png" style="width:100%">
 
 ## 2D Lighting System
@@ -14,7 +15,9 @@ We had decided that the atmosphere was to be given the most priority while devel
 * The basic idea was to draw transparent lines originating radially outwards from a sprite with negligible separation to give a sense of light coming out.
 * I used the Unity's low level [Graphics Library (gl)](https://docs.unity3d.com/ScriptReference/GL.html) to draw lines between two points.
 * The raycast loop- <br><br>
+
 <img src="../files/raycast_loop.png" style="width:100%"> <br><br>
+
 * This loop draws rays from the player's position (which is exposed in the inspector) to equally spaced points around the player.
 * The angle that light covers is governed by theta (which is exposed in the inspector).
 * The spacing between each ray is governed by steps (which is exposed in the inspector).
@@ -45,5 +48,14 @@ We had decided that the atmosphere was to be given the most priority while devel
 </table>
 
 ### Ray Material
-* 
+* My next task was to make the light rays feel more natural by introducing transparency.
+* Upon some pondering I found that GL library by default uses the Unlit material provided by Unity to create the lines.
+* As the unlit material doesn't support transparency, I wrote an unlit shader that supported both transparency and vertex colors.
+* The RGBA values of the colors of the material based upon this shader was passed as an input. <br><br>
+
+<img src="../files/RGBA.png" style="width:100%"> <br><br>
+
+* With transparency controls the rays looked much natural. <br><br>
+
+<img src="../files/TRays.gif" style="width:100%">
 
