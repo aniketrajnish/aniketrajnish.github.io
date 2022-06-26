@@ -16,8 +16,34 @@ We had decided that the atmosphere was to be given the most priority while devel
 * The raycast loop- <br><br>
 <img src="../files/raycast_loop.png" style="width:100%"> <br><br>
 * This loop draws rays from the player's position (which is exposed in the inspector) to equally spaced points around the player.
-* The angle that light covers is governed by `theta` (which is exposed in the inspector).
-* The spacing between each ray is governed by `steps` (which is exposed in the inspector).
-* The color of the rays is governed by `col` (which is exposed in the inspector).
-* This script is attached to the `MainCamera` and the loop is called in `OnPostRender()` so that the lines are rendered as soon as the camera finishes rendering the scene.
+* The angle that light covers is governed by theta (which is exposed in the inspector).
+* The spacing between each ray is governed by steps (which is exposed in the inspector).
+* The color of the rays is governed by col (which is exposed in the inspector).
+* The length of light ray is governed by maxVisiblityDistance (which is exposed in the inspector).
+* This script is attached to the MainCamera and the loop is called in OnPostRender() so that the lines are rendered as soon as the camera finishes rendering the scene.
+
+<table border="0">
+ <tr>
+    <td><img src="../files/theta.gif" style="width:100%"></td>
+    <td><img src="../files/steps.gif" style="width:100%"></td>
+ </tr>
+ <tr>
+    <td>Changing theta</td>
+    <td>Changing steps</td>
+ </tr>
+</table>
+
+<table border="0">
+ <tr>
+    <td><img src="../files/col.gif" style="width:100%"></td>
+    <td><img src="../files/maxvdist.gif" style="width:100%"></td>    
+ </tr>
+ <tr>
+    <td>Changing color</td>
+    <td>Changing max visibility distance</td>
+ </tr>
+</table>
+
+### Ray Material
+* 
 
