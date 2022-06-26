@@ -20,15 +20,16 @@ for (float i = 0; i < theta; i += steps)
     GL.Begin(GL.LINES);
     GL.Color(col); //Initializing GL Library with white color as input
 
-    GL.Vertex3(transform.position.x, transform.position.y, 0); //starting point
+    GL.Vertex3(player.transform.position.x, player.transform.position.y, 0); //starting point
 
     GL.Vertex3(player.transform.position.x+ Mathf.Cos(i * Mathf.Deg2Rad)* maxVisiblityDistance, player.transform.position.y + Mathf.Sin(i * Mathf.Deg2Rad)* maxVisiblityDistance, 0); //ending point
 
     GL.End(); //clearing garbage
 }
 ```
-* This loop draws rays from the player's position to equally spaced points around the player.
-* The angle that light covers is governed by *theta* (which is exposed in the inspector).
-* The spacing between each ray is governed by *steps* (which is exposed in the inspector).
-* The color of the rays is governed by *col* (which is exposed in the inspector).
+* This loop draws rays from the player's position (which is exposed in the inspector) to equally spaced points around the player.
+* The angle that light covers is governed by `theta` (which is exposed in the inspector).
+* The spacing between each ray is governed by `steps` (which is exposed in the inspector).
+* The color of the rays is governed by `col` (which is exposed in the inspector).
+* This script is attached to the `MainCamera` and the loop is called in `OnPostRender()` so that the lines are rendered as soon as the camera finishes rendering the scene.
 
