@@ -53,9 +53,10 @@ We had decided that the atmosphere was to be given the most priority while devel
 * As the unlit material doesn't support transparency, I wrote an unlit shader that supported both transparency and vertex colors.
 * The RGBA values of the colors of the material based upon this shader was passed as an input. <br><br>
 
-<img src="../files/RGBA.png" style="width:100%"> <br><br>
+<img src="../files/RGBA.png" style="width:100%"> <br>
 
-* With transparency controls the rays looked much natural. <br><br>
+* With transparency controls the rays looked much natural. <br>
 
 <img src="../files/TRays.gif" style="width:100%">
 
+### Environment Lighting
