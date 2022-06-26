@@ -13,20 +13,8 @@ We had decided that the atmosphere was to be given the most priority while devel
 ### 2D Raycaster (GL)
 * The basic idea was to draw transparent lines originating radially outwards from a sprite with negligible separation to give a sense of light coming out.
 * I used the Unity's low level [Graphics Library (gl)](https://docs.unity3d.com/ScriptReference/GL.html) to draw lines between two points.
-* The raycast loop-
-<code>
-for (float i = 0; i < theta; i += steps)
-{
-    GL.Begin(GL.LINES);
-    GL.Color(col); //Initializing GL Library with white color as input
-
-    GL.Vertex3(player.transform.position.x, player.transform.position.y, 0); //starting point
-
-    GL.Vertex3(player.transform.position.x+ Mathf.Cos(i * Mathf.Deg2Rad)* maxVisiblityDistance, player.transform.position.y + Mathf.Sin(i * Mathf.Deg2Rad)* maxVisiblityDistance, 0); //ending point
-
-    GL.End(); //clearing garbage
-}
-</code>
+* The raycast loop- <br><br>
+<img src="../files/raycast_loop.png" style="width:100%"> <br><br>
 * This loop draws rays from the player's position (which is exposed in the inspector) to equally spaced points around the player.
 * The angle that light covers is governed by `theta` (which is exposed in the inspector).
 * The spacing between each ray is governed by `steps` (which is exposed in the inspector).
