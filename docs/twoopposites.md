@@ -63,12 +63,9 @@ We had decided that the atmosphere was to be given the most priority while devel
 * The next step would be to make the environment around react to the light rays emitted by the player.
 * This would involve two steps-
 
-1. Making the light ray stop when it hits an object. This is done by raycasting along the light rays that GL draws and checking if we've hit something. <br>
-
+1. Making the light ray stop when it hits an object. This is done by raycasting along the light rays that GL draws and checking if we've hit something.
 <img src="../files/RaycastHit.png" style="width:100%">
-
-2. Making the sprite color of the object depend upon its distance from the light source. <br>
-
+2. Making the sprite color of the object depend upon its distance from the light source.
 <img src="../files/spritecol.png" style="width:100%">
 
 ### Final Output
