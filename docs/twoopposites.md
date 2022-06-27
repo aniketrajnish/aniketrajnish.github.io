@@ -115,11 +115,13 @@ We had decided that the atmosphere was to be given the most priority while devel
 * The animation is simply enabled if we're sending an input, else it stays disabled. <br><br> 
 <img src="../files/Sprites.gif" style="width:100%">
 
-### Button Mechanics
+### Button Mechanic
 We decided upon a coming up with a button mechanic system. The idea was to spawn two buttons (one in each world) and the player was expected to walk over both the buttons simultaneously two open gates so that people can people can proceed to the next level.
 * When the player walked over a button, the button's sprite renderer was made to glow.
 * Also, an event was called to check if the other button is pressed as well.
 * If the other button was pressed, the gates (which were hinged at their corner) would rotate and the player could pass through them. <br><br>
 <img src="../files/Buttons.gif" style="width:100%">
+
+### 
 
 
