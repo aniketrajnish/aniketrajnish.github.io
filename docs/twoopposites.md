@@ -51,7 +51,7 @@ We had decided that the atmosphere was to be given the most priority while devel
 * My next task was to make the light rays feel more natural by introducing transparency.
 * Upon some pondering I found that GL library by default uses the Unlit material provided by Unity to create the lines.
 * As the unlit material doesn't support transparency, I wrote an unlit shader that supported both transparency and vertex colors.
-* The RGBA values of the colors of the material based upon this shader was passed as an input. <br><br>
+* The RGBA values of the colors of the material based upon this shader was passed as an input. <br>
 
 <img src="../files/RGBA.png" style="width:100%">
 
