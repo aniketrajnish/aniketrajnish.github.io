@@ -11,7 +11,7 @@ The game was made in a week (by three of us) for the Brackeys Game Jam (particip
 ## 2D Lighting System
 We had decided that the atmosphere was to be given the most priority while developing this game. And the visual appeal of the game played a major role in that. Back when we started working upon this project, Unity didn't have any render pipeline that supported 2D lighting. So my task was to develop a 2D lighting system for the game.
 
-### 2D Raycaster (GL)
+### 2D Raycaster (GL) - 1st iteration
 * The basic idea was to draw transparent lines originating radially outwards from a sprite with negligible separation to give a sense of light coming out.
 * I used the Unity's low level [Graphics Library (gl)](https://docs.unity3d.com/ScriptReference/GL.html) to draw lines between two points.
 * The raycast loop- <br><br>
@@ -70,3 +70,6 @@ We had decided that the atmosphere was to be given the most priority while devel
 2. Making the sprite color of the object depend upon its distance from the light source. <br>
 
 <img src="../files/spritecol.png" style="width:100%">
+
+### Final Output
+<img src="../files/2dlightsys.gif" style="width:100%">
