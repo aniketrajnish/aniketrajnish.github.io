@@ -73,8 +73,20 @@ We had decided that the atmosphere was to be given the most priority while devel
 
 ### 2D Raycaster (GL) - 2nd iteration
 * The previous method for generating rays was very inefficient with a time complexity of O(n) as the loop had to run 3600 times every frame with a step size of 0.1.
-* This issue was tackled by detecting the edges of nearby objects and casting rays at them and then filling the space between them by generating mesh between them. <br>
+* This issue was tackled by detecting the edges of nearby objects and casting rays at them and then filling the space between them by generating mesh between them. <br><br>
 <img src="../files/mesh2dlight.png" style="width:100%">
 
 ### Final Output
 <img src="../files/2dmeshlightsys.gif" style="width:100%">
+
+### Environment Reflection
+* Two players (each with their own top down camera) were added in either sides of the map separated by a box collider.
+* The screen was split into two (one for each camera) by decreasing the width of the both camera's viewport rect to 0.5 and offsetting one of them to 0.5.
+
+### Player Movement 
+* A simple rigidbody top down controller was yoinked from one of Brackeys tutorials for the first player.
+* While the movement of the second player was made to be governed by the first player's movement.
+<img src="../files/inversion.png" style="width:100%">
+* This inverts the movement of the second player horizontally (lateral inversion) as if their movements were mirrored.
+<img src="../files/inversion.gif" style="width:100%">
+
