@@ -91,4 +91,26 @@ We had decided that the atmosphere was to be given the most priority while devel
 <img src="../files/inversion.gif" style="width:100%">
 
 ### Player Sprites & Animations
+* Two sprite sheets of the top-down view of a male & female character (drawn by one of my teammates) walking were imported into the game. 
+* These sprites were split into frames for animation using Unity's inbuilt sprite editor.
 
+<table border="0">
+ <tr>
+    <td><img src="../files/BoySprite.png" style="width:100%"></td>
+    <td><img src="../files/GirlSprite.png" style="width:100%"></td>    
+ </tr>
+ <tr>
+    <td>Boy Sprite Sheet</td>
+    <td>Girl Sprite Sheet</td>
+ </tr>
+</table>
+
+* These were then animated at 10 fps.
+* The controller was tweaked to support both animation and smooth rotation of the player sprites.
+<img src="../files/newmov.png" style="width:100%">
+
+* The translation is governed by Unity's Physics engine (using rigidbodies) and is executed in the FixedUpdate() method to keep keep it independent of frame rate.
+* The rotation of the sprite changes with its movement direction (governed by the combination of vertical and horizontal input).
+* The translation and rotation speed is parametrically controlled by speed and rotSpeed variable exposed in the inspector.
+* The animation is simply enabled if we're sending an input, else it stays disabled. <br><br> 
+<img src="../files/Sprites.gif" style="width:100%">
