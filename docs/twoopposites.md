@@ -70,3 +70,11 @@ We had decided that the atmosphere was to be given the most priority while devel
 
 ### Final Output
 <img src="../files/2dlightsys.gif" style="width:100%">
+
+### 2D Raycaster (GL) - 2nd iteration
+* The previous method for generating rays was very inefficient with a time complexity of O(n) as the loop had to run 3600 times every frame with a step size of 0.1.
+* This issue was tackled by detecting the edges of nearby objects and casting rays at them and then filling the space between them by generating mesh between them. <br>
+<img src="../files/mesh2dlight.png" style="width:100%">
+
+### Final Output
+<img src="../files/2dmeshlightsys.gif" style="width:100%">
