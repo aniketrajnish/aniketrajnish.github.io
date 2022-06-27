@@ -6,7 +6,7 @@ layout: default
 Two opposites is a game about the journey of two opposites (characters with mirrored controls) separated by a mirror. They need to solve puzzles to escape the mirror world and finally meet each other. However, the challenge lies in the fact that they can only solve these puzzles together. You can play it in your browser [here](https://makra.itch.io/two-opposites) <br><br>
 The game was made in a week (by three of us) for the Brackeys Game Jam (participated by 10k+ people worldwide) and ranked #22 in the innovation category. <br>
 
-<img src="../files/TwoOppLogo.png" style="width:100%">
+<a href="../files/TwoOppLogo.png" data-lightbox="example" data-title="Demo"><img src="../files/TwoOppLogo.png" style="width:100%"></a>
 
 ### 2D Lighting System
 We had decided that the atmosphere was to be given the most priority while developing this game. And the visual appeal of the game played a major role in that. Back when we started working upon this project, Unity didn't have any render pipeline that supported 2D lighting. So my task was to develop a 2D lighting system for the game.
@@ -122,6 +122,9 @@ We decided upon a coming up with a button mechanic system. The idea was to spawn
 * If the other button was pressed, the gates (which were hinged at their corner) would rotate and the player could pass through them. <br><br>
 <img src="../files/Buttons.gif" style="width:100%">
 
-### 
+### Pushable Objects
+To add more depth to the puzzles, we decided to come up with a few objects that the players could push in order to block or press something. 
+
+* 
 
 
