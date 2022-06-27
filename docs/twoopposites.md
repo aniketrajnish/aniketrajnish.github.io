@@ -85,8 +85,10 @@ We had decided that the atmosphere was to be given the most priority while devel
 
 ### Player Movement 
 * A simple rigidbody top down controller was yoinked from one of Brackeys tutorials for the first player.
-* While the movement of the second player was made to be governed by the first player's movement.
+* While the movement of the second player was made to be governed by that of the first player's. <br>
 <img src="../files/inversion.png" style="width:100%">
 * This inverts the movement of the second player horizontally (lateral inversion) as if their movements were mirrored.
 <img src="../files/inversion.gif" style="width:100%">
+
+### Player Sprites & Animations
 
