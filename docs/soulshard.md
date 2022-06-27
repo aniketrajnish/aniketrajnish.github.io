@@ -118,9 +118,9 @@ The flame material was created simply by assigning the particle color input to t
 <img src="../files/FlameMat.png" style="width:100%">
 
 ### Flame Particles - Final iteration
-* A fountain based emitter is chosen by removing gravity, cone velocity, drag and scaleColor just retaining the initial properties.
+* A fountain based emitter is used after removing gravity, cone velocity, drag and scaleColor just retaining the initial properties.
 * The default sprite renderer is replaced with a mesh renderer and the icosphere and the flame material we created is assigned.
-* The particles were assigned a random vertical velocity so that variance in the fire's peak giving it a natural look.
+* The particles were assigned a random vertical velocity so that variance in the fire's peak giving it a natural eye.
 * They're scaled down in size as they reach up to give an inverted conical shape by using bezier curves to keep the transition smooth.
 * The color is lerped between yellow and red with the lifetime of the particle. <br><br>
 <img src="../files/FlameVFX2.gif" style="width:100%">
@@ -159,7 +159,7 @@ Further I was assigned the task to develop a snow-based footprint system over sn
 *Footprint Sprites*
 
 ### Footprint Material - 1st iteration 
-* The material used for the footprints was a deferred decal material with blending mode set to translucent to be able to use it as a decal.
+* The material used for the footprints was a deferred decal material with blending mode set to translucent so that you can apply it as a decal.
 * The alpha of the texture/sprite was assigned to the opacity of the material and the RGB values to the base color. <br><br>
 <img src="../files/FPMat1.png" style="width:100%">
 
@@ -203,7 +203,7 @@ Further I was assigned the task to develop a snow-based footprint system over sn
 <img src="../files/FP1.gif" style="width:100%">
 
 ### Footprint Sprites - Final iteration
-I was suggested by the team that the current footprint didn't look natural as snow footprints are generally a litte darker (dark grey/blue) with blue tint on the edges. Apart from this, they suggested to add normal information to the footprints aswell.
+The team pinpointed that the current footprint lacked originality as snow footprints are generally a litte darker (dark grey/blue) with blue tint on the edges. Apart from this, they suggested to add normal information to the footprints aswell.
 * I decreased the exposure of the textures, added bluish tint on the edges using the brush (Chalk 2) tool.
 * Furthur, I generated the normals using the inbuilt 3D tools provided in Photoshop. (which turned out to be one of my laggiest workflow experiences with Photoshop).
 
@@ -246,7 +246,7 @@ My next task was to design and develop a snowstorm system for the yard area. I w
 * So, I created a fountain emitter and inverted its initial velocity to make the particles fall downwards instead of upwards. 
 * The particles were made to spawn around a big sphere.
 * The trajectory cone's apex angle was increased aswell to increase the spread of the particles.
-* The gravity was decreased and drag was increased to make the snowfall appear more natural. <br><br>
+* The gravity was decreased and drag was increased to make the snowfall appear more genuine. <br><br>
 <img src="../files/Snow1.gif" style="width:100%">
 
 ### Wind Material
