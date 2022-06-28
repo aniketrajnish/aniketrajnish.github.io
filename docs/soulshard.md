@@ -27,7 +27,7 @@ Firstly, I designed various cloud textures with separate RGB channels for Base C
 
 ### Smoke Material
 * The smoke material was made using these textures. 
-* The emmisivity and particle colors were exposed to edit while making the particles. <br><br> 
+* The emmisivity and particle colors were exposed so that they could be adjusted later while making the particles. <br><br> 
 <img src="../files/CloudMat.png" style="width:100%">
 
 ### Smoke Particles - 1st iteration
@@ -54,7 +54,7 @@ The debris material was created using the debris texture in a similar fashion to
 ### Smoke Particles - 3rd iteration
 * The debris particle was given the same parameters as the smoke particle.
 * Since the debris appeared lighter, the drag was reduced and gravitational force (positive) was raised to increase the spread.
-* Apart from that, a fountain emitter was assigned the same debris material to make the spread look more abrupt.  <br><br>
+* A fountain emitter was assigned the same debris material to make the spread look more abrupt.  <br><br>
 <img src="../files/Smoke3.gif" style="width:100%">
 
 ### Spark Texture
@@ -126,10 +126,10 @@ The flame material was created simply by assigning the particle color input to t
 <img src="../files/FlameVFX2.gif" style="width:100%">
 
 ## Footprint System
-Further I was assigned the task to develop a snow-based footprint system over snow for the main characters (Ambrose and Nimue).  
+Further, I was assigned the task to develop a snow-based footprint system over snow for the main characters (Ambrose and Nimue).  
 
 ### Footprint Sprites - 1st iteration
-* I used a snow texture I found online to make the footprint sprites.
+* I used a snow texture which I found online to make the footprint sprites.
 * The foot impressions of the right foot of both the characters were traced using the pen tool and the texture was masked to make the footprint sprites.
 * The left footprint sprite was simply made by inverting the image horizontally.
 
@@ -239,7 +239,7 @@ The footprint material was now modified to support normal information and the no
 <img src="../files/FP2.gif" style="width:100%">
 
 ## Snowstorm System
-My next task was to design and develop a snowstorm system for the yard area. I was provided with a [reference video](https://www.shutterstock.com/video/clip-1058627680-dense-heavy-blizzard-snowstorm-vfx-insert-slow-motion) for the same.
+I was then asked to design and develop a snowstorm system for the yard area. I was provided with a [reference video](https://www.shutterstock.com/video/clip-1058627680-dense-heavy-blizzard-snowstorm-vfx-insert-slow-motion) for the same.
 
 ### Snow Particles
 * I found this task quite easy and felt that simply a fountain emitter with the default particle renderer would do the trick.
