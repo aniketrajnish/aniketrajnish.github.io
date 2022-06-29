@@ -6,7 +6,7 @@ layout: default
 
 <img class="profile-picture" src="files/IMG_20220513165455419.jpg">
 
-I’m a junior undergraduate at IIT Gandhinagar. I’m into developing games, VFX, editing videos, computer graphics, and simulations. I’ve mentioned some of my work below. If you want the source code/ build of any of these you can contact me! <br><br>
+I’m a junior undergraduate at IIT Gandhinagar. I’m into developing games, VFX, editing videos, computer graphics, and simulations. I’ve mentioned some of my work below. If you want the source code/ build of any of these you can contact me! <br>
 
 **Few of them are available  on my [Github](https://github.com/aniketrajnish). The design & development documents of the projects and games that I've mentioned below are can be found [here](https://aniketrajnish.github.io/docs).**
 ## Skills
