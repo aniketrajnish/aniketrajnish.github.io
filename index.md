@@ -133,23 +133,23 @@ Tools & Technologies | Unity, OpenGL, Adobe Premiere Pro, Unreal Engine 4, Adobe
 
 * The following game prototypes are being developed in partnership with [CrazyLabs](https://www.crazylabs.com/)- 
 
-1. **[Shoot The Numbers](https://youtu.be/OnMOxLZIVHE)** 
+1. [Shoot The Numbers](https://youtu.be/OnMOxLZIVHE) 
    * Optimized multiple navmesh agents for mobile devices.
    * Wrote a shader that supports both transparency and interpolation between two colours.
    * Wrote swerve mechanics trending in hypercasual games these days.
    * Wrote mechanics for algebraic gates trending in hypercasual games these days.
-2. **[Body Adjustment ASMR](https://youtu.be/tipcHr53JcI)**
+2. [Body Adjustment ASMR](https://youtu.be/tipcHr53JcI)
    * Wrote mesh deformation and reformation algorithm.
    * Wrote a mesh outline algorithm that's performant on mobile devices.
-3. **[Hoof Cleaning ASMR](https://youtu.be/PZkQhBOjrHU)**
+3. [Hoof Cleaning ASMR](https://youtu.be/PZkQhBOjrHU)
    * Wrote texture masking algorithm to erase / paint textures over meshes.
-4. **[Jelly Cleaner ASMR](https://youtu.be/FnhNXtHPPoE)**
+4. [Jelly Cleaner ASMR](https://youtu.be/FnhNXtHPPoE)
    * Wrote jelly physics algorithms that's performant over mobile devices using spring joints.
-5. **[Human Canon](https://youtu.be/XJnFSqy4siI)**
+5. [Human Canon](https://youtu.be/XJnFSqy4siI)
    * Worte ragdoll crowd control mechanics.
    * Wrote canon projectile mechanics.
    * Wrote a low poly water shader.
-6. **[Dodge Master](https://youtu.be/6OCS70rkZJk)**
+6. [Dodge Master](https://youtu.be/6OCS70rkZJk)
    * Wrote time control mechnaics.
    * Implemented mesh deformation and reformation algorithm from Body Adjustment ASMR.
 
@@ -168,37 +168,37 @@ The ideation and developement of these games is done by me. Marketing and publis
 
 ## Computer Graphics
 
- * **[Raymarching Engine](https://github.com/aniketrajnish/Raymarching-Engine)**<br>
+ * [Raymarching Engine](https://github.com/aniketrajnish/Raymarching-Engine)<br>
    Currently writing a raymarching engine in Unity. This technique allows rendering complex geometry like fractals, n-dimensional objects, volumetric clouds, etc. using very little computation costs by just comping up with a distance function for the surface that we want to render.
- * **[Teserract Unity Implementation](https://github.com/aniketrajnish/4D-tesseract-unity-implementation)**<br>
+ * [Teserract Unity Implementation](https://github.com/aniketrajnish/4D-tesseract-unity-implementation)<br>
    A rotating hypercube implemented in unity using mesh generation and GL library. Underlying maths includes rotation & projection of coordinates using rotation & projection matrices.
- * **[Rendering a 4D Hypercube](https://editor.p5js.org/aniketrajnish/sketches/wJVjV9OAY)**<br>
+ * [Rendering a 4D Hypercube](https://editor.p5js.org/aniketrajnish/sketches/wJVjV9OAY)<br>
    Demonstration of a 3D section of a rotating 4D Hypercube (with hardcoded coordinates) by using rotation and projection matrices as a part of project of the MA202 course at      IITGN. Currently working upon ray marching techinques to expand this technique to render complete 4D worlds in Unity.
- * **[3D Render using Gaussian elimination](https://editor.p5js.org/aniketrajnish/sketches/S-KwEmoSm)**<br>
+ * [3D Render using Gaussian elimination](https://editor.p5js.org/aniketrajnish/sketches/S-KwEmoSm)<br>
    Mathematically modeled a 3D rendering technique that uses numerical methods to calculate the intersection of planes and render 3D objects as a part of a project of the MA202      course at IITGN. Currently planning to apply the underlying methodology to the 4th dimension and develop a 4D rendering engine that uses these numerical methods instead of      the traditional approach of using ray marching/ projection and rotation matrices.
- * **[Specular lighting in OpenGL](https://github.com/aniketrajnish/specular-lighting-opengl)**<br>
+ * [Specular lighting in OpenGL](https://github.com/aniketrajnish/specular-lighting-opengl)<br>
    Implemented specular ligting in OpenGL by following tutorials from [Michael Grieco](https://michaelg29.github.io/)
- * **[Raycast 3D renderer](https://scratch.mit.edu/projects/510603211/)**<br>
+ * [Raycast 3D renderer](https://scratch.mit.edu/projects/510603211/)<br>
    A 3D renderer I implemented in scratch that uses the traditional concept of raycasting used in games like VCOP2 and Wolfenstein 3D.
- * **[Non Euclidean World in Unity](https://youtu.be/wi1RoQJWHbk)**<br>
+ * [Non Euclidean World in Unity](https://youtu.be/wi1RoQJWHbk)<br>
    Optical illusion made by using multiple intersecting single-sided planes instead of a 3d mesh.
 
 ## Simulations
  
- * **[Realtime Jelly Simulation in Unity](https://youtu.be/fMwoglpPgFk)**<br>
+ * [Realtime Jelly Simulation in Unity](https://youtu.be/fMwoglpPgFk)<br>
    Wrote an optimized jelly physics algorithm that works in realtime on different platforms using spring joints between armatures! 
  
- * **[Realtime Slime Simulation in Unity](https://youtu.be/a__DdXiYQ-U)**<br>
+ * [Realtime Slime Simulation in Unity](https://youtu.be/a__DdXiYQ-U)<br>
    Similar approach as jelly simulation used but with more spring density to make the mesh look more viscous.
- * **[Fire Simulation in Blender](https://youtu.be/_QH19dipOxY)**<br> 
+ * [Fire Simulation in Blender](https://youtu.be/_QH19dipOxY)<br> 
    Done with the help of one of my club members.
    
- * **[Putting my simulations to work - 2048 Jelly](https://youtu.be/9tfnqnrit_0)**<br> 
+ * [Putting my simulations to work - 2048 Jelly](https://youtu.be/9tfnqnrit_0)<br> 
    This game uses real-time Jelly-Physics that I mentioned above.  
 
 ## Relevant Coursework
  
- 1. **[DES 492 - 1]**(https://docs.google.com/document/d/1x0Ong7Herwsmf828lOB-8RwccJlR9PEl/edit?usp=sharing&ouid=101872699639981619068&rtpof=true&sd=true)<br>
+ 1. [DES 492 - 1](https://docs.google.com/document/d/1x0Ong7Herwsmf828lOB-8RwccJlR9PEl/edit?usp=sharing&ouid=101872699639981619068&rtpof=true&sd=true)<br>
    The course involved modding a pre-existing game, developing a sandbox-styled game, speculation of different permutations & combinations of different outcomes of the game, and development of a hypertext game with a non-linear branching story.
    * [Modding Assignment - Maze Game made 3D](https://github.com/aniketrajnish/DES-492-Modding-Project)
    * [Sandbox & Speculation Assignment - Joined Together](https://github.com/aniketrajnish/DES-492-Sandbox-and-Speculation)
@@ -207,19 +207,19 @@ The ideation and developement of these games is done by me. Marketing and publis
 
 ## VFX & Edits
   
- * **[Messing around with shaders - GameJam 2020 AD Trailer](https://youtu.be/4zfHbw6GRes)**<br> 
+ * [Messing around with shaders - GameJam 2020 AD Trailer](https://youtu.be/4zfHbw6GRes)<br> 
    I made this trailer using a shader that I wrote for Unity. This shader uses one-sided features of multiple planes to give a non-euclidean look (currently working on a    puzzle-game based project that uses this!).  Also, I wrote a shader to replicate the look of HDRP reflective materials using Unity's built-in render pipeline and a reflection    probe. Added the materials based on these shaders to the mascots and the jar!
   
- * **[Messing around with VFX Graphs - GameJam 2020 AD Theme Reveal Video](https://youtu.be/kPlAOdrKgbw)**<br> 
+ * [Messing around with VFX Graphs - GameJam 2020 AD Theme Reveal Video](https://youtu.be/kPlAOdrKgbw)<br> 
    I had to make a theme reveal for a game jam that my college is hosting. So I decided to utilize this opportunity and learn VFX graphs in Unity. VFX graphs help to simulate over a million particles in real-time using the parallel processing power of GPU unlike the paticle system which works over the CPU and is much slower. Everything that you see in this video is made out of '2020', which was the theme for the JAM itself.
   
- * **[Messing around with Particle Systems - Psychedelic Edit](https://youtu.be/ofWcNlWYwnI)**<br> 
+ * [Messing around with Particle Systems - Psychedelic Edit](https://youtu.be/ofWcNlWYwnI)<br> 
    Because Dani said 'You can make anything using Unity's particle system'
   
- * **[Recreated Coldplay's Up&Up Music Video](https://youtu.be/gy9gc2orpCY)**<br> 
+ * [Recreated Coldplay's Up&Up Music Video](https://youtu.be/gy9gc2orpCY)<br> 
    Rendered using Motion Tracking in Blender and After Effects
    
- * **[Recreated Interstellar's Black Hole](https://youtu.be/pGvQrE8Plsc)**<br> 
+ * [Recreated Interstellar's Black Hole](https://youtu.be/pGvQrE8Plsc)<br> 
    With 0 budget, blender and the help of my senior.<br><br>
    *Fun Fact: Most of the trailers and intro videos for societies, events & fests of IITGn are made on game Engines instead of dedicated editing softwares as it is done by us.*
 
