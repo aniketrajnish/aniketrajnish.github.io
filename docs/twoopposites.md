@@ -124,7 +124,9 @@ We decided upon a coming up with a button mechanic system. The idea was to spawn
 
 ### Pushable Objects
 To add more depth to the puzzles, we decided to come up with a few objects that the players could push in order to block or press something. 
-
-* 
+* A physics material (with high coefficient of friction value & 0 bounciness) is created.
+* Sprites for pushable objects (with hand-drawn textures by one of the teammates) are imported.
+* Their prefabs are created with Box Collider 2D & Rigidbody 2D components having the physics material assigned to them. <br><br>
+<a href="../files/Buttons.gif" data-lightbox="pushable" data-title="Pushable Objects"><img src="../files/Pushable.gif" style="width:100%"></a>
 
 
