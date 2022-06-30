@@ -9,8 +9,8 @@ Soul Shard is a cooperative puzzle platformer that draws inspiration from EA's '
 
 <table border="0">
  <tr>
-    <td><a href="../files/SoulShard.png" data-lightbox="soulShard" data-title=""><img src="../files/SoulShard.png" style="width:100%"></a></td>
-    <td><a href="../files/19SOB.png" data-lightbox="soulShard" data-title=""><img src="../files/19SOB.png" style="width:100%"></a></td>
+    <td><a href="../files/SoulShard.png" data-lightbox="soulShard" data-title="Soul Shard Poster"><img src="../files/SoulShard.png" style="width:100%"></a></td>
+    <td><a href="../files/19SOB.png" data-lightbox="soulShard" data-title="19 Souls on Board Logo"><img src="../files/19SOB.png" style="width:100%"></a></td>
  </tr>
  <tr>
     <td>Soul Shard Poster</td>
@@ -23,62 +23,62 @@ My first task was to design and develop a stylized explosive smoke particles for
 
 ### Cloud Texture
 Firstly, I designed various cloud textures with separate RGB channels for Base Color, Emmisivity and Opacity Mask. <br><br>
-<a href="../files/CloudRGB.png" data-lightbox="soulShard" data-title=""><img src="../files/CloudRGB.png" style="width:100%"></a>
+<a href="../files/CloudRGB.png" data-lightbox="cloudrgb" data-title="RGB Cloud Texture"><img src="../files/CloudRGB.png" style="width:100%"></a>
 
 ### Smoke Material
 * The smoke material was made using these textures. 
 * The emmisivity and particle colors were exposed to edit while making the particles. <br><br> 
-<a href="../files/CloudMat.png" data-lightbox="soulShard" data-title=""><img src="../files/CloudMat.png" style="width:100%"></a>
+<a href="../files/CloudMat.png" data-lightbox="smokemat" data-title="Smoke Material"><img src="../files/CloudMat.png" style="width:100%"></a>
 
 ### Smoke Particles - 1st iteration
 * The smoke particles were made using the Niagara VFX system. 
 * The particles (100) were made to spawn in a burst around a cylinder with an initial velocity radially outwards. 
 * A positive gravitational force was added to make the particles rise with a drag coefficient to smooth things out and make them feel natural. 
 * Individual particles also received rotation in addition to a colour (the exposed parameter) that was lerped from grey to black .<br><br>
-<a href="../files/Smoke1.gif" data-lightbox="soulShard" data-title=""><img src="../files/Smoke1.gif" style="width:100%"></a>
+<a href="../files/Smoke1.gif" data-lightbox="smokepart1" data-title="Smoke Particles - 1st iteration"><img src="../files/Smoke1.gif" style="width:100%"></a>
 
 ### Smoke Particles - 2nd iteration
 * A light renderer was added to the particles to further intricately define the explosion.
 * The light renderer was initiated at the same initial position as the smoke particles.
 * The intensity was lerped from 100 to 0.  <br><br>
-<a href="../files/Smoke2.gif" data-lightbox="soulShard" data-title=""><img src="../files/Smoke2.gif" style="width:100%"></a>
+<a href="../files/Smoke2.gif" data-lightbox="smokepart2" data-title="Smoke Particles - 2nd iteration"><img src="../files/Smoke2.gif" style="width:100%"></a>
 
 ### Debris Texture
-The debris texture was made in photoshop using refrence images online and the brush tool. <br><br>
-<a href="../files/DebrisTex.png" data-lightbox="soulShard" data-title=""><img src="../files/DebrisTex.png" style="width:100%"></a>
+The debris texture was made in photoshop using reference images online and the brush tool. <br><br>
+<a href="../files/DebrisTex.png" data-lightbox="debtex" data-title="Debris Texture"><img src="../files/DebrisTex.png" style="width:100%"></a>
 
 ### Debris Material
 The debris material was created using the debris texture in a similar fashion to the smoke material. <br><br>
-<a href="../files/DebrisMat.png" data-lightbox="soulShard" data-title=""><img src="../files/DebrisMat.png" style="width:100%"></a>
+<a href="../files/DebrisMat.png" data-lightbox="debmat" data-title="Debris Material"><img src="../files/DebrisMat.png" style="width:100%"></a>
 
 ### Smoke Particles - 3rd iteration
 * The debris particle was given the same parameters as the smoke particle.
 * Since the debris appeared lighter, the drag was reduced and gravitational force (positive) was raised to increase the spread.
 * Apart from that, a fountain emitter was assigned the same debris material to make the spread look more abrupt.  <br><br>
-<a href="../files/Smoke3.gif" data-lightbox="soulShard" data-title=""><img src="../files/Smoke3.gif" style="width:100%"></a>
+<a href="../files/Smoke3.gif" data-lightbox="smokepart3" data-title="Smoke Particles - 3rd iteration"><img src="../files/Smoke3.gif" style="width:100%"></a>
 
 ### Spark Texture
 The spark texture with separate RGB channels was obtained online. <br><br>
-<a href="../files/Spark.png" data-lightbox="soulShard" data-title=""><img src="../files/Spark.png" style="width:100%"></a>
+<a href="../files/Spark.png" data-lightbox="sparktex" data-title="Spark Texture"><img src="../files/Spark.png" style="width:100%"></a>
 
 ### Spark Material
 * The spark material was made using the spark texture. 
 * The blue channel was used as the opacity mask.
 * The emmisive color was obtained by multiplying red and yellow. <br><br>
-<a href="../files/SparkMat.png" data-lightbox="soulShard" data-title=""><img src="../files/SparkMat.png" style="width:100%"></a>
+<a href="../files/SparkMat.png" data-lightbox="sparkmat" data-title="Spark Material"><img src="../files/SparkMat.png" style="width:100%"></a>
 
 ### Smoke Particles - Final iteration
 * The spark particles were given the same parameter as the debris particle, i.e. a higher spread emitter and a fountain emitter.  <br><br>
-<a href="../files/Smoke4.gif" data-lightbox="soulShard" data-title=""><img src="../files/Smoke4.gif" style="width:100%"></a>
+<a href="../files/Smoke4.gif" data-lightbox="smokefin" data-title="Smoke Particles - Final iteration"><img src="../files/Smoke4.gif" style="width:100%"></a>
 
 ### Other Variations
 Few other variations of the smoke system <br>
 
 <table border="0">
  <tr>
-    <td><a href="../files/Smoke5.gif" data-lightbox="soulShard" data-title=""><img src="../files/Smoke5.gif" style="width:100%"></a></td>
-    <td><a href="../files/Smoke6.gif" data-lightbox="soulShard" data-title=""><img src="../files/Smoke6.gif" style="width:100%"></a></td>
-    <td><a href="../files/Smoke7.gif" data-lightbox="soulShard" data-title=""><img src="../files/Smoke7.gif" style="width:100%"></a></td>  
+    <td><a href="../files/Smoke5.gif" data-lightbox="ov" data-title="Less stylized system"><img src="../files/Smoke5.gif" style="width:100%"></a></td>
+    <td><a href="../files/Smoke6.gif" data-lightbox="ov" data-title="Debris only system"><img src="../files/Smoke6.gif" style="width:100%"></a></td>
+    <td><a href="../files/Smoke7.gif" data-lightbox="ov" data-title="Puff system"><img src="../files/Smoke7.gif" style="width:100%"></a></td>  
  </tr>
  <tr>
     <td>Less stylized system</td>
@@ -86,14 +86,14 @@ Few other variations of the smoke system <br>
     <td>Puff system</td>
  </tr>
 </table>
-*The gifs are sized properly, zoom in to see them clearly*
+*Tap on the image to zoom*
 
 ## Flame system
 My next task was to design & develop flame systems for different purposes like burning coal, chimneys, explosion, etc.
 
 ### Noise Texture
 A stylized noise texture was created to serve as the opacity mask for the flame material. <br><br>
-<a href="../files/NoiseTex.png" data-lightbox="soulShard" data-title=""><img src="../files/NoiseTex.png" style="width:100%"></a>
+<a href="../files/NoiseTex.png" data-lightbox="noisetex" data-title="Noise Texture"><img src="../files/NoiseTex.png" style="width:100%"></a>
 
 ### Flame Material
 * Parametrically controlled texture coordinate was masked to obtain a controllable gradient. The value is clamped between 0 and 1 to prevent excessive bleeding.
@@ -101,21 +101,21 @@ A stylized noise texture was created to serve as the opacity mask for the flame 
 * The UV map of the texture was given a panner (with texture coordinate as input) to animate it, depicting a burning fire.
 * A RadialGradientExponential (with texture coordinate as input) was subtracted from the mask to prevent square edges.
 * The tiling, erosion & color of the material were exposed as dynamic parameters to be controlled by the Niagara system. <br><br>
-<a href="../files/FlameMat.gif" data-lightbox="soulShard" data-title=""><img src="../files/FlameMat.gif" style="width:100%"></a>
+<a href="../files/FlameMat.gif" data-lightbox="flamemat" data-title="Flame Material"><img src="../files/FlameMat.gif" style="width:100%"></a>
 
 ### Flame Particles - 1st iteration
 * Majorly, the structure of flame system was completed during the making of material itself.
 * The sprites were spawned in a circular grid with different rotations to give a 3D look.
 * The color was lerped between yellow and red. <br><br>
-<a href="../files/FlameVFX.gif" data-lightbox="soulShard" data-title=""><img src="../files/FlameVFX.gif" style="width:100%"></a>
+<a href="../files/FlameVFX.gif" data-lightbox="fp1" data-title="Flame Particles - 1st iteration"><img src="../files/FlameVFX.gif" style="width:100%"></a>
 
 ### Flame mesh
 The flame system previously made was disapproved by the team for being too toony and not matching the game tone setting. So I decided to replace the sprite based particle system to a mesh based one. I modeled an icoshpere mesh with decimate modifier for this purpose to provide randomness. <br><br>
-<a href="../files/FlameMesh.png" data-lightbox="soulShard" data-title=""><img src="../files/FlameMesh.png" style="width:100%"></a>
+<a href="../files/FlameMesh.png" data-lightbox="flamemesh" data-title="Flame mesh"><img src="../files/FlameMesh.png" style="width:100%"></a>
 
 ### Flame material
 The flame material was created simply by assigning the particle color input to the emmisive color of the material so that we can assign it later in the emmiter itself. <br><br>
-<a href="../files/FlameMat.png" data-lightbox="soulShard" data-title=""><img src="../files/FlameMat.png" style="width:100%"></a>
+<a href="../files/FlameMat.png" data-lightbox="flamat" data-title="Flame material"><img src="../files/FlameMat.png" style="width:100%"></a>
 
 ### Flame Particles - Final iteration
 * A fountain based emitter is used after removing gravity, cone velocity, drag and scaleColor just retaining the initial properties.
@@ -123,7 +123,7 @@ The flame material was created simply by assigning the particle color input to t
 * The particles were assigned a random vertical velocity so that variance in the fire's peak giving it a natural eye.
 * They're scaled down in size as they reach up to give an inverted conical shape by using bezier curves to keep the transition smooth.
 * The color is lerped between yellow and red with the lifetime of the particle. <br><br>
-<a href="../files/FlameVFX2.gif" data-lightbox="soulShard" data-title=""><img src="../files/FlameVFX2.gif" style="width:100%"></a>
+<a href="../files/FlameVFX2.gif" data-lightbox="fpfin" data-title="Flame Particles - Final iteration"><img src="../files/FlameVFX2.gif" style="width:100%"></a>
 
 ## Footprint System
 Further I was assigned the task to develop a snow-based footprint system over snow for the main characters (Ambrose and Nimue).  
@@ -135,8 +135,8 @@ Further I was assigned the task to develop a snow-based footprint system over sn
 
 <table border="0">
  <tr>
-    <td><a href="../files/AmbroseFI.png" data-lightbox="soulShard" data-title=""><img src="../files/AmbroseFI.png" style="width:100%"></a></td>
-    <td><a href="../files/NimueFI.png" data-lightbox="soulShard" data-title=""><img src="../files/NimueFI.png" style="width:100%"></a></td>
+    <td><a href="../files/AmbroseFI.png" data-lightbox="fi" data-title="Ambrose Foot Impression"><img src="../files/AmbroseFI.png" style="width:100%"></a></td>
+    <td><a href="../files/NimueFI.png" data-lightbox="fi" data-title="Nimue Foot Impression"><img src="../files/NimueFI.png" style="width:100%"></a></td>
  </tr>
  <tr>
     <td>Ambrose Foot Impression</td>
@@ -148,8 +148,8 @@ Further I was assigned the task to develop a snow-based footprint system over sn
 
 <table border="0">
  <tr>
-    <td><a href="../files/AmbroseFPS1.png" data-lightbox="soulShard" data-title=""><img src="../files/AmbroseFPS1.png" style="width:100%"></a></td>
-    <td><a href="../files/NimueFPS1.png" data-lightbox="soulShard" data-title=""><img src="../files/NimueFPS1.png" style="width:100%"></a></td>
+    <td><a href="../files/AmbroseFPS1.png" data-lightbox="fs" data-title="Ambrose Footprint Sprite"><img src="../files/AmbroseFPS1.png" style="width:100%"></a></td>
+    <td><a href="../files/NimueFPS1.png" data-lightbox="fs" data-title="Nimue Footprint Sprite"><img src="../files/NimueFPS1.png" style="width:100%"></a></td>
  </tr>
  <tr>
     <td>Ambrose Footprint Sprite</td>
@@ -161,19 +161,19 @@ Further I was assigned the task to develop a snow-based footprint system over sn
 ### Footprint Material - 1st iteration 
 * The material used for the footprints was a deferred decal material with blending mode set to translucent so that you can apply it as a decal.
 * The alpha of the texture/sprite was assigned to the opacity of the material and the RGB values to the base color. <br><br>
-<a href="../files/FPMat1.png" data-lightbox="soulShard" data-title=""><img src="../files/FPMat1.png" style="width:100%"></a>
+<a href="../files/FPMat1.png" data-lightbox="fm1" data-title="Footprint Material - 1st iteration"><img src="../files/FPMat1.png" style="width:100%"></a>
 
 ### Footprint Blueprint
 * An actor blueprint is created for both left and right footprints.
 * A decal facing downwards with the footprint material is added as the child to the DefaultSceneRoot.
 * The decal is made to fade away gradually after 5 seconds. <br><br>
-<a href="../files/FPBP.png" data-lightbox="soulShard" data-title=""><img src="../files/FPBP.png" style="width:100%"></a>
+<a href="../files/FPBP.png" data-lightbox="fpb" data-title="Footprint Blueprint"><img src="../files/FPBP.png" style="width:100%"></a>
 
 ### Adding to the third person blueprint
 * I used the default third person character provided by Unreal to playtest the footprints.
 * In the TPC blueprint, planes are added as a child of the mesh and the respective foot as the parent socket so that it snaps perfectly with the foot's movement.
-* The planes are rendered as invisible (hidden in game), events are prevented from overlapping, and collisions are disabled as they're just meant for spawn refrence to the footprints. <br><br>
-<a href="../files/TPBP.png" data-lightbox="soulShard" data-title=""><img src="../files/TPBP.png" style="width:100%"></a>
+* The planes are rendered as invisible (hidden in game), events are prevented from overlapping, and collisions are disabled as they're just meant for spawn reference to the footprints. <br><br>
+<a href="../files/TPBP.png" data-lightbox="addtpb" data-title="Third Person Blueprint"><img src="../files/TPBP.png" style="width:100%"></a>
 
 ### Animation Notifier
 * Animation notifiers are added for each footprint to spawn at the appropriate time in the running animation.
@@ -187,9 +187,9 @@ Further I was assigned the task to develop a snow-based footprint system over sn
 
 <table border="0">
  <tr>
-    <td><a href="../files/AnimNoti.gif" data-lightbox="soulShard" data-title=""><img src="../files/AnimNoti.gif" style="width:100%"></a></td>
-    <td><a href="../files/TPAnimBP.png" data-lightbox="soulShard" data-title=""><img src="../files/TPAnimBP.png" style="width:100%"></a></td>
-    <td><a href="../files/TPCharBP.png" data-lightbox="soulShard" data-title=""><img src="../files/TPCharBP.png" style="width:100%"></a></td>
+    <td><a href="../files/AnimNoti.gif" data-lightbox="tpb" data-title="Adding run animation notifier"><img src="../files/AnimNoti.gif" style="width:100%"></a></td>
+    <td><a href="../files/TPAnimBP.png" data-lightbox="tpb" data-title="Third person animation event graph"><img src="../files/TPAnimBP.png" style="width:100%"></a></td>
+    <td><a href="../files/TPCharBP.png" data-lightbox="tpb" data-title="Third person character event graph"><img src="../files/TPCharBP.png" style="width:100%"></a></td>
  </tr>
  <tr>
     <td>Adding run animation notifier</td>
@@ -197,20 +197,20 @@ Further I was assigned the task to develop a snow-based footprint system over sn
     <td>Third person character event graph</td>
  </tr>
 </table>
-*The images are sized properly, zoom in to see them clearly*
+*Tap on the image to zoom*
 
 ### 1st Output
-<a href="../files/FP1.gif" data-lightbox="soulShard" data-title=""><img src="../files/FP1.gif" style="width:100%"></a>
+<a href="../files/FP1.gif" data-lightbox="op1" data-title="Footprint System"><img src="../files/FP1.gif" style="width:100%"></a>
 
 ### Footprint Sprites - Final iteration
-The team pinpointed that the current footprint lacked originality as snow footprints are generally a litte darker (dark grey/blue) with blue tint on the edges. Apart from this, they suggested to add normal information to the footprints aswell.
+The team pinpointed that the current footprint lacked originality as snow footprints are generally a little darker (dark grey/blue) with blue tint on the edges. Apart from this, they suggested to add normal information to the footprints aswell.
 * I decreased the exposure of the textures, added bluish tint on the edges using the brush (Chalk 2) tool.
-* Furthur, I generated the normals using the inbuilt 3D tools provided in Photoshop. (which turned out to be one of my laggiest workflow experiences with Photoshop).
+* Further, I generated the normals using the inbuilt 3D tools provided in Photoshop. (which turned out to be one of my most laggy workflow experiences with Photoshop).
 
 <table border="0">
  <tr>
-    <td><a href="../files/AmbroseFPS2.png" data-lightbox="soulShard" data-title=""><img src="../files/AmbroseFPS2.png" style="width:100%"></a></td>
-    <td><a href="../files/NimueFPS2.png" data-lightbox="soulShard" data-title=""><img src="../files/NimueFPS2.png" style="width:100%"></a></td>
+    <td><a href="../files/AmbroseFPS2.png" data-lightbox="fp2" data-title="New Ambrose footprint texture"><img src="../files/AmbroseFPS2.png" style="width:100%"></a></td>
+    <td><a href="../files/NimueFPS2.png" data-lightbox="fp2" data-title="New Nimue footprint texture"><img src="../files/NimueFPS2.png" style="width:100%"></a></td>
  </tr>
  <tr>
     <td>New Ambrose footprint texture</td>
@@ -221,8 +221,8 @@ The team pinpointed that the current footprint lacked originality as snow footpr
 
 <table border="0">
  <tr>
-    <td><a href="../files/AmbroseFPN.png" data-lightbox="soulShard" data-title=""><img src="../files/AmbroseFPN.png" style="width:100%"></a></td>
-    <td><a href="../files/NimueFPN.png" data-lightbox="soulShard" data-title=""><img src="../files/NimueFPN.png" style="width:100%"></a></td>
+    <td><a href="../files/AmbroseFPN.png" data-lightbox="fn" data-title="Ambrose footprint normal"><img src="../files/AmbroseFPN.png" style="width:100%"></a></td>
+    <td><a href="../files/NimueFPN.png" data-lightbox="fn" data-title="Nimue footprint normal"><img src="../files/NimueFPN.png" style="width:100%"></a></td>
  </tr>
  <tr>
     <td>Ambrose footprint normal</td>
@@ -233,10 +233,10 @@ The team pinpointed that the current footprint lacked originality as snow footpr
 
 ### Footprint Material - Final iteration
 The footprint material was now modified to support normal information and the noraml map textures generated were assigned. <br><br>
-<a href="../files/FPMat2.png" data-lightbox="soulShard" data-title=""><img src="../files/FPMat2.png" style="width:100%"></a>
+<a href="../files/FPMat2.png" data-lightbox="fmfin" data-title="Footprint Material - Final iteration"><img src="../files/FPMat2.png" style="width:100%"></a>
 
 ### Final Output
-<a href="../files/FP2.gif" data-lightbox="soulShard" data-title=""><img src="../files/FP2.gif" style="width:100%"></a>
+<a href="../files/FP2.gif" data-lightbox="newfp" data-title="New footprint system"><img src="../files/FP2.gif" style="width:100%"></a>
 
 ## Snowstorm System
 My next task was to design and develop a snowstorm system for the yard area. I was provided with a [reference video](https://www.shutterstock.com/video/clip-1058627680-dense-heavy-blizzard-snowstorm-vfx-insert-slow-motion) for the same.
@@ -247,14 +247,14 @@ My next task was to design and develop a snowstorm system for the yard area. I w
 * The particles were made to spawn around a big sphere.
 * The trajectory cone's apex angle was increased aswell to increase the spread of the particles.
 * The gravity was decreased and drag was increased to make the snowfall appear more genuine. <br><br>
-<a href="../files/Snow1.gif" data-lightbox="soulShard" data-title=""><img src="../files/Snow1.gif" style="width:100%"></a>
+<a href="../files/Snow1.gif" data-lightbox="sp" data-title="Snow Particles"><img src="../files/Snow1.gif" style="width:100%"></a>
 
 ### Wind Material
 As I had anticipated, I was suggested to add more depth to the snowstorm. The idea was to make the snow more dramatic by introducing a wind system. They provided a [reference video](https://www.youtube.com/watch?v=sGkh1W5cbH4) aswell.
 * A translucent unlit material was chosen for the wind particles.
 * The emissive color was made to be driven by the particle color. 
 * The opacity was controlled by the multiplication of the alpha value of the particle with a RadialGradientExponential to introduce a smooth gradient fall-off that would make the wind look natural. <br><br>
-<a href="../files/WindMat.png" data-lightbox="soulShard" data-title=""><img src="../files/WindMat.png" style="width:100%"></a>
+<a href="../files/WindMat.png" data-lightbox="windmat" data-title="Wind Material"><img src="../files/WindMat.png" style="width:100%"></a>
 
 ### Wind Particles
 * A new Cascade particle system is created and the rendering for the default emitter is turned off.
@@ -264,11 +264,11 @@ As I had anticipated, I was suggested to add more depth to the snowstorm. The id
 * The scale is made to represent a long trail.
 * The direction of velocity is made to ribbon over its lifetime to make the trail follow a wave-like pattern.
 * The particles are made to spawn around a sphere with controllable radius to contol the spread. <br><br>
-<a href="../files/WindPart.gif" data-lightbox="soulShard" data-title=""><img src="../files/WindPart.gif" style="width:100%"></a>
+<a href="../files/WindPart.gif" data-lightbox="wpart" data-title="Wind Particles"><img src="../files/WindPart.gif" style="width:100%"></a>
 
 ### Fog Texture
 * A smooth noise texture (obtained online) was used as the fog texture for smooth light absorption (extinction). <br><br>
-<a href="../files/FogTex.png" data-lightbox="soulShard" data-title=""><img src="../files/FogTex.png" style="width:100%"></a>
+<a href="../files/FogTex.png" data-lightbox="fogtex" data-title="Fog Texture"><img src="../files/FogTex.png" style="width:100%"></a>
 
 ### Fog Material
 * A volume-based material with additive blending is created for the fog to be volumetric.
@@ -276,7 +276,7 @@ As I had anticipated, I was suggested to add more depth to the snowstorm. The id
 * The mask is parametrically controlled by a hardness and extinction value multiplied by RGB value of the texture we obtained earlier.
 * The albedo of the material takes in the mutiplication of the sphere mask and the blend overlay between our texture and a RGB value parameter which we can control in the instance of that material.
 * Thus we can control the hardness, light absorption rate and the color of the fog. <br><br>
-<a href="../files/FogMat.png" data-lightbox="soulShard" data-title=""><img src="../files/FogMat.png" style="width:100%"></a>
+<a href="../files/FogMat.png" data-lightbox="fogmat" data-title="Fog Material"><img src="../files/FogMat.png" style="width:100%"></a>
 
 ### Fog Particle
 * A new Cascade particle system is created and an instance of the fog material is assigned to it. 
@@ -286,8 +286,8 @@ As I had anticipated, I was suggested to add more depth to the snowstorm. The id
 
 <table border="0">
  <tr>
-    <td><a href="../files/FogEH.gif" data-lightbox="soulShard" data-title=""><img src="../files/FogEH.gif" style="width:100%"></a></td>
-    <td><a href="../files/FogCol.gif" data-lightbox="soulShard" data-title=""><img src="../files/FogCol.gif" style="width:100%"></a></td>
+    <td><a href="../files/FogEH.gif" data-lightbox="fogpart" data-title="Fog Extinction & Hardness"><img src="../files/FogEH.gif" style="width:100%"></a></td>
+    <td><a href="../files/FogCol.gif" data-lightbox="fogpart" data-title="Fog Color"><img src="../files/FogCol.gif" style="width:100%"></a></td>
  </tr>
  <tr>
     <td>Fog Extinction & Hardness</td>
@@ -297,7 +297,7 @@ As I had anticipated, I was suggested to add more depth to the snowstorm. The id
 
 ### Final Output
 Finally the snow niagara system, wind cascade system, fog cascade system & an exponential height fog (with volumetric fog enabled) are added into a single bluperint actor to be used in the yard scene as a snowstorm system. <br><br>
-<a href="../files/SnowStormFinal.gif" data-lightbox="soulShard" data-title=""><img src="../files/SnowStormFinal.gif" style="width:100%"></a>
+<a href="../files/SnowStormFinal.gif" data-lightbox="ssys" data-title="Snowstorm System"><img src="../files/SnowStormFinal.gif" style="width:100%"></a>
 
 ## Cable system
 My next task was to come up with a physics-based cable system that was mostly to be used for cosmetic purposes in the game.
@@ -308,4 +308,4 @@ Fortunately, Unreal comes preloaded with cable actors with rope physics for on-t
 * The texture maps were obtained from the Quixel Megascans.
 * The physics is constrained between objects that the cable is attached to by using Physics constraint actor between the two objects.
 * Cable's end is attached to any one of the objects. <br><br>
-<a href="../files/Cable.gif" data-lightbox="soulShard" data-title=""><img src="../files/Cable.gif" style="width:100%"></a>
+<a href="../files/Cable.gif" data-lightbox="cable" data-title="Cable System"><img src="../files/Cable.gif" style="width:100%"></a>
