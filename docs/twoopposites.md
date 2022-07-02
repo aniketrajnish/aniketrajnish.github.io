@@ -125,10 +125,75 @@ We decided upon a coming up with a button mechanic system. The idea was to spawn
 ### Pushable Objects
 To add more depth to the puzzles, we decided to come up with a few objects that the players could push in order to block or press something. 
 * A physics material (with high coefficient of friction value & 0 bounciness) is created.
-* Sprites for pushable objects (with hand-drawn textures by one of the teammates) are imported.
-* Their prefabs are created with Box Collider 2D & Rigidbody 2D components having the physics material assigned to them. <br><br>
-<a href="../files/Buttons.gif" data-lightbox="pushable" data-title="Pushable Objects"><img src="../files/Pushable.gif" style="width:100%"></a>
+* Sprites for pushable objects (with hand-drawn texture maps by one of the teammates) are imported.
 
-###
+<table border="0">
+ <tr>
+    <td><a href="../files/crate.png" data-lightbox="crate" data-title="Crate base map"><img src="../files/crate.png" style="width:100%"></a></td>
+    <td><a href="../files/cratenormal.png" data-lightbox="crate" data-title="Crate normal map"><img src="../files/cratenormal.png" style="width:100%"></a></td>    
+ </tr>
+ <tr>
+    <td>Crate base map</td>
+    <td>Crate normal map</td>
+ </tr>
+</table>
+
+* These textures are assigned to the URP's default lit sprite material.
+* Their prefabs are created with Box Collider 2D & Rigidbody 2D components having the physics material assigned to them. <br><br>
+<a href="../files/Pushable.gif" data-lightbox="pushable" data-title="Pushable Objects"><img src="../files/Pushable.gif" style="width:100%"></a>
+
+### Death Mechanic
+We decided to include spikes in the game. They would kill the the players on contact, rendering few areas of the game as unapproachable. We decided to keep the death animations and effect as brutal and gross (taking inspiration from Limbo) to add to the dark atmosphere of the game.
+
+* Colliders were set up on the spikes (with 'Death' tag) and the player and whenever the player came in contact with the spike a Coroutine containing all the relevant methods for death of the player was called.
+
+<a href="../files/death2opp.png" data-lightbox="death" data-title="Death Logic"><img src="../files/death2opp.png" style="width:100%"></a>
+
+### Spike Texture
+* Since our core idea was to make the game appealing to the eyes we decided to keep environment ques pretty detailed, we decided to do the same with the spikes.
+* The spike texture maps were hand-drawn by one of the teammates. We had initially decided to include a height/bump map but later replaced it with a normal map.
+
+<table border="0">
+ <tr>
+    <td><a href="../files/spikes.png" data-lightbox="spike" data-title="Spike base map"><img src="../files/spikes.png" style="width:100%"></a></td>
+    <td><a href="../files/SpikesNormal.png" data-lightbox="spike" data-title="Spike normal map"><img src="../files/SpikesNormal.png" style="width:100%"></a></td>
+    <td><a href="../files/spike height.png" data-lightbox="spike" data-title="Spike height map"><img src="../files/spike height.png" style="width:100%"></a></td>    
+ </tr>
+ <tr>
+    <td>Spike base map</td>
+    <td>Spike normal map</td>
+    <td>Spike height map</td>
+ </tr>
+</table>
+
+* These textures are assigned to the URP's default lit sprite material.
+
+### Death Animation
+* A sprite sheet for hand=drawn animation of blood splash was imported.
+
+<a href="../files/BloodSplash.png" data-lightbox="bloodsplash" data-title="Blood Splash sprite sheet"><img src="../files/BloodSplash.png" style="width:100%"></a>
+
+* This sprite sheet was played upon collision with the spikes.
+* The movement state of the players were changed from animated to static.
+* The movement vector of the players were overridden to be zero.
+* The canvas was fade out to black and the level was reloaded.
+
+<a href="../files/death2oppcor.png" data-lightbox="deathlogic" data-title="Death Coroutine"><img src="../files/death2oppcor.png" style="width:100%"></a>
+
+### Final Ouptut
+<a href="../files/death2opp.gif" data-lightbox="deathoutput" data-title="Death"><img src="../files/death2opp.gif" style="width:100%"></a>
+
+### Level Design
+
+### Game UI & UX
+For the game UI, we decided to keep it minimal and match the atmospheric tone of the game. 
+
+### Font
+
+### Animations
+
+### Intro clip
+
+### Music 
 
 
