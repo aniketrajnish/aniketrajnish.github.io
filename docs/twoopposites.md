@@ -130,7 +130,7 @@ To add more depth to the puzzles, we decided to come up with a few objects that 
 <table border="0">
  <tr>
     <td><a href="../files/crate.png" data-lightbox="crate" data-title="Crate base map"><img src="../files/crate.png" style="width:100%"></a></td>
-    <td><a href="../files/cratenormal.png" data-lightbox="crate" data-title="Crate normal map"><img src="../files/cratenormal.png" style="width:100%"></a></td>    
+    <td><a href="../files/cratenormal.jpg" data-lightbox="crate" data-title="Crate normal map"><img src="../files/cratenormal.jpg" style="width:100%"></a></td>    
  </tr>
  <tr>
     <td>Crate base map</td>
