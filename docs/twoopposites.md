@@ -190,6 +190,10 @@ We decided to include spikes in the game. They would kill the the players on con
 For the game UI, we decided to keep it minimal and match the atmospheric tone of the game. 
 
 ### Font
+* We browsed through a bunch of hand-drawn fonts for the game's UI. 
+* We shortlisted to Architects Daughter, Amatic, and Blokletters.
+* The colors were kept minimal and preferably lerped between black and white. <br>
+<a href="../files/amatic.png" data-lightbox="font" data-title="Amatic font"><img src="../files/amatic.png" style="width:100%"></a>
 
 ### Animations
 
