@@ -145,13 +145,14 @@ To add more depth to the puzzles, we decided to come up with a few objects that 
 ### Death Mechanic
 We decided to include spikes in the game. They would kill the the players on contact, rendering few areas of the game as unapproachable. We decided to keep the death animations and effect as brutal and gross (taking inspiration from Limbo) to add to the dark atmosphere of the game.
 
-* Colliders were set up on the spikes (with 'Death' tag) and the player and whenever the player came in contact with the spike a Coroutine containing all the relevant methods for death of the player was called.
+* Colliders were set up on the spikes (with 'Death' tag) and the player.
+* If the player came in contact with the spike a Coroutine containing all the relevant methods for death of the player was called.
 
 <a href="../files/death2opp.png" data-lightbox="death" data-title="Death Logic"><img src="../files/death2opp.png" style="width:100%"></a>
 
 ### Spike Texture
-* Since our core idea was to make the game appealing to the eyes we decided to keep environment ques pretty detailed, we decided to do the same with the spikes.
-* The spike texture maps were hand-drawn by one of the teammates. We had initially decided to include a height/bump map but later replaced it with a normal map.
+* Since our core idea was to make the game atmospheric & appealing to the eyes we wanted to keep environment ques pretty detailed. We decided to do the same with the spikes.
+* The spike texture maps were hand-drawn by one of the teammates. We had initially thought of including a height/bump map but later replaced it with a normal map.
 
 <table border="0">
  <tr>
