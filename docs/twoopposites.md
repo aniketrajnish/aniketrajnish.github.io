@@ -191,14 +191,24 @@ For the game UI, we decided to keep it minimal and match the atmospheric tone of
 
 ### Font
 * We browsed through a bunch of hand-drawn fonts for the game's UI. 
-* We shortlisted to Architects Daughter, Amatic, and Blokletters.
+* We shortlisted to Architects Daughter, Amatic, and Blokletters and finalized Amatic in the end due to the 
 * The colors were kept minimal and preferably lerped between black and white. <br><br>
 <a href="../files/amatic.png" data-lightbox="font" data-title="Amatic font"><img src="../files/amatic.png" style="width:100%"></a>
 
 ### Animations
-* The animations were kept minimal aswell - fading, scaling, and translations. 
+* The animations were kept minimal - fading, scaling, and translations. 
 * A canvas with black panel was used as an overlay and it was used for fading transitions between different scenes and menus.
-<a href="../files/menuanim.gif" data-lightbox="menuanim" data-title="Amatic font"><img src="../files/menuanim.gif" style="width:100%"></a>
+
+<table border="0">
+ <tr>
+    <td><a href="../files/menuanim.gif" data-lightbox="menuanim" data-title="Main Menu"><img src="../files/menuanim.gif" style="width:100%"></a></td>
+    <td><a href="../files/pausemenu.gif" data-lightbox="spike" data-title="Pause Menu"><img src="../files/pausemenu.gif" style="width:100%"></a></td>
+ </tr>
+ <tr>
+    <td>Main Menu</td>
+    <td>Pause Menu</td>
+ </tr>
+</table>
 
 ### Intro clip
 
