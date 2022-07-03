@@ -202,7 +202,7 @@ For the game UI, we decided to keep it minimal and match the atmospheric tone of
 <table border="0">
  <tr>
     <td><a href="../files/menuanim.gif" data-lightbox="menuanim" data-title="Main Menu"><img src="../files/menuanim.gif" style="width:100%"></a></td>
-    <td><a href="../files/pausemenu.gif" data-lightbox="spike" data-title="Pause Menu"><img src="../files/pausemenu.gif" style="width:100%"></a></td>
+    <td><a href="../files/pausemenu.gif" data-lightbox="pausemenuanim" data-title="Pause Menu"><img src="../files/pausemenu.gif" style="width:100%"></a></td>
  </tr>
  <tr>
     <td>Main Menu</td>
@@ -211,6 +211,9 @@ For the game UI, we decided to keep it minimal and match the atmospheric tone of
 </table>
 
 ### Intro clip
+* We created a small clip using Unity's timeline as the menu felt a little lifeless. Again, minimalism and dark atmosphere were the key. <br>
+
+<a href="../files/mainmenu.gif" data-lightbox="mm" data-title="Main Menu Final"><img src="../files/mainmenu.gif" style="width:100%"></a>
 
 ### Music 
 
