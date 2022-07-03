@@ -211,10 +211,11 @@ For the game UI, we decided to keep it minimal and match the atmospheric tone of
 </table>
 
 ### Intro clip
-* We created a small clip using Unity's timeline as the menu felt a little lifeless. Again, minimalism and dark atmosphere were the key. <br>
+We created a small clip using Unity's timeline as the menu felt a little lifeless. Again, minimalism and dark atmosphere were the key. <br>
 
 <a href="../files/mainmenu.gif" data-lightbox="mm" data-title="Main Menu Final"><img src="../files/mainmenu.gif" style="width:100%"></a>
 
-### Music 
+### Music & Sound Effects
+
 
 
