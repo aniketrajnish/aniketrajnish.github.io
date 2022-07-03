@@ -211,11 +211,14 @@ For the game UI, we decided to keep it minimal and match the atmospheric tone of
 </table>
 
 ### Intro clip
-We created a small clip using Unity's timeline as the menu felt a little lifeless. Again, minimalism and dark atmosphere were the key. <br>
+We created a small clip using Unity's timeline as just with the text, the menu felt a little lifeless. Again, minimalism and dark atmosphere were the key. <br>
 
 <a href="../files/mainmenu.gif" data-lightbox="mm" data-title="Main Menu Final"><img src="../files/mainmenu.gif" style="width:100%"></a>
 
 ### Music & Sound Effects
-
+* Simple sound effects obtained from [ZapSplat](https://www.zapsplat.com/) were used to for clicks, death, button press, gates and various other purposes.
+* A [free for profit sad piano beat](https://www.youtube.com/watch?v=E3yKY6D7j_M) by Loud Jezze was used as the background track.
+* Drawing cues from Minecraft, the soundtrack was played whenever the game became intense.
+* The soundtrack was played one of four timestamps so that it didn't feel repetitive. 
 
 
