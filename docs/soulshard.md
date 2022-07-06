@@ -356,5 +356,37 @@ The team then assigned me the task to come up with materials with glowing cracks
 ### 6.4 Final Output
 A material instance of this material was created as assigned to one of the items in the game.
 
+<table border="0">
+ <tr>
+    <td><a href="../files/Coverage.gif" data-lightbox="parameters" data-title="Changing Coverage"><img src="../files/Coverage.gif" style="width:100%"></a></td>
+    <td><a href="../files/GlowIntensity.gif" data-lightbox="parameters" data-title="Changing Glow Intensity"><img src="../files/GlowIntensity.gif" style="width:100%"></a></td>
+ </tr>
+ <tr>
+    <td>Changing Coverage</td>
+    <td>Changing Glow Intensity</td>
+ </tr>
+</table>
+
+<table border="0">
+ <tr>
+    <td><a href="../files/PulseIntensity.gif" data-lightbox="parameters" data-title="Changing Pulse Intensity"><img src="../files/PulseIntensity.gif" style="width:100%"></a></td>
+    <td><a href="../files/Rate.gif" data-lightbox="parameters" data-title="Changing Rate"><img src="../files/Rate.gif" style="width:100%"></a></td>
+ </tr>
+ <tr>
+    <td>Changing Pulse Intensity</td>
+    <td>Changing Rate</td>
+ </tr>
+</table>
+
+<table border="0">
+ <tr>
+    <td><a href="../files/EmissiveColor.gif" data-lightbox="parameters" data-title="Changing Emissive Color"><img src="../files/EmissiveColor.gif" style="width:100%"></a></td>
+    <td><a href="../files/BaseTint.gif" data-lightbox="parameters" data-title="Changing Base Tint"><img src="../files/BaseTint.gif" style="width:100%"></a></td>
+ </tr>
+ <tr>
+    <td>Changing Emissive Color</td>
+    <td>Changing Base Tint</td>
+ </tr>
+</table>
 
 
