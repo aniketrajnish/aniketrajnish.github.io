@@ -310,5 +310,51 @@ Fortunately, Unreal comes preloaded with cable actors with rope physics for on-t
 * Cable's end is attached to any one of the objects. <br><br>
 <a href="../files/Cable.gif" data-lightbox="cable" data-title="Cable System"><img src="../files/Cable.gif" style="width:100%"></a>
 
-### Glowing Crack Material
+## 6.0 Glowing Crack Material
+The team then assigned me the task to come up with materials with glowing cracks. They provided me with [references](https://assetstore.unity.com/packages/vfx/particles/spells/mesh-effects-67803#description) aswell. <br><br>
+<a href="../files/gcrackref.png" data-lightbox="gcrack" data-title="Glowing Crack Reference"><img src="../files/gcrackref.png" style="width:100%"></a>
+
+### 6.1 Crack textures
+* As the reference for the material that I was provided with was a Unity asset, I tried reverse engineering the properties of the material to recreate it unreal.
+* I could make out that a single color channel of the base map (Albedo) was inverted and clamped between 0 and 1 and was multiplied with the emissivity input for the material.
+* The single channel input texture ensured that the light emitted took greyscale values according to the base map and the we could control the intensity, rate, color tint, etc. through the emissivity input.
+* A normal map was also used to add depth information to the cracks to make them look more realistic.
+* So I imported a non-uniform galvanized metal's texture maps (base & normal) from the Quixel Bridge for this purpose. 
+
+<table border="0">
+ <tr>
+    <td><a href="../files/CrackBase.png" data-lightbox="crack" data-title="Base Map"><img src="../files/CrackBase.png" style="width:100%"></a></td>
+    <td><a href="../files/CrackNormal.png" data-lightbox="crack" data-title="Normal Map"><img src="../files/CrackNormal.png" style="width:100%"></a></td>
+ </tr>
+ <tr>
+    <td>Base Map</td>
+    <td>Normal Map</td>
+ </tr>
+</table>
+
+### 6.2 Emission Parameters
+* The emissive color parameter of the material is governed by a time-dependent sine wave that leads to pulsating behavior by the glowing cracks.
+* The sine input is given a **Rate** factor as its frequency, to control the rate of pulsation.
+* Then the wave is given an offset governed by the **Pulse Intensity**. Its value is preferably kept to be greater than one to avoid negative waves (This prevents lag between the pulse cycles).
+* The offseted wave function is amplified by a **Glow Intensity** factor to control the amplitude of the glow.
+* Finally the entire amplified function is multiplied by an **Emissive Color** Vector parameter which governs the color of the glow.
+* The **Rate, Pulse Intensity, Glow Intensity, Emissive Color** are parametrically exposed to be controlled by the instance of that material. <br><br>
+<a href="../files/EmissionParameter.png" data-lightbox="empar" data-title="Emission Parameters"><img src="../files/EmissionParameter.png" style="width:100%"></a>
+
+### 6.3 Emission Shape
+* The base color of the material is governed by the the base map of texture and a **Base Tint** Vector factor.
+* The base map is blend overlayed with the **Base Tint** as the base. This ensures that whenever the blend is greater that half the grey value, it will get screened else it will get multiplied. (Every blend option was tried and the Overlay type was found to be best suited for our purpose).
+* The final blend output is multiplied again with the base map and assigned to the base color of the material.
+* The normal map is assigned as the material's normal as is.
+* The shape of the emission is governed by a single color channel of the base map (All three were tried and the Red channel felt the most appealing to the eyes).
+* The color input is inverted using 1-x node and it's assigned a **Coverage** parameter as the exponent.
+* The value is clamped between 0 and 1 and is multiplied by amplified function obtained above and finally assigned to the emissive color property of the material. 
+* The **Base Tint & Coverage** are parametrically exposed to be controlled by the instance of that material. <br><br>
+
+<a href="../files/EmissionShape.png" data-lightbox="emsh" data-title="Emission Shape "><img src="../files/EmissionShape.png" style="width:100%"></a>
+
+### 6.4 Final Output
+A material instance of this material was created as assigned to one of the items in the game.
+
+
 
