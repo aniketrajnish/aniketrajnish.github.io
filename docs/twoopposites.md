@@ -8,10 +8,10 @@ The game was made in a week (in a team of three) for the Brackeys Game Jam (10k+
 
 <a href="../files/TwoOppLogo.png" data-lightbox="twoOpposites" data-title="Two Opposites"><img src="../files/TwoOppLogo.png" style="width:100%"></a>
 
-### 2D Lighting System
+### 1.0 2D Lighting System
 Upon initial analysis, we decided that the atmosphere should be given the most priority while developing this game. And the visual appeal of the game played a significant role in that. Back when we started working on this project, Unity didn't have any rendering pipeline that supported 2D lighting. So my task was to develop a 2D lighting system for the game.
 
-### 2D Raycaster (GL) - 1st iteration
+### 1.1 2D Raycaster (GL) - 1st iteration
 * The basic idea was to draw transparent lines originating radially outwards from a sprite with negligible separation to give a sense of light coming out.
 * I used the Unity's low level [Graphics Library (gl)](https://docs.unity3d.com/ScriptReference/GL.html) to draw lines between two points.
 * The raycast loop formulated- <br>
@@ -48,7 +48,7 @@ Upon initial analysis, we decided that the atmosphere should be given the most p
  </tr>
 </table>
 
-### Ray Material
+### 1.2 Ray Material
 * The next task to make the light rays feel more natural by introducing transparency.
 * While pondering I found that GL library by default uses the Unlit material provided by Unity to create the lines.
 * As the Unlit Material doesn't support transparency by default, I wrote an Unlit Shader that supported both transparency and vertex colors.
@@ -60,7 +60,7 @@ Upon initial analysis, we decided that the atmosphere should be given the most p
 
 <a href="../files/TRays.gif" data-lightbox="rgba" data-title="Light looks more natural"><img src="../files/TRays.gif" style="width:100%"></a>
 
-### Environment Lighting
+### 1.3 Environment Lighting
 * The next step would be to make the scene react to the light rays emitted by the player.
 * This involved two steps-
 
@@ -69,28 +69,28 @@ Upon initial analysis, we decided that the atmosphere should be given the most p
 2. Making the sprite color of the object depend upon its distance from the light source. <br>
 <a href="../files/spritecol.png" data-lightbox="envlight" data-title="Sprite color dependent on distance from light source"><img src="../files/spritecol.png" style="width:100%"></a>
 
-### Final Output
+### 1.4 Final Output
 <a href="../files/2dlightsys.gif" data-lightbox="finalenvlight" data-title="Natural Light with dynamic environment reacting to it"><img src="../files/2dlightsys.gif" style="width:100%"></a>
 
-### 2D Raycaster (GL) - 2nd iteration
+### 1.5 2D Raycaster (GL) - 2nd iteration
 * The previous method for generating rays was very inefficient with time complexity of O(n) as the loop had to run 3600 times every frame with a step size of 0.1.
 * This issue was solved by detecting the edges of nearby objects and casting rays at them and then filling the space by generating mesh between them. <br><br>
 <a href="../files/mesh2dlight.png" data-lightbox="mesh2dlight" data-title="Detecting the edges of nearby objects and generating mesh between them."><img src="../files/mesh2dlight.png" style="width:100%"></a>
 
-### Final Output
+### 1.6 Final Output
 <a href="../files/2dmeshlightsys.gif" data-lightbox="finalmesh2dlight" data-title="Looks exactly like individual rays"><img src="../files/2dmeshlightsys.gif" style="width:100%"></a>
 
-### Environment Reflection
+### 2.0 Environment Reflection
 * Two players (each with their own top down camera) were added in either sides of the map separated by a box collider.
 * The screen was split into two (one for each camera) by decreasing the width of the both camera's viewport rect to 0.5 and offsetting one of them to 0.5.
 
-### Player Movement 
+### 3.0 Player Movement 
 * A simple rigidbody top down controller was yoinked from one of Brackeys tutorials for the first player while the movement of the second player was made to be governed by that of the first player's. <br>
 <a href="../files/inversion.png" data-lightbox="inversion" data-title="Movement Lateral Inversion"><img src="../files/inversion.png" style="width:100%"></a>
 * This inverts the movement of the second player horizontally (lateral inversion) as if their movements were mirrored.
 <a href="../files/inversion.gif" data-lightbox="inversion" data-title="Output on inverted movement."><img src="../files/inversion.gif" style="width:100%"></a>
 
-### Player Sprites & Animations
+### 3.1 Player Sprites & Animations
 * Two sprite sheets of the top-down view of a male & female character (drawn by one of my teammates) walking were imported into the game. 
 * These sprites were split into frames for animation using Unity's inbuilt sprite editor.
 
@@ -115,14 +115,14 @@ Upon initial analysis, we decided that the atmosphere should be given the most p
 * The animation is simply enabled if we're sending an input, else it stays disabled. <br><br> 
 <a href="../files/Sprites.gif" data-lightbox="newmovoutput" data-title="New Player Movement with Animations"><img src="../files/Sprites.gif" style="width:100%"></a>
 
-### Button Mechanic
+### 4.0 Button Mechanic
 We decided to come up with a button mechanic system. The idea was to spawn two buttons (one in each world) and the player was expected to walk over both the buttons simultaneously to open the gates so that he can people can proceed to the next level.
 * When the player walked over a button, the button's sprite renderer glowed.
 * Also, an event was called to check if the other button is pressed as well.
 * If the other button was pressed, the gates (which were hinged at their corner) would rotate and the player could pass through them. <br><br>
 <a href="../files/Buttons.gif" data-lightbox="btn" data-title="Button Mechanic"><img src="../files/Buttons.gif" style="width:100%"></a>
 
-### Movable Objects
+### 5.0 Movable Objects
 To add more depth to the puzzles, we decided to come up with a few objects that the players could push in order to block or press something. 
 * A physics material (with high coefficient of friction value & 0 bounciness) is created.
 * Sprites for movable objects (with hand-drawn texture maps by one of the teammates) are imported.
@@ -142,7 +142,7 @@ To add more depth to the puzzles, we decided to come up with a few objects that 
 * Their prefabs are created with Box Collider 2D & Rigidbody 2D components having the physics material assigned to them. <br><br>
 <a href="../files/Pushable.gif" data-lightbox="pushable" data-title="Pushable Objects"><img src="../files/Pushable.gif" style="width:100%"></a>
 
-### Death Mechanic
+### 6.0 Death Mechanic
 We decided to include spikes in the game. They would kill the players on contact, rendering few areas of the game as unapproachable. The death animations and effect were kept as brutal and gross (taking inspiration from Limbo) to add to the dark atmosphere of the game.
 
 * Colliders were set up on the spikes (with 'Death' tag) and the player.
@@ -150,7 +150,7 @@ We decided to include spikes in the game. They would kill the players on contact
 
 <a href="../files/death2opp.png" data-lightbox="death" data-title="Death Logic"><img src="../files/death2opp.png" style="width:100%"></a>
 
-### Spike Texture
+### 6.1 Spike Texture
 * Since our core idea was to make the game atmospheric & appealing to eyes we wanted to keep environment ques pretty detailed. We decided to do the same with the spikes.
 * The spike texture maps were hand-drawn by one of the teammates. We had initially thought of including a height/bump map but later replaced it with a normal map.
 
@@ -169,7 +169,7 @@ We decided to include spikes in the game. They would kill the players on contact
 
 * These textures are assigned to the URP's default lit sprite material.
 
-### Death Animation
+### 6.2 Death Animation
 * A sprite sheet for hand=drawn animation of blood splash was imported.
 
 <a href="../files/BloodSplash.png" data-lightbox="bloodsplash" data-title="Blood Splash sprite sheet"><img src="../files/BloodSplash.png" style="width:100%"></a>
@@ -181,21 +181,21 @@ We decided to include spikes in the game. They would kill the players on contact
 
 <a href="../files/death2oppcor.png" data-lightbox="deathlogic" data-title="Death Coroutine"><img src="../files/death2oppcor.png" style="width:100%"></a>
 
-### Final Ouptut
+### 6.3 Final Ouptut
 <a href="../files/death2opp.gif" data-lightbox="deathoutput" data-title="Death"><img src="../files/death2opp.gif" style="width:100%"></a>
 
 ### Level Design
 
-### Game UI & UX
+### 8.0 Game UI & UX
 For UI, we decided to keep it minimal and match the atmospheric tone of the game. 
 
-### Font
+### 8.1 Font
 * We browsed through a bunch of hand-drawn fonts for the game's UI. 
 * We shortlisted to Architects Daughter, Amatic, and Blokletters and finally finalized Amatic. 
 * The color palette was kept limited and preferably lerped between black and white. <br><br>
 <a href="../files/amatic.png" data-lightbox="font" data-title="Amatic font"><img src="../files/amatic.png" style="width:100%"></a>
 
-### Animations
+### 8.2 Animations
 * The animations were kept minimal - fading, scaling, and translations. 
 * A canvas with black panel was used as an overlay and it was used for fading transitions between different scenes and menus.
 
@@ -210,12 +210,12 @@ For UI, we decided to keep it minimal and match the atmospheric tone of the game
  </tr>
 </table>
 
-### Intro clip
+### 8.3 Intro clip
 We created a small clip using Unity's timeline as with the text only, the menu seemed a little lifeless. Again, minimalism and dark atmosphere were the key. <br>
 
 <a href="../files/mainmenu.gif" data-lightbox="mm" data-title="Main Menu Final"><img src="../files/mainmenu.gif" style="width:100%"></a>
 
-### Music & Sound Effects
+### 8.4 Music & Sound Effects
 * Simple sound effects imported from [ZapSplat](https://www.zapsplat.com/) were used to for clicks, death, button press, gates and various other purposes.
 * A [free for profit sad piano beat](https://www.youtube.com/watch?v=E3yKY6D7j_M) by Loud Jezze was used as the background track.
 * Drawing cues from Minecraft, the soundtrack was played whenever the game became intense.
