@@ -8,7 +8,7 @@ The game was made in a week (in a team of three) for the Brackeys Game Jam (10k+
 
 <a href="../files/TwoOppLogo.png" data-lightbox="twoOpposites" data-title="Two Opposites"><img src="../files/TwoOppLogo.png" style="width:100%"></a>
 
-### 1.0 2D Lighting System
+## 1.0 2D Lighting System
 Upon initial analysis, we decided that the atmosphere should be given the most priority while developing this game. And the visual appeal of the game played a significant role in that. Back when we started working on this project, Unity didn't have any rendering pipeline that supported 2D lighting. So my task was to develop a 2D lighting system for the game.
 
 ### 1.1 2D Raycaster (GL) - 1st iteration
@@ -80,11 +80,11 @@ Upon initial analysis, we decided that the atmosphere should be given the most p
 ### 1.6 Final Output
 <a href="../files/2dmeshlightsys.gif" data-lightbox="finalmesh2dlight" data-title="Looks exactly like individual rays"><img src="../files/2dmeshlightsys.gif" style="width:100%"></a>
 
-### 2.0 Environment Reflection
+## 2.0 Environment Reflection
 * Two players (each with their own top down camera) were added in either sides of the map separated by a box collider.
 * The screen was split into two (one for each camera) by decreasing the width of the both camera's viewport rect to 0.5 and offsetting one of them to 0.5.
 
-### 3.0 Player Movement 
+## 3.0 Player Movement 
 * A simple rigidbody top down controller was yoinked from one of Brackeys tutorials for the first player while the movement of the second player was made to be governed by that of the first player's. <br>
 <a href="../files/inversion.png" data-lightbox="inversion" data-title="Movement Lateral Inversion"><img src="../files/inversion.png" style="width:100%"></a>
 * This inverts the movement of the second player horizontally (lateral inversion) as if their movements were mirrored.
@@ -115,14 +115,14 @@ Upon initial analysis, we decided that the atmosphere should be given the most p
 * The animation is simply enabled if we're sending an input, else it stays disabled. <br><br> 
 <a href="../files/Sprites.gif" data-lightbox="newmovoutput" data-title="New Player Movement with Animations"><img src="../files/Sprites.gif" style="width:100%"></a>
 
-### 4.0 Button Mechanic
+## 4.0 Button Mechanic
 We decided to come up with a button mechanic system. The idea was to spawn two buttons (one in each world) and the player was expected to walk over both the buttons simultaneously to open the gates so that he can people can proceed to the next level.
 * When the player walked over a button, the button's sprite renderer glowed.
 * Also, an event was called to check if the other button is pressed as well.
 * If the other button was pressed, the gates (which were hinged at their corner) would rotate and the player could pass through them. <br><br>
 <a href="../files/Buttons.gif" data-lightbox="btn" data-title="Button Mechanic"><img src="../files/Buttons.gif" style="width:100%"></a>
 
-### 5.0 Movable Objects
+## 5.0 Movable Objects
 To add more depth to the puzzles, we decided to come up with a few objects that the players could push in order to block or press something. 
 * A physics material (with high coefficient of friction value & 0 bounciness) is created.
 * Sprites for movable objects (with hand-drawn texture maps by one of the teammates) are imported.
@@ -142,7 +142,7 @@ To add more depth to the puzzles, we decided to come up with a few objects that 
 * Their prefabs are created with Box Collider 2D & Rigidbody 2D components having the physics material assigned to them. <br><br>
 <a href="../files/Pushable.gif" data-lightbox="pushable" data-title="Pushable Objects"><img src="../files/Pushable.gif" style="width:100%"></a>
 
-### 6.0 Death Mechanic
+## 6.0 Death Mechanic
 We decided to include spikes in the game. They would kill the players on contact, rendering few areas of the game as unapproachable. The death animations and effect were kept as brutal and gross (taking inspiration from Limbo) to add to the dark atmosphere of the game.
 
 * Colliders were set up on the spikes (with 'Death' tag) and the player.
@@ -184,9 +184,9 @@ We decided to include spikes in the game. They would kill the players on contact
 ### 6.3 Final Ouptut
 <a href="../files/death2opp.gif" data-lightbox="deathoutput" data-title="Death"><img src="../files/death2opp.gif" style="width:100%"></a>
 
-### Level Design
+## 7.0 Level Design
 
-### 8.0 Game UI & UX
+## 8.0 Game UI & UX
 For UI, we decided to keep it minimal and match the atmospheric tone of the game. 
 
 ### 8.1 Font
