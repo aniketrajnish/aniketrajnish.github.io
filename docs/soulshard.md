@@ -18,7 +18,7 @@ Soul Shard is a cooperative puzzle platformer that draws inspiration from EA's '
  </tr>
 </table>
 
-## 1.0 Smoke System
+### 1.0 Smoke System
 My first task was to design and develop a stylized explosive smoke particles for various machinery and explosions in the game. The basic idea was to develop a functional prototype and then refine it in the iterative design process.
 
 ### 1.1 Cloud Texture
@@ -88,7 +88,7 @@ Few other variations of the smoke system <br>
 </table>
 *Tap on the image to zoom*
 
-## 2.0 Flame system
+### 2.0 Flame system
 My next task was to design & develop flame systems for different purposes like burning coal, chimneys, explosion, etc.
 
 ### 2.1 Noise Texture
@@ -125,7 +125,7 @@ The flame material was created simply by assigning the particle color input to t
 * The color is lerped between yellow and red with the lifetime of the particle. <br><br>
 <a href="../files/FlameVFX2.gif" data-lightbox="fpfin" data-title="Flame Particles - Final iteration"><img src="../files/FlameVFX2.gif" style="width:100%"></a>
 
-## 3.0 Footprint System
+### 3.0 Footprint System
 Further I was assigned the task to develop a snow-based footprint system over snow for the main characters (Ambrose and Nimue).  
 
 ### 3.1 Footprint Sprites - 1st iteration
@@ -238,7 +238,7 @@ The footprint material was now modified to support normal information and the no
 ### 3.9 Final Output
 <a href="../files/FP2.gif" data-lightbox="newfp" data-title="New footprint system"><img src="../files/FP2.gif" style="width:100%"></a>
 
-## 4.0 Snowstorm System
+### 4.0 Snowstorm System
 My next task was to design and develop a snowstorm system for the yard area. I was provided with a [reference video](https://www.shutterstock.com/video/clip-1058627680-dense-heavy-blizzard-snowstorm-vfx-insert-slow-motion) for the same.
 
 ### 4.1 Snow Particles
@@ -299,7 +299,7 @@ As I had anticipated, I was suggested to add more depth to the snowstorm. The id
 Finally the snow niagara system, wind cascade system, fog cascade system & an exponential height fog (with volumetric fog enabled) are added into a single bluperint actor to be used in the yard scene as a snowstorm system. <br><br>
 <a href="../files/SnowStormFinal.gif" data-lightbox="ssys" data-title="Snowstorm System"><img src="../files/SnowStormFinal.gif" style="width:100%"></a>
 
-## 5.0 Cable system
+### 5.0 Cable system
 My next task was to come up with a physics-based cable system that was mostly to be used for cosmetic purposes in the game.
 
 ### 5.1 Cable Actors
@@ -310,12 +310,12 @@ Fortunately, Unreal comes preloaded with cable actors with rope physics for on-t
 * Cable's end is attached to any one of the objects. <br><br>
 <a href="../files/Cable.gif" data-lightbox="cable" data-title="Cable System"><img src="../files/Cable.gif" style="width:100%"></a>
 
-## 6.0 Glowing Crack Material
+### 6.0 Glowing Crack Material
 The team then assigned me the task to come up with materials with glowing cracks. They provided me with [references](https://assetstore.unity.com/packages/vfx/particles/spells/mesh-effects-67803#description) aswell. <br><br>
 <a href="../files/gcrackref.png" data-lightbox="gcrack" data-title="Glowing Crack Reference"><img src="../files/gcrackref.png" style="width:100%"></a>
 
 ### 6.1 Crack textures
-* As the reference for the material that I was provided with was a Unity asset, I tried reverse engineering the properties of the material to recreate it unreal.
+* As the reference for the material that I was provided with was a Unity asset, I tried reverse engineering the properties of the material to recreate it in Unreal.
 * I could make out that a single color channel of the base map (Albedo) was inverted and clamped between 0 and 1 and was multiplied with the emissivity input for the material.
 * The single channel input texture ensured that the light emitted took greyscale values according to the base map and the we could control the intensity, rate, color tint, etc. through the emissivity input.
 * A normal map was also used to add depth information to the cracks to make them look more realistic.
