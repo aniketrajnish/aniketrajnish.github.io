@@ -388,5 +388,3 @@ A material instance of this material was created as assigned to one of the items
     <td>Changing Base Tint</td>
  </tr>
 </table>
-
-

@@ -85,7 +85,7 @@ Upon initial analysis, we decided that the atmosphere should be given the most p
 * The screen was split into two (one for each camera) by decreasing the width of the both camera's viewport rect to 0.5 and offsetting one of them to 0.5.
 
 ### 3.0 Player Movement 
-* A simple rigidbody top down controller was yoinked from one of Brackeys tutorials for the first player while the movement of the second player was made to be governed by that of the first player's. <br>
+* A simple rigidbody top down controller was yoinked from one of Brackeys tutorials for the first player while the movement of the second player was made to be governed by that of the first player's. <br><br>
 <a href="../files/inversion.png" data-lightbox="inversion" data-title="Movement Lateral Inversion"><img src="../files/inversion.png" style="width:100%"></a>
 * This inverts the movement of the second player horizontally (lateral inversion) as if their movements were mirrored.
 <a href="../files/inversion.gif" data-lightbox="inversion" data-title="Output on inverted movement."><img src="../files/inversion.gif" style="width:100%"></a>
@@ -185,24 +185,92 @@ We decided to include spikes in the game. They would kill the players on contact
 <a href="../files/death2opp.gif" data-lightbox="deathoutput" data-title="Death"><img src="../files/death2opp.gif" style="width:100%"></a>
 
 ### 7.0 Level Design
+The biggest challenge ahead of us was actually to come up with a level design that would keep the people engaged till the end of the game and not feel tiring at the same time (Since atmospheric games heavily rely on the level design). As the game was a submission to a gamejam we decided to keep the total play time around 10-15 minutes.
 
-### 8.0 Game UI & UX
+### 7.1 Initial levels
+* The key concept of an accessible game design is to keep the initial levels of the game feel more like tutorials that help people stumble upon the core mechanics and gameplay features that game has to offer.
+* The challenge with atmospheric though is that they can't give away much visual cues about the game, the player is expected to explore and find it himself. But again, the game was a part of a game jam submission wherein the attention span of the players playing the game is quite small, so keeping things extremely vague might lead to less player retention. So we decided a sweet spot in between them.
+* The game started with a WSAD key sprite I made using Adobe XD fading into the scene giving the player idea of the controls.
+
+<table border="0">
+ <tr>
+    <td><a href="../files/WSADGame.png" data-lightbox="WSAD" data-title="WSAD Key Sprite in Game"><img src="../files/WSADGame.png" style="width:100%"></a></td>
+    <td><a href="../files/WSADXD.png" data-lightbox="WSAD" data-title="WSAD Key Sprite made in Adobe XD"><img src="../files/WSADXD.png" style="width:100%"></a></td>
+ </tr>
+ <tr>
+    <td>WSAD Key Sprite in Game</td>
+    <td>WSAD Key Sprite made in Adobe XD</td>
+ </tr>
+</table>
+
+* An arrow sprite was made using Photoshop which was spawned in the game's first level to guide directions to the gate that next level. These arrows were spawned if the player exceeded a certain threshold time to reach the gates. 
+
+<table border="0">
+ <tr>
+    <td><a href="../files/ArrowGame.png" data-lightbox="Arrow" data-title="Arrow Sprite in Game"><img src="../files/ArrowGame.png" style="width:100%"></a></td>
+    <td><a href="../files/ArrowPS.png" data-lightbox="Arrow" data-title="Arrow Sprite made in Photoshop"><img src="../files/ArrowPS.png" style="width:100%"></a></td>
+ </tr>
+ <tr>
+    <td>Arrow Sprite in Game</td>
+    <td>Arrow Sprite made in Photoshop</td>
+ </tr>
+</table>
+
+* This level was kept simple and most importantly symmetric. The players were just expected to roam around, get familiar with the inversion mechanic and the gates that would progress them to the next level. <br><br>
+<a href="../files/Lev1.png" data-lightbox="level" data-title="1st Level"><img src="../files/Lev1.png" style="width:100%"></a>
+
+* The first challenge was introduced in the next level as the it was kept asymmetric. Now players needed to figure out a way to make both the characters back in sync with each other so that they reach the gates. <br><br>
+<a href="../files/Lev2.png" data-lightbox="level" data-title="2nd Level"><img src="../files/Lev2.png" style="width:100%"></a>
+
+* The third level introduced the button mechanic in the game. The gates are kept locked and the players are expected to align both the characters over the button simultaneously to unlock the game. The player would use the same method he used to sync both the characters in the previous level as the outline of both the levels is kept the same. <br><br>
+<a href="../files/Lev3.png" data-lightbox="level" data-title="3rd Level"><img src="../files/Lev3.png" style="width:100%"></a>
+
+### 7.2 Later Levels
+* The difficulty for the game was now gradually increased and the game now focused more on the player creatively finding out a way to solve the puzzles rather than teaching the player how to play.
+* For the next level, the the button for one of the characters was spawned right next to him. Our solution to this was locking one of the players in the slots next to the button while the other traveled to his button. To our surprise the players came up with various other solutions to this puzzle too (This is true in the case of the subsequent levels as well). <br><br>
+<a href="../files/Lev4.png" data-lightbox="level" data-title="4th Level"><img src="../files/Lev4.png" style="width:100%"></a>
+
+* The next level had both the puzzles on different vertical levels but symmetric to each other. <br><br>
+<a href="../files/Lev5.png" data-lightbox="level" data-title="5th Level"><img src="../files/Lev5.png" style="width:100%"></a>
+
+* Now that the player knew how to sync the characters and solve the puzzles in both vertical and horizontal directions, it was now the time to introduce the spikes into the level. So the next was similar to the previous one except for the addition of spikes on some of the walls. This limited the areas that the player could explore to solve the puzzle. <br><br>
+<a href="../files/Lev6.png" data-lightbox="level" data-title="6th Level"><img src="../files/Lev6.png" style="width:100%"></a> 
+
+* The next level drastically increased the difficulty of the game by introducing a maze like map with the buttons at the end of the maze and spikes on a few of the walls. Lots of players exclaimed about getting stuck on this level. <br><br>
+<a href="../files/Lev7.png" data-lightbox="level" data-title="7th Level"><img src="../files/Lev7.png" style="width:100%"></a> 
+
+* Now the players were introduced to the movable boxes that were to be strategically used to solve the puzzles. <br><br>
+<a href="../files/Lev8.png" data-lightbox="level" data-title="8th Level"><img src="../files/Lev8.png" style="width:100%"></a> 
+
+* The next few levels combined the usage of both box and spikes along with maze-like level designs. <br><br>
+<a href="../files/Lev9.png" data-lightbox="level" data-title="9th Level"><img src="../files/Lev9.png" style="width:100%"></a> 
+
+* The final level involved a cliffhanger ending followed by the credit screen. Play the game to know more ;) <br><br>
+<a href="../files/LevFin.png" data-lightbox="level" data-title="Final Level"><img src="../files/LevFin.png" style="width:100%"></a> 
+
+### 8.0 Post Processing  
+We used post processing to increase the immersion that the game offers. We decided to limit ourselves to the stack that were well optimized for WebGL builds. 
+* Lens distortion and Chromatic Aberration were added to the images rendered by the camera a more natural. This causes the shape of the images rendered by the camera to distort at the edges and thus increase the focus of the environment in proximity of both the players.
+* We had planned on adding Bloom as well but since we weren't Unity's lighting system we would have to write the Bloom system for our lighting system. Due to deadlines for the gamejam approaching, we decided to shelve the idea. <br><br>
+<a href="../files/PP.gif" data-lightbox="PP" data-title="Post Processing"><img src="../files/PP.gif" style="width:100%"></a>
+
+### 9.0 Game UI & UX
 For UI, we decided to keep it minimal and match the atmospheric tone of the game. 
 
-### 8.1 Font
+### 9.1 Font
 * We browsed through a bunch of hand-drawn fonts for the game's UI. 
 * We shortlisted to Architects Daughter, Amatic, and Blokletters and finally finalized Amatic. 
 * The color palette was kept limited and preferably lerped between black and white. <br><br>
 <a href="../files/amatic.png" data-lightbox="font" data-title="Amatic font"><img src="../files/amatic.png" style="width:100%"></a>
 
-### 8.2 Animations
+### 9.2 Animations
 * The animations were kept minimal - fading, scaling, and translations. 
 * A canvas with black panel was used as an overlay and it was used for fading transitions between different scenes and menus.
 
 <table border="0">
  <tr>
     <td><a href="../files/menuanim.gif" data-lightbox="menuanim" data-title="Main Menu"><img src="../files/menuanim.gif" style="width:100%"></a></td>
-    <td><a href="../files/pausemenu.gif" data-lightbox="pausemenuanim" data-title="Pause Menu"><img src="../files/pausemenu.gif" style="width:100%"></a></td>
+    <td><a href="../files/pausemenu.gif" data-lightbox="menuanim" data-title="Pause Menu"><img src="../files/pausemenu.gif" style="width:100%"></a></td>
  </tr>
  <tr>
     <td>Main Menu</td>
@@ -210,17 +278,15 @@ For UI, we decided to keep it minimal and match the atmospheric tone of the game
  </tr>
 </table>
 
-### 8.3 Intro clip
+### 9.3 Intro clip
 We created a small clip using Unity's timeline as with the text only, the menu seemed a little lifeless. Again, minimalism and dark atmosphere were the key. <br>
 
 <a href="../files/mainmenu.gif" data-lightbox="mm" data-title="Main Menu Final"><img src="../files/mainmenu.gif" style="width:100%"></a>
 
-### 8.4 Music & Sound Effects
+### 9.4 Music & Sound Effects
 * Simple sound effects imported from [ZapSplat](https://www.zapsplat.com/) were used to for clicks, death, button press, gates and various other purposes.
 * A [free for profit sad piano beat](https://www.youtube.com/watch?v=E3yKY6D7j_M) by Loud Jezze was used as the background track.
 * Drawing cues from Minecraft, the soundtrack was played whenever the game became intense.
 * The soundtrack was played one of four timestamps so that it doesn't feel repetitive. 
 * Also, with each scene, the soundtrack's instance was destroyed if it was already playing to avoid multiple instances.
 * The soundtracks were muffled in the menus.
-
-
