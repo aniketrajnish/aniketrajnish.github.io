@@ -354,7 +354,7 @@ The team then assigned me the task to come up with materials with glowing cracks
 <a href="../files/EmissionShape.png" data-lightbox="emsh" data-title="Emission Shape "><img src="../files/EmissionShape.png" style="width:100%"></a>
 
 ### 6.4 Final Output
-A material instance of this material was created as assigned to one of the items in the game.
+A material instance of this material was created and assigned to one of the items in the game.
 
 <table border="0">
  <tr>

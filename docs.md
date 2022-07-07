@@ -4,7 +4,7 @@ layout: default
 ## Design & Development Documents
 *This section of the website is under development*
 ## Games
-1. [Soul Shards](https://aniketrajnish.github.io/docs/soulshard)
+1. [Soul Shard](https://aniketrajnish.github.io/docs/soulshard)
 2. [Two Opposites](https://aniketrajnish.github.io/docs/twoopposites)
 3. [Faster Than Light - Hypercasual](https://aniketrajnish.github.io/docs/ftlhc)
 4. [Faster Than Light - PC](https://aniketrajnish.github.io/docs/ftlpc)
