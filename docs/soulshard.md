@@ -22,29 +22,29 @@ Soul Shard is a cooperative puzzle platformer that draws inspiration from EA's '
 My first task was to design and develop a stylized explosive smoke particles for various machinery and explosions in the game. The basic idea was to develop a functional prototype and then refine it in the iterative design process.
 
 ### 1.1 Cloud Texture
-Firstly, I designed various cloud textures with separate RGB channels for Base Color, Emmisivity and Opacity Mask. <br><br>
+Initially, I designed various cloud textures with separate RGB channels for Base Color, Emmisivity and Opacity Mask. <br><br>
 <a href="../files/CloudRGB.png" data-lightbox="cloudrgb" data-title="RGB Cloud Texture"><img src="../files/CloudRGB.png" style="width:100%"></a>
 
 ### 1.2 Smoke Material
 * The smoke material was made using these textures. 
-* The emmisivity and particle colors were exposed to edit while making the particles. <br><br> 
+* The emmisivity and particle colors were exposed for editing while making the particles. <br><br> 
 <a href="../files/CloudMat.png" data-lightbox="smokemat" data-title="Smoke Material"><img src="../files/CloudMat.png" style="width:100%"></a>
 
 ### 1.3 Smoke Particles - 1st iteration
 * The smoke particles were made using the Niagara VFX system. 
 * The particles (100) were made to spawn in a burst around a cylinder with an initial velocity radially outwards. 
-* A positive gravitational force was added to make the particles rise with a drag coefficient to smooth things out and make them feel natural. 
+* A positive gravitational force was added to make the particles rise with a drag coefficient to smoothen things and make it feel natural. 
 * Individual particles also received rotation in addition to a colour (the exposed parameter) that was lerped from grey to black .<br><br>
 <a href="../files/Smoke1.gif" data-lightbox="smokepart1" data-title="Smoke Particles - 1st iteration"><img src="../files/Smoke1.gif" style="width:100%"></a>
 
 ### 1.4 Smoke Particles - 2nd iteration
 * A light renderer was added to the particles to further intricately define the explosion.
-* The light renderer was initiated at the same initial position as the smoke particles.
+* The light renderer was started off at the same initial position as the smoke particles.
 * The intensity was lerped from 100 to 0.  <br><br>
 <a href="../files/Smoke2.gif" data-lightbox="smokepart2" data-title="Smoke Particles - 2nd iteration"><img src="../files/Smoke2.gif" style="width:100%"></a>
 
 ### 1.5 Debris Texture
-The debris texture was made in photoshop using reference images online and the brush tool. <br><br>
+The debris texture was made in photoshop using online reference images and the brush tool. <br><br>
 <a href="../files/DebrisTex.png" data-lightbox="debtex" data-title="Debris Texture"><img src="../files/DebrisTex.png" style="width:100%"></a>
 
 ### 1.6 Debris Material
@@ -64,7 +64,7 @@ The spark texture with separate RGB channels was obtained online. <br><br>
 ### 1.9 Spark Material
 * The spark material was made using the spark texture. 
 * The blue channel was used as the opacity mask.
-* The emmisive color was obtained by multiplying red and yellow. <br><br>
+* The emmisive color was obtained after combining red and yellow. <br><br>
 <a href="../files/SparkMat.png" data-lightbox="sparkmat" data-title="Spark Material"><img src="../files/SparkMat.png" style="width:100%"></a>
 
 ### 1.10 Smoke Particles - Final iteration
@@ -89,7 +89,7 @@ Few other variations of the smoke system <br>
 *Tap on the image to zoom*
 
 ### 2.0 Flame system
-My next task was to design & develop flame systems for different purposes like burning coal, chimneys, explosion, etc.
+My subsequent task was to design & develop flame systems for different purposes like burning coal, chimneys, explosion, etc.
 
 ### 2.1 Noise Texture
 A stylized noise texture was created to serve as the opacity mask for the flame material. <br><br>
@@ -104,13 +104,13 @@ A stylized noise texture was created to serve as the opacity mask for the flame 
 <a href="../files/FlameMat.gif" data-lightbox="flamemat" data-title="Flame Material"><img src="../files/FlameMat.gif" style="width:100%"></a>
 
 ### 2.3 Flame Particles - 1st iteration
-* Majorly, the structure of flame system was completed during the making of material itself.
+* Majorly, the structure of flame system was completed during the formation of material itself.
 * The sprites were spawned in a circular grid with different rotations to give a 3D look.
 * The color was lerped between yellow and red. <br><br>
 <a href="../files/FlameVFX.gif" data-lightbox="fp1" data-title="Flame Particles - 1st iteration"><img src="../files/FlameVFX.gif" style="width:100%"></a>
 
 ### 2.4 Flame mesh
-The flame system previously made was disapproved by the team for being too toony and not matching the game tone setting. So I decided to replace the sprite based particle system to a mesh based one. I modeled an icoshpere mesh with decimate modifier for this purpose to provide randomness. <br><br>
+The flame system previously made was disapproved by the team for being too toony and not matching the game tone setting. So I decided to replace the sprite based particle system to a mesh one. I modeled an icoshpere mesh with decimate modifier for this purpose to provide randomness. <br><br>
 <a href="../files/FlameMesh.png" data-lightbox="flamemesh" data-title="Flame mesh"><img src="../files/FlameMesh.png" style="width:100%"></a>
 
 ### 2.5 Flame material
@@ -129,7 +129,7 @@ The flame material was created simply by assigning the particle color input to t
 Further I was assigned the task to develop a snow-based footprint system over snow for the main characters (Ambrose and Nimue).  
 
 ### 3.1 Footprint Sprites - 1st iteration
-* I used a snow texture I found online to make the footprint sprites.
+* I used a snow texture which I found online to make the footprint sprites.
 * The foot impressions of the right foot of both the characters were traced using the pen tool and the texture was masked to make the footprint sprites.
 * The left footprint sprite was simply made by inverting the image horizontally.
 
@@ -232,7 +232,7 @@ The team pinpointed that the current footprint lacked originality as snow footpr
 *Footprint Normals*
 
 ### 3.8 Footprint Material - Final iteration
-The footprint material was now modified to support normal information and the noraml map textures generated were assigned. <br><br>
+The footprint material was modified to support normal information and the normal map textures generated were assigned. <br><br>
 <a href="../files/FPMat2.png" data-lightbox="fmfin" data-title="Footprint Material - Final iteration"><img src="../files/FPMat2.png" style="width:100%"></a>
 
 ### 3.9 Final Output
@@ -245,7 +245,7 @@ My next task was to design and develop a snowstorm system for the yard area. I w
 * I found this task quite easy and felt that simply a fountain emitter with the default particle renderer would do the trick.
 * So, I created a fountain emitter and inverted its initial velocity to make the particles fall downwards instead of upwards. 
 * The particles were made to spawn around a big sphere.
-* The trajectory cone's apex angle was increased aswell to increase the spread of the particles.
+* The trajectory cone's apex angle was increased as well to increase the spread of the particles.
 * The gravity was decreased and drag was increased to make the snowfall appear more genuine. <br><br>
 <a href="../files/Snow1.gif" data-lightbox="sp" data-title="Snow Particles"><img src="../files/Snow1.gif" style="width:100%"></a>
 
@@ -258,7 +258,7 @@ As I had anticipated, I was suggested to add more depth to the snowstorm. The id
 
 ### 4.3 Wind Particles
 * A new Cascade particle system is created and the rendering for the default emitter is turned off.
-* The particle is given random horizontal velocity with minor deviations in the other directions.
+* The particle is given random horizontal velocity with minor deviations in other directions.
 * An emitter for trails is added and it's made to follow the first emitter and spawn alongside it.
 * The wind material created earlier is added to the trail emitter.
 * The scale is made to represent a long trail.
@@ -273,14 +273,14 @@ As I had anticipated, I was suggested to add more depth to the snowstorm. The id
 ### 4.5 Fog Material
 * A volume-based material with additive blending is created for the fog to be volumetric.
 * A sphere mask between world and particle position with particle radius as the mask's radius is used to control the rate of light absorption (extinction) of the material.
-* The mask is parametrically controlled by a hardness and extinction value multiplied by RGB value of the texture we obtained earlier.
+* The mask is parametrically controlled by a hardness and extinction value multiplied by RGB value of the texture I obtained earlier.
 * The albedo of the material takes in the mutiplication of the sphere mask and the blend overlay between our texture and a RGB value parameter which we can control in the instance of that material.
 * Thus we can control the hardness, light absorption rate and the color of the fog. <br><br>
 <a href="../files/FogMat.png" data-lightbox="fogmat" data-title="Fog Material"><img src="../files/FogMat.png" style="width:100%"></a>
 
 ### 4.6 Fog Particle
 * A new Cascade particle system is created and an instance of the fog material is assigned to it. 
-* The particle is scaled only along the X-aixs & Z-axis to represent a flat surface and its velocity is set to zero.
+* The particle is scaled only along the X-axis & Z-axis to represent a flat surface and its velocity is set to zero.
 * This particle needs to be paired with an exponential height fog (with volumetric fog enabled) to render over the screen.
 * The particles are spawned around a cylinder (having zero thickness) with its flat edge in the X-Z plane.
 
@@ -296,7 +296,7 @@ As I had anticipated, I was suggested to add more depth to the snowstorm. The id
 </table>
 
 ### 4.7 Final Output
-Finally the snow niagara system, wind cascade system, fog cascade system & an exponential height fog (with volumetric fog enabled) are added into a single bluperint actor to be used in the yard scene as a snowstorm system. <br><br>
+Finally the snow niagara system, wind cascade system, fog cascade system & an exponential height fog (with volumetric fog enabled) are added into a single blueprint actor to be used in the yard scene as a snowstorm system. <br><br>
 <a href="../files/SnowStormFinal.gif" data-lightbox="ssys" data-title="Snowstorm System"><img src="../files/SnowStormFinal.gif" style="width:100%"></a>
 
 ### 5.0 Cable system
@@ -306,7 +306,7 @@ My next task was to come up with a physics-based cable system that was mostly to
 Fortunately, Unreal comes preloaded with cable actors with rope physics for on-the-go usage. 
 * These cables implement the traditional way for rope physics i.e. using a series of particles with motion constraints between them.
 * The texture maps were obtained from the Quixel Megascans.
-* The physics is constrained between objects that the cable is attached to by using Physics constraint actor between the two objects.
+* The physics is constrained between objects that the cable is attached to them by using Physics constraint actor between the two objects.
 * Cable's end is attached to any one of the objects. <br><br>
 <a href="../files/Cable.gif" data-lightbox="cable" data-title="Cable System"><img src="../files/Cable.gif" style="width:100%"></a>
 
@@ -317,7 +317,7 @@ The team then assigned me the task to come up with materials with glowing cracks
 ### 6.1 Crack textures
 * As the reference for the material that I was provided with was a Unity asset, I tried reverse engineering the properties of the material to recreate it in Unreal.
 * I could make out that a single color channel of the base map (Albedo) was inverted and clamped between 0 and 1 and was multiplied with the emissivity input for the material.
-* The single channel input texture ensured that the light emitted took greyscale values according to the base map and the we could control the intensity, rate, color tint, etc. through the emissivity input.
+* The single channel input texture ensured that the light emitted took greyscale values according to the base map and we could control the intensity, rate, color tint, etc through the emissivity input.
 * A normal map was also used to add depth information to the cracks to make them look more realistic.
 * So I imported a non-uniform galvanized metal's texture maps (base & normal) from the Quixel Bridge for this purpose. 
 
@@ -335,19 +335,19 @@ The team then assigned me the task to come up with materials with glowing cracks
 ### 6.2 Emission Parameters
 * The emissive color parameter of the material is governed by a time-dependent sine wave that leads to pulsating behavior by the glowing cracks.
 * The sine input is given a **Rate** factor as its frequency, to control the rate of pulsation.
-* Then the wave is given an offset governed by the **Pulse Intensity**. Its value is preferably kept to be greater than one to avoid negative waves (This prevents lag between the pulse cycles).
+* Then the wave is given an offset governed by the **Pulse Intensity**. Its value is preferably kept to be greater than one to avoid negative waves (this prevents lag between the pulse cycles).
 * The offseted wave function is amplified by a **Glow Intensity** factor to control the amplitude of the glow.
 * Finally the entire amplified function is multiplied by an **Emissive Color** Vector parameter which governs the color of the glow.
 * The **Rate, Pulse Intensity, Glow Intensity, Emissive Color** are parametrically exposed to be controlled by the instance of that material. <br><br>
 <a href="../files/EmissionParameter.png" data-lightbox="empar" data-title="Emission Parameters"><img src="../files/EmissionParameter.png" style="width:100%"></a>
 
 ### 6.3 Emission Shape
-* The base color of the material is governed by the the base map of texture and a **Base Tint** Vector factor.
-* The base map is blend overlayed with the **Base Tint** as the base. This ensures that whenever the blend is greater that half the grey value, it will get screened else it will get multiplied. (Every blend option was tried and the Overlay type was found to be best suited for our purpose).
+* The base color of the material is governed by the base map of texture and a **Base Tint** Vector factor.
+* The base map is blend overlayed with the **Base Tint** as the base. This ensures that whenever the blend is greater than half the grey value, it will get screened else it will get multiplied. (Every blend option was tried and the Overlay type was found to be best suited for our purpose).
 * The final blend output is multiplied again with the base map and assigned to the base color of the material.
-* The normal map is assigned as the material's normal as is.
-* The shape of the emission is governed by a single color channel of the base map (All three were tried and the Red channel felt the most appealing to the eyes).
-* The color input is inverted using 1-x node and it's assigned a **Coverage** parameter as the exponent.
+* The normal map is assigned as the material's normal as it is.
+* The shape of the emission is governed by a single color channel of the base map (all three were tried and the Red channel felt the most appealing to the eyes).
+* The color input is inverted using 1-x node and it is assigned a **Coverage** parameter as the exponent.
 * The value is clamped between 0 and 1 and is multiplied by amplified function obtained above and finally assigned to the emissive color property of the material. 
 * The **Base Tint & Coverage** are parametrically exposed to be controlled by the instance of that material. <br><br>
 
