@@ -149,6 +149,7 @@ Tools & Technologies | Unity, OpenGL, Adobe Premiere Pro, Unreal Engine 4, Adobe
    * Worte ragdoll crowd control mechanics.
    * Wrote canon projectile mechanics.
    * Wrote a low poly water shader.
+   * Optimized clouds by using raymarched clouds instead of particle based clouds.
 6. [Dodge Master](https://youtu.be/6OCS70rkZJk)
    * Wrote time control mechnaics.
    * Implemented mesh deformation and reformation algorithm from Body Adjustment ASMR.
