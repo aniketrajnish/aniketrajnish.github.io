@@ -388,3 +388,24 @@ A material instance of this material was created and assigned to one of the item
     <td>Changing Base Tint</td>
  </tr>
 </table>
+
+### 7.0 Loading Screen
+I decided to switch my role to explore the track of a tech designer. I was assigned the task to design a loading screen for the various scene transitions in the game. 
+
+### 7.0 Widget
+* A 16:9 widget was created to serve as the lock screen. 
+* A [video](https://drive.google.com/file/d/1AEvD9Qi2J3TZTnRo6RIspSqx6nZX-jSQ/view) was provided to be used as the background for the lock screen.
+* Since Unreal Engine doesn't support Video files for Widget as is, I had to do a walkaround. I imported the video as a media player and created a video texture out of it. Then I created a material with UI domain that could be used in the widget as an Image. (Image in widgets support the use of materials as a brush)
+* The video was looped and precached to avoid any frame drops in between each loop.
+* The default Rendering Hardware Interface was changed to DirectX11 as Vulkan/DirectX12 eventually failed to cache the video and led to a black screen.
+  
+<a href="../files/loadscrmat.gif" data-lightbox="loadscrmat" data-title="Video UI Material"><img src="../files/loadscrmat.gif" style="width:100%"></a>
+**Video UI Material**
+
+
+### 7.1 Progress Bar
+The team wanted me to implement a progress bar whose colors can be controlled by us in the engine. Apart from this the progress bar's progress was to be linked with the amount of level content and lighting information was loaded in the level.
+
+* 
+
+
