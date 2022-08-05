@@ -406,6 +406,38 @@ I decided to switch my role to explore the track of a tech designer. I was assig
 ### 7.1 Progress Bar
 The team wanted me to implement a progress bar whose colors can be controlled by us in the engine. Apart from this the progress bar's progress was to be linked with the amount of level content and lighting information was loaded in the level.
 
-* 
+* I used the Progress Bar prefab provided by the Unreal Engine in the Widget Palette as the base. 
+* The progress percentage was bound with the `GetAsyncLoadPercentage` with an upper clamp on the timing. 
+* A custom sprite was used for the progress bar aswell.
 
+ <tr>
+    <td><a href="../files/progressbarbp.png" data-lightbox="pb" data-title="Percentage Blueprint"><img src="../files/progressbarbp.png" style="width:100%"></a></td>
+    <td><a href="../files/BaseTint.gif" data-lightbox="pb" data-title="Changing Base Tint"><img src="../files/BaseTint.gif" style="width:100%"></a></td>
+ </tr>
+ <tr>
+    <td>Percentage Blueprint</td>
+    <td>Changing Base Tint</td>
+ </tr>
+</table>
 
+### 7.2 Tips System
+Next we decided upon implementing a tips system that would show up random tips on the widget while the level is loading. 
+
+* A semi transparent black box was used as the container for the textbox of the tips that would come randomly.
+* DCC font was used for the text to keep it seamless with the game.
+* The text was randomly chosen from an array of strings and was set to switch to another string after a threshold time.
+* The sound designers event went on to implement a narration system that read out the tips that came out on the screen.
+
+ <tr>
+    <td><a href="../files/tipbp.png" data-lightbox="tipbp" data-title="Percentage Blueprint"><img src="../files/tipbp.png" style="width:100%"></a></td>
+    <td><a href="../files/BaseTint.gif" data-lightbox="tipbp" data-title="Changing Base Tint"><img src="../files/BaseTint.gif" style="width:100%"></a></td>
+ </tr>
+ <tr>
+    <td>Tips Blueprint</td>
+    <td>Changing Base Tint</td>
+ </tr>
+</table>
+
+### 7.3 Animations
+
+  
