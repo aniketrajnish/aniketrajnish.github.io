@@ -427,7 +427,7 @@ Next we decided upon implementing a tips system that would show up random tips o
 * A semi transparent black box was used as the container for the textbox of the tips that would come randomly.
 * DCC font was used for the text to keep it seamless with the game.
 * The text was randomly chosen from an array of strings and was set to switch to another string after a threshold time.
-* The sound designers event went on to implement a narration system that read out the tips that came out on the screen.
+* The sound designers even went on to implement a narration system that read out the tips that came out on the screen.
 
 <a href="../files/tipbp.png" data-lightbox="tipbp" data-title="Percentage Blueprint"><img src="../files/tipbp.png" style="width:100%"></a>
 
