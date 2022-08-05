@@ -410,16 +410,7 @@ The team wanted me to implement a progress bar whose colors can be controlled by
 * The progress percentage was bound with the `GetAsyncLoadPercentage` with an upper clamp on the timing. 
 * A custom sprite was used for the progress bar aswell.
 
-<table border="0">
- <tr>
-    <td><a href="../files/progressbarbp.png" data-lightbox="pb" data-title="Percentage Blueprint"><img src="../files/progressbarbp.png" style="width:100%"></a></td>
-    <td><a href="../files/BaseTint.gif" data-lightbox="pb" data-title="Changing Base Tint"><img src="../files/BaseTint.gif" style="width:100%"></a></td>
- </tr>
- <tr>
-    <td>Percentage Blueprint</td>
-    <td>Changing Base Tint</td>
- </tr>
-</table>
+<a href="../files/progressbarbp.png" data-lightbox="pb" data-title="Percentage Blueprint"><img src="../files/progressbarbp.png" style="width:100%"></a>
 
 ### 7.2 Tips System
 Next we decided upon implementing a tips system that would show up random tips on the widget while the level is loading. 
