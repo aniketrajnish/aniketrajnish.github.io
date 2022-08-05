@@ -400,7 +400,7 @@ I decided to switch my role to explore the track of a tech designer. I was assig
 * The default Rendering Hardware Interface was changed to DirectX11 as Vulkan/DirectX12 eventually failed to cache the video and led to a black screen.
   
 <a href="../files/loadscrmat.gif" data-lightbox="loadscrmat" data-title="Video UI Material"><img src="../files/loadscrmat.gif" style="width:100%"></a>
-**Video UI Material**
+*Video UI Material*
 
 
 ### 7.1 Progress Bar
@@ -429,31 +429,13 @@ Next we decided upon implementing a tips system that would show up random tips o
 * The text was randomly chosen from an array of strings and was set to switch to another string after a threshold time.
 * The sound designers event went on to implement a narration system that read out the tips that came out on the screen.
 
-<table border="0">
- <tr>
-    <td><a href="../files/tipbp.png" data-lightbox="tipbp" data-title="Percentage Blueprint"><img src="../files/tipbp.png" style="width:100%"></a></td>
-    <td><a href="../files/BaseTint.gif" data-lightbox="tipbp" data-title="Changing Base Tint"><img src="../files/BaseTint.gif" style="width:100%"></a></td>
- </tr>
- <tr>
-    <td>Tips Blueprint</td>
-    <td>Changing Base Tint</td>
- </tr>
-</table>
+<a href="../files/tipbp.png" data-lightbox="tipbp" data-title="Percentage Blueprint"><img src="../files/tipbp.png" style="width:100%"></a>
 
 ### 7.3 Widget & Level Blueprint
 * The widget was added to the viewport of the screen when a new level was opened. 
 * It was made to wait for `GetAsyncLoadPercentage` to get to 100 and then a prompt was shown to press any key (cross-platform) to disable the widget and open the newly loaded level. The blueprint was made to wait for a threshold time in case the level took too long to load. 
 
-<table border="0">
- <tr>
-    <td><a href="../files/lswidget.png" data-lightbox="widget" data-title="Level Blueprint"><img src="../files/lswidget.png" style="width:100%"></a></td>
-    <td><a href="../files/lswidget2.png" data-lightbox="widget" data-title="Widget Blueprint"><img src="../files/lswidget2.png" style="width:100%"></a></td>
- </tr>
- <tr>
-    <td>Level Blueprint</td>
-    <td>Widget Blueprint</td>
- </tr>
-</table>
+<a href="../files/lswidget.png" data-lightbox="widget" data-title="Level Blueprint"><img src="../files/lswidget.png" style="width:100%"></a>
   
 ### 7.4 Final Touches
 * All the widgets and elements were animated To give a more professional look.
