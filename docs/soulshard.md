@@ -410,6 +410,7 @@ The team wanted me to implement a progress bar whose colors can be controlled by
 * The progress percentage was bound with the `GetAsyncLoadPercentage` with an upper clamp on the timing. 
 * A custom sprite was used for the progress bar aswell.
 
+<table border="0">
  <tr>
     <td><a href="../files/progressbarbp.png" data-lightbox="pb" data-title="Percentage Blueprint"><img src="../files/progressbarbp.png" style="width:100%"></a></td>
     <td><a href="../files/BaseTint.gif" data-lightbox="pb" data-title="Changing Base Tint"><img src="../files/BaseTint.gif" style="width:100%"></a></td>
@@ -428,6 +429,7 @@ Next we decided upon implementing a tips system that would show up random tips o
 * The text was randomly chosen from an array of strings and was set to switch to another string after a threshold time.
 * The sound designers event went on to implement a narration system that read out the tips that came out on the screen.
 
+<table border="0">
  <tr>
     <td><a href="../files/tipbp.png" data-lightbox="tipbp" data-title="Percentage Blueprint"><img src="../files/tipbp.png" style="width:100%"></a></td>
     <td><a href="../files/BaseTint.gif" data-lightbox="tipbp" data-title="Changing Base Tint"><img src="../files/BaseTint.gif" style="width:100%"></a></td>
@@ -438,6 +440,23 @@ Next we decided upon implementing a tips system that would show up random tips o
  </tr>
 </table>
 
-### 7.3 Animations
+### 7.3 Widget & Level Blueprint
+* The widget was added to the viewport of the screen when a new level was opened. 
+* It was made to wait for `GetAsyncLoadPercentage` to get to 100 and then a prompt was shown to press any key (cross-platform) to disable the widget and open the newly loaded level. The blueprint was made to wait for a threshold time in case the level took too long to load. 
 
+<table border="0">
+ <tr>
+    <td><a href="../files/lswidget.png" data-lightbox="widget" data-title="Level Blueprint"><img src="../files/lswidget.png" style="width:100%"></a></td>
+    <td><a href="../files/lswidget2.png" data-lightbox="widget" data-title="Widget Blueprint"><img src="../files/lswidget2.png" style="width:100%"></a></td>
+ </tr>
+ <tr>
+    <td>Level Blueprint</td>
+    <td>Widget Blueprint</td>
+ </tr>
+</table>
   
+### 7.4 Final Touches
+* All the widgets and elements were animated To give a more professional look.
+* The game's logo was added in the center and was made to fade into a text prompt that asked the players to press a key to continue once the level had been loaded.
+
+ <a href="../files/LoadingScreen.gif" data-lightbox="finalls" data-title="Loading Screen"><img src="../files/LoadingScreen.gif" style="width:100%"></a>
