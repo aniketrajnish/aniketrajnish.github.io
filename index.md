@@ -199,8 +199,8 @@ The ideation and developement of these games is done by me. Marketing and publis
 
 ## Relevant Coursework
  
- 1. [DES 492 - 1](https://docs.google.com/document/d/1x0Ong7Herwsmf828lOB-8RwccJlR9PEl/edit?usp=sharing&ouid=101872699639981619068&rtpof=true&sd=true)<br>
-   The course involved modding a pre-existing game, developing a sandbox-styled game, speculation of different permutations & combinations of different outcomes of the game, and development of a hypertext game with a non-linear branching story.
+ 1. [DES 492 - 1](https://docs.google.com/document/d/1x0Ong7Herwsmf828lOB-8RwccJlR9PEl/edit?usp=sharing&ouid=101872699639981619068&rtpof=true&sd=true) Special Topics in Design: Playing with possibilities: gaming new worlds]<br>
+   The course involved modding a pre-existing game, developing a sandbox-styled game, speculation of different permutations & combinations of different outcomes of the game, and development of a hypertext game with a non-linear branching story. This course was taken under the guidance of [Prof. Prayas Abhinav](https://prayasabhinav.net/)
    * [Modding Assignment - Maze Game made 3D](https://github.com/aniketrajnish/DES-492-Modding-Project)
    * [Sandbox & Speculation Assignment - Joined Together](https://github.com/aniketrajnish/DES-492-Sandbox-and-Speculation)
    * [Hypertext Assignment - Friday Hai](https://github.com/aniketrajnish/DES-492-Hypertext-Game)
