@@ -199,19 +199,20 @@ The ideation and developement of these games is done by me. Marketing and publis
 
 ## Relevant Coursework
  
- 1. [DES 492 - 1](https://docs.google.com/document/d/1x0Ong7Herwsmf828lOB-8RwccJlR9PEl/edit?usp=sharing&ouid=101872699639981619068&rtpof=true&sd=true) Special Topics in Design: Playing with possibilities: gaming new worlds]<br>
+ 1. **[DES 492 - 1](https://docs.google.com/document/d/1x0Ong7Herwsmf828lOB-8RwccJlR9PEl/edit?usp=sharing&ouid=101872699639981619068&rtpof=true&sd=true) Special Topics in Design: Playing with possibilities: gaming new worlds]**<br>
    The course involved modding a pre-existing game, developing a sandbox-styled game, speculation of different permutations & combinations of different outcomes of the game, and development of a hypertext game with a non-linear branching story. This course was taken under the guidance of [Prof. Prayas Abhinav](https://prayasabhinav.net/)
-   * [Modding Assignment - Maze Game made 3D](https://github.com/aniketrajnish/DES-492-Modding-Project)
-   * [Sandbox & Speculation Assignment - Joined Together](https://github.com/aniketrajnish/DES-492-Sandbox-and-Speculation)
-   * [Hypertext Assignment - Friday Hai](https://github.com/aniketrajnish/DES-492-Hypertext-Game)
- 2. [DES 391 - 1](https://docs.google.com/document/d/1DYaIqf-aDBfEVeppSoWMcmVnCk06W0MG/edit?usp=sharing&ouid=101872699639981619068&rtpof=true&sd=true): Special Topics in Design:On the Possibility of Board Games<br>
-   * The course is continuation of DES 492 - 1 and involves 6 modules that covered various aspects of board games and game design in general.
-   * Apart from all the topics covered in the previous course this course also expects us to create cinematics for the various games we developed earlier. Apart from this, we're expected to design and develop a war game and use all the knowledge we gained after undertaking both the courses into a final game.
-   * This course was taken under the guidance of [Prof. Prayas Abhinav](https://prayasabhinav.net/)
-3. DES 499
+    * [Modding Assignment - Maze Game made 3D](https://github.com/aniketrajnish/DES-492-Modding-Project)
+    * [Sandbox & Speculation Assignment - Joined Together](https://github.com/aniketrajnish/DES-492-Sandbox-and-Speculation)
+    * [Hypertext Assignment - Friday Hai](https://github.com/aniketrajnish/DES-492-Hypertext-Game)
+ 2. **[DES 391 - 1](https://docs.google.com/document/d/1DYaIqf-aDBfEVeppSoWMcmVnCk06W0MG/edit?usp=sharing&ouid=101872699639981619068&rtpof=true&sd=true): Special Topics in Design:On the Possibility of Board Games**<br>
+    * The course is continuation of DES 492 - 1 and involves 6 modules that covered various aspects of board games and game design in general.
+    * Apart from all the topics covered in the previous course this course also expects us to create cinematics for the various games we developed earlier. Apart from this, we're expected to design and develop a war game and use all the knowledge we gained after undertaking both the courses into a final game.
+    * This course was taken under the guidance of [Prof. Prayas Abhinav](https://prayasabhinav.net/)
+    * The repository for the modding assignment can be found [here]().
+3. **DES 499**
    * As a part of this project course, we are expected to design and develop an interactive environment of the various yantras at [Jantar Mantar](https://www.jantarmantar.org/) for the user to navigate through it for the [MHRD](https://www.education.gov.in/en)
    * This course was taken under the guidance of [Prof. Sameer S. Sahasrabudhe](https://www.it.iitb.ac.in/~s1000brains/Sameer_Sahasrabudhe_Mar2014/Home.html)
-4. CS 499
+4. **CS 499**
    * As a part of this project course, we aim to improve the [CSGNet](https://hippogriff.github.io/CSGNet/)- a neural architecture that takes as input a 2D or 3D shape and induces a program to generate it.
    * We aim to do this by adding more shape information, introducing color reconstruction, and creating a 2D image to 3D mesh pipeline.
    * This course was taken under the guidance of [Prof. Shanmuganathan Raman](https://sites.google.com/a/iitgn.ac.in/shanmuga/)

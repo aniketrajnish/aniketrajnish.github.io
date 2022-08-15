@@ -63,6 +63,3 @@ The game has a digital version  hosted here to [play](https://tabletopia.com/pla
     <td>Grid Rule</td>
  </tr>
 </table>
-
-
-
