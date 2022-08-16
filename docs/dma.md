@@ -4,7 +4,8 @@ layout: default
 
 # DES 391-1 Modding Assignment
 
-The game has a digital version  hosted here to [play](https://tabletopia.com/players/id1929536/19qb8n/play).
+* The game has a digital version  hosted here to [play](https://tabletopia.com/players/id1929536/19qb8n/play).
+* Apart from that the assets used to make the game are also uploaded [here](../files/game.pdf). 
 ## 1. The original Idea
  * The original game was based around the idea of arranging four quadrants (with different patterns) on the board in such a way that it forms a full circle. If all the four quadrants are made of same pattern, the player gets bonus points. 
  * The player can either turn a quadrant, add a quadrant, remove a quadrant by adding the same pattern.
