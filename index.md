@@ -6,7 +6,7 @@ layout: default
 
 <img class="profile-picture" src="files/IMG_20220513165455419.jpg">
 
-I’m a junior undergraduate at IIT Gandhinagar. I’m into developing games, VFX, editing videos, computer graphics, and simulations. I’ve mentioned some of my work below. If you want the source code/ build of any of these you can contact me! <br>
+I’m a senior undergraduate at IIT Gandhinagar. I’m into developing games, VFX, editing videos, computer graphics, and simulations. I’ve mentioned some of my work below. If you want the source code/ build of any of these you can contact me! <br>
 
 **Few of them are available  on my [Github](https://github.com/aniketrajnish). The design & development documents of the projects and games that I've mentioned below are can be found [here](https://aniketrajnish.github.io/docs).**
 ## Skills
@@ -127,7 +127,8 @@ Tools & Technologies | Unity, OpenGL, Adobe Premiere Pro, Unreal Engine 4, Adobe
 * Developed VFX effects like stylized fire & flames, smoke, debris & flames using the inbuilt Niagara system.
 * Developed a dynamic snowstorm system.
 * Implemented rope physics for cables.
-* The development update to the project can be found [here](https://www.youtube.com/watch?v=cN4vf7va254).
+* Implemented a loading screen.
+* The development update to the project can be found [here](https://youtu.be/0S1EbyBRVhw).
 
 ## Crazylabs Partnership
 
@@ -154,7 +155,7 @@ Tools & Technologies | Unity, OpenGL, Adobe Premiere Pro, Unreal Engine 4, Adobe
    * Wrote time control mechnaics.
    * Implemented mesh deformation and reformation algorithm from Body Adjustment ASMR.
 
-The ideation and developement of these games is done by me. Marketing and publishing side of things is looked over by CrazyLabs. The source code and the build for the games can't be shared publicly as this comes under NDA.
+The ideation and development of these games is done by me. Marketing and publishing side of things is looked over by CrazyLabs. The source code and the build for the games can't be shared publicly as this comes under NDA.
 
 ## Project Holly
 
@@ -199,12 +200,12 @@ The ideation and developement of these games is done by me. Marketing and publis
 
 ## Relevant Coursework
  
- 1. **[DES 492 - 1](https://docs.google.com/document/d/1x0Ong7Herwsmf828lOB-8RwccJlR9PEl/edit?usp=sharing&ouid=101872699639981619068&rtpof=true&sd=true) Special Topics in Design: Playing with possibilities: gaming new worlds]**<br>
+ 1. **[DES 492 - 1](https://docs.google.com/document/d/1x0Ong7Herwsmf828lOB-8RwccJlR9PEl/edit?usp=sharing&ouid=101872699639981619068&rtpof=true&sd=true) : Special Topics in Design: Playing with possibilities: gaming new worlds**<br>
    The course involved modding a pre-existing game, developing a sandbox-styled game, speculation of different permutations & combinations of different outcomes of the game, and development of a hypertext game with a non-linear branching story. This course was taken under the guidance of [Prof. Prayas Abhinav](https://prayasabhinav.net/)
     * [Modding Assignment - Maze Game made 3D](https://github.com/aniketrajnish/DES-492-Modding-Project)
     * [Sandbox & Speculation Assignment - Joined Together](https://github.com/aniketrajnish/DES-492-Sandbox-and-Speculation)
     * [Hypertext Assignment - Friday Hai](https://github.com/aniketrajnish/DES-492-Hypertext-Game)
- 2. **[DES 391 - 1](https://docs.google.com/document/d/1DYaIqf-aDBfEVeppSoWMcmVnCk06W0MG/edit?usp=sharing&ouid=101872699639981619068&rtpof=true&sd=true): Special Topics in Design:On the Possibility of Board Games**<br>
+ 2. **[DES 391 - 1](https://docs.google.com/document/d/1DYaIqf-aDBfEVeppSoWMcmVnCk06W0MG/edit?usp=sharing&ouid=101872699639981619068&rtpof=true&sd=true) : Special Topics in Design : On the Possibility of Board Games**<br>
     * The course is continuation of DES 492 - 1 and involves 6 modules that covered various aspects of board games and game design in general.
     * Apart from all the topics covered in the previous course this course also expects us to create cinematics for the various games we developed earlier. Apart from this, we're expected to design and develop a war game and use all the knowledge we gained after undertaking both the courses into a final game.
     * This course was taken under the guidance of [Prof. Prayas Abhinav](https://prayasabhinav.net/)
