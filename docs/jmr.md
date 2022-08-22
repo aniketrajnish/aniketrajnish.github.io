@@ -13,9 +13,8 @@ As a part of this project course we're expected to create a physically precise i
  * I used a Procedural Sky shader for skybox as it comes with a sun that mimics the directional light by default.
  * Then I bound the directional light's rotation and intensity, fog color and a clock to the day & night cycle. 
 
-<video style="width:100%" autoplay>
+<video style="width:100%" autoplay on>
   <source src="../files/day_night.mp4" type="video/mp4">  
-Your browser does not support the video tag.
 </video>
 
 
