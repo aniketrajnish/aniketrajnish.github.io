@@ -8,9 +8,9 @@ As a part of this project course we're expected to create a physically precise i
 
 ### 1.0 Week - 1
 ### 1.1 Blender & 3D Models
-* We also collected some [Reference Online Material](https://docs.google.com/document/d/1l8tKDSJfwaVZQedeRZSi7APF9uCLk7THDPQUlbR4L1Q/edit?usp=sharing)  
+1. We also collected some [Reference Online Material](https://docs.google.com/document/d/1l8tKDSJfwaVZQedeRZSi7APF9uCLk7THDPQUlbR4L1Q/edit?usp=sharing)  
     * We couldn't find any document which depicts the exact dimensions of Jantar Mantar, but we found a website containing paper model replica of jantar mantar.     
-* Building approxiamate models of [Samrat Yantra](https://www.jantarmantar.org/learn/observatories/instruments/samrat/index.html) in Blender.
+2. Building approxiamate models of [Samrat Yantra](https://www.jantarmantar.org/learn/observatories/instruments/samrat/index.html) in Blender.
     * The model we made was not accurate and had some flaws. We will work on this in 
       the next week.
     <br><br>
