@@ -15,8 +15,8 @@ In the first week we were mostly expected to collect reference materials online 
 ### 1.2 3D Models 
 * Then we created rough models of the [Samrat Yantra](https://www.jantarmantar.org/learn/observatories/instruments/samrat/index.html) in Blender based on the resources we could procure.
 * As the model didn't take CAD dimensions into account, it sure had some flaws that were pointed by Sameer Sir in our weekly meetings.
-* We were later expected to come up with dimensionally accurate models based on CAD and paper model replicas that we found.w
-    <br><br>
+* We were later expected to come up with dimensionally accurate models based on CAD and paper model replicas that we found.
+    
     <a href="../files/SamratYantraRough.png" data-lightbox="yantra" data-title="Boy Sprite Sheet"><img src="../files/SamratYantraRough.png" style="width:100%"></a>
     
     <br>
@@ -30,6 +30,7 @@ In the first week we were mostly expected to collect reference materials online 
         <td>Right Side - Base</td>
     </tr>
     </table>   
+
 ### 1.3 Day & Night Cycles
  My job was to script the day & night cycles in Unity (need not be physically precise initially).
  * I used a Procedural Sky shader for skybox as it comes with a sun that mimics the directional light by default.
