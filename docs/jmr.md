@@ -36,7 +36,7 @@ In the first week we were mostly expected to collect reference materials online 
  * I used a Procedural Sky shader for skybox as it comes with a sun that mimics the directional light by default.
  * Then I bound the directional light's rotation and intensity, fog color and a clock to the day & night cycle. 
 
-<video style="width:100%" autoplay muted controls loop>
+<video style="width:100%" autoplay muted loop>
   <source src="../files/day_night.mp4" type="video/mp4">  
 </video>
 
