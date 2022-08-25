@@ -17,13 +17,13 @@ In the first week we were mostly expected to collect reference materials online 
 * As the model didn't take CAD dimensions into account, it sure had some flaws that were pointed by Sameer Sir in our weekly meetings.
 * We were later expected to come up with dimensionally accurate models based on CAD and paper model replicas that we found.
     
-    <a href="../files/SamratYantraRough.png" data-lightbox="yantra" data-title="Boy Sprite Sheet"><img src="../files/SamratYantraRough.png" style="width:100%"></a>
+    <a href="../files/SamratYantraRough.png" data-lightbox="yantra" data-title="Rough Model of Samrat Yantra"><img src="../files/SamratYantraRough.png" style="width:100%"></a>
     
     <br>
     <table border="0">
     <tr>
-    <td><a href="../files/Error1_SamratYantra.png" data-lightbox="yantra" data-title="Boy Sprite Sheet"><img src="../files/Error1_SamratYantra.png" style="width:100%"></a></td>
-    <td><a href="../files/Error2_SamratYantra.png" data-lightbox="yantra" data-title="Girl Sprite Sheet"><img src="../files/Error2_SamratYantra.png" style="width:100%"></a></td>    
+    <td><a href="../files/Error1_SamratYantra.png" data-lightbox="yantra" data-title="Left Side - Base"><img src="../files/Error1_SamratYantra.png" style="width:100%"></a></td>
+    <td><a href="../files/Error2_SamratYantra.png" data-lightbox="yantra" data-title="Right Side - Base"><img src="../files/Error2_SamratYantra.png" style="width:100%"></a></td>    
     </tr>
     <tr>
         <td>Left Side - Base</td>
