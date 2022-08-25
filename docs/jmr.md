@@ -14,21 +14,21 @@ In the first week we were mostly expected to collect reference materials online 
     
 ### 1.2 3D Models 
 * Then we created rough models of the [Samrat Yantra](https://www.jantarmantar.org/learn/observatories/instruments/samrat/index.html) in Blender based on the resources we could procure.
-* As the model didn't take CAD dimensions into account, it sure had some flaws that were pointed by Sameer Sir in our weekly meetings.
+* As the model didn't take CAD dimensions into account, it sure had some flaws that were pointed by Sameer Sir in our weekly meetings. Especially the fact that the base model wasn't symmetrical from both the sides.
 * We were later expected to come up with dimensionally accurate models based on CAD and paper model replicas that we found.
     
-    <a href="../files/SamratYantraRough.png" data-lightbox="yantra" data-title="Rough Model of Samrat Yantra"><img src="../files/SamratYantraRough.png" style="width:100%"></a>     
-    <table border="0">
-    <tr>
-    <td><a href="../files/Error1_SamratYantra.png" data-lightbox="yantra" data-title="Left Side - Base"><img src="../files/Error1_SamratYantra.png" style="width:100%"></a></td>
-    <td><a href="../files/Error2_SamratYantra.png" data-lightbox="yantra" data-title="Right Side - Base"><img src="../files/Error2_SamratYantra.png" style="width:100%"></a></td>    
-    </tr>
-    <tr>
-        <td>Left Side - Base</td>
-        <td>Right Side - Base</td>
-    </tr>
-    </table> 
-    *Not Symmetrical*   
+<a href="../files/SamratYantraRough.png" data-lightbox="yantra" data-title="Rough Model of Samrat Yantra"><img src="../files/SamratYantraRough.png" style="width:100%"></a>     
+  <table border="0">
+  <tr>
+  <td><a href="../files/Error1_SamratYantra.png" data-lightbox="yantra"data-title="Left Side - Base"><img src="../files/Error1_SamratYantra.png"style="width:100%"></a></td>
+  <td><a href="../files/Error2_SamratYantra.png" data-lightbox="yantra"data-title="Right Side - Base"><img src="../files/Error2_SamratYantra.png"style="width:100%"></a></td>    
+  </tr>
+  <tr>
+      <td>Left Side - Base</td>
+      <td>Right Side - Base</td>
+  </tr>
+  </table> 
+  *Not Symmetrical*   
 
 ### 1.3 Day & Night Cycles
  My job was to script the day & night cycles in Unity (need not be physically precise initially).
@@ -39,4 +39,10 @@ In the first week we were mostly expected to collect reference materials online 
   <source src="../files/day_night.mp4" type="video/mp4">  
 </video>
 
+### 2.0 Week - 2
+In the next week we were assigned the task to come up with dimensionally accurate CAD models, labelling of Jantar Mantar Engineering Drawings, making of a paper prototype and 3D models of Jantar Mantar that we obtained online and adding a rough sundial model in Unity to check if the shadows casted by the day & night cycle are working properly. 
 
+### 2.1 Accurate CAD Models
+### 2.2 Labelling of Engineering Drawings
+### 2.3 Making of Paper Prototype
+### 2.4 Shadows in Unity
