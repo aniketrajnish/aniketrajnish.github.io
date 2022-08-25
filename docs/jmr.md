@@ -44,5 +44,9 @@ In the next week we were assigned the task to come up with dimensionally accurat
 
 ### 2.1 Accurate CAD Models
 ### 2.2 Labelling of Engineering Drawings
+All the engineering drawings were labeled to make their assembly (for 3D model and paper prototype) easier.
+
+<a href="../files/Label.jpg" data-lightbox="yantra" data-title="Rough Model of Samrat Yantra"><img src="../files/Label.jpg" style="width:100%"></a> 
+
 ### 2.3 Making of Paper Prototype
 ### 2.4 Shadows in Unity
