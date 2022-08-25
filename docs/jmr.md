@@ -44,9 +44,18 @@ In the next week we were assigned the task to come up with dimensionally accurat
 
 ### 2.1 Accurate CAD Models
 ### 2.2 Labelling of Engineering Drawings
-All the engineering drawings were labeled to make their assembly (for 3D model and paper prototype) easier.
+* All the engineering drawings were labeled to make their assembly (for 3D model and paper prototype) easier.
+* As we didn't have a lot of dimensionally accurate references for the Samrat Yantra, so we used online references to manually label each of them individually first and then come up with a rough idea how the model and paper model was to be assembled.
 
-<a href="../files/Label.jpg" data-lightbox="yantra" data-title="Rough Model of Samrat Yantra"><img src="../files/Label.jpg" style="width:100%"></a> 
+<a href="../files/Label.jpg" data-lightbox="label" data-title="Labelling of Samrat Yantra"><img src="../files/Label.jpg" style="width:100%"></a> 
 
 ### 2.3 Making of Paper Prototype
+* The engineering drawings after analysis and labelling were converted into a paper prototype for us to visualize.
+* The process was fairly simple as these engineering drawings were originally meant for paper prototyping itself. So we had to cut and glue them accordingly.
+
 ### 2.4 Shadows in Unity
+* I decided to use a cylinder model to simulate how the sun would cast its shadows on a full day and night cycle. 
+* The shadows depicted linear movement (motion on a straight line) unlike the sundial with roughly works like a clock and the dial rotates in a clockwise fashion.
+<video style="width:100%" autoplay muted loop>
+  <source src="../files/shadow_day_night.mp4" type="video/mp4">  
+</video>
