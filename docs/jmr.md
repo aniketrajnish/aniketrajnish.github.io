@@ -57,5 +57,5 @@ In the next week we were assigned the task to come up with dimensionally accurat
 * I decided to use a cylinder model to simulate how the sun would cast its shadows on a full day and night cycle. 
 * The shadows depicted linear movement (motion on a straight line) unlike the sundial with roughly works like a clock and the dial rotates in a clockwise fashion.
 <video style="width:100%" autoplay muted loop>
-  <source src="../files/shadow_day_night.mp4" type="video/mp4">  
+  <source src="../files/shadow_day_night_.mp4" type="video/mp4">  
 </video>
