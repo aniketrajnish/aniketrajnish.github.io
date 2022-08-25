@@ -28,7 +28,7 @@ In the first week we were mostly expected to collect reference materials online 
       <td>Right Side - Base</td>
   </tr>
   </table> 
-  *Not Symmetrical*   
+*Not Symmetrical*   
 
 ### 1.3 Day & Night Cycles
  My job was to script the day & night cycles in Unity (need not be physically precise initially).
