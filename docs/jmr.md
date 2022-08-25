@@ -18,17 +18,18 @@ In the first week we were mostly expected to collect reference materials online 
 * We were later expected to come up with dimensionally accurate models based on CAD and paper model replicas that we found.
     
 <a href="../files/SamratYantraRough.png" data-lightbox="yantra" data-title="Rough Model of Samrat Yantra"><img src="../files/SamratYantraRough.png" style="width:100%"></a> 
-    
-  <table border="0">
-  <tr>
-  <td><a href="../files/Error1_SamratYantra.png" data-lightbox="yantra"data-title="Left Side - Base"><img src="../files/Error1_SamratYantra.png"style="width:100%"></a></td>
-  <td><a href="../files/Error2_SamratYantra.png" data-lightbox="yantra"data-title="Right Side - Base"><img src="../files/Error2_SamratYantra.png"style="width:100%"></a></td>    
-  </tr>
-  <tr>
-      <td>Left Side - Base</td>
-      <td>Right Side - Base</td>
-  </tr>
-  </table> 
+
+<table border="0">
+ <tr>
+    <td><a href="../files/Error1_SamratYantra.png" data-lightbox="yantra" data-title="Left Side - Base"><img src="../files/Error1_SamratYantra.png" style="width:100%"></a></td>
+    <td><a href="../files/Error2_SamratYantra.png" data-lightbox="yantra" data-title="Right Side - Base"><img src="../files/Error2_SamratYantra.png" style="width:100%"></a></td>
+ </tr>
+ <tr>
+    <td>Left Side - Base</td>
+    <td>Right Side - Base</td>
+ </tr>
+</table>
+
 *Not Symmetrical*   
 
 ### 1.3 Day & Night Cycles
