@@ -4,7 +4,7 @@ layout: default
 
 ## SDFNet: Boring 2D Flat images to fast-rendered 3D
 <div align = center>
-<img width="400px" height="240px" src= "https://user-images.githubusercontent.com/76529011/185734211-6530a49f-3209-431b-8fed-bdf1fc450bd0.png">
+<a href="../files/sdfnet.png" data-lightbox="sdfnet" data-title="SDFNet"><img src="../files/sdfnet.png" style="width:50%"></a>
 </div>
 
 SDFNet aims to go from boring flat, 2D images to less boring Signed Distance Functions for representing them in 3D, for simple, symmetric shapes. It uses Neural Radiance Fields (NeRFs) and Constructive Solid Geometry to go from images to 3-Dimensional objects, to SDFs for the shapes.
