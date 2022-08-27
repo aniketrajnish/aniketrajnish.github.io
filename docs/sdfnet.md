@@ -11,6 +11,8 @@ SDFNet aims to go from boring flat, 2D images to less boring Signed Distance Fun
 
 We're deeply referencing the code accompanying the paper: [CSGNet: Neural Shape Parser for Constructive Solid Geometry, CVPR 2018](https://arxiv.org/abs/1712.08290). Also referenced is the paper on Neural Radiance Fields, whose code can be found [here](https://github.com/bmild/nerf).
 
+### Week - 1
+
 ### Contact
 
 To ask questions, please email any one of us: [Aniket](mailto:aniket.r@iitgn.ac.in), [Dhyey](mailto:dhyey.thummar@iitgn.ac.in), [Progyan](mailto:progyan.das@iitgn.ac.in) and [Shruhrid](mailto:shruhrid.banthia@iitgn.ac.in).
