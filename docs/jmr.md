@@ -42,22 +42,19 @@ In the first week we were mostly expected to collect reference materials online 
 </video>
 
 ### 2.0 Week - 2
-In the next week we were assigned the task to come up with dimensionally accurate CAD models, labelling of Jantar Mantar Engineering Drawings, making of a paper prototype and 3D models of Jantar Mantar that we obtained online and adding a rough sundial model in Unity to check if the shadows casted by the day & night cycle are working properly. 
+In the next week we were assigned the task to come up with labelled Jantar Mantar Engineering Drawings, paper prototype and 3D models of Jantar Mantar that we obtained online and adding a rough sundial model in Unity to check if the shadows casted by the day & night cycle are working properly. 
 
-### 2.1 Accurate CAD Models
-The first task that we were given with was to model a few accurate 3D models based on CAD drawings to get accustomed with dimensionally accurate modelling.
-
-### 2.2 Labelling of Engineering Drawings
+### 2.1 Labelling of Engineering Drawings
 * All the engineering drawings were labeled to make their assembly (for 3D model and paper prototype) easier.
 * As we didn't have a lot of dimensionally accurate references for the Samrat Yantra, so we used online references to manually label each of them individually first and then come up with a rough idea how the model and paper model was to be assembled.
 
 <a href="../files/Label.jpg" data-lightbox="label" data-title="Labelling of Samrat Yantra"><img src="../files/Label.jpg" style="width:100%"></a> 
 
-### 2.3 Making of Paper Prototype
+### 2.2 Making of Paper Prototype
 * The engineering drawings after analysis and labelling were converted into a paper prototype for us to visualize.
 * The process was fairly simple as these engineering drawings were originally meant for paper prototyping itself. So we had to cut and glue them accordingly.
 
-### 2.4 Shadows in Unity
+### 2.3 Shadows in Unity
 * I decided to use a cylinder model to simulate how the sun would cast its shadows on a full day and night cycle. 
 * The shadows depicted linear movement (motion on a straight line) unlike the sundial with roughly works like a clock and the dial rotates in a clockwise fashion.
 <video style="width:100%" autoplay muted loop>
