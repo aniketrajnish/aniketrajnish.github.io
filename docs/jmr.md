@@ -44,19 +44,38 @@ In the first week we were mostly expected to collect reference materials online 
 ### 2.0 Week - 2
 In the next week we were assigned the task to come up with labelled Jantar Mantar Engineering Drawings, paper prototype and 3D models of Jantar Mantar that we obtained online and adding a rough sundial model in Unity to check if the shadows casted by the day & night cycle are working properly. 
 
-### 2.1 Labelling of Engineering Drawings
+### 2.1 Precision CAD modelling
+* We were suggested to make accurate CAD model from any random CAD design to learn precision CAD modelling.
+
+<table border="0">
+ <tr>
+    <td><a href="../files/CAD_Design.jpeg" data-lightbox="precise" data-title="CAD Design"><img src="../files/CAD_Design.jpeg" style="width:100%"></a></td>
+    <td><a href="../files/Model_Render.png" data-lightbox="precise" data-title="Model Render"><img src="../files/Model_Render.png" style="width:100%"></a></td>
+ </tr>
+ <tr>
+    <td>CAD Design</td>
+    <td>Model Render</td>
+ </tr>
+</table>
+
+### 2.2 Labelling of Engineering Drawings
 * All the engineering drawings were labeled to make their assembly (for 3D model and paper prototype) easier.
 * As we didn't have a lot of dimensionally accurate references for the Samrat Yantra, so we used online references to manually label each of them individually first and then come up with a rough idea how the model and paper model was to be assembled.
 
 <a href="../files/Label.jpg" data-lightbox="label" data-title="Labelling of Samrat Yantra"><img src="../files/Label.jpg" style="width:100%"></a> 
 
-### 2.2 Making of Paper Prototype
+### 2.3 Making of Paper Prototype
 * The engineering drawings after analysis and labelling were converted into a paper prototype for us to visualize.
 * The process was fairly simple as these engineering drawings were originally meant for paper prototyping itself. So we had to cut and glue them accordingly.
+* The prototypes were dimensionally accurate and represented a scaled down model of Samrat Yantra.
+* As the paper was quite thin, the model wasn't structurally intact.
 
-### 2.3 Shadows in Unity
+<a href="../files/Cut.jpg" data-lightbox="cut" data-title="Cutting Paper Prototype"><img src="../files/Cut.jpg" style="width:100%"></a> 
+
+### 2.4 Shadows in Unity
 * I decided to use a cylinder model to simulate how the sun would cast its shadows on a full day and night cycle. 
 * The shadows depicted linear movement (motion on a straight line) unlike the sundial with roughly works like a clock and the dial rotates in a clockwise fashion.
+  
 <video style="width:100%" autoplay muted loop>
   <source src="../files/shadow_day_night_.mp4" type="video/mp4">  
 </video>
