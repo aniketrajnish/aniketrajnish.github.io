@@ -93,6 +93,23 @@ In this week we were expected to start working the UX that our project had to of
 * It was quite surprising to see that the shadows were rotating perfectly just due to the shape of the dial while keeping the rotation pattern of the sun same as before.
 * Add cyl vs sundial and model img here.
 
+<a href="../files/Sundial.jpeg" data-lightbox="cut" data-title="Sundial Model made in Blender"><img src="../files/Sundial.jpeg" style="width:100%"></a>
+
+<table border="0">
+ <tr>
+    <td><video style="width:100%" autoplay muted loop>
+  <source src="../files/day_night.mp4" type="video/mp4">  
+  </video></td>
+    <td><video style="width:100%" autoplay muted loop>
+  <source src="../files/user_control.mp4" type="video/mp4">  
+  </video></a></td>
+ </tr>
+ <tr>
+    <td>Old Design - Less Physical Accuracy</td>
+    <td>New Design - More Physical Accuracy</td>
+ </tr>
+</table> 
+
 ### 3.1 Day/Night Cycle & Camera Controls
 * Unity's default input system was used to take the input of the players.
 * The horizontal axis was assigned to the rotation of the camera whereas the vertical axis was kept responsible for the day/night cycle.
