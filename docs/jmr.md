@@ -8,6 +8,7 @@ As a part of this project course we're expected to create a physically precise i
 
 ### 1.0 Week - 1
 In the first week we were mostly expected to collect reference materials online as well as start working upon rough models of few of the Yantars (need not be physically accurate).
+
 ### 1.1 Reference Materials
 * We collected a lot of Reference Materials and listed them [here](https://docs.google.com/document/d/1l8tKDSJfwaVZQedeRZSi7APF9uCLk7THDPQUlbR4L1Q/edit?usp=sharing).  
 * Although, we couldn't find any document that depicted the exact dimensions of Jantar Mantar, but we did find a [website](https://www.jantarmantar.org/resources/Projects/SY-Model/Samrat-Yantra-Model-Templates.pdf) containing the paper model replica of jantar mantar.     
@@ -46,6 +47,7 @@ In the next week we were assigned the task to come up with labelled Jantar Manta
 
 ### 2.1 Precision CAD modelling
 * We were suggested to make accurate CAD model from any random CAD design to learn precision CAD modelling.
+* The blend file can be found [here](../files/Perc.blend)
 
 <table border="0">
  <tr>
@@ -78,4 +80,24 @@ In the next week we were assigned the task to come up with labelled Jantar Manta
   
 <video style="width:100%" autoplay muted loop>
   <source src="../files/shadow_day_night_.mp4" type="video/mp4">  
+</video>
+
+### 3.0 Week - 3
+In this week we were expected to start working the UX that our project had to offer. 
+* For this we were expected to give the day/night cycle and camera controls to the user as well as allow the user to input any time to check the shadow configuration at that time. 
+* We also decided to replace the existing cylinder that depicted the sundial with an actual sundial model along with proper sundial markings.
+* Some people began working on the game's UI as well.
+
+### 3.1 Sundial Model
+* A sundial was modeled based on refrence dimensions that we obtained online.
+* It was quite surprising to see that the shadows were rotating perfectly just due to the shape of the dial while keeping the rotation pattern of the sun same as before.
+* Add cyl vs sundial and model img here.
+
+### 3.1 Day/Night Cycle & Camera Controls
+* Unity's default input system was used to take the input of the players.
+* The horizontal axis was assigned to the rotation of the camera whereas the vertical axis was kept responsible for the day/night cycle.
+* A dedicated prompt was shown on the screen to inform the users about the same.
+
+<video style="width:100%" autoplay muted loop>
+  <source src="../files/user_control.mp4" type="video/mp4">  
 </video>
