@@ -32,18 +32,25 @@ We're deeply referencing the code accompanying the paper: [CSGNet: Neural Shape 
 3. We began analyzing papers such as Pixel2Mesh for the above problem.
 4. Continued reseach work on the papers of Neural Rendering.
 
-<video style="width:100%" autoplay muted loop>
-  <source src="../files/bottle_dataset.mp4" type="video/mp4">  
-</video>
-
 ### Week - 4
 
-1. Implemented a sdf renderer (built ground-up in Unity) to reconstruct images from the data provided by the first iteration model.
+1. Implemented a SDF Renderer (built ground-up in Unity) to reconstruct images from the data provided by the first iteration model.
 2. Identified new directions to progress, one being Pixel to Mesh followed by reconstruction using CSGNet, while also looking to explore the possibility of using the function within Neural Radiance Field for 3D reconstruction.
 
-<video style="width:100%" autoplay muted loop>
+<table border="0">
+ <tr>
+    <td><video style="width:100%" autoplay muted loop>
+  <source src="../files/bottle_dataset.mp4" type="video/mp4">  
+  </video></td>
+    <td><video style="width:100%" autoplay muted loop>
   <source src="../files/bottle_sdf.mp4" type="video/mp4">  
-</video>
+  </video></td>
+ </tr>
+ <tr>
+    <td>Blender Dataset</td>
+    <td>Rendered using the SDF Renderer</td>
+ </tr>
+</table> 
 
 ### Contact
 
