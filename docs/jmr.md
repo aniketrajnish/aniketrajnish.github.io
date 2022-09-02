@@ -101,7 +101,7 @@ In this week we were expected to start working the UX that our project had to of
   <source src="../files/shadow_day_night_.mp4" type="video/mp4">  
   </video></td>
     <td><video style="width:100%" autoplay muted loop>
-  <source src="../files/user_control.mp4" type="video/mp4">  
+  <source src="../files/accurate_day_night.mp4" type="video/mp4">  
   </video></a></td>
  </tr>
  <tr>
@@ -122,5 +122,6 @@ In this week we were expected to start working the UX that our project had to of
 ### 3.3 Custom Time Input
 * I used the Text Mesh Pro input box to take inputs from the user.
 * I limited each text box to take 2-digit integer inputs (HH & MM format).
+* This value was used to assign a custom time value that
 
 ### UI & UX
