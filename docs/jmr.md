@@ -128,5 +128,4 @@ In this week we were expected to start working the UX that our project had to of
   <source src="../files/time_day_night.mp4" type="video/mp4">  
 </video>
 
-
 ### UI & UX
