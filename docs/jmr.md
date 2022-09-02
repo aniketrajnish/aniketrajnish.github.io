@@ -98,7 +98,7 @@ In this week we were expected to start working the UX that our project had to of
 <table border="0">
  <tr>
     <td><video style="width:100%" autoplay muted loop>
-  <source src="../files/day_night.mp4" type="video/mp4">  
+  <source src="../files/shadow_day_night_.mp4" type="video/mp4">  
   </video></td>
     <td><video style="width:100%" autoplay muted loop>
   <source src="../files/user_control.mp4" type="video/mp4">  
@@ -110,7 +110,7 @@ In this week we were expected to start working the UX that our project had to of
  </tr>
 </table> 
 
-### 3.1 Day/Night Cycle & Camera Controls
+### 3.2 Day/Night Cycle & Camera Controls
 * Unity's default input system was used to take the input of the players.
 * The horizontal axis was assigned to the rotation of the camera whereas the vertical axis was kept responsible for the day/night cycle.
 * A dedicated prompt was shown on the screen to inform the users about the same.
@@ -118,3 +118,9 @@ In this week we were expected to start working the UX that our project had to of
 <video style="width:100%" autoplay muted loop>
   <source src="../files/user_control.mp4" type="video/mp4">  
 </video>
+
+### 3.3 Custom Time Input
+* I used the Text Mesh Pro input box to take inputs from the user.
+* I limited each text box to take 2-digit integer inputs (HH & MM format).
+
+### UI & UX
