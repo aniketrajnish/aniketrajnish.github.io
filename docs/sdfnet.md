@@ -23,7 +23,7 @@ We're deeply referencing the code accompanying the paper: [CSGNet: Neural Shape 
 1. Identified and collected previous research work like [CSGNet](https://hippogriff.github.io/CSGNet/) and [Pixel2Mesh](https://nywang16.github.io/p2m/index.html) in the domains.
 2. Formulated the Problem Statement - Improving CSGNet by adding more shape information, introducing color reconstruction, and creating a 2D image to 3D mesh pipeline.
 3. Began the Iteration One of reconstruction of the 3D model of a bottle. This was integral in helping us understand the nitty gritty of and the subtle details that were missed in mere discussions and research overview.
-4. Continued reseach work on the papers of Neural Rendering and Constructive Solid Geometry.
+4. Continued research work on the papers of Neural Rendering and Constructive Solid Geometry.
 
 ### Week - 3
 
