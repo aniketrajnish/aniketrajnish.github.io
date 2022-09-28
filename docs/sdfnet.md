@@ -50,7 +50,10 @@ We're deeply referencing the code accompanying the paper: [CSGNet: Neural Shape 
     <td>Blender Dataset</td>
     <td>Rendered using the SDF Renderer</td>
  </tr>
-</table> 
+</table>
+
+### Week - 5
+* Implemented operations in the renderer & sh
 
 ### Contact
 
