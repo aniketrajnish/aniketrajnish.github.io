@@ -2,6 +2,8 @@
 layout: default
 ---
 
+**new website here - [makra.wtf](https://makra.wtf/)**
+
 ## About Me
 
 <img class="profile-picture" src="files/20220517_022507.jpg">
