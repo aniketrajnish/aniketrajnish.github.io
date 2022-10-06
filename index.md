@@ -6,7 +6,7 @@ layout: default
 
 ## About Me
 
-
+<img class="profile-picture" src="files/20220517_022507.jpg">
 
 I’m a senior undergraduate at IIT Gandhinagar. I’m into developing games, VFX, editing videos, computer graphics, and simulations. I’ve mentioned some of my work below. If you want the source code/ build of any of these you can contact me! <br>
 
