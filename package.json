@@ -6,7 +6,7 @@
     "url": "https://github.com/dmotz/dmotz.github.com.git"
   },
   "private": true,
-  "author": "Dan Motzenbecker",
+  "author": "makra",
   "homepage": "http://oxism.com",
   "dependencies": {
     "async": "^2.0.0-rc.1",
