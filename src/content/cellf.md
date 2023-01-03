@@ -6,4 +6,4 @@ you play.
 More simply put, it's a twist on sliding tile games written in ClojureScript,
 React (via Om), and core.async.
 
-[Try it](/cellf) for urself.
+[Try it](/cellf) for yourself.
