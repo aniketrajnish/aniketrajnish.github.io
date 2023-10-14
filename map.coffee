@@ -8,6 +8,16 @@
     'github [250+ stars]': 'https://github.com/aniketrajnish/Unity-Collider-Optimizer'
     '80.lv Article':  'https://80.lv/articles/a-new-tool-for-optimizing-mesh-polygon-colliders-in-unity/'
 
+'raymarching-engine-unity':
+  display: 'Raymarching Engine'
+  fontSize: '1px'
+  isMajor: true
+  line:    'A raymarching engine for Unity that supports 28+ primitives and various operations'
+  images:  ['raymarchingengine2.mp4']
+  tags:    ['C#', 'Unity', 'HLSL']
+  links:
+    github : 'https://github.com/aniketrajnish/Raymarching-Engine-Unity'
+
 'thing-translator':
   display: 'Thing Translator'
   isMajor: true

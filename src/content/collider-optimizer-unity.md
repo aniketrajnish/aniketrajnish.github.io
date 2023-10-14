@@ -25,7 +25,7 @@ The tool uses a [C# implementation](https://www.codeproject.com/Articles/18936/A
 * Import all the assets from the package in your unity project.
 * Attach the `PolygonColliderOptimizer.cs` script on your 2D sprite.
 * Adjust the `optimizationFactor` to control the amount of optimzation you need. 
-* You can run the performance comparision test on your machine by cloning the project and going to the `Polygon Collider Optimization Test` scene in Unity.
+* Run the performance comparision test on your machine by cloning the project & going to the `Polygon Collider Optimization Test` scene in Unity.
 
 ## Mesh Collider Optimizer 
 
@@ -57,10 +57,9 @@ The tool uses the [Computational Geometry Unity Library](https://github.com/Habr
 * Adjust the `optimizationFactor` to control the amount of optimzation you need.
 * Choose the mesh style to be _Soft, Hard or both_.
 * **Warning:** Choosing the "Fast" mode would likely lead to errors, Precise mode is recommended for most of the meshes.
-* You can run the performance comparision test on your machine by cloning the project and going to the `Mesh Collider Optimization Test` scene in Unity.
+* Run the performance comparision test on your machine by cloning the project & going to the `Mesh Collider Optimization Test` scene in Unity.
 
 ## Updates
-**v004**
 * Added the functionality to save and load the optimized colliders as assets.
 * Fixed the refresh bug.
 <center>
