@@ -5,9 +5,9 @@ $serif      = Georgia, Times, 'Times New Roman', serif
 $mono       = Consolas, 'Lucida Console', 'DejaVu Sans Mono', Monaco, 'Courier New', monospace
 $advBold    = 'adv', $helv
 $boxSize    = 26rem
-$bgColor    = #eee
+$bgColor    = #625893
 $cycleSpeed = 1s
-$gold       = #e3ba7a
+$theme       = #625893
 $teal       = #35d2d8
 $blue       = #0baadc
 $red        = #ff585a
@@ -89,25 +89,32 @@ h1, h2
 
 #info
 
-  h1, h2
+  h1
     color #fff
+    font-size 3.3rem
+    line-height 1.1
+    font-family $advBold
+  h2
+    color #000
     font-size 3.3rem
     line-height 1.1
     font-family $advBold
 
   .cover
-    background-image url('../images/d.svg')
-    background-color #35D2D8 !important
+    background-image url('../images/spider_back_9.png')
+    background-color #625893 
     color #fff
 
   &:hover
-    h2
-      color #fff !important
+    .cover
+      background-image url('../images/spider_back_8.png')
+     h1
+      color #000 !important
 
 
 #meta
   .cover
-    background-image url('../images/m.svg')
+    background-image url('../images/spider_back_2_01.png')
 
     > div
       float right
@@ -118,6 +125,7 @@ h1, h2
   &:hover
     .cover
       background-color rgba(#fff, .9) !important
+      background-image url('../images/spider_back_2.gif')
 
   .button
     color #fff
@@ -128,7 +136,7 @@ h1, h2
     font-size 1.8rem
     text-align right
     transition transform .2s ease-out
-    background-color $gold
+    background-color $theme
 
     &:last-child
       margin-bottom 0
@@ -147,7 +155,7 @@ h1, h2
     display inline-block
     perspective 100rem
     transition transform .3s ease-out
-    color $gold
+    color $theme
 
     > div
       width $boxSize
@@ -286,7 +294,7 @@ $permaDark = rgba(#000, .5)
   float left
 
   a
-    color $gold
+    color $theme
     border-bottom 5px solid #f0f0f0
     text-decoration none
     padding 0 .3rem
@@ -370,7 +378,7 @@ pre
     font-size 6rem
     word-wrap break-word
     width 81%
-    color $gold
+    color $theme
 
   h2
     font-size 3.3rem
@@ -382,9 +390,9 @@ pre
 
   .buttons a
     font-size: 2.4rem
-    color $gold
+    color $theme
     float left
-    outline .4rem solid $gold
+    outline .4rem solid $theme
     background-color rgba(#000, 0)
     transition color .2s ease-out, background-color .2s ease-out
     margin-left .3rem
@@ -392,7 +400,7 @@ pre
 
 
     &:hover
-      background-color $gold
+      background-color $theme
       color #f0f0f0
 
 
