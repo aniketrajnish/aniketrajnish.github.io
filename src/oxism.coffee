@@ -12,7 +12,7 @@ byId             = doc.getElementById.bind doc
 docOn            = doc.addEventListener.bind doc
 winOn            = win.addEventListener.bind win
 route            = '/works/'
-defaultTitle     = 'Dan Motzenbecker'
+defaultTitle     = 'Aniket Rajnish'
 bendStrength     = 10
 motionDampen     = 2
 
