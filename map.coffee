@@ -1,3 +1,13 @@
+'collider-optimizer-unity':
+  display: 'Unity Collider Optimizer'
+  isMajor: true
+  line:    'Optimizes Mesh & Polygon colliders in Unity'
+  images:  ['collideroptimizer2.mp4']
+  tags:    ['C#', 'Unity']
+  links:
+    'github [250+ stars]': 'https://github.com/aniketrajnish/Unity-Collider-Optimizer'
+    '80.lv Article':  'https://80.lv/articles/a-new-tool-for-optimizing-mesh-polygon-colliders-in-unity/'
+
 'thing-translator':
   display: 'Thing Translator'
   isMajor: true

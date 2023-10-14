@@ -124,8 +124,8 @@ docOn 'DOMContentLoaded', ->
   w    = h = parseInt getComputedStyle(squares[0]).width, 10
 
   byId('email').href = ['m', 'a', 'i', 'l', 't', 'o', ':',
-                        'd', 'a', 'n', '@', 'o', 'x', 'i',
-                        's', 'm', '.', 'c', 'o', 'm'].join ''
+                        'm', 'a', 'k', 'r', 'a', '@', 'u', 'c', 'f',
+                        '.', 'e', 'd', 'u'].join ''
 
   if isTouchScreen
     winOn 'deviceorientation', onMotion
