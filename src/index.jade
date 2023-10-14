@@ -2,7 +2,7 @@ doctype
 html.no-js(lang='en')
   head
     include common
-    title= locals.target ? locals.title : 'Dan Motzenbecker'
+    title= locals.target ? locals.title : 'Aniket Rajnish'
 
   body(class=locals.target ? 'perma' : '')
 
@@ -10,9 +10,9 @@ html.no-js(lang='en')
       #info
         div
           .cover
-            h1 Dan<br>Motzenbecker
+            h1 Aniket<br>Rajnish
             br
-            h2 recent<br>works
+            h2 Portfolio
           .image
 
       #meta
@@ -20,8 +20,9 @@ html.no-js(lang='en')
           .cover
             div
               a.button#email email
-              a.button(href='https://twitter.com/dcmotz') twitter
-              a.button(href='https://github.com/dmotz') github
+              a.button(href='https://www.linkedin.com/in/makra2077/') linkedin
+              a.button(href='https://github.com/aniketrajnish') github
+              a.button(href='/assets/pdf/AR_Resume.pdf') resume
 
       each val, key in locals.map
         if val.isMajor
