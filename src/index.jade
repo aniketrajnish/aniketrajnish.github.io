@@ -22,21 +22,23 @@ html.no-js(lang='en')
               a.button#email email
               a.button(href='https://www.linkedin.com/in/makra2077/') linkedin
               a.button(href='https://github.com/aniketrajnish') github
-              a.button(href='/assets/pdf/AR_Resume.pdf') resume              
+              a.button(href='/assets/pdf/AR_Resume.pdf') resume 
+              a.button(href='/works/blogs') blogs             
 
       each val, key in locals.map
-        if val.isMajor
-          a.major(id=key + '-link', href='/works/' + key)
-            div
-              .cover
-                h2!= val.gridName || val.display
-              .image
+        if !val.dontDisplay
+          if val.isMajor
+            a.major(id=key + '-link', href='/works/' + key)
+              div
+                .cover
+                  h2!= val.gridName || val.display
+                .image
 
-        else
-          a(id=key + '-link', href='/works/' + key)
-            div
-              .cover
-                h2!= val.gridName || val.display
+          else
+            a(id=key + '-link', href='/works/' + key)
+              div
+                .cover
+                  h2!= val.gridName || val.display
 
 
     section#perma

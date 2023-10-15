@@ -34,7 +34,7 @@
 'hypercasual-games':
   display: 'Hypercasual Games'
   isMajor: true
-  line:    'Hypercasual Games I\'ve worked upon'
+  line:    'Hypercasual Games and Prototypes I\'ve worked upon'
   images:  ['hypercasual0.mp4']
   tags:    ['C#', 'HLSL', 'Unity', 'Game Design']
 
@@ -43,4 +43,10 @@
   isMajor: true
   line:    'My participation in various gamejams'
   images:  ['gamejam1.mp4']
+  tags:    ['C#', 'HLSL', 'Unity', 'GameMaker', 'GameJam', 'Game Design']
+
+'blogs':
+  display: 'Blogs'
+  line:    'I write sometimes'
+  dontDisplay: true
   tags:    ['C#', 'HLSL', 'Unity', 'GameMaker', 'GameJam', 'Game Design']
