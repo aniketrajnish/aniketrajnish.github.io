@@ -20,7 +20,6 @@ html.no-js(lang='en')
           .cover
             div
               a.button#email email
-              a.button(href='https://youtu.be/w_C8dS7L1HU?si=SmrPg0D9WXkmicQq') demo reel
               a.button(href='https://www.linkedin.com/in/makra2077/') linkedin
               a.button(href='https://github.com/aniketrajnish') github
               a.button(href='/assets/pdf/AR_Resume.pdf') resume              
@@ -60,3 +59,12 @@ html.no-js(lang='en')
       var jsonMap = !{ locals.jsonMap };
     script(src='/assets/js/oxism.js?v=' + hashes.script)
     include analytics
+
+
+.center-container
+  figure(style='display: flex; flex-direction: column; align-items: center; width: 40%; margin: 20px auto;')
+    video(controls loop playsinline src='/assets/images/demoreel.mp4' style='border: 5px solid white; border-radius: 30px; width: 100%;')
+    figcaption.caption(style='color: white; margin-top: 10px;') Demo Reel
+
+
+

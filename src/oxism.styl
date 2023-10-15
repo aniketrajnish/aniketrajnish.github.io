@@ -519,7 +519,23 @@ pre
     background-color: #ffffff;
 }
 
+.center-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: $helv
+}
 
+.center-container .caption {
+  font-family: $advBold;
+  letter-spacing: -0.2rem;
+  font-size: 4.3rem;
+}
 
+.center-container
+  perspective 100rem
+  transition transform .3s ease-out
 
+  &:hover
+    transform scale(1.05)
 

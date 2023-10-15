@@ -1,4 +1,4 @@
-A fast GPU-accelerated raymarching engine for Unity with support for 28 primitives (including fractals, n-dimensional objects, volumetric clouds) and 3 operations (Union, Subtract, Intersect). Includes a custom interface for manipulating shader parameters through the editor.<br>
+A fast GPU-accelerated raymarching engine for Unity with support for over 28 primitives (including fractals, n-dimensional objects, volumetric clouds) and set operations (Union, Subtract, Intersect). Includes a custom interface for manipulating shader parameters through the editor.<br>
 
 ## Rendering the shapes provided
 
