@@ -34,8 +34,8 @@
 'hypercasual-games':
   display: 'Hypercasual Games'
   isMajor: true
-  line:    'Helps procedurally generate tailored 3D shape datasets'
-  images:  ['datasetgenerator0.mp4']
+  line:    'Hypercasual Games I\'ve worked upon'
+  images:  ['hypercasual0.mp4']
   tags:    ['C#', 'HLSL', 'Unity']
   links:
     'github': 'https://github.com/aniketrajnish/3D-Shapes-Dataset-Generator'
@@ -43,14 +43,14 @@
     'Sample Datasets [Kaggle]': 'https://www.kaggle.com/makra2077/datasets?scroll=true'
     'Windows x64 Installer' : 'https://github.com/aniketrajnish/3D-Shapes-Dataset-Generator/releases/tag/1.0'
 
-'gamejam-entries':
-  display: 'Gamejam Entries'
-  isMajor: true
-  line:    'Helps procedurally generate tailored 3D shape datasets'
-  images:  ['datasetgenerator0.mp4']
-  tags:    ['C#', 'HLSL', 'Unity']
-  links:
-    'github': 'https://github.com/aniketrajnish/3D-Shapes-Dataset-Generator'
-    'Project Report':  '/assets/pdf/CS399.pdf'
-    'Sample Datasets [Kaggle]': 'https://www.kaggle.com/makra2077/datasets?scroll=true'
-    'Windows x64 Installer' : 'https://github.com/aniketrajnish/3D-Shapes-Dataset-Generator/releases/tag/1.0'
+# 'gamejam-entries':
+#   display: 'Gamejam Entries'
+#   isMajor: true
+#   line:    'Helps procedurally generate tailored 3D shape datasets'
+#   images:  ['hypercasual0.mp4']
+#   tags:    ['C#', 'HLSL', 'Unity']
+#   links:
+#     'github': 'https://github.com/aniketrajnish/3D-Shapes-Dataset-Generator'
+#     'Project Report':  '/assets/pdf/CS399.pdf'
+#     'Sample Datasets [Kaggle]': 'https://www.kaggle.com/makra2077/datasets?scroll=true'
+#     'Windows x64 Installer' : 'https://github.com/aniketrajnish/3D-Shapes-Dataset-Generator/releases/tag/1.0'
