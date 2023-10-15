@@ -510,7 +510,9 @@ pre
 
 .custom-table img {
     width: 100%; 
-    max-width: 100%; 
+    max-width: 100%;
+    border: 2px solid black; 
+    border-radius: 5px; 
 }
 
 /* Style for odd rows */
@@ -543,3 +545,19 @@ pre
   &:hover
     transform scale(1.05)
 
+pdf-container {
+    width: 100%;
+    height: 100vh; /* This makes it take up the full viewport height */
+    background-color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 10vh;
+}
+
+.pdf-container embed {
+    display: block;
+    width: 100%;
+    height: 50vh;
+    margin-bottom: 5vh;
+    border: 3px solid black; 
+    border-radius: 15px;   
+}

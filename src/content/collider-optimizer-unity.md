@@ -63,7 +63,7 @@ The tool uses the [Computational Geometry Unity Library](https://github.com/Habr
 * Added the functionality to save and load the optimized colliders as assets.
 * Fixed the refresh bug.
 <center>
-<video autoplay loop style="width: 90%; border: 7px solid black;">
+<video autoplay loop style="width: 90%; border: 3px solid black; border-radius: 15px;">
   <source src="https://github.com/aniketrajnish/Unity-Collider-Optimizer/assets/58925008/ba42c61c-4ea1-419d-bf81-324304a218b8" type="video/mp4">
 </video>
 </center>

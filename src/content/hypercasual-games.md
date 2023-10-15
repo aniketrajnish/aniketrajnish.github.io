@@ -1,86 +1,200 @@
-<div align = center>
-<a href = "https://github.com/aniketrajnish/3D-Shapes-Dataset-Generator/releases/tag/1.0"><img width="300px" height="300px" src= "https://github.com/aniketrajnish/3D-Shapes-Dataset-Generator/assets/58925008/749e9463-8cd8-4f10-bcb0-ee8502ce946b"></a>
+## Jelly Cleaner
+
+<div style="display: flex; justify-content: space-between; align-items: flex-start; width: 100%; padding: 20px;">
+
+<video controls style="width: 50%; border: 3px solid black; border-radius: 15px;">
+  <source src="/assets/images/jelly.mp4" type="video/mp4">
+</video>
+
+<div style="width: 45%; padding-left: 10px; font-size: 2.3rem; color: black;">
+
+  **Metrics**<br>  
+    CPI : $0.28  
+    D1 : 12%  
+    Usage 24h : 00:42
+    <br>
+    <br>
+  **My Responsibilities:** <br><br>
+    - Led a team of two and looked after game mechanics, lighting and the overall production of the game and CPI video.
+    <br> 
+    - Wrote Jelly physics algorithms that's performant over mobile devices using spring joints. <br>
+    - Wrote a shader for Jelly leveraging the use of perlin noise and sine functions. <br>
+
 </div>
 
-This tool is designed to help users create procedurally generated 3D shape datasets customized to their needs. It's built on top of my open source [Raymarching Engine](https://github.com/aniketrajnish/CS499-SDFNet/tree/main/Renderer) and runs over GPU. The engine supports over thirty primitives, three set operations (Union, Intersection, and Subtraction), and varying color values (along with shadows).
-<p align="center">  
-  <img src="https://github.com/aniketrajnish/3D-Shapes-Dataset-Generator/assets/58925008/4f245e7e-36d9-48ca-a34f-abc9d5d1d6be" width="50%"><br>
-  A glimpse of the Final Dataset
-</p>
-<p align="center">
-  <img src="https://github.com/aniketrajnish/3D-Shapes-Dataset-Generator/assets/58925008/3817574b-e8a2-43fa-a694-9f42faa3d324" width="50%"><br>
-  Sample image with operations: Cone (Union) + Sphere (Union) + Box Frame (Subtraction)
-</p>
+</div>
 
-## Getting Started
+## Dodge Master
 
-* Download the build file/windows installer from the [Releases](https://github.com/aniketrajnish/3D-Shapes-Dataset-Generator/releases/tag/1.0).
-* If you need over the top features -
-    *  Clone the repository
-       ```
-       git clone https://github.com/aniketrajnish/3D-Shapes-Dataset-Generator.git
-       ```
-    *  Open and edit the source code (in the `/src` folder) in `Unity 2020.3.30f1` or later.
+<div style="display: flex; justify-content: space-between; align-items: flex-start; width: 100%; padding: 20px;">
 
-## Usage
+<video controls style="width: 40%; border: 3px solid black; border-radius: 15px;">
+  <source src="/assets/images/dodge.mp4" type="video/mp4">
+</video>
 
-* `Varying Camera Angle` (currently not functional): Set to `True` if you want to assign a different camera angle to each image in the dataset. Otherwise, the camera will look at the object keeping it in the center using `transform.LookAt()`.
-* `Varying Orientation`: Set to `True` if you want to assign a unique random orientation (angle) to the individual shapes in the dataset. Otherwise, the shapes will be aligned with the axis using `Quaternion.identity`.
-* `Varying Position`: Set to `True` if you want to assign a unique random position to the individual shapes in a cube of dimension 2 units centered at the origin. Otherwise, the shapes will be centered at the origin.
-* `Randomize Shape Count`: Set to `True` if you want to randomize the number of shapes in each image between 0 and the `Max Shape Count`. Otherwise, every image will be generated with `Max Shape Count` number of shapes.
-* `Max Shape Count`: Set the maximum number of shapes that each image in the dataset should have.
-* `Dataset Size`: Set the number of images to be generated in the dataset.
-* `Dataset Path`: Set the path where the dataset folder is to be created.
-* `Resolution`: Set the width and height of the images (in pixels) to generate them accordingly.
-* `Shapes and Operations`: These are enums that determine which shape index and operation index are to be taken into * consideration while generating each shape.
-* `Seed`: Input a seed value to generate a dataset that has already been created before by assigning the seed value to the Random State.
+<div style="width: 55%; padding-left: 10px; font-size: 2.3rem; color: black;">
 
-Note that the `Varying Camera Angle` parameter is still under development and is not functional.
+  **Metrics**<br>  
+    CPI : $0.59  
+    Usage 24h : 01:13
+    <br>
+    <br>
+  **My Responsibilities:** <br><br>
+    - Led a team of three and looked after game mechanics, lighting and the overall production of the game and CPI video.
+    <br> 
+    - Wrote time control and bullet-time destruction mechanic. <br>    
 
-## Datasets
-* The images are saved in the `../images` folder.
-* The seed value of each random state is also exported in a txt file and can be used to
-re-generate a dataset.
-* These parameters are exported in the CSV sheet with all the image information as shown in table below.
-<table class="custom-table">
-    <thead>
-        <tr>
-            <th>Column Name</th>
-            <th>Info</th>
-        </tr>
-    </thead>
-    <tbody>
-        <tr>
-            <td>filename</td>
-            <td>Name of the image file</td>
-        </tr>
-        <tr>
-            <td>shape</td>
-            <td>Shape Index</td>
-        </tr>
-        <tr>
-            <td>operation</td>
-            <td>Operation Index</td>
-        </tr>
-        <tr>
-            <td>a,b,c,d,e,f,g,h,i,j,k,l</td>
-            <td>Dimensional parameters</td>
-        </tr>
-        <tr>
-            <td>hue, sat, val</td>
-            <td>HSV Values of the color</td>
-        </tr>
-        <tr>
-            <td>rot_x, rot_y, rot_z</td>
-            <td>Euler Angles</td>
-        </tr>
-        <tr>
-            <td>pos_x, pos_y, pos_z</td>
-            <td>Position Vector</td>
-        </tr>
-    </tbody>
-</table>
-* Each row depicts information about a shape in the image of a dataset.
+</div>
 
-## Contributing
-If you find a bug or have a feature request, please open an issue or submit a pull request.
+</div>
+
+## Body Adjustment ASMR
+
+<div style="display: flex; justify-content: space-between; align-items: flex-start; width: 100%; padding: 20px;">
+
+<video controls style="width: 40%; border: 3px solid black; border-radius: 15px;">
+  <source src="/assets/images/body.mp4" type="video/mp4">
+</video>
+
+<div style="width: 55%; padding-left: 10px; font-size: 2.3rem; color: black;">
+
+  **Metrics**<br>  
+    CPI : $0.76
+    <br>
+    <br>
+  **My Responsibilities:** <br><br>
+    - Led a team of three and looked after game mechanics, lighting and the overall production of the game and CPI video.
+    <br> 
+    - Wrote skinned mesh deformation and reformation algorithm. <br> 
+    - Developed a mesh outline tool that’s performant on mobile devices <br>   
+
+</div>
+
+</div>
+
+## Shoot The Numbers
+<div style="display: flex; justify-content: space-between; align-items: flex-start; width: 100%; padding: 20px;">
+
+<video controls style="width: 40%; border: 3px solid black; border-radius: 15px;">
+  <source src="/assets/images/stn.mp4" type="video/mp4">
+</video>
+
+<div style="width: 55%; padding-left: 10px; font-size: 2.3rem; color: black;">
+
+  **Metrics**<br>  
+    CPI : $1.48
+    <br>
+    <br>
+  **My Responsibilities:** <br><br>
+    - Led a team of four and looked after game mechanics, lighting and the overall production of the game and CPI video.
+    <br> 
+    - Wrote pathfinding algorithms instead of using Navmesh to increase performance on mobile devices. <br> 
+    - Wrote a shader that supports both transparency and interpolation between two colours. <br>  
+    - Wrote swerve mechanics and mechanics for algebraic gates trending in hypercasual games back then. <br>
+
+</div>
+
+</div>
+
+## Human Canon
+<div style="display: flex; justify-content: space-between; align-items: flex-start; width: 100%; padding: 20px;">
+
+<video controls style="width: 40%; border: 3px solid black; border-radius: 15px;">
+  <source src="/assets/images/canon.mp4" type="video/mp4">
+</video>
+
+<div style="width: 55%; padding-left: 10px; font-size: 2.3rem; color: black;">
+
+  **Metrics**<br>  
+    CPI : $2.36
+    <br>
+    <br>
+  **My Responsibilities:** <br><br>
+    - Led a team of three and looked after game mechanics, lighting and the overall production of the game and CPI video.
+    <br> 
+    - Worte ragdoll crowd control mechanics. <br> 
+    - Wrote canon projectile mechanics. <br>  
+    - Wrote a low poly water shader. <br>
+    - Optimized clouds by using raymarched clouds from the [raymarching engine](/works/raymarching-engine-unity) I developed instead of particle based clouds. <br>
+
+</div>
+
+</div>
+
+## Hoof Cleaning ASMR
+<div style="display: flex; justify-content: space-between; align-items: flex-start; width: 100%; padding: 20px;">
+
+<video controls style="width: 40%; border: 3px solid black; border-radius: 15px;">
+  <source src="/assets/images/hoof.mp4" type="video/mp4">
+</video>
+
+<div style="width: 55%; padding-left: 10px; font-size: 2.3rem; color: black;">
+
+  **Metrics**<br>  
+    CPI : $0.89
+    <br>
+    <br>
+  **My Responsibilities:** <br><br>
+    - Led a team of two and looked after game mechanics, lighting and the overall production of the game and CPI video.
+    <br> 
+    - Wrote texture masking algorithm to erase / paint textures over meshes. <br>
+</div>
+
+</div>
+
+## Faster Than Light Hypercasual
+<div style="display: flex; justify-content: space-between; align-items: flex-start; width: 100%; padding: 20px;">
+
+<video controls style="width: 35%; border: 3px solid black; border-radius: 15px;">
+  <source src="/assets/images/ftl.mp4" type="video/mp4">
+</video>
+
+<div style="width: 60%; padding-left: 10px; font-size: 2.3rem; color: black;">
+
+  **Metrics**<br>  
+    CPI : $0.58
+    <br>
+    <br>
+  **My Responsibilities:** <br><br>
+    - Led a team of three and looked after game mechanics, lighting & shaders, UI design, sound design, and the overall production of the game.
+    <br>
+    - Won the JAMBOOST game jam hosted by Chartboost and a prize of 1000$. <br>
+    - Optimized indoor lighting on mobile platform using baked lighting. <br>
+    - Programmed every mechanic & enemy AI of the game. <br>
+</div>
+
+</div>
+
+## Game Pitches
+I have conceptualized and presented these hypercasual game pitches. <br><br>
+
+<div class="pdf-container">
+        <embed src="/assets/pdf/pitches/BaggageClaim.pdf#toolbar=0" type="application/pdf">
+        <embed src="/assets/pdf/pitches/BananaSwing.pdf#toolbar=0" type="application/pdf">
+        <embed src="/assets/pdf/pitches/BodyCrackASMR.pdf#toolbar=0" type="application/pdf">
+        <embed src="/assets/pdf/pitches/BossFight.pdf#toolbar=0" type="application/pdf">
+        <embed src="/assets/pdf/pitches/BulletDodge.pdf#toolbar=0" type="application/pdf">
+        <embed src="/assets/pdf/pitches/CatAndMouse.pdf#toolbar=0" type="application/pdf">
+        <embed src="/assets/pdf/pitches/ColorMyBullet.pdf#toolbar=0" type="application/pdf">
+        <embed src="/assets/pdf/pitches/CrowdBalancer.pdf#toolbar=0" type="application/pdf">
+        <embed src="/assets/pdf/pitches/DeckDeckGo.pdf#toolbar=0" type="application/pdf">
+        <embed src="/assets/pdf/pitches/FoodPop.pdf#toolbar=0" type="application/pdf">
+        <embed src="/assets/pdf/pitches/FreezeNBreeze.pdf#toolbar=0" type="application/pdf">
+        <embed src="/assets/pdf/pitches/GasUp.pdf#toolbar=0" type="application/pdf">
+        <embed src="/assets/pdf/pitches/HeadphoneUntangler.pdf#toolbar=0" type="application/pdf">
+        <embed src="/assets/pdf/pitches/HoofCleaningASMR.pdf#toolbar=0" type="application/pdf">
+        <embed src="/assets/pdf/pitches/HumanCanon3D.pdf#toolbar=0" type="application/pdf">
+        <embed src="/assets/pdf/pitches/HumanRush.pdf#toolbar=0" type="application/pdf">
+        <embed src="/assets/pdf/pitches/JellyCleaner.pdf#toolbar=0" type="application/pdf">
+        <embed src="/assets/pdf/pitches/MowEmDown.pdf#toolbar=0" type="application/pdf">
+        <embed src="/assets/pdf/pitches/RainbowDriver.pdf#toolbar=0" type="application/pdf">
+        <embed src="/assets/pdf/pitches/ShootTheNumbers.pdf#toolbar=0" type="application/pdf">
+        <embed src="/assets/pdf/pitches/SnakePass.pdf#toolbar=0" type="application/pdf">
+        <embed src="/assets/pdf/pitches/StonePaperBhoom.pdf#toolbar=0" type="application/pdf">
+        <embed src="/assets/pdf/pitches/StopTheRoaches.pdf#toolbar=0" type="application/pdf">
+        <embed src="/assets/pdf/pitches/TakeOff.pdf#toolbar=0" type="application/pdf">
+        <embed src="/assets/pdf/pitches/TiltPaint.pdf#toolbar=0" type="application/pdf">
+        <embed src="/assets/pdf/pitches/ToiletPaperRun.pdf#toolbar=0" type="application/pdf">
+        <embed src="/assets/pdf/pitches/VehicleEvolution.pdf#toolbar=0" type="application/pdf">
+        <embed src="/assets/pdf/pitches/ZombieRush.pdf#toolbar=0" type="application/pdf">        
+</div>
