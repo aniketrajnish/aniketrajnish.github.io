@@ -4,6 +4,9 @@
     <video controls style="width: 90%; border: 3px solid black; border-radius: 15px;">
       <source src="/assets/images/twoopp.mp4" type="video/mp4">
     </video>
+    <a href="https://makra.itch.io/two-opposites" target="_blank">
+        <img src="/assets/images/itch_badge.svg" style="width: 30%; margin-top: 20px; border-radius: 10px;">
+    </a>
 </center>    
 
 <br>
@@ -20,11 +23,6 @@
 * Led a team of three and looked after game mechanics, lighting & shaders, UI design, sound design, and the overall production of the game. Made within a week
 * Programmed every mechanic of the game which included, but not limited to mirror movement, multiple camera setup, etc.
 * Formulated and developed a [2D Lighting System](https://makra.wtf/docs/2022/two-opoosites/#10-2d-lighting-system) in C# for Unity using raycasts and Unity started official support for it in a later update.
-<center>  
-    <a href="https://makra.itch.io/two-opposites" target="_blank">
-        <img src="/assets/images/itch_badge.svg" style="width: 30%; margin-top: 20px; border-radius: 10px;">
-    </a>
-</center>
 
 ## Faster Than Light?
 
@@ -32,6 +30,9 @@
     <video controls style="width: 90%; border: 3px solid black; border-radius: 15px;">
       <source src="/assets/images/ftl1.mp4" type="video/mp4">
     </video>
+    <a href="https://makra.itch.io/faster-than-light" target="_blank">
+        <img src="/assets/images/itch_badge.svg" style="width: 30%; margin-top: 20px; border-radius: 10px;">
+    </a>
 </center>    
 
 <br>
@@ -49,11 +50,6 @@
 * Led a team of three and looked after game mechanics, lighting & shaders, UI design, sound design, and the overall production of the game. Made within a week
 * Programmed every mechanic & enemy AI of the game.
 * Developed player physics in 48 hours, allowing for [timescale-independent movement](https://github.com/aniketrajnish/time-scale-independent-controller) in space, timescale manipulation, & [bullet-time mechanics](https://github.com/aniketrajnish/superhot).
-<center>  
-    <a href="https://makra.itch.io/faster-than-light" target="_blank">
-        <img src="/assets/images/itch_badge.svg" style="width: 30%; margin-top: 20px; border-radius: 10px;">
-    </a>
-</center>
 
 ## ARE YA WINNING, SON?
 
@@ -61,6 +57,9 @@
     <video controls style="width: 90%; border: 3px solid black; border-radius: 15px;">
       <source src="/assets/images/ayws.mp4" type="video/mp4">
     </video>
+    <a href="https://makra.itch.io/are-ya-winning-son" target="_blank">
+        <img src="/assets/images/itch_badge.svg" style="width: 30%; margin-top: 20px; border-radius: 10px;">
+    </a>
 </center>    
 
 <br>
@@ -77,12 +76,6 @@
 * Led a team of three and looked after game mechanics, lighting & shaders, UI design, sound design, and the overall production of the game. Made within a week
 * Became proficient in generating ideas & quickly prototyping them in Unity.
 * Developed shaders & implemented post-processing effects to create a [CRT TV aesthetic](https://makra.wtf/docs/2022/fiea-tech-art-portfolio-copy#70-retro-shader--post-processing---are-ya-winning-son), gaining technical expertise in implementing visual effects.
-<center>  
-    <a href="https://makra.itch.io/are-ya-winning-son" target="_blank">
-        <img src="/assets/images/itch_badge.svg" style="width: 30%; margin-top: 20px; border-radius: 10px;">
-    </a>
-</center>
-
 
 ## Faster Than Light Hypercasual
 <div style="display: flex; justify-content: space-between; align-items: flex-start; width: 100%; padding: 20px;">
@@ -122,7 +115,7 @@
 <div style="width: 60%; padding-left: 10px; font-size: 2.3rem; color: black;">
 
   **Opera GX Gamejam**<br>  
-    Total Particpants: 1000+<br><br>
+    Total Particpants: 5000+<br><br>
   **My Responsibilities:** <br><br>
     - Led a team of two and looked after game mechanics, UI design, sound design, and the overall production of the game.
     <br>
