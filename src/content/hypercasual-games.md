@@ -161,6 +161,9 @@
     - Won the JAMBOOST game jam hosted by Chartboost and a prize of 1000$. <br>
     - Optimized indoor lighting on mobile platform using baked lighting. <br>
     - Programmed every mechanic & enemy AI of the game. <br>
+    <a href="https://play.google.com/store/apps/details?id=com.makra.FasterThanLight" target="_blank">
+      <img src="/assets/images/play_badge.png" style="width: 50%; margin-top: 20px; border-radius: 10px;">
+    </a>
 </div>
 
 </div>

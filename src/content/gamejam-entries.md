@@ -1,86 +1,135 @@
-<div align = center>
-<a href = "https://github.com/aniketrajnish/3D-Shapes-Dataset-Generator/releases/tag/1.0"><img width="300px" height="300px" src= "https://github.com/aniketrajnish/3D-Shapes-Dataset-Generator/assets/58925008/749e9463-8cd8-4f10-bcb0-ee8502ce946b"></a>
+## Two Opposites
+
+<center>
+    <video controls style="width: 90%; border: 3px solid black; border-radius: 15px;">
+      <source src="/assets/images/twoopp.mp4" type="video/mp4">
+    </video>
+</center>    
+
+<br>
+
+**Brackeys Gamejam 2021.1** 
+* Total Particpants: 10000+
+* My Rank: 22 (Innovation), 44 (Game Design), 71 (Overall)
+
+**About the game:** 
+* Two opposites is a game about the journey of two opposites (characters with mirrored controls) separated by a mirror.
+* Players need to solve puzzles to escape the mirror world and finally meet each other. However, the challenge lies in the fact that they can only solve these puzzles together.
+    
+**My Responsibilities:**
+* Led a team of three and looked after game mechanics, lighting & shaders, UI design, sound design, and the overall production of the game. Made within a week
+* Programmed every mechanic of the game which included, but not limited to mirror movement, multiple camera setup, etc.
+* Formulated and developed a [2D Lighting System](https://makra.wtf/docs/2022/two-opoosites/#10-2d-lighting-system) in C# for Unity using raycasts and Unity started official support for it in a later update.
+<center>  
+    <a href="https://makra.itch.io/two-opposites" target="_blank">
+        <img src="/assets/images/itch_badge.svg" style="width: 30%; margin-top: 20px; border-radius: 10px;">
+    </a>
+</center>
+
+## Faster Than Light?
+
+<center>
+    <video controls style="width: 90%; border: 3px solid black; border-radius: 15px;">
+      <source src="/assets/images/ftl1.mp4" type="video/mp4">
+    </video>
+</center>    
+
+<br>
+
+**Brackeys Gamejam 2020.2** 
+* Total Particpants: 9000+
+* My Rank: 71 (Audio), 132 (Overall)
+* Popularity Rank: 3rd
+
+**About the game:** 
+* To 'REWIND' the time one has to achieve the speed of light. Can you?
+* Corona has taken over the world. Vaccines have failed to stop it. Scientists have figured out that the only option left is to travel back in time and stop the root cause of the virus. To ‘REWIND’ the time one has to achieve the speed of light. Can you? 5/5 people who play-tested it couldn’t do so :P
+    
+**My Responsibilities:**
+* Led a team of three and looked after game mechanics, lighting & shaders, UI design, sound design, and the overall production of the game. Made within a week
+* Programmed every mechanic & enemy AI of the game.
+* Developed player physics in 48 hours, allowing for [timescale-independent movement](https://github.com/aniketrajnish/time-scale-independent-controller) in space, timescale manipulation, & [bullet-time mechanics](https://github.com/aniketrajnish/superhot).
+<center>  
+    <a href="https://makra.itch.io/faster-than-light" target="_blank">
+        <img src="/assets/images/itch_badge.svg" style="width: 30%; margin-top: 20px; border-radius: 10px;">
+    </a>
+</center>
+
+## ARE YA WINNING, SON?
+
+<center>
+    <video controls style="width: 90%; border: 3px solid black; border-radius: 15px;">
+      <source src="/assets/images/ayws.mp4" type="video/mp4">
+    </video>
+</center>    
+
+<br>
+
+**Brackeys Gamejam 2020.2** 
+* Total Particpants: 20000+
+* My Rank: 223 (Presentation), 725 (Overall)
+
+**About the game:** 
+* A game in which the AI won't let you win!
+* The A.I. of this game has taken over and the game is OUT OF your CONTROL and he challenges that he won’t let you win.
+    
+**My Responsibilities:**
+* Led a team of three and looked after game mechanics, lighting & shaders, UI design, sound design, and the overall production of the game. Made within a week
+* Became proficient in generating ideas & quickly prototyping them in Unity.
+* Developed shaders & implemented post-processing effects to create a [CRT TV aesthetic](https://makra.wtf/docs/2022/fiea-tech-art-portfolio-copy#70-retro-shader--post-processing---are-ya-winning-son), gaining technical expertise in implementing visual effects.
+<center>  
+    <a href="https://makra.itch.io/are-ya-winning-son" target="_blank">
+        <img src="/assets/images/itch_badge.svg" style="width: 30%; margin-top: 20px; border-radius: 10px;">
+    </a>
+</center>
+
+
+## Faster Than Light Hypercasual
+<div style="display: flex; justify-content: space-between; align-items: flex-start; width: 100%; padding: 20px;">
+
+<video controls style="width: 35%; border: 3px solid black; border-radius: 15px;">
+  <source src="/assets/images/ftl.mp4" type="video/mp4">
+</video>
+
+<div style="width: 60%; padding-left: 10px; font-size: 2.3rem; color: black;">
+
+  **JAMBOOST Gamejam**<br>  
+    Total Particpants: 305<br>
+    My Rank: 1<br>
+    Prize Won: 1000$<br>
+    <br>
+    <br>
+  **My Responsibilities:** <br><br>
+    - Led a team of three and looked after game mechanics, lighting & shaders, UI design, sound design, and the overall production of the game.
+    <br>
+    - Achieved a CPI of $0.58. <br>
+    - Optimized indoor lighting on mobile platform using baked lighting. <br>
+    - Programmed every mechanic & enemy AI of the game. <br>
+    <a href="https://play.google.com/store/apps/details?id=com.makra.FasterThanLight" target="_blank">
+      <img src="/assets/images/play_badge.png" style="width: 50%; margin-top: 20px; border-radius: 10px;">
+    </a>
 </div>
 
-This tool is designed to help users create procedurally generated 3D shape datasets customized to their needs. It's built on top of my open source [Raymarching Engine](https://github.com/aniketrajnish/CS499-SDFNet/tree/main/Renderer) and runs over GPU. The engine supports over thirty primitives, three set operations (Union, Intersection, and Subtraction), and varying color values (along with shadows).
-<p align="center">  
-  <img src="https://github.com/aniketrajnish/3D-Shapes-Dataset-Generator/assets/58925008/4f245e7e-36d9-48ca-a34f-abc9d5d1d6be" width="50%"><br>
-  A glimpse of the Final Dataset
-</p>
-<p align="center">
-  <img src="https://github.com/aniketrajnish/3D-Shapes-Dataset-Generator/assets/58925008/3817574b-e8a2-43fa-a694-9f42faa3d324" width="50%"><br>
-  Sample image with operations: Cone (Union) + Sphere (Union) + Box Frame (Subtraction)
-</p>
+</div>
 
-## Getting Started
+## Doge To The Moon
+<div style="display: flex; justify-content: space-between; align-items: flex-start; width: 100%; padding: 20px;">
 
-* Download the build file/windows installer from the [Releases](https://github.com/aniketrajnish/3D-Shapes-Dataset-Generator/releases/tag/1.0).
-* If you need over the top features -
-    *  Clone the repository
-       ```
-       git clone https://github.com/aniketrajnish/3D-Shapes-Dataset-Generator.git
-       ```
-    *  Open and edit the source code (in the `/src` folder) in `Unity 2020.3.30f1` or later.
+<video controls style="width: 35%; border: 3px solid black; border-radius: 15px;">
+  <source src="/assets/images/doge.mp4" type="video/mp4">
+</video>
 
-## Usage
+<div style="width: 60%; padding-left: 10px; font-size: 2.3rem; color: black;">
 
-* `Varying Camera Angle` (currently not functional): Set to `True` if you want to assign a different camera angle to each image in the dataset. Otherwise, the camera will look at the object keeping it in the center using `transform.LookAt()`.
-* `Varying Orientation`: Set to `True` if you want to assign a unique random orientation (angle) to the individual shapes in the dataset. Otherwise, the shapes will be aligned with the axis using `Quaternion.identity`.
-* `Varying Position`: Set to `True` if you want to assign a unique random position to the individual shapes in a cube of dimension 2 units centered at the origin. Otherwise, the shapes will be centered at the origin.
-* `Randomize Shape Count`: Set to `True` if you want to randomize the number of shapes in each image between 0 and the `Max Shape Count`. Otherwise, every image will be generated with `Max Shape Count` number of shapes.
-* `Max Shape Count`: Set the maximum number of shapes that each image in the dataset should have.
-* `Dataset Size`: Set the number of images to be generated in the dataset.
-* `Dataset Path`: Set the path where the dataset folder is to be created.
-* `Resolution`: Set the width and height of the images (in pixels) to generate them accordingly.
-* `Shapes and Operations`: These are enums that determine which shape index and operation index are to be taken into * consideration while generating each shape.
-* `Seed`: Input a seed value to generate a dataset that has already been created before by assigning the seed value to the Random State.
+  **Opera GX Gamejam**<br>  
+    Total Particpants: 1000+<br><br>
+  **My Responsibilities:** <br><br>
+    - Led a team of two and looked after game mechanics, UI design, sound design, and the overall production of the game.
+    <br>
+    - Learnt and developed in over the weekend in GameMaker.<br>
+    <a href="https://gamejolt.com/games/doge2themoon/636263" target="_blank">
+      <img src="/assets/images/gamejolt_badge.png" style="width: 50%; margin-top: 20px; border-radius: 10px;">
+    </a>
+</div>
 
-Note that the `Varying Camera Angle` parameter is still under development and is not functional.
-
-## Datasets
-* The images are saved in the `../images` folder.
-* The seed value of each random state is also exported in a txt file and can be used to
-re-generate a dataset.
-* These parameters are exported in the CSV sheet with all the image information as shown in table below.
-<table class="custom-table">
-    <thead>
-        <tr>
-            <th>Column Name</th>
-            <th>Info</th>
-        </tr>
-    </thead>
-    <tbody>
-        <tr>
-            <td>filename</td>
-            <td>Name of the image file</td>
-        </tr>
-        <tr>
-            <td>shape</td>
-            <td>Shape Index</td>
-        </tr>
-        <tr>
-            <td>operation</td>
-            <td>Operation Index</td>
-        </tr>
-        <tr>
-            <td>a,b,c,d,e,f,g,h,i,j,k,l</td>
-            <td>Dimensional parameters</td>
-        </tr>
-        <tr>
-            <td>hue, sat, val</td>
-            <td>HSV Values of the color</td>
-        </tr>
-        <tr>
-            <td>rot_x, rot_y, rot_z</td>
-            <td>Euler Angles</td>
-        </tr>
-        <tr>
-            <td>pos_x, pos_y, pos_z</td>
-            <td>Position Vector</td>
-        </tr>
-    </tbody>
-</table>
-* Each row depicts information about a shape in the image of a dataset.
-
-## Contributing
-If you find a bug or have a feature request, please open an issue or submit a pull request.
+</div>
