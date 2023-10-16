@@ -1,5 +1,6 @@
 As the title suggests, this blog shall contain some of my favorite pieces of code/artwork that I'd be submitting for my Technical Artist Portfolio (for [FIEA](https://fiea.ucf.edu/)) in no particular order.
 
+<br>
 ## **1.0 2D Lighting System - Unity**
 * While competing for the [Brackeys Game Jam 2021.1](https://itch.io/jam/brackeys-5), we decided to make a top-down atmospheric 2D game as they were trending a lot on [itch.io](https://itch.io/) back then.
 * Back when we started working on this project, Unity didn’t have any rendering pipeline that supported 2D lighting, so I developed my own lighting system for it. This was primarily done to add to the atmospheric look of the game.
@@ -7,7 +8,7 @@ As the title suggests, this blog shall contain some of my favorite pieces of cod
 <table class="custom-table" style="width: 100%;">
     <tr>
         <td style="text-align: center;">
-            <img src="/assets/images/prev/2dlightsys.gif" alt="The first iteration" class="img-fluid rounded z-depth-1">
+            <img src="/assets/images/prev/2dlightsys.gif" alt="The first iteration">
             <br>
             <strong>The first iteration</strong>
         </td>
@@ -20,7 +21,7 @@ As the title suggests, this blog shall contain some of my favorite pieces of cod
 <table class="custom-table" style="width: 100%;">
     <tr>
         <td style="text-align: center;">
-            <img src="/assets/images/prev/2dmeshlightsys.gif" alt="The second iteration (optimized)" class="img-fluid rounded z-depth-1">
+            <img src="/assets/images/prev/2dmeshlightsys.gif" alt="The second iteration (optimized)">
             <br>
             <strong>The second iteration (optimized)</strong>
         </td>
@@ -32,7 +33,7 @@ As the title suggests, this blog shall contain some of my favorite pieces of cod
 <table class="custom-table" style="width: 100%;">
     <tr>
         <td style="text-align: center;">
-            <img src="/assets/images/prev/2oppingame.gif" alt="In-game look" class="img-fluid rounded z-depth-1">
+            <img src="/assets/images/prev/2oppingame.gif" alt="In-game look">
             <br>
             <strong>In-game look</strong>
         </td>
@@ -48,17 +49,17 @@ As the title suggests, this blog shall contain some of my favorite pieces of cod
 <table class="custom-table" style="width: 100%;">
     <tr>
         <td style="text-align: center;">
-            <img src="/assets/images/prev/CHRIS_SIR.png" alt="Chris Sir" class="img-fluid rounded z-depth-1">
+            <img src="/assets/images/prev/CHRIS_SIR.png" alt="Chris Sir">
             <br>
             <strong>Chris Sir</strong>
         </td>
         <td style="text-align: center;">
-            <img src="/assets/images/prev/RICK_SIR.png" alt="Rick Sir" class="img-fluid rounded z-depth-1">
+            <img src="/assets/images/prev/RICK_SIR.png" alt="Rick Sir">
             <br>
             <strong>Rick Sir</strong>
         </td>
         <td style="text-align: center;">
-            <img src="/assets/images/prev/RON_SIR.png" alt="Ron Sir" class="img-fluid rounded z-depth-1">
+            <img src="/assets/images/prev/RON_SIR.png" alt="Ron Sir">
             <br>
             <strong>Ron Sir</strong>
         </td>
@@ -111,7 +112,7 @@ As the title suggests, this blog shall contain some of my favorite pieces of cod
 <table class="custom-table" style="width: 100%;">
     <tr>
         <td style="text-align: center;">
-            <img src="/assets/images/prev/Collage_LineArt.png" alt="Engraved Images" class="img-fluid rounded z-depth-1">
+            <img src="/assets/images/prev/Collage_LineArt.png" alt="Engraved Images">
             <br>
             <strong>Engraved Images</strong>
         </td>
@@ -169,17 +170,17 @@ As the title suggests, this blog shall contain some of my favorite pieces of cod
 <table class="custom-table" style="width: 100%;">
     <tr>
         <td style="text-align: center;">
-            <img src="/assets/images/prev/Snow1.gif" alt="A Snow Subsystem" class="img-fluid rounded z-depth-1">
+            <img src="/assets/images/prev/Snow1.gif" alt="A Snow Subsystem">
             <br>
             <strong>Snow Subsystem</strong>
         </td>
         <td style="text-align: center;">
-            <img src="/assets/images/prev/WindPart.gif" alt="A Wind Subsystem" class="img-fluid rounded z-depth-1">
+            <img src="/assets/images/prev/WindPart.gif" alt="A Wind Subsystem">
             <br>
             <strong>A Wind Subsystem</strong>
         </td>
         <td style="text-align: center;">
-            <img src="/assets/images/prev/FogEH.gif" alt="A Fog Subsystem" class="img-fluid rounded z-depth-1">
+            <img src="/assets/images/prev/FogEH.gif" alt="A Fog Subsystem">
             <br>
             <strong>A Fog Subsystem</strong>
         </td>
@@ -201,13 +202,13 @@ As the title suggests, this blog shall contain some of my favorite pieces of cod
 <table class="custom-table">
     <tr>
         <td>
-            <img src="/assets/images/prev/TP_1.png" alt="Mockup" class="img-fluid rounded z-depth-1">
+            <img src="/assets/images/prev/TP_1.png" alt="Mockup">
         </td>
         <td>
-            <img src="/assets/images/prev/TP_2.png" alt="Mockup" class="img-fluid rounded z-depth-1">
+            <img src="/assets/images/prev/TP_2.png" alt="Mockup">
         </td>
         <td>
-            <img src="/assets/images/prev/TP_3.png" alt="Mockup" class="img-fluid rounded z-depth-1">
+            <img src="/assets/images/prev/TP_3.png" alt="Mockup">
         </td>
     </tr>
 </table>
@@ -216,16 +217,16 @@ As the title suggests, this blog shall contain some of my favorite pieces of cod
 <table class="custom-table">
     <tr>
         <td>
-            <img src="/assets/images/prev/BASMR_1.png" alt="Mockup" class="img-fluid rounded z-depth-1">
+            <img src="/assets/images/prev/BASMR_1.png" alt="Mockup">
         </td>
         <td>
-            <img src="/assets/images/prev/BASMR_2.png" alt="Mockup" class="img-fluid rounded z-depth-1">
+            <img src="/assets/images/prev/BASMR_2.png" alt="Mockup">
         </td>
         <td>
-            <img src="/assets/images/prev/BASMR_3.png" alt="Mockup" class="img-fluid rounded z-depth-1">
+            <img src="/assets/images/prev/BASMR_3.png" alt="Mockup">
         </td>
         <td>
-            <img src="/assets/images/prev/BASMR_4.png" alt="Mockup" class="img-fluid rounded z-depth-1">
+            <img src="/assets/images/prev/BASMR_4.png" alt="Mockup">
         </td>
     </tr>
 </table>
@@ -250,7 +251,7 @@ As the title suggests, this blog shall contain some of my favorite pieces of cod
 <table class="custom-table">
     <tr>
         <td>
-            <img src="/assets/images/prev/Doge_PA.png" alt="All Pixel Arts" class="img-fluid rounded z-depth-1">
+            <img src="/assets/images/prev/Doge_PA.png" alt="All Pixel Arts">
         </td>
     </tr>
     <tr>
@@ -262,7 +263,7 @@ As the title suggests, this blog shall contain some of my favorite pieces of cod
 <table class="custom-table">
     <tr>
         <td>
-            <img src="/assets/images/prev/Doge_Hit_PA.png" alt="Glowing Pixel Arts" class="img-fluid rounded z-depth-1">
+            <img src="/assets/images/prev/Doge_Hit_PA.png" alt="Glowing Pixel Arts">
         </td>
     </tr>
     <tr>
@@ -274,7 +275,7 @@ As the title suggests, this blog shall contain some of my favorite pieces of cod
 <table class="custom-table">
     <tr>
         <td>
-            <img src="/assets/images/prev/Doge_Anims_PA.png" alt="Animation Sprite Sheets" class="img-fluid rounded z-depth-1">
+            <img src="/assets/images/prev/Doge_Anims_PA.png" alt="Animation Sprite Sheets">
         </td>
     </tr>
     <tr>
@@ -287,15 +288,15 @@ As the title suggests, this blog shall contain some of my favorite pieces of cod
 <table class="custom-table">
     <tr>
         <td>
-            <img src="/assets/images/prev/stars_PA.png" alt="Stars Section" class="img-fluid rounded z-depth-1">
+            <img src="/assets/images/prev/stars_PA.png" alt="Stars Section">
             <div class="caption">Stars Section</div>
         </td>
         <td>
-            <img src="/assets/images/prev/Back_PA.png" alt="Background Section" class="img-fluid rounded z-depth-1">
+            <img src="/assets/images/prev/Back_PA.png" alt="Background Section">
             <div class="caption">Background Section</div>
         </td>
         <td>
-            <img src="/assets/images/prev/Doge_Final.gif" alt="Final In-Game Look" class="img-fluid rounded z-depth-1">
+            <img src="/assets/images/prev/Doge_Final.gif" alt="Final In-Game Look">
             <div class="caption">Final In-Game Look</div>
         </td>
     </tr>
@@ -306,25 +307,29 @@ As the title suggests, this blog shall contain some of my favorite pieces of cod
 * I decided to utilize this opportunity and learn VFX graphs in Unity. 
 * VFX graph help simulate over a million particles in real-time as they use the parallel processing capabilities of GPU, unlike the default particle system that runs on CPU.
 * Everything that you see in this video is made out of '2020', which was the theme for the JAM itself.
-<center>
+<div class="yt-container">
 <iframe width="560" height="315" src="https://www.youtube.com/embed/kPlAOdrKgbw?si=caCEYcrqZjXpN_JO" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-</center>
+</div>
 
 ## **10.0 Non-Euclidean Worlds in Unity**
 * I worked on various Non-Euclidean world simulations inside of Unity, especially after CodeParade announced that [it's technically impossible to develop Non-Euclidean worlds in Unity without low-level access to its Rendering Engine](https://youtu.be/kEB11PQ9Eo8?t=233).
 * The first simulation consisted of cameras rendering over a render texture in the opening of a tunnel and colliders that teleported the player between different worlds seamlessly, offering a non-euclidean illusion.
-<center>
+<div class="yt-container">
 <iframe width="560" height="315" src="https://www.youtube.com/embed/Jv5gQzI1xhk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-</center>        
+</div>        
 
 * The subsequent two simulations used multiple intersecting single-sided planes instead of a 3d mesh to give a non-euclidean look.
 <table class="custom-table">
     <tr>
-        <td class="embed-responsive embed-responsive-16by9 mr-3 rounded z-depth-1-half" style="width: 50%;">
-            <iframe width="100%" height ="100%" src="https://www.youtube.com/embed/wi1RoQJWHbk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <td>
+            <div class="yt-container">
+                <iframe src="https://www.youtube.com/embed/wi1RoQJWHbk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
         </td>
-        <td class="embed-responsive embed-responsive-16by9 rounded z-depth-1-half" style="width: 50%;">
-            <iframe width="100%" height ="100%" src="https://www.youtube.com/embed/4zfHbw6GRes" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <td>
+            <div class="yt-container">
+                <iframe src="https://www.youtube.com/embed/4zfHbw6GRes" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
         </td>
     </tr>
 </table>
@@ -335,7 +340,7 @@ As the title suggests, this blog shall contain some of my favorite pieces of cod
 <table class="custom-table">
     <tr>
         <td class="col-sm mt-3 mt-md-0">
-            <img src="/assets/images/prev/AFPS_TopView.png" alt="Stars Section" class="img-fluid rounded z-depth-1">
+            <img src="/assets/images/prev/AFPS_TopView.png" alt="Stars Section">
         </td>
     </tr>
     <tr>
@@ -346,7 +351,9 @@ As the title suggests, this blog shall contain some of my favorite pieces of cod
 </table>
 
 * This terrain was sculpted using the Unity's default Terrain Editor, and this is the timelapse video of developing this map-
-<iframe width="560" height="315" src="https://www.youtube.com/embed/n17XMTDp_Ns?si=bdonN04iqX-myi1C" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+<div class="yt-container">
+    <iframe src="https://www.youtube.com/embed/n17XMTDp_Ns?si=bdonN04iqX-myi1C" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+</div>
 
 ## **12.0 Glowing Crack Material - Soul Shard**
 
@@ -354,13 +361,13 @@ As the title suggests, this blog shall contain some of my favorite pieces of cod
 <table class="custom-table">
     <tr>
         <td>
-            <img src="/assets/images/prev/EmissionParameter.png" alt="Emission Parameters" title="Stars Section" class="img-fluid rounded z-depth-1">
+            <img src="/assets/images/prev/EmissionParameter.png" alt="Emission Parameters" title="Stars Section">
             <div class="caption">
                 Emission Parameters
             </div>
         </td>
         <td>
-            <img src="/assets/images/prev/EmissionShape.png" alt="Emission Shape" title="Background Section" class="img-fluid rounded z-depth-1">
+            <img src="/assets/images/prev/EmissionShape.png" alt="Emission Shape" title="Background Section">
             <div class="caption">
                 Emission Shape
             </div>
@@ -372,13 +379,13 @@ As the title suggests, this blog shall contain some of my favorite pieces of cod
 <table class="custom-table">
     <tr>
         <td>
-            <img src="/assets/images/prev/Coverage.gif" alt="Coverage" title="example image" class="img-fluid rounded z-depth-1">
+            <img src="/assets/images/prev/Coverage.gif" alt="Coverage" title="example image">
             <div class="caption">
                 Coverage
             </div>
         </td>
         <td>
-            <img src="/assets/images/prev/GlowIntensity.gif" alt="Glow Intensity" title="example image" class="img-fluid rounded z-depth-1">
+            <img src="/assets/images/prev/GlowIntensity.gif" alt="Glow Intensity" title="example image">
             <div class="caption">
                 Glow Intensity
             </div>
@@ -386,13 +393,13 @@ As the title suggests, this blog shall contain some of my favorite pieces of cod
     </tr>
     <tr>
         <td>
-            <img src="/assets/images/prev/PulseIntensity.gif" alt="Pulse Intensity" title="example image" class="img-fluid rounded z-depth-1">
+            <img src="/assets/images/prev/PulseIntensity.gif" alt="Pulse Intensity" title="example image">
             <div class="caption">
                 Pulse Intensity
             </div>
         </td>
         <td>
-            <img src="/assets/images/prev/Rate.gif" alt="Rate" title="example image" class="img-fluid rounded z-depth-1">
+            <img src="/assets/images/prev/Rate.gif" alt="Rate" title="example image">
             <div class="caption">
                 Rate
             </div>
@@ -400,13 +407,13 @@ As the title suggests, this blog shall contain some of my favorite pieces of cod
     </tr>
     <tr>
         <td>
-            <img src="/assets/images/prev/EmissiveColor.gif" alt="Emissive Color" title="example image" class="img-fluid rounded z-depth-1">
+            <img src="/assets/images/prev/EmissiveColor.gif" alt="Emissive Color" title="example image">
             <div class="caption">
                 Emissive Color
             </div>
         </td>
         <td>
-            <img src="/assets/images/prev/BaseTint.gif" alt="Base Tint" title="example image" class="img-fluid rounded z-depth-1">
+            <img src="/assets/images/prev/BaseTint.gif" alt="Base Tint" title="example image">
             <div class="caption">
                 Base Tint
             </div>
