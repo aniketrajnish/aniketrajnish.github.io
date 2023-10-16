@@ -2,12 +2,20 @@ h1= val.display
 h2= val.line + '.'
 
 if val.images
-  .images
-    each image in val.images
-      if /\.mp4$/.test(image)
-        video(autoplay, loop, playsinline, muted, src='/assets/images/' + image, style='width: 100%;')
-      else
-        img(src='/assets/images/' + image)
+  if val.imageCount > 1
+    .images
+      each image in val.images
+        if /\.mp4$/.test(image)
+          video(autoplay, loop, playsinline, muted, src='/assets/images/' + image, style='width: ' + (100/val.imageCount) - 2 + '%;')
+        else
+          img(src='/assets/images/' + image, style='width: ' + (100/val.imageCount) - 2 + '%;')
+  else
+      .images
+      each image in val.images
+        if /\.mp4$/.test(image)
+          video(autoplay, loop, playsinline, muted, src='/assets/images/' + image, style='width: 100%;')
+        else
+          img(src='/assets/images/' + image, style='width: 100%;')
 
 if val.links
   .buttons

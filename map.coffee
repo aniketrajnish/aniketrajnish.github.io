@@ -50,3 +50,18 @@
   line:    'I write sometimes'
   dontDisplay: true
   tags:    ['C#', 'HLSL', 'Unity', 'GameMaker', 'GameJam', 'Game Design']
+
+'lighting-system-2d':
+  display: '2D lighting system'
+  line:    'Making a 2D lighting system for the game Two Opposites'
+  dontDisplay: true
+  images:  ['/prev/TwoOppLogo.png']
+  tags:    ['C#', 'HLSL', 'Unity', 'Game Design']
+
+'fiea-summer':
+  display: 'FIEA Summer Internship Work'
+  line:    'Work at FIEA (Summer Internship) - Documented'
+  dontDisplay: true
+  images:  ['/prev/SoulShard (2).png', '/prev/19SOB.png']
+  imageCount: 2
+  tags:    ['Unreal Engine', 'Game Design']
