@@ -73,3 +73,10 @@
   images:  ['/prev/Icon_Editor.png', '/prev/Editor_UI.jpg']
   imageCount: 2
   tags:    ['C#', 'HLSL', 'Unity']
+
+'fiea-portfolio-submission':
+  display: 'FIEA Technical Artist Portfolio'
+  line:    'My submission for Technical Artist Portfolio (for admission to FIEA)'
+  dontDisplay: true
+  images:  ['/prev/FIEA_PORTFOLIO.png']
+  tags:    ['C#', 'HLSL', 'Unity', 'GameMaker', 'GameJam', 'Game Design']
