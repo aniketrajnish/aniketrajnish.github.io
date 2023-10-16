@@ -35,10 +35,10 @@ for (float i = 0; i < theta; i += steps)
 <table class="custom-table">
     <tr>
         <td>
-            <img src="/assets/images/prev/theta.gif" alt="Adjusting theta" class="img-fluid rounded z-depth-1">
+            <img src="/assets/images/prev/theta.gif" alt="Adjusting theta" >
         </td>
         <td>
-            <img src="/assets/images/prev/steps.gif" alt="Adjusting steps" class="img-fluid rounded z-depth-1">
+            <img src="/assets/images/prev/steps.gif" alt="Adjusting steps" >
         </td>
     </tr>
     <tr>
@@ -47,10 +47,10 @@ for (float i = 0; i < theta; i += steps)
     </tr>
     <tr>
         <td>
-            <img src="/assets/images/prev/col.gif" alt="Adjusting color" class="img-fluid rounded z-depth-1">
+            <img src="/assets/images/prev/col.gif" alt="Adjusting color" >
         </td>
         <td>
-            <img src="/assets/images/prev/maxvdist.gif" alt="Adjusting max visibility distance" class="img-fluid rounded z-depth-1">
+            <img src="/assets/images/prev/maxvdist.gif" alt="Adjusting max visibility distance" >
         </td>
     </tr>
     <tr>
@@ -75,7 +75,7 @@ lineMat.color.a));
 <table class="custom-table">
     <tr>
         <td>
-            <img src="/assets/images/prev/TRays.gif" alt="With transparency controls, the rays looked more natural." class="img-fluid rounded z-depth-1">
+            <img src="/assets/images/prev/TRays.gif" alt="With transparency controls, the rays looked more natural." >
         </td>
     </tr>
     <tr>
@@ -128,7 +128,7 @@ lineMat.color.a));
 <table class="custom-table">
     <tr>
         <td>
-            <img src="/assets/images/prev/2dlightsys.gif" alt="Final Output" class="img-fluid rounded z-depth-1">
+            <img src="/assets/images/prev/2dlightsys.gif" alt="Final Output" >
         </td>
     </tr>
     <tr>
@@ -154,7 +154,7 @@ LightMesh.mesh.triangles = triangles;
 <table class="custom-table">
     <tr>
         <td>
-            <img src="/assets/images/prev/2dmeshlightsys.gif" alt="Final Output" class="img-fluid rounded z-depth-1">
+            <img src="/assets/images/prev/2dmeshlightsys.gif" alt="Final Output" >
         </td>
     </tr>
     <tr>
@@ -181,7 +181,7 @@ void Update()
 <table class="custom-table">
     <tr>
         <td>
-            <img src="/assets/images/prev/inversion.gif" alt="example image" class="img-fluid rounded z-depth-1">
+            <img src="/assets/images/prev/inversion.gif" alt="example image" >
         </td>
     </tr>    
 </table>
@@ -192,10 +192,10 @@ void Update()
 <table class="custom-table">
     <tr>
         <td>
-            <img src="/assets/images/prev/BoySprite.png" alt="Boy Sprite Sheet" class="img-fluid rounded z-depth-1">
+            <img src="/assets/images/prev/BoySprite.png" alt="Boy Sprite Sheet" >
         </td>
         <td>
-            <img src="/assets/images/prev/GirlSprite.png" alt="Girl Sprite Sheet" class="img-fluid rounded z-depth-1">
+            <img src="/assets/images/prev/GirlSprite.png" alt="Girl Sprite Sheet" >
         </td>
     </tr>
     <tr>
@@ -247,7 +247,7 @@ void Update()
 <table class="custom-table">
     <tr>
         <td>
-            <img src="/assets/images/prev/Sprites.gif" class="img-fluid rounded z-depth-1">
+            <img src="/assets/images/prev/Sprites.gif" >
         </td>
     </tr>
 </table>
@@ -260,7 +260,7 @@ We decided to come up with a button mechanic system. The idea was to spawn two b
 <table class="custom-table">
     <tr>
         <td>
-            <img src="/assets/images/prev/Buttons.gif" alt="example image" class="img-fluid rounded z-depth-1">
+            <img src="/assets/images/prev/Buttons.gif" alt="example image" >
         </td>
     </tr>
     <tr>
@@ -273,10 +273,10 @@ To add more depth to the puzzles, we decided to come up with a few objects that 
 <table class="custom-table">
     <tr>
         <td>
-            <img src="/assets/images/prev/crate.png" alt="Crate Base Map" class="img-fluid rounded z-depth-1">
+            <img src="/assets/images/prev/crate.png" alt="Crate Base Map" >
         </td>
         <td>
-            <img src="/assets/images/prev/cratenormal.jpg" alt="Crate Normal Map" class="img-fluid rounded z-depth-1">
+            <img src="/assets/images/prev/cratenormal.jpg" alt="Crate Normal Map" >
         </td>
     </tr>
     <tr>
@@ -290,7 +290,7 @@ To add more depth to the puzzles, we decided to come up with a few objects that 
 <table class="custom-table">
     <tr>
         <td>
-            <img src="/assets/images/prev/Pushable.gif" alt="example image" class="img-fluid rounded z-depth-1">
+            <img src="/assets/images/prev/Pushable.gif" alt="example image" >
         </td>
     </tr>
 </table>
@@ -316,13 +316,13 @@ We decided to include spikes in the game. They would kill the players on contact
     <table class="custom-table">
         <tr>
             <td>
-                <img src="/assets/images/prev/spikes.png" alt="Spike Base Map" class="img-fluid rounded z-depth-1">
+                <img src="/assets/images/prev/spikes.png" alt="Spike Base Map" >
             </td>
             <td>
-                <img src="/assets/images/prev/SpikesNormal.png" alt="Spike Normal Map" class="img-fluid rounded z-depth-1">
+                <img src="/assets/images/prev/SpikesNormal.png" alt="Spike Normal Map" >
             </td>
             <td>
-                <img src="/assets/images/prev/spike height.png" alt="Spike Height Map" class="img-fluid rounded z-depth-1">
+                <img src="/assets/images/prev/spike height.png" alt="Spike Height Map" >
             </td>
         </tr>
         <tr>
@@ -338,7 +338,7 @@ We decided to include spikes in the game. They would kill the players on contact
     <table class="custom-table">
         <tr>
             <td>
-                <img src="/assets/images/prev/BloodSplash.png" alt="example image" class="img-fluid rounded z-depth-1">
+                <img src="/assets/images/prev/BloodSplash.png" alt="example image" >
             </td>
         </tr>
     </table>
@@ -360,7 +360,7 @@ We decided to include spikes in the game. They would kill the players on contact
 <table class="custom-table">
     <tr>
         <td>
-            <img src="/assets/images/prev/death2opp.gif" alt="Final Output" class="img-fluid rounded z-depth-1">
+            <img src="/assets/images/prev/death2opp.gif" alt="Final Output" >
         </td>
     </tr>
     <tr>
@@ -378,10 +378,10 @@ The biggest challenge ahead of us was actually to come up with a level design th
 <table class="custom-table">
     <tr>
         <td>
-            <img src="/assets/images/prev/WSADGame.png" alt="Key Sprite in Game" class="img-fluid rounded z-depth-1">
+            <img src="/assets/images/prev/WSADGame.png" alt="Key Sprite in Game" >
         </td>
         <td>
-            <img src="/assets/images/prev/WSADXD.png" alt="Key Sprite made in Adobe XD" class="img-fluid rounded z-depth-1">
+            <img src="/assets/images/prev/WSADXD.png" alt="Key Sprite made in Adobe XD" >
         </td>
     </tr>
     <tr>
@@ -394,10 +394,10 @@ The biggest challenge ahead of us was actually to come up with a level design th
 <table class="custom-table">
     <tr>
         <td>
-            <img src="/assets/images/prev/ArrowGame.png" alt="Arrow Sprite in Game" class="img-fluid rounded z-depth-1">
+            <img src="/assets/images/prev/ArrowGame.png" alt="Arrow Sprite in Game" >
         </td>
         <td>
-            <img src="/assets/images/prev/ArrowPS.png" alt="Arrow Sprite made in Photoshop" class="img-fluid rounded z-depth-1">
+            <img src="/assets/images/prev/ArrowPS.png" alt="Arrow Sprite made in Photoshop" >
         </td>
     </tr>
     <tr>
@@ -410,7 +410,7 @@ The biggest challenge ahead of us was actually to come up with a level design th
 <table class="custom-table">
     <tr>
         <td>
-            <img src="/assets/images/prev/Lev1.png" alt="example image" class="img-fluid rounded z-depth-1">
+            <img src="/assets/images/prev/Lev1.png" alt="example image" >
         </td>
     </tr>
 </table>
@@ -419,7 +419,7 @@ The biggest challenge ahead of us was actually to come up with a level design th
 <table class="custom-table">
     <tr>
         <td>
-            <img src="/assets/images/prev/Lev2.png" alt="example image" class="img-fluid rounded z-depth-1">
+            <img src="/assets/images/prev/Lev2.png" alt="example image" >
         </td>
     </tr>
 </table>
@@ -428,7 +428,7 @@ The biggest challenge ahead of us was actually to come up with a level design th
 <table class="custom-table">
     <tr>
         <td>
-            <img src="/assets/images/prev/Lev3.png" alt="example image" class="img-fluid rounded z-depth-1">
+            <img src="/assets/images/prev/Lev3.png" alt="example image" >
         </td>
     </tr>
 </table>
@@ -440,7 +440,7 @@ The biggest challenge ahead of us was actually to come up with a level design th
 <table class="custom-table">
     <tr>
         <td>
-            <img src="/assets/images/prev/Lev4.png" alt="example image" class="img-fluid rounded z-depth-1">
+            <img src="/assets/images/prev/Lev4.png" alt="example image" >
         </td>
     </tr>
 </table>
@@ -449,7 +449,7 @@ The biggest challenge ahead of us was actually to come up with a level design th
 <table class="custom-table">
     <tr>
         <td>
-            <img src="/assets/images/prev/Lev5.png" alt="example image" class="img-fluid rounded z-depth-1">
+            <img src="/assets/images/prev/Lev5.png" alt="example image" >
         </td>
     </tr>
 </table>
@@ -458,7 +458,7 @@ The biggest challenge ahead of us was actually to come up with a level design th
 <table class="custom-table">
     <tr>
         <td>
-            <img src="/assets/images/prev/Lev6.png" alt="example image" class="img-fluid rounded z-depth-1">
+            <img src="/assets/images/prev/Lev6.png" alt="example image" >
         </td>
     </tr>
 </table>
@@ -467,7 +467,7 @@ The biggest challenge ahead of us was actually to come up with a level design th
 <table class="custom-table">
     <tr>
         <td>
-            <img src="/assets/images/prev/Lev7.png" alt="example image" class="img-fluid rounded z-depth-1">
+            <img src="/assets/images/prev/Lev7.png" alt="example image" >
         </td>
     </tr>
 </table>
@@ -476,7 +476,7 @@ The biggest challenge ahead of us was actually to come up with a level design th
 <table class="custom-table">
     <tr>
         <td>
-            <img src="/assets/images/prev/Lev8.png" alt="example image" class="img-fluid rounded z-depth-1">
+            <img src="/assets/images/prev/Lev8.png" alt="example image" >
         </td>
     </tr>
 </table>
@@ -485,7 +485,7 @@ The biggest challenge ahead of us was actually to come up with a level design th
 <table class="custom-table">
     <tr>
         <td>
-            <img src="/assets/images/prev/Lev9.png" alt="example image" class="img-fluid rounded z-depth-1">
+            <img src="/assets/images/prev/Lev9.png" alt="example image" >
         </td>
     </tr>
 </table>
@@ -495,7 +495,7 @@ The biggest challenge ahead of us was actually to come up with a level design th
 <table class="custom-table">
     <tr>
         <td>
-            <img src="/assets/images/prev/LevFin.png" alt="example image" class="img-fluid rounded z-depth-1">
+            <img src="/assets/images/prev/LevFin.png" alt="example image" >
         </td>
     </tr>
 </table>
@@ -507,7 +507,7 @@ We used post processing to increase the immersion that the game offers. We decid
 <table class="custom-table">
     <tr>
         <td>
-            <img src="/assets/images/prev/PP.gif" alt="example image" class="img-fluid rounded z-depth-1">
+            <img src="/assets/images/prev/PP.gif" alt="example image" >
         </td>
     </tr>
 </table>
@@ -519,7 +519,7 @@ We used post processing to increase the immersion that the game offers. We decid
 <table class="custom-table">
     <tr>
         <td>
-            <img src="/assets/images/prev/amatic.png" alt="example image" class="img-fluid rounded z-depth-1">
+            <img src="/assets/images/prev/amatic.png" alt="example image" >
         </td>
     </tr>
 </table>
@@ -530,10 +530,10 @@ We used post processing to increase the immersion that the game offers. We decid
 <table class="custom-table">
     <tr>
         <td>
-            <img src="/assets/images/prev/menuanim.gif" alt="Main Menu" class="img-fluid rounded z-depth-1">
+            <img src="/assets/images/prev/menuanim.gif" alt="Main Menu" >
         </td>
         <td>
-            <img src="/assets/images/prev/pausemenu.gif" alt="Pause Menu" class="img-fluid rounded z-depth-1">
+            <img src="/assets/images/prev/pausemenu.gif" alt="Pause Menu" >
         </td>
     </tr>
     <tr>
@@ -547,7 +547,7 @@ We created a small clip using Unity's timeline as with the text only, the menu s
 <table class="custom-table">
     <tr>
         <td>
-            <img src="/assets/images/prev/mainmenu.gif" alt="example image" class="img-fluid rounded z-depth-1">
+            <img src="/assets/images/prev/mainmenu.gif" alt="example image" >
         </td>
     </tr>
 </table>

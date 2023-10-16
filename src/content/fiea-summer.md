@@ -10,7 +10,7 @@ Initially, I designed various cloud textures with separate RGB channels for Base
 <table class="custom-table">
     <tr>
         <td>
-            <img src="/assets/images/prev/CloudRGB.png" alt="example image" class="img-fluid rounded z-depth-1">
+            <img src="/assets/images/prev/CloudRGB.png" alt="example image" >
         </td>
     </tr>    
 </table>
@@ -21,7 +21,7 @@ Initially, I designed various cloud textures with separate RGB channels for Base
 <table class="custom-table">
     <tr>
         <td>
-            <img src="/assets/images/prev/CloudMat.png" alt="example image" class="img-fluid rounded z-depth-1">
+            <img src="/assets/images/prev/CloudMat.png" alt="example image" >
         </td>
     </tr>    
 </table>
@@ -34,7 +34,7 @@ Initially, I designed various cloud textures with separate RGB channels for Base
 <table class="custom-table">
     <tr>
         <td>
-            <img src="/assets/images/prev/Smoke1.gif" alt="example image" class="img-fluid rounded z-depth-1">
+            <img src="/assets/images/prev/Smoke1.gif" alt="example image" >
         </td>
     </tr>    
 </table>
@@ -46,7 +46,7 @@ Initially, I designed various cloud textures with separate RGB channels for Base
 <table class="custom-table">
     <tr>
         <td>
-            <img src="/assets/images/prev/Smoke2.gif" alt="example image" class="img-fluid rounded z-depth-1">
+            <img src="/assets/images/prev/Smoke2.gif" alt="example image" >
         </td>
     </tr>    
 </table>
@@ -55,7 +55,7 @@ Initially, I designed various cloud textures with separate RGB channels for Base
 The debris texture was made in photoshop using online reference images and the brush tool.<table class="custom-table">
     <tr>
         <td>
-            <img src="/assets/images/prev/DebrisTex.png" alt="example image" class="img-fluid rounded z-depth-1">
+            <img src="/assets/images/prev/DebrisTex.png" alt="example image" >
         </td>
     </tr>    
 </table>
@@ -65,7 +65,7 @@ The debris material was created using the debris texture in a similar fashion to
 <table class="custom-table">
     <tr>
         <td>
-            <img src="/assets/images/prev/DebrisMat.png" alt="example image" class="img-fluid rounded z-depth-1">
+            <img src="/assets/images/prev/DebrisMat.png" alt="example image" >
         </td>
     </tr>    
 </table>
@@ -77,7 +77,7 @@ The debris material was created using the debris texture in a similar fashion to
 <table class="custom-table">
     <tr>
         <td>
-            <img src="/assets/images/prev/Smoke3.gif" alt="example image" class="img-fluid rounded z-depth-1">
+            <img src="/assets/images/prev/Smoke3.gif" alt="example image" >
         </td>
     </tr>    
 </table>
@@ -87,7 +87,7 @@ The spark texture with separate RGB channels was obtained online.
 <table class="custom-table">
     <tr>
         <td>
-            <img src="/assets/images/prev/Spark.png" alt="example image" class="img-fluid rounded z-depth-1">
+            <img src="/assets/images/prev/Spark.png" alt="example image" >
         </td>
     </tr>    
 </table>
@@ -99,7 +99,7 @@ The spark texture with separate RGB channels was obtained online.
 <table class="custom-table">
     <tr>
         <td>
-            <img src="/assets/images/prev/SparkMat.png" alt="example image" class="img-fluid rounded z-depth-1">
+            <img src="/assets/images/prev/SparkMat.png" alt="example image" >
         </td>
     </tr>    
 </table>
@@ -109,7 +109,7 @@ The spark texture with separate RGB channels was obtained online.
 <table class="custom-table">
     <tr>
         <td>
-            <img src="/assets/images/prev/Smoke4.gif" alt="example image" class="img-fluid rounded z-depth-1">
+            <img src="/assets/images/prev/Smoke4.gif" alt="example image" >
         </td>
     </tr>    
 </table>
@@ -119,13 +119,13 @@ Few other variations of the smoke system.
 <table class="custom-table">
     <tr>
         <td>
-            <img src="/assets/images/prev/Smoke5.gif" alt="Less stylized system" class="img-fluid rounded z-depth-1">
+            <img src="/assets/images/prev/Smoke5.gif" alt="Less stylized system" >
         </td>
         <td>
-            <img src="/assets/images/prev/Smoke6.gif" alt="Debris only system" class="img-fluid rounded z-depth-1">
+            <img src="/assets/images/prev/Smoke6.gif" alt="Debris only system" >
         </td>
         <td>
-            <img src="/assets/images/prev/Smoke7.gif" alt="Puff system" class="img-fluid rounded z-depth-1">
+            <img src="/assets/images/prev/Smoke7.gif" alt="Puff system" >
         </td>
     </tr>
     <tr>
@@ -143,7 +143,7 @@ A stylized noise texture was created to serve as the opacity mask for the flame 
 <table class="custom-table">
     <tr>
         <td>
-            <img src="/assets/images/prev/NoiseTex.png" alt="example image" class="img-fluid rounded z-depth-1">
+            <img src="/assets/images/prev/NoiseTex.png" alt="example image" >
         </td>
     </tr>    
 </table>
@@ -157,7 +157,7 @@ A stylized noise texture was created to serve as the opacity mask for the flame 
 <table class="custom-table">
     <tr>
         <td>
-            <img src="/assets/images/prev/FlameMat.gif" alt="example image" class="img-fluid rounded z-depth-1">
+            <img src="/assets/images/prev/FlameMat.gif" alt="example image" >
         </td>
     </tr>    
 </table>
@@ -169,7 +169,7 @@ A stylized noise texture was created to serve as the opacity mask for the flame 
 <table class="custom-table">
     <tr>
         <td>
-            <img src="/assets/images/prev/FlameVFX.gif" alt="example image" class="img-fluid rounded z-depth-1">
+            <img src="/assets/images/prev/FlameVFX.gif" alt="example image" >
         </td>
     </tr>    
 </table>
@@ -179,7 +179,7 @@ The flame system previously made was disapproved by the team for being too toony
 <table class="custom-table">
     <tr>
         <td>
-            <img src="/assets/images/prev/FlameMesh.png" alt="example image" class="img-fluid rounded z-depth-1">
+            <img src="/assets/images/prev/FlameMesh.png" alt="example image" >
         </td>
     </tr>    
 </table>
@@ -189,7 +189,7 @@ The flame material was created simply by assigning the particle color input to t
 <table class="custom-table">
     <tr>
         <td>
-            <img src="/assets/images/prev/FlameMat.png" alt="example image" class="img-fluid rounded z-depth-1">
+            <img src="/assets/images/prev/FlameMat.png" alt="example image" >
         </td>
     </tr>    
 </table>
@@ -203,7 +203,7 @@ The flame material was created simply by assigning the particle color input to t
 <table class="custom-table">
     <tr>
         <td>
-            <img src="/assets/images/prev/FlameVFX2.gif" alt="example image" class="img-fluid rounded z-depth-1">
+            <img src="/assets/images/prev/FlameVFX2.gif" alt="example image" >
         </td>
     </tr>    
 </table>
@@ -221,10 +221,10 @@ Further I was assigned the task to develop a snow-based footprint system over sn
     </tr>
     <tr>
         <td>
-            <img src="/assets/images/prev/AmbroseFI.png" alt="Ambrose Foot Impression" class="img-fluid rounded z-depth-1">
+            <img src="/assets/images/prev/AmbroseFI.png" alt="Ambrose Foot Impression" >
         </td>
         <td>
-            <img src="/assets/images/prev/NimueFI.png" alt="Nimue Foot Impression" class="img-fluid rounded z-depth-1">
+            <img src="/assets/images/prev/NimueFI.png" alt="Nimue Foot Impression" >
         </td>
     </tr>
     <tr>
@@ -236,10 +236,10 @@ Further I was assigned the task to develop a snow-based footprint system over sn
     </tr>    
     <tr>
         <td>
-            <img src="/assets/images/prev/AmbroseFPS1.png" alt="Ambrose Footprint Sprite" class="img-fluid rounded z-depth-1">
+            <img src="/assets/images/prev/AmbroseFPS1.png" alt="Ambrose Footprint Sprite" >
         </td>
         <td>
-            <img src="/assets/images/prev/NimueFPS1.png" alt="Nimue Footprint Sprite" class="img-fluid rounded z-depth-1">
+            <img src="/assets/images/prev/NimueFPS1.png" alt="Nimue Footprint Sprite" >
         </td>
     </tr>
     <tr>
@@ -254,7 +254,7 @@ Further I was assigned the task to develop a snow-based footprint system over sn
 <table class="custom-table">
     <tr>
         <td>
-            <img src="/assets/images/prev/FPMat1.png" alt="example image" class="img-fluid rounded z-depth-1">
+            <img src="/assets/images/prev/FPMat1.png" alt="example image" >
         </td>
     </tr>    
 </table>
@@ -266,7 +266,7 @@ Further I was assigned the task to develop a snow-based footprint system over sn
 <table class="custom-table">
     <tr>
         <td>
-            <img src="/assets/images/prev/FPBP.png" alt="example image" class="img-fluid rounded z-depth-1">
+            <img src="/assets/images/prev/FPBP.png" alt="example image" >
         </td>
     </tr>    
 </table>
@@ -278,7 +278,7 @@ Further I was assigned the task to develop a snow-based footprint system over sn
 <table class="custom-table">
     <tr>
         <td>
-            <img src="/assets/images/prev/TPBP.png" alt="example image" class="img-fluid rounded z-depth-1">
+            <img src="/assets/images/prev/TPBP.png" alt="example image" >
         </td>
     </tr>    
 </table>
@@ -295,13 +295,13 @@ Further I was assigned the task to develop a snow-based footprint system over sn
 <table class="custom-table">
     <tr>
         <td>
-            <img src="/assets/images/prev/AnimNoti.gif" alt="Adding run animation notifier" class="img-fluid rounded z-depth-1">
+            <img src="/assets/images/prev/AnimNoti.gif" alt="Adding run animation notifier" >
         </td>
         <td>
-            <img src="/assets/images/prev/TPAnimBP.png" alt="Third person animation event graph" class="img-fluid rounded z-depth-1">
+            <img src="/assets/images/prev/TPAnimBP.png" alt="Third person animation event graph" >
         </td>
         <td>
-            <img src="/assets/images/prev/TPCharBP.png" alt="Third person character event graph" class="img-fluid rounded z-depth-1">
+            <img src="/assets/images/prev/TPCharBP.png" alt="Third person character event graph" >
         </td>
     </tr>
     <tr>
@@ -314,7 +314,7 @@ Further I was assigned the task to develop a snow-based footprint system over sn
 <table class="custom-table">
     <tr>
         <td>
-            <img src="/assets/images/prev/FP1.gif" alt="First Output" class="img-fluid rounded z-depth-1">
+            <img src="/assets/images/prev/FP1.gif" alt="First Output" >
         </td>
     </tr>
     <tr>
@@ -332,10 +332,10 @@ The team pinpointed that the current footprint lacked originality as snow footpr
     </tr>
     <tr>
         <td>
-            <img src="/assets/images/prev/AmbroseFPS2.png" alt="New Ambrose Footprint Texture" class="img-fluid rounded z-depth-1">
+            <img src="/assets/images/prev/AmbroseFPS2.png" alt="New Ambrose Footprint Texture" >
         </td>
         <td>
-            <img src="/assets/images/prev/NimueFPS2.png" alt="New Nimue Footprint Texture" class="img-fluid rounded z-depth-1">
+            <img src="/assets/images/prev/NimueFPS2.png" alt="New Nimue Footprint Texture" >
         </td>
     </tr>
     <tr>
@@ -347,10 +347,10 @@ The team pinpointed that the current footprint lacked originality as snow footpr
     </tr>
     <tr>
         <td>
-            <img src="/assets/images/prev/AmbroseFPN.png" alt="Ambrose footprint normal" class="img-fluid rounded z-depth-1">
+            <img src="/assets/images/prev/AmbroseFPN.png" alt="Ambrose footprint normal" >
         </td>
         <td>
-            <img src="/assets/images/prev/NimueFPN.png" alt="Nimue footprint normal" class="img-fluid rounded z-depth-1">
+            <img src="/assets/images/prev/NimueFPN.png" alt="Nimue footprint normal" >
         </td>
     </tr>
     <tr>
@@ -364,14 +364,14 @@ The footprint material was modified to support normal information and the normal
 <table class="custom-table">
     <tr>
         <td>
-            <img src="/assets/images/prev/FPMat2.png" alt="example image" class="img-fluid rounded z-depth-1">
+            <img src="/assets/images/prev/FPMat2.png" alt="example image" >
         </td>
     </tr>    
 </table>
 <table class="custom-table">
     <tr>
         <td>
-            <img src="/assets/images/prev/FP2.gif" alt="example image" class="img-fluid rounded z-depth-1">
+            <img src="/assets/images/prev/FP2.gif" alt="example image" >
         </td>
     </tr>
     <tr>
@@ -391,7 +391,7 @@ My next task was to design and develop a snowstorm system for the yard area. I w
 <table class="custom-table">
     <tr>
         <td>
-            <img src="/assets/images/prev/Snow1.gif" alt="example image" class="img-fluid rounded z-depth-1">
+            <img src="/assets/images/prev/Snow1.gif" alt="example image" >
         </td>
     </tr>    
 </table>
@@ -404,7 +404,7 @@ As I had anticipated, I was suggested to add more depth to the snowstorm. The id
 <table class="custom-table">
     <tr>
         <td>
-            <img src="/assets/images/prev/WindMat.png" alt="example image" class="img-fluid rounded z-depth-1">
+            <img src="/assets/images/prev/WindMat.png" alt="example image" >
         </td>
     </tr>    
 </table>
@@ -420,7 +420,7 @@ As I had anticipated, I was suggested to add more depth to the snowstorm. The id
 <table class="custom-table">
     <tr>
         <td>
-            <img src="/assets/images/prev/WindPart.gif" alt="example image" class="img-fluid rounded z-depth-1">
+            <img src="/assets/images/prev/WindPart.gif" alt="example image" >
         </td>
     </tr>    
 </table>
@@ -430,7 +430,7 @@ As I had anticipated, I was suggested to add more depth to the snowstorm. The id
 <table class="custom-table">
     <tr>
         <td>
-            <img src="/assets/images/prev/FogTex.png" alt="example image" class="img-fluid rounded z-depth-1">
+            <img src="/assets/images/prev/FogTex.png" alt="example image" >
         </td>
     </tr>    
 </table>
@@ -444,7 +444,7 @@ As I had anticipated, I was suggested to add more depth to the snowstorm. The id
 <table class="custom-table">
     <tr>
         <td>
-            <img src="/assets/images/prev/FogMat.png" alt="example image" class="img-fluid rounded z-depth-1">
+            <img src="/assets/images/prev/FogMat.png" alt="example image" >
         </td>
     </tr>    
 </table>
@@ -457,10 +457,10 @@ As I had anticipated, I was suggested to add more depth to the snowstorm. The id
 <table class="custom-table">
     <tr>
         <td>
-            <img src="/assets/images/prev/FogEH.gif" alt="Fog Extinction & Hardness" class="img-fluid rounded z-depth-1">
+            <img src="/assets/images/prev/FogEH.gif" alt="Fog Extinction & Hardness" >
         </td>
         <td>
-            <img src="/assets/images/prev/FogCol.gif" alt="Fog Color" class="img-fluid rounded z-depth-1">
+            <img src="/assets/images/prev/FogCol.gif" alt="Fog Color" >
         </td>
     </tr>
     <tr>
@@ -473,7 +473,7 @@ As I had anticipated, I was suggested to add more depth to the snowstorm. The id
 <table class="custom-table">
     <tr>
         <td>
-            <img src="/assets/images/prev/SnowStormFinal.gif" alt="Snowstorm system" class="img-fluid rounded z-depth-1">
+            <img src="/assets/images/prev/SnowStormFinal.gif" alt="Snowstorm system" >
         </td>
     </tr>
 </table>
@@ -490,7 +490,7 @@ Fortunately, Unreal comes preloaded with cable actors with rope physics for on-t
 <table class="custom-table">
     <tr>
         <td>
-            <img src="/assets/images/prev/Cable.gif" alt="example image" class="img-fluid rounded z-depth-1">
+            <img src="/assets/images/prev/Cable.gif" alt="example image" >
         </td>
     </tr>    
 </table>
@@ -501,7 +501,7 @@ The team then assigned me the task to come up with materials with glowing cracks
 <table class="custom-table">
     <tr>
         <td>
-            <img src="/assets/images/prev/gcrackref.png" alt="example image" class="img-fluid rounded z-depth-1">
+            <img src="/assets/images/prev/gcrackref.png" alt="example image" >
         </td>
     </tr>    
 </table>
@@ -515,10 +515,10 @@ The team then assigned me the task to come up with materials with glowing cracks
 <table class="custom-table">
     <tr>
         <td>
-            <img src="/assets/images/prev/CrackBase.png" alt="Base Map" class="img-fluid rounded z-depth-1">
+            <img src="/assets/images/prev/CrackBase.png" alt="Base Map" >
         </td>
         <td>
-            <img src="/assets/images/prev/CrackNormal.png" alt="Normal Map" class="img-fluid rounded z-depth-1">
+            <img src="/assets/images/prev/CrackNormal.png" alt="Normal Map" >
         </td>
     </tr>
     <tr>
@@ -538,7 +538,7 @@ The team then assigned me the task to come up with materials with glowing cracks
 <table class="custom-table">
     <tr>
         <td>
-            <img src="/assets/images/prev/EmissionParameter.png" alt="example image" class="img-fluid rounded z-depth-1">
+            <img src="/assets/images/prev/EmissionParameter.png" alt="example image" >
         </td>
     </tr>    
 </table>
@@ -555,7 +555,7 @@ The team then assigned me the task to come up with materials with glowing cracks
 <table class="custom-table">
     <tr>
         <td>
-            <img src="/assets/images/prev/EmissionShape.png" alt="example image" class="img-fluid rounded z-depth-1">
+            <img src="/assets/images/prev/EmissionShape.png" alt="example image" >
         </td>
     </tr>    
 </table>
@@ -564,10 +564,10 @@ The team then assigned me the task to come up with materials with glowing cracks
 <table class="custom-table">
     <tr>
         <td>
-            <img src="/assets/images/prev/Coverage.gif" alt="Changing Coverage" class="img-fluid rounded z-depth-1">
+            <img src="/assets/images/prev/Coverage.gif" alt="Changing Coverage" >
         </td>
         <td>
-            <img src="/assets/images/prev/GlowIntensity.gif" alt="Changing Glow Intensity" class="img-fluid rounded z-depth-1">
+            <img src="/assets/images/prev/GlowIntensity.gif" alt="Changing Glow Intensity" >
         </td>
     </tr>
     <tr>
@@ -576,10 +576,10 @@ The team then assigned me the task to come up with materials with glowing cracks
     </tr>
     <tr>
         <td>
-            <img src="/assets/images/prev/PulseIntensity.gif" alt="Changing Pulse Intensity" class="img-fluid rounded z-depth-1">
+            <img src="/assets/images/prev/PulseIntensity.gif" alt="Changing Pulse Intensity" >
         </td>
         <td>
-            <img src="/assets/images/prev/Rate.gif" alt="Changing Rate" class="img-fluid rounded z-depth-1">
+            <img src="/assets/images/prev/Rate.gif" alt="Changing Rate" >
         </td>
     </tr>
     <tr>
@@ -588,10 +588,10 @@ The team then assigned me the task to come up with materials with glowing cracks
     </tr>
     <tr>
         <td>
-            <img src="/assets/images/prev/EmissiveColor.gif" alt="Changing Emissive Color" class="img-fluid rounded z-depth-1">
+            <img src="/assets/images/prev/EmissiveColor.gif" alt="Changing Emissive Color" >
         </td>
         <td>
-            <img src="/assets/images/prev/BaseTint.gif" alt="Changing Base Tint" class="img-fluid rounded z-depth-1">
+            <img src="/assets/images/prev/BaseTint.gif" alt="Changing Base Tint" >
         </td>
     </tr>
     <tr>
@@ -612,7 +612,7 @@ I decided to switch my role to explore the track of a tech designer. I was assig
 <table class="custom-table">
     <tr>
         <td>
-            <img src="/assets/images/prev/loadscrmat.gif" alt="Video UI Material" class="img-fluid rounded z-depth-1">
+            <img src="/assets/images/prev/loadscrmat.gif" alt="Video UI Material" >
         </td>
     </tr>
     <tr>
@@ -629,7 +629,7 @@ The team wanted me to implement a progress bar whose colors can be controlled by
 <table class="custom-table">
     <tr>
         <td>
-            <img src="/assets/images/prev/progressbarbp.png" alt="example image" class="img-fluid rounded z-depth-1">
+            <img src="/assets/images/prev/progressbarbp.png" alt="example image" >
         </td>
     </tr>    
 </table>
@@ -644,7 +644,7 @@ Next we decided upon implementing a tips system that would show up random tips o
 <table class="custom-table">
     <tr>
         <td>
-            <img src="/assets/images/prev/tipbp.png" alt="example image" class="img-fluid rounded z-depth-1">
+            <img src="/assets/images/prev/tipbp.png" alt="example image" >
         </td>
     </tr>    
 </table>
@@ -655,7 +655,7 @@ Next we decided upon implementing a tips system that would show up random tips o
 <table class="custom-table">
     <tr>
         <td>
-            <img src="/assets/images/prev/lswidget.png" alt="example image" class="img-fluid rounded z-depth-1">
+            <img src="/assets/images/prev/lswidget.png" alt="example image" >
         </td>
     </tr>    
 </table>
@@ -666,7 +666,7 @@ Next we decided upon implementing a tips system that would show up random tips o
 <table class="custom-table">
     <tr>
         <td>
-            <img src="/assets/images/prev/LoadingScreen.gif" alt="example image" class="img-fluid rounded z-depth-1">
+            <img src="/assets/images/prev/LoadingScreen.gif" alt="example image" >
         </td>
     </tr>    
 </table>
