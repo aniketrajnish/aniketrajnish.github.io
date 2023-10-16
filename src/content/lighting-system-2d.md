@@ -492,11 +492,13 @@ The biggest challenge ahead of us was actually to come up with a level design th
 
 * The final level involved a cliffhanger ending followed by the credit screen. Play the game to know more ;)
 
-<div class="row">
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.html path="assets/img/LevFin.png" title="example image" class="img-fluid rounded z-depth-1" zoomable=true %}
-    </div>
-</div>
+<table class="custom-table">
+    <tr>
+        <td>
+            <img src="/assets/images/prev/LevFin.png" alt="example image" class="img-fluid rounded z-depth-1">
+        </td>
+    </tr>
+</table>
 
 ## 8.0 Post Processing  
 We used post processing to increase the immersion that the game offers. We decided to limit ourselves to the stack that were well optimized for WebGL builds. 
