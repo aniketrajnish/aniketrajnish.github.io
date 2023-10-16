@@ -1,87 +1,229 @@
-<!DOCTYPE html><html lang="en" class="no-js"><head><link href="/assets/css/oxism.css?v=7356345b09dacdc9ed040c1f7b30d903" rel="stylesheet" type="text/css"><link href="//fonts.googleapis.com/css?family=Playfair+Display:700" rel="stylesheet" type="text/css"><link href="/assets/images/logo.png" rel="icon" type="image/png"><link href="/assets/images/logo.png" rel="apple-touch-icon-precomposed"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no"><meta name="author" content="Aniket Rajnish"><meta name="description" content="Aniket Rajnish :: Portfolio"><title>3D Shapes Dataset Generator - Helps procedurally generate tailored 3D shape datasets</title></head><body class="perma"><nav id="grid"><div id="info"><div><div class="cover"><h1>Aniket<br>Rajnish</h1><br><h2>Portfolio</h2></div><div class="image"></div></div></div><div id="meta"><div><div class="cover"><div><a id="email" class="button">email</a><a href="https://www.linkedin.com/in/makra2077/" class="button">linkedin</a><a href="https://github.com/aniketrajnish" class="button">github</a><a href="/assets/pdf/AR_Resume.pdf" class="button">resume </a><a href="/works/blogs" class="button">blogs             </a></div></div></div></div><a id="collider-optimizer-unity-link" href="/works/collider-optimizer-unity" class="major"><div><div class="cover"><h2>Unity Collider Optimizer</h2></div><div class="image"></div></div></a><a id="raymarching-engine-unity-link" href="/works/raymarching-engine-unity" class="major"><div><div class="cover"><h2>Raymarching Engine</h2></div><div class="image"></div></div></a><a id="shapes-dataset-generator-link" href="/works/shapes-dataset-generator" class="major"><div><div class="cover"><h2>3D Shapes Dataset Generator</h2></div><div class="image"></div></div></a><a id="hypercasual-games-link" href="/works/hypercasual-games" class="major"><div><div class="cover"><h2>Hypercasual Games</h2></div><div class="image"></div></div></a><a id="gamejam-entries-link" href="/works/gamejam-entries" class="major"><div><div class="cover"><h2>Gamejam Entries</h2></div><div class="image"></div></div></a></nav><section id="perma"><div id="perma-content"><a id="x" href="/">&times;</a><main id="content-shapes-dataset-generator" role="main" class="active"><h1>3D Shapes Dataset Generator</h1><h2>Helps procedurally generate tailored 3D shape datasets.</h2><div class="images"></div><video autoplay loop playsinline muted src="/assets/images/datasetgenerator0.mp4" style="width: 100%;"></video><div class="buttons"><a href="https://github.com/aniketrajnish/3D-Shapes-Dataset-Generator" class="button">github</a><a href="/assets/pdf/CS399.pdf" class="button">Project Report</a><a href="https://www.kaggle.com/makra2077/datasets?scroll=true" class="button">Sample Datasets [Kaggle]</a><a href="https://github.com/aniketrajnish/3D-Shapes-Dataset-Generator/releases/tag/1.0" class="button">Windows x64 Installer</a></div><div class="content"><div align="center">
-<a href="https://github.com/aniketrajnish/3D-Shapes-Dataset-Generator/releases/tag/1.0"><img width="300px" height="300px" src="https://github.com/aniketrajnish/3D-Shapes-Dataset-Generator/assets/58925008/749e9463-8cd8-4f10-bcb0-ee8502ce946b"></a>
-</div>
-
-<p>This tool is designed to help users create procedurally generated 3D shape datasets customized to their needs. It’s built on top of my open source <a href="https://github.com/aniketrajnish/CS499-SDFNet/tree/main/Renderer">Raymarching Engine</a> and runs over GPU. The engine supports over thirty primitives, three set operations (Union, Intersection, and Subtraction), and varying color values (along with shadows).</p>
-<p align="center"><br>  <img src="https://github.com/aniketrajnish/3D-Shapes-Dataset-Generator/assets/58925008/4f245e7e-36d9-48ca-a34f-abc9d5d1d6be" width="50%"><br>
-  A glimpse of the Final Dataset
-</p>
-<p align="center">
-  <img src="https://github.com/aniketrajnish/3D-Shapes-Dataset-Generator/assets/58925008/3817574b-e8a2-43fa-a694-9f42faa3d324" width="50%"><br>
-  Sample image with operations: Cone (Union) + Sphere (Union) + Box Frame (Subtraction)
-</p>
-
-<h2 id="getting-started">Getting Started</h2>
+<!DOCTYPE html><html lang="en" class="no-js"><head><link href="/assets/css/oxism.css?v=7356345b09dacdc9ed040c1f7b30d903" rel="stylesheet" type="text/css"><link href="//fonts.googleapis.com/css?family=Playfair+Display:700" rel="stylesheet" type="text/css"><link href="/assets/images/logo.png" rel="icon" type="image/png"><link href="/assets/images/logo.png" rel="apple-touch-icon-precomposed"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no"><meta name="author" content="Aniket Rajnish"><meta name="description" content="Aniket Rajnish :: Portfolio"><title>Image Editor developed in Unity - A janky photo editor that transforms any image into a “low-quality-meme”</title></head><body class="perma"><nav id="grid"><div id="info"><div><div class="cover"><h1>Aniket<br>Rajnish</h1><br><h2>Portfolio</h2></div><div class="image"></div></div></div><div id="meta"><div><div class="cover"><div><a id="email" class="button">email</a><a href="https://www.linkedin.com/in/makra2077/" class="button">linkedin</a><a href="https://github.com/aniketrajnish" class="button">github</a><a href="/assets/pdf/AR_Resume.pdf" class="button">resume </a><a href="/works/blogs" class="button">blogs             </a></div></div></div></div><a id="collider-optimizer-unity-link" href="/works/collider-optimizer-unity" class="major"><div><div class="cover"><h2>Unity Collider Optimizer</h2></div><div class="image"></div></div></a><a id="raymarching-engine-unity-link" href="/works/raymarching-engine-unity" class="major"><div><div class="cover"><h2>Raymarching Engine</h2></div><div class="image"></div></div></a><a id="shapes-dataset-generator-link" href="/works/shapes-dataset-generator" class="major"><div><div class="cover"><h2>3D Shapes Dataset Generator</h2></div><div class="image"></div></div></a><a id="hypercasual-games-link" href="/works/hypercasual-games" class="major"><div><div class="cover"><h2>Hypercasual Games</h2></div><div class="image"></div></div></a><a id="gamejam-entries-link" href="/works/gamejam-entries" class="major"><div><div class="cover"><h2>Gamejam Entries</h2></div><div class="image"></div></div></a></nav><section id="perma"><div id="perma-content"><a id="x" href="/">&times;</a><main id="content-image-editor-unity" role="main" class="active"><h1>Image Editor developed in Unity</h1><h2>A janky photo editor that transforms any image into a “low-quality-meme”.</h2><div class="images"><img src="/assets/images//prev/Icon_Editor.png" style="NaN%;"><img src="/assets/images//prev/Editor_UI.jpg" style="NaN%;"></div><div class="content"><p>I was recently accepted into the Florida Interactive Entertainment Academy for the Technical Art track. I was checking out some medium blogs to to learn some image manipulation to brush up some of my technical art skils. Them medium gods were actually pretty darn helpful and I somehow ended up developing a janky photo editor using Unity. It transforms any regular image into a “low-quality-meme”. I call it the “Low Res Meme Editor”. I’ll be discussing my approach towards developing the photo editor in this blog.</p>
+<h2 id="1-0-preparing-images-for-editing"><strong>1.0 Preparing Images for Editing</strong></h2>
+<p>The first step was transforming the images into a suitable format for easy manipulation. <code>Texture2D</code> felt appopriate for this purpose, as it gives me more control over the pixel data. I could directly manipulate pixel values using the <code>GetPixel()</code> and <code>SetPixel()</code> methods of any Texture2D object.</p>
 <ul>
-<li>Download the build file/windows installer from the <a href="https://github.com/aniketrajnish/3D-Shapes-Dataset-Generator/releases/tag/1.0">Releases</a>.</li>
-<li>If you need over the top features -<ul>
-<li>Clone the repository<pre><code>git clone https://github.com/aniketrajnish/3D-Shapes-Dataset-Generator.git
+<li><p>So I created method that took an image an returned a Texture2D corresponding to it.</p>
+<pre><code>private Texture2D GetTextureFromImage(Image targetImage) {}
 </code></pre></li>
-<li>Open and edit the source code (in the <code>/src</code> folder) in <code>Unity 2020.3.30f1</code> or later.</li>
+<li><p>Then I created an empty texture with the width and height of the image.</p>
+<pre><code>Rect rect = targetImage.sprite.rect;
+Texture2D texture = new Texture2D((int)rect.width, (int)rect.height);                
+</code></pre></li>
+<li><p>Finally the pixels on the original image are mirrored on the pixels of the empty texture using the <code>SetPixels()</code> method.</p>
+<pre><code>texture.SetPixels(
+      targetImage.sprite.texture.GetPixels(
+          (int)rect.x,
+          (int)rect.y,
+          (int)rect.width, 
+          (int)rect.height));
+  texture.Apply();
+  return texture;                
+</code></pre></li>
 </ul>
+<h2 id="2-0-image-editing-algorithms-approach"><strong>2.0 Image Editing Algorithms: Approach</strong></h2>
+<p>I chose to work on a series of image editing techniques. My plan was to apply these algorithms with different settings, essentially creating pre-defined configurations for editing images. <strong>Most of these algorithms shall serve the sole purpose of giving the image a low-quality-meme look”.</strong></p>
+<h2 id="2-1-saturation-control"><strong>2.1 Saturation Control</strong></h2>
+<p>The first control I wished to establish was for Saturation i.e the intensity of the color of each pixel of the image. </p>
+<ul>
+<li>A saturation value of 0 makes the image grayscale.</li>
+<li>A value of 1 keeps the original colors unchanged.</li>
+<li>Anything above 1 makes the image more vibrant.<table class="custom-table" style="width: 100%;">
+  <tr>
+      <td style="text-align: center;">
+          <img style="border:none;" src="/assets/images/prev/Saturation_Diagram.png" alt="Algorithm for Saturation Control">
+          <br>
+          <strong>Algorithm for Saturation Control</strong>
+      </td>
+  </tr>
+</table>
+
 </li>
 </ul>
-<h2 id="usage">Usage</h2>
+<p>So the basic algorithm I used to achieve saturation control was–</p>
+<ol>
+<li><p>Getting the texture from the image and creating an empty texture to assign the edits texture to.</p>
+<pre><code> originalTexture = GetTextureFromImage(image);
+ modifiedTexture = new Texture2D(originalTexture.width, originalTexture.height);
+</code></pre></li>
+<li><p>Looping through the pixels to access the HSV values from their color. The <code>saturation</code> value is of importance here as we are going to alter it, so it is passed as a reference type.</p>
+<pre><code> // accessing the texture code here
+
+ Color[] pixels = originalTexture.GetPixels();
+ int totalPixels = pixels.Length;
+
+ for (int i = 0; i &lt; totalPixels; i++)
+ {
+     Color pixelColor = pixels[index];
+     Color.RGBToHSV(pixelColor, out float hue, out float saturation, out float value);    
+ }
+</code></pre></li>
+<li><p>Applying the saturation to each pixel. The <code>saturation</code> value is multiplied by  a <code>saturationFactor</code> to alter it. And finally a new array of Color of length the same as the original image is assigned the color with the new <code>saturation</code> value.</p>
+<pre><code> Color[] modifiedPixels = new Color[totalPixels];
+
+ for (int i = 0; i &lt; totalPixels; i++)
+ {
+     // accessing HSV code here
+     saturation *= _saturationFactor;
+     modifiedPixels[index] = Color.HSVToRGB(hue, saturation, value);
+ }
+</code></pre></li>
+<li><p>A new texture with the saturated pixels is created and assigned to a sprite.</p>
+<pre><code> modifiedTexture.SetPixels(modifiedPixels);
+ modifiedTexture.Apply();
+
+ Sprite modifiedSprite = Sprite.Create(modifiedTexture,
+                                     new Rect(0, 0,
+                                     modifiedTexture.width, modifiedTexture.height),
+                                     new Vector2(0.5f, 0.5f));
+ image.sprite = modifiedSprite;
+</code></pre><table class="custom-table" style="width: 100%;">
+ <tr>
+     <td style="text-align: center;">
+         <img src="/assets/images/prev/saturationFactor.png" alt="Saturation Control">
+         <br>
+         <strong>Saturation Control</strong>
+     </td>
+ </tr>
+</table>
+
+
+</li>
+</ol>
+<h2 id="2-2-adding-gaussian-blur"><strong>2.2 Adding Gaussian Blur</strong></h2>
+<p>Next in the list are algorithms that helps blur an image using a Gaussian Function. This helps achieve the bokeh effect. It has the effect of reducing an image’s high frequency components and thus acting like a low-pass filter. </p>
+<ol>
+<li><p><strong>Creating the Gaussian Kernel</strong></p>
+</li>
+<li><p>First we create a gaussian kernel of a given size and radius. The gaussian kernel is a float 2D matrix (<code>float[,]</code>). Each element in the matrix is a weight that determines the contribution of each pixel to the blurring process. These weights are caluclated based on the Gaussian distribution formula.</p>
+</li>
+</ol>
+<p align="center">
+  <img src="https://latex.codecogs.com/svg.image?{f(x)&space;=&space;\frac{1}{\sigma\sqrt{2\pi}}&space;e^{-\frac{(x-\mu)^2}{2\sigma^2}}}">
+</p>
+
 <ul>
-<li><code>Varying Camera Angle</code> (currently not functional): Set to <code>True</code> if you want to assign a different camera angle to each image in the dataset. Otherwise, the camera will look at the object keeping it in the center using <code>transform.LookAt()</code>.</li>
-<li><code>Varying Orientation</code>: Set to <code>True</code> if you want to assign a unique random orientation (angle) to the individual shapes in the dataset. Otherwise, the shapes will be aligned with the axis using <code>Quaternion.identity</code>.</li>
-<li><code>Varying Position</code>: Set to <code>True</code> if you want to assign a unique random position to the individual shapes in a cube of dimension 2 units centered at the origin. Otherwise, the shapes will be centered at the origin.</li>
-<li><code>Randomize Shape Count</code>: Set to <code>True</code> if you want to randomize the number of shapes in each image between 0 and the <code>Max Shape Count</code>. Otherwise, every image will be generated with <code>Max Shape Count</code> number of shapes.</li>
-<li><code>Max Shape Count</code>: Set the maximum number of shapes that each image in the dataset should have.</li>
-<li><code>Dataset Size</code>: Set the number of images to be generated in the dataset.</li>
-<li><code>Dataset Path</code>: Set the path where the dataset folder is to be created.</li>
-<li><code>Resolution</code>: Set the width and height of the images (in pixels) to generate them accordingly.</li>
-<li><code>Shapes and Operations</code>: These are enums that determine which shape index and operation index are to be taken into * consideration while generating each shape.</li>
-<li><code>Seed</code>: Input a seed value to generate a dataset that has already been created before by assigning the seed value to the Random State.</li>
+<li><p><strong>Input Parameters:</strong> The <code>CreateGaussianKernel()</code> method takes the <code>radius</code> and <code>size</code> of the kernel as the parameter and returns a 2D matrix (<code>float[,]</code>). The <code>size</code> represents the dimensions of the kernel, and the <code>radius</code> controls the spread of the blur effect.</p>
+<pre><code>  private float[,] CreateGaussianKernel(int size, float radius) {}
+</code></pre></li>
+<li><p><strong>Initialization:</strong> An empty 2D array called <code>kernel</code> of size x size is initialized. This array will store the weights that determine the strength of blurring for each pixel. The variable <code>sigma</code> is calculated as <code>radius / 3f</code>. <code>sigma</code> is a parameter that affects the spread of the Gaussian distribution. A larger sigma value results in a wider spread of the blur. The constant for the gaussian distribution is calculated as twice the <code>sigma</code> squared.</p>
+<pre><code>  float[,] kernel = new float[size, size];
+  float sigma = radius / 3f; 
+  float twoSigmaSquare = 2f * sigma * sigma; 
+  float totalWeight = 0f; 
+</code></pre></li>
+<li><p><strong>Gaussian and Total Weight Calculation:</strong> The nested loops iterate over each element of the <code>kernel</code> array. For each element at position [y, x], it calculates the squared distance from the center of the kernel. The formula <em>x<em>x + y</em>y</em> calculates the squared Euclidean distance. Using the squared distance, it calculates the weight using the formula <em>Mathf.Exp(-distance / twoSigmaSquare)</em>. This weight is a measure of how much influence a pixel at that distance should have on the blurring process. The greater the distance, the smaller the weight. The calculated weight is assigned to the corresponding position in the kernel array. The <code>totalWeight</code> variable keeps track of the sum of all the weights in the kernel. This sum is used to normalize the kernel later.</p>
+<pre><code>  // intialization code here
+
+  for (int y = -size / 2; y &lt;= size / 2; y++) // -size / 2 to size / 2
+  {
+      for (int x = -size / 2; x &lt;= size / 2; x++) // -size / 2 to size / 2
+      {
+          float distance = x * x + y * y; 
+          float weight = Mathf.Exp(-distance / twoSigmaSquare); 
+          kernel[y + size / 2, x + size / 2] = weight; 
+          totalWeight += weight;
+      }
+  }
+</code></pre></li>
+<li><p><strong>Kernel Normalization:</strong>  After calculating all the weights, the kernel is normalized to ensure that the sum of all the weights equals 1. This step is essential to maintain the overall brightness of the image during blurring. The nested loops iterate over each element of the <code>kernel</code> array again. Each weight is divided by the <code>totalWeight</code>, effectively scaling down the weights to ensure their sum equals 1. And then the <code>kernel</code> is returned.</p>
+<pre><code>  // intialization code here
+
+  // weight calculation code here
+
+  for (int y = 0; y &lt; size; y++)
+  {
+      for (int x = 0; x &lt; size; x++)
+      {
+          kernel[y, x] /= totalWeight;
+      }
+  }
+
+  return kernel;
+</code></pre></li>
+<li><p><strong>Applying the Gaussian Kernel</strong>
+The gaussian kernel created above is applied to the pixels of the image thereby convulating the kernel with the particular pixel and its neighbouring pixels, thus calculating the weighted sum of their colors. This sum becomes the new color value for the central pixel, resulting in the blurring effect.</p>
+</li>
+<li><p><strong>Input Parameters:</strong> The <code>ApplyKernel()</code> method takes a Texture2D as input along with a <code>kernel</code>, <code>x</code>, <code>y</code> (position within the image) and <code>size</code> of the kernel as the parameter. It then calculates and returns the weighted average of colors in the neighborhood around the (x, y) position using the provided Gaussian kernel.</p>
+<pre><code>  private Color ApplyKernel(Texture2D texture, int x, int y, float[,] kernel, int size) {}
+</code></pre></li>
+<li><p><strong>Initialization:</strong> The 3 float variables for the RGB values are initalized to accumulate the weighted sum of red, green, and blue color channels. The half-size of the kernel is calculated as well and this is used to determine the bounds of the neighborhood around the (x, y) position.</p>
+<pre><code>  float r = 0f, g = 0f, b = 0f;
+  int halfSize = size / 2;
+</code></pre></li>
+<li><p><strong>Looping through the Kernel:</strong> Nested for loops iterate over each cell in kernel. The outer <code>j</code> loop iterates over the rows of the kernel whereas the inner <code>i</code> loop iterates over its columns. </p>
+<pre><code>  for (int j = 0; j &lt; size; j++)
+  {
+      for (int i = 0; i &lt; size; i++)
+      {
+
+      }
+  }
+</code></pre></li>
+<li><p><strong>Calculating pixel coordinates of Input Image:</strong> <code>offsetX</code> and <code>offsetY</code> is calculated inside the loop to represent the corresponding pixel coordinates in the input image based on the current <code>x</code> and <code>y</code> position within the image and the <code>i</code> and <code>j</code> indices. Both these values are clamped to the bounds of the image.</p>
+<pre><code>  int offsetX = x + i - halfSize;
+  int offsetY = y + j - halfSize;
+
+  offsetX = Mathf.Clamp(offsetX, 0, texture.width - 1);
+  offsetY = Mathf.Clamp(offsetY, 0, texture.height - 1);
+</code></pre></li>
+<li><p><strong>Retrieving and Updating the color values of pixels:</strong> The color values of pixels at calculated coordinates <code>offsetX</code> and <code>offsetY</code> are retrieved from the input texture. The RGB values intialized earlier are updated by adding the color values retrieved multiplied by the weight value from the Gaussian Kernel matrix from the <code>i</code> and <code>j</code> position. The final color obtained is returned.</p>
+<pre><code>  Color pixel = texture.GetPixel(offsetX, offsetY);
+  float weight = kernel[j, i];
+
+  r += pixel.r * weight;
+  g += pixel.g * weight;
+  b += pixel.b * weight;
+</code></pre></li>
+<li><p><strong>Applying the Gaussian Blur</strong> 
+Now we apply the gaussian blur to the image by calculating the kernel, processing the pixel and updating the image. </p>
+</li>
+<li><p><strong>Input Parameters:</strong> The <code>ApplyGaussianBlur()</code> method takes a Texture2D as input along with the <code>radius</code> of the Gaussian Blur needed (basically used as the size of the kernel) and returns the blurred texture.</p>
+<pre><code>  private Texture2D ApplyGaussianBlur(Texture2D sourceTexture, float radius) {}
+</code></pre></li>
+<li><p><strong>Calculating Kernel size and Kernel:</strong> The Kernel size is obtained by rounding the <code>radius</code> to the nearest integer, doubling it and then adding 1 to it, ensuring coverage of sufficient area around each pixel.</p>
+<pre><code>  int kernelSize = Mathf.RoundToInt(radius) * 2 + 1;
+  float[,] kernel = CreateGaussianKernel(kernelSize, radius);
+</code></pre></li>
+<li><p><strong>Creating Blurred Texture:</strong> A new <code>blurredTexture</code> with same dimensions as <code>sourceTexture</code> is initialized.</p>
+<pre><code>  Color[] pixels = sourceTexture.GetPixels();
+  Color[] blurredPixels = new Color[pixels.Length];
+</code></pre></li>
+<li><p><strong>Iterating through pixels:</strong> A nested loop is used to access the pixels of the <code>sourceTexture</code>. For each pixel at (<code>x</code>, <code>y</code>), the <code>ApplyKernel()</code> function is called to calculate the new color of that pixel. The calculated blurrer color is stored in the corresponding position of the <code>blurredPixels</code> array.</p>
+<pre><code>  for (int y = 0; y &lt; sourceTexture.height; y++)
+  {
+      for (int x = 0; x &lt; sourceTexture.width; x++)
+      {
+          Color blurredColor = ApplyKernel(sourceTexture, x, y, kernel, kernelSize);
+          blurredPixels[y * sourceTexture.width + x] = blurredColor;
+      }
+  }
+</code></pre></li>
+<li><p><strong>Applying Blurred pixels to the Texture:</strong> After processing all the pixels, the <code>blurredPixels</code> array is assigned to the <code>blurredTexture</code> and it is returned.</p>
+<pre><code>  blurredTexture.SetPixels(blurredPixels);
+  blurredTexture.Apply();
+
+  return blurredTexture;
+</code></pre></li>
+<li><p><strong>Blurred Sprite:</strong> A sprite is created from the blurred texture and is applied to the image.</p>
+<pre><code>  Sprite blurredSprite = Sprite.Create(blurredTexture,
+                                      new Rect(0, 0, blurredTexture.width, blurredTexture.height),
+                                      new Vector2(0.5f, 0.5f));
+  image.sprite = blurredSprite;
+</code></pre><table class="custom-table" style="width: 100%;">
+  <tr>
+      <td style="text-align: center;">
+          <img src="/assets/images/prev/blurRadius.png" alt="Gaussian Blur Control">
+          <br>
+          <strong>Gaussian Blur Control</strong>
+      </td>
+  </tr>
+</table>
+
+
+</li>
 </ul>
-<p>Note that the <code>Varying Camera Angle</code> parameter is still under development and is not functional.</p>
-<h2 id="datasets">Datasets</h2>
-<ul>
-<li>The images are saved in the <code>../images</code> folder.</li>
-<li>The seed value of each random state is also exported in a txt file and can be used to
-re-generate a dataset.</li>
-<li>These parameters are exported in the CSV sheet with all the image information as shown in table below.<table class="custom-table">
-  <thead>
-      <tr>
-          <th>Column Name</th>
-          <th>Info</th>
-      </tr>
-  </thead>
-  <tbody>
-      <tr>
-          <td>filename</td>
-          <td>Name of the image file</td>
-      </tr>
-      <tr>
-          <td>shape</td>
-          <td>Shape Index</td>
-      </tr>
-      <tr>
-          <td>operation</td>
-          <td>Operation Index</td>
-      </tr>
-      <tr>
-          <td>a,b,c,d,e,f,g,h,i,j,k,l</td>
-          <td>Dimensional parameters</td>
-      </tr>
-      <tr>
-          <td>hue, sat, val</td>
-          <td>HSV Values of the color</td>
-      </tr>
-      <tr>
-          <td>rot_x, rot_y, rot_z</td>
-          <td>Euler Angles</td>
-      </tr>
-      <tr>
-          <td>pos_x, pos_y, pos_z</td>
-          <td>Position Vector</td>
-      </tr>
-  </tbody>
-</table></li>
-<li>Each row depicts information about a shape in the image of a dataset.</li>
-</ul>
-<h2 id="contributing">Contributing</h2>
-<p>If you find a bug or have a feature request, please open an issue or submit a pull request.</p>
+<h2 id="3-0-image-compressor"><strong>3.0 Image Compressor</strong></h2>
+<p><strong><strong>The blog is still in Works</strong></strong></p>
 </div><div class="tools">C#, HLSL, Unity</div><br class="clear"></main><article id="content-collider-optimizer-unity"><h1>Unity Collider Optimizer</h1><h2>Optimizes Mesh &amp; Polygon colliders in Unity.</h2><div class="images"></div><video autoplay loop playsinline muted src="/assets/images/collideroptimizer2.mp4" style="width: 100%;"></video><div class="buttons"><a href="https://github.com/aniketrajnish/Unity-Collider-Optimizer" class="button">github [250+ stars]</a><a href="https://80.lv/articles/a-new-tool-for-optimizing-mesh-polygon-colliders-in-unity/" class="button">80.lv Article</a><a href="https://github.com/aniketrajnish/Unity-Collider-Optimizer/releases/tag/v004" class="button">unitypackage</a></div><div class="content"><h2 id="polygon-collider-optimizer">Polygon Collider Optimizer</h2>
 <table class="custom-table">
   <tr>
@@ -250,7 +392,91 @@ public struct shapeDimensions
 }
 </code></pre></li>
 </ul>
-</div><div class="tools">C#, Unity, HLSL</div><br class="clear"></article><article id="content-hypercasual-games"><h1>Hypercasual Games</h1><h2>Hypercasual Games and Prototypes I've worked upon.</h2><div class="images"></div><video autoplay loop playsinline muted src="/assets/images/hypercasual0.mp4" style="width: 100%;"></video><div class="content"><h2 id="jelly-cleaner">Jelly Cleaner</h2>
+</div><div class="tools">C#, Unity, HLSL</div><br class="clear"></article><article id="content-shapes-dataset-generator"><h1>3D Shapes Dataset Generator</h1><h2>Helps procedurally generate tailored 3D shape datasets.</h2><div class="images"></div><video autoplay loop playsinline muted src="/assets/images/datasetgenerator0.mp4" style="width: 100%;"></video><div class="buttons"><a href="https://github.com/aniketrajnish/3D-Shapes-Dataset-Generator" class="button">github</a><a href="/assets/pdf/CS399.pdf" class="button">Project Report</a><a href="https://www.kaggle.com/makra2077/datasets?scroll=true" class="button">Sample Datasets [Kaggle]</a><a href="https://github.com/aniketrajnish/3D-Shapes-Dataset-Generator/releases/tag/1.0" class="button">Windows x64 Installer</a></div><div class="content"><div align="center">
+<a href="https://github.com/aniketrajnish/3D-Shapes-Dataset-Generator/releases/tag/1.0"><img width="300px" height="300px" src="https://github.com/aniketrajnish/3D-Shapes-Dataset-Generator/assets/58925008/749e9463-8cd8-4f10-bcb0-ee8502ce946b"></a>
+</div>
+
+<p>This tool is designed to help users create procedurally generated 3D shape datasets customized to their needs. It’s built on top of my open source <a href="https://github.com/aniketrajnish/CS499-SDFNet/tree/main/Renderer">Raymarching Engine</a> and runs over GPU. The engine supports over thirty primitives, three set operations (Union, Intersection, and Subtraction), and varying color values (along with shadows).</p>
+<p align="center"><br>  <img src="https://github.com/aniketrajnish/3D-Shapes-Dataset-Generator/assets/58925008/4f245e7e-36d9-48ca-a34f-abc9d5d1d6be" width="50%"><br>
+  A glimpse of the Final Dataset
+</p>
+<p align="center">
+  <img src="https://github.com/aniketrajnish/3D-Shapes-Dataset-Generator/assets/58925008/3817574b-e8a2-43fa-a694-9f42faa3d324" width="50%"><br>
+  Sample image with operations: Cone (Union) + Sphere (Union) + Box Frame (Subtraction)
+</p>
+
+<h2 id="getting-started">Getting Started</h2>
+<ul>
+<li>Download the build file/windows installer from the <a href="https://github.com/aniketrajnish/3D-Shapes-Dataset-Generator/releases/tag/1.0">Releases</a>.</li>
+<li>If you need over the top features -<ul>
+<li>Clone the repository<pre><code>git clone https://github.com/aniketrajnish/3D-Shapes-Dataset-Generator.git
+</code></pre></li>
+<li>Open and edit the source code (in the <code>/src</code> folder) in <code>Unity 2020.3.30f1</code> or later.</li>
+</ul>
+</li>
+</ul>
+<h2 id="usage">Usage</h2>
+<ul>
+<li><code>Varying Camera Angle</code> (currently not functional): Set to <code>True</code> if you want to assign a different camera angle to each image in the dataset. Otherwise, the camera will look at the object keeping it in the center using <code>transform.LookAt()</code>.</li>
+<li><code>Varying Orientation</code>: Set to <code>True</code> if you want to assign a unique random orientation (angle) to the individual shapes in the dataset. Otherwise, the shapes will be aligned with the axis using <code>Quaternion.identity</code>.</li>
+<li><code>Varying Position</code>: Set to <code>True</code> if you want to assign a unique random position to the individual shapes in a cube of dimension 2 units centered at the origin. Otherwise, the shapes will be centered at the origin.</li>
+<li><code>Randomize Shape Count</code>: Set to <code>True</code> if you want to randomize the number of shapes in each image between 0 and the <code>Max Shape Count</code>. Otherwise, every image will be generated with <code>Max Shape Count</code> number of shapes.</li>
+<li><code>Max Shape Count</code>: Set the maximum number of shapes that each image in the dataset should have.</li>
+<li><code>Dataset Size</code>: Set the number of images to be generated in the dataset.</li>
+<li><code>Dataset Path</code>: Set the path where the dataset folder is to be created.</li>
+<li><code>Resolution</code>: Set the width and height of the images (in pixels) to generate them accordingly.</li>
+<li><code>Shapes and Operations</code>: These are enums that determine which shape index and operation index are to be taken into * consideration while generating each shape.</li>
+<li><code>Seed</code>: Input a seed value to generate a dataset that has already been created before by assigning the seed value to the Random State.</li>
+</ul>
+<p>Note that the <code>Varying Camera Angle</code> parameter is still under development and is not functional.</p>
+<h2 id="datasets">Datasets</h2>
+<ul>
+<li>The images are saved in the <code>../images</code> folder.</li>
+<li>The seed value of each random state is also exported in a txt file and can be used to
+re-generate a dataset.</li>
+<li>These parameters are exported in the CSV sheet with all the image information as shown in table below.<table class="custom-table">
+  <thead>
+      <tr>
+          <th>Column Name</th>
+          <th>Info</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td>filename</td>
+          <td>Name of the image file</td>
+      </tr>
+      <tr>
+          <td>shape</td>
+          <td>Shape Index</td>
+      </tr>
+      <tr>
+          <td>operation</td>
+          <td>Operation Index</td>
+      </tr>
+      <tr>
+          <td>a,b,c,d,e,f,g,h,i,j,k,l</td>
+          <td>Dimensional parameters</td>
+      </tr>
+      <tr>
+          <td>hue, sat, val</td>
+          <td>HSV Values of the color</td>
+      </tr>
+      <tr>
+          <td>rot_x, rot_y, rot_z</td>
+          <td>Euler Angles</td>
+      </tr>
+      <tr>
+          <td>pos_x, pos_y, pos_z</td>
+          <td>Position Vector</td>
+      </tr>
+  </tbody>
+</table></li>
+<li>Each row depicts information about a shape in the image of a dataset.</li>
+</ul>
+<h2 id="contributing">Contributing</h2>
+<p>If you find a bug or have a feature request, please open an issue or submit a pull request.</p>
+</div><div class="tools">C#, HLSL, Unity</div><br class="clear"></article><article id="content-hypercasual-games"><h1>Hypercasual Games</h1><h2>Hypercasual Games and Prototypes I've worked upon.</h2><div class="images"></div><video autoplay loop playsinline muted src="/assets/images/hypercasual0.mp4" style="width: 100%;"></video><div class="content"><h2 id="jelly-cleaner">Jelly Cleaner</h2>
 <div style="display: flex; justify-content: space-between; align-items: flex-start; width: 100%; padding: 20px;">
 
 <video controls style="width: 50%; border: 3px solid black; border-radius: 15px;">
@@ -1819,233 +2045,7 @@ LightMesh.mesh.triangles = triangles;
       </td>
   </tr><br></table></li>
 </ul>
-</div><div class="tools">Unreal Engine, Game Design</div><br class="clear"></article><article id="content-image-editor-unity"><h1>Image Editor developed in Unity</h1><h2>A janky photo editor that transforms any image into a “low-quality-meme”.</h2><div class="images"><img src="/assets/images//prev/Icon_Editor.png" style="NaN%;"><img src="/assets/images//prev/Editor_UI.jpg" style="NaN%;"></div><div class="content"><p>I was recently accepted into the Florida Interactive Entertainment Academy for the Technical Art track. I was checking out some medium blogs to to learn some image manipulation to brush up some of my technical art skils. Them medium gods were actually pretty darn helpful and I somehow ended up developing a janky photo editor using Unity. It transforms any regular image into a “low-quality-meme”. I call it the “Low Res Meme Editor”. I’ll be discussing my approach towards developing the photo editor in this blog.</p>
-<h2 id="1-0-preparing-images-for-editing"><strong>1.0 Preparing Images for Editing</strong></h2>
-<p>The first step was transforming the images into a suitable format for easy manipulation. <code>Texture2D</code> felt appopriate for this purpose, as it gives me more control over the pixel data. I could directly manipulate pixel values using the <code>GetPixel()</code> and <code>SetPixel()</code> methods of any Texture2D object.</p>
-<ul>
-<li><p>So I created method that took an image an returned a Texture2D corresponding to it.</p>
-<pre><code>private Texture2D GetTextureFromImage(Image targetImage) {}
-</code></pre></li>
-<li><p>Then I created an empty texture with the width and height of the image.</p>
-<pre><code>Rect rect = targetImage.sprite.rect;
-Texture2D texture = new Texture2D((int)rect.width, (int)rect.height);                
-</code></pre></li>
-<li><p>Finally the pixels on the original image are mirrored on the pixels of the empty texture using the <code>SetPixels()</code> method.</p>
-<pre><code>texture.SetPixels(
-      targetImage.sprite.texture.GetPixels(
-          (int)rect.x,
-          (int)rect.y,
-          (int)rect.width, 
-          (int)rect.height));
-  texture.Apply();
-  return texture;                
-</code></pre></li>
-</ul>
-<h2 id="2-0-image-editing-algorithms-approach"><strong>2.0 Image Editing Algorithms: Approach</strong></h2>
-<p>I chose to work on a series of image editing techniques. My plan was to apply these algorithms with different settings, essentially creating pre-defined configurations for editing images. <strong>Most of these algorithms shall serve the sole purpose of giving the image a low-quality-meme look”.</strong></p>
-<h2 id="2-1-saturation-control"><strong>2.1 Saturation Control</strong></h2>
-<p>The first control I wished to establish was for Saturation i.e the intensity of the color of each pixel of the image. </p>
-<ul>
-<li>A saturation value of 0 makes the image grayscale.</li>
-<li>A value of 1 keeps the original colors unchanged.</li>
-<li>Anything above 1 makes the image more vibrant.<table class="custom-table" style="width: 100%;">
-  <tr>
-      <td style="text-align: center;">
-          <img style="border:none;" src="/assets/images/prev/Saturation_Diagram.png" alt="Algorithm for Saturation Control">
-          <br>
-          <strong>Algorithm for Saturation Control</strong>
-      </td>
-  </tr>
-</table>
-
-</li>
-</ul>
-<p>So the basic algorithm I used to achieve saturation control was–</p>
-<ol>
-<li><p>Getting the texture from the image and creating an empty texture to assign the edits texture to.</p>
-<pre><code> originalTexture = GetTextureFromImage(image);
- modifiedTexture = new Texture2D(originalTexture.width, originalTexture.height);
-</code></pre></li>
-<li><p>Looping through the pixels to access the HSV values from their color. The <code>saturation</code> value is of importance here as we are going to alter it, so it is passed as a reference type.</p>
-<pre><code> // accessing the texture code here
-
- Color[] pixels = originalTexture.GetPixels();
- int totalPixels = pixels.Length;
-
- for (int i = 0; i &lt; totalPixels; i++)
- {
-     Color pixelColor = pixels[index];
-     Color.RGBToHSV(pixelColor, out float hue, out float saturation, out float value);    
- }
-</code></pre></li>
-<li><p>Applying the saturation to each pixel. The <code>saturation</code> value is multiplied by  a <code>saturationFactor</code> to alter it. And finally a new array of Color of length the same as the original image is assigned the color with the new <code>saturation</code> value.</p>
-<pre><code> Color[] modifiedPixels = new Color[totalPixels];
-
- for (int i = 0; i &lt; totalPixels; i++)
- {
-     // accessing HSV code here
-     saturation *= _saturationFactor;
-     modifiedPixels[index] = Color.HSVToRGB(hue, saturation, value);
- }
-</code></pre></li>
-<li><p>A new texture with the saturated pixels is created and assigned to a sprite.</p>
-<pre><code> modifiedTexture.SetPixels(modifiedPixels);
- modifiedTexture.Apply();
-
- Sprite modifiedSprite = Sprite.Create(modifiedTexture,
-                                     new Rect(0, 0,
-                                     modifiedTexture.width, modifiedTexture.height),
-                                     new Vector2(0.5f, 0.5f));
- image.sprite = modifiedSprite;
-</code></pre><table class="custom-table" style="width: 100%;">
- <tr>
-     <td style="text-align: center;">
-         <img src="/assets/images/prev/saturationFactor.png" alt="Saturation Control">
-         <br>
-         <strong>Saturation Control</strong>
-     </td>
- </tr>
-</table>
-
-
-</li>
-</ol>
-<h2 id="2-2-adding-gaussian-blur"><strong>2.2 Adding Gaussian Blur</strong></h2>
-<p>Next in the list are algorithms that helps blur an image using a Gaussian Function. This helps achieve the bokeh effect. It has the effect of reducing an image’s high frequency components and thus acting like a low-pass filter. </p>
-<ol>
-<li><p><strong>Creating the Gaussian Kernel</strong></p>
-</li>
-<li><p>First we create a gaussian kernel of a given size and radius. The gaussian kernel is a float 2D matrix (<code>float[,]</code>). Each element in the matrix is a weight that determines the contribution of each pixel to the blurring process. These weights are caluclated based on the Gaussian distribution formula.</p>
-</li>
-</ol>
-<p align="center">
-  <img src="https://latex.codecogs.com/svg.image?{f(x)&space;=&space;\frac{1}{\sigma\sqrt{2\pi}}&space;e^{-\frac{(x-\mu)^2}{2\sigma^2}}}">
-</p>
-
-<ul>
-<li><p><strong>Input Parameters:</strong> The <code>CreateGaussianKernel()</code> method takes the <code>radius</code> and <code>size</code> of the kernel as the parameter and returns a 2D matrix (<code>float[,]</code>). The <code>size</code> represents the dimensions of the kernel, and the <code>radius</code> controls the spread of the blur effect.</p>
-<pre><code>  private float[,] CreateGaussianKernel(int size, float radius) {}
-</code></pre></li>
-<li><p><strong>Initialization:</strong> An empty 2D array called <code>kernel</code> of size x size is initialized. This array will store the weights that determine the strength of blurring for each pixel. The variable <code>sigma</code> is calculated as <code>radius / 3f</code>. <code>sigma</code> is a parameter that affects the spread of the Gaussian distribution. A larger sigma value results in a wider spread of the blur. The constant for the gaussian distribution is calculated as twice the <code>sigma</code> squared.</p>
-<pre><code>  float[,] kernel = new float[size, size];
-  float sigma = radius / 3f; 
-  float twoSigmaSquare = 2f * sigma * sigma; 
-  float totalWeight = 0f; 
-</code></pre></li>
-<li><p><strong>Gaussian and Total Weight Calculation:</strong> The nested loops iterate over each element of the <code>kernel</code> array. For each element at position [y, x], it calculates the squared distance from the center of the kernel. The formula <em>x<em>x + y</em>y</em> calculates the squared Euclidean distance. Using the squared distance, it calculates the weight using the formula <em>Mathf.Exp(-distance / twoSigmaSquare)</em>. This weight is a measure of how much influence a pixel at that distance should have on the blurring process. The greater the distance, the smaller the weight. The calculated weight is assigned to the corresponding position in the kernel array. The <code>totalWeight</code> variable keeps track of the sum of all the weights in the kernel. This sum is used to normalize the kernel later.</p>
-<pre><code>  // intialization code here
-
-  for (int y = -size / 2; y &lt;= size / 2; y++) // -size / 2 to size / 2
-  {
-      for (int x = -size / 2; x &lt;= size / 2; x++) // -size / 2 to size / 2
-      {
-          float distance = x * x + y * y; 
-          float weight = Mathf.Exp(-distance / twoSigmaSquare); 
-          kernel[y + size / 2, x + size / 2] = weight; 
-          totalWeight += weight;
-      }
-  }
-</code></pre></li>
-<li><p><strong>Kernel Normalization:</strong>  After calculating all the weights, the kernel is normalized to ensure that the sum of all the weights equals 1. This step is essential to maintain the overall brightness of the image during blurring. The nested loops iterate over each element of the <code>kernel</code> array again. Each weight is divided by the <code>totalWeight</code>, effectively scaling down the weights to ensure their sum equals 1. And then the <code>kernel</code> is returned.</p>
-<pre><code>  // intialization code here
-
-  // weight calculation code here
-
-  for (int y = 0; y &lt; size; y++)
-  {
-      for (int x = 0; x &lt; size; x++)
-      {
-          kernel[y, x] /= totalWeight;
-      }
-  }
-
-  return kernel;
-</code></pre></li>
-<li><p><strong>Applying the Gaussian Kernel</strong>
-The gaussian kernel created above is applied to the pixels of the image thereby convulating the kernel with the particular pixel and its neighbouring pixels, thus calculating the weighted sum of their colors. This sum becomes the new color value for the central pixel, resulting in the blurring effect.</p>
-</li>
-<li><p><strong>Input Parameters:</strong> The <code>ApplyKernel()</code> method takes a Texture2D as input along with a <code>kernel</code>, <code>x</code>, <code>y</code> (position within the image) and <code>size</code> of the kernel as the parameter. It then calculates and returns the weighted average of colors in the neighborhood around the (x, y) position using the provided Gaussian kernel.</p>
-<pre><code>  private Color ApplyKernel(Texture2D texture, int x, int y, float[,] kernel, int size) {}
-</code></pre></li>
-<li><p><strong>Initialization:</strong> The 3 float variables for the RGB values are initalized to accumulate the weighted sum of red, green, and blue color channels. The half-size of the kernel is calculated as well and this is used to determine the bounds of the neighborhood around the (x, y) position.</p>
-<pre><code>  float r = 0f, g = 0f, b = 0f;
-  int halfSize = size / 2;
-</code></pre></li>
-<li><p><strong>Looping through the Kernel:</strong> Nested for loops iterate over each cell in kernel. The outer <code>j</code> loop iterates over the rows of the kernel whereas the inner <code>i</code> loop iterates over its columns. </p>
-<pre><code>  for (int j = 0; j &lt; size; j++)
-  {
-      for (int i = 0; i &lt; size; i++)
-      {
-
-      }
-  }
-</code></pre></li>
-<li><p><strong>Calculating pixel coordinates of Input Image:</strong> <code>offsetX</code> and <code>offsetY</code> is calculated inside the loop to represent the corresponding pixel coordinates in the input image based on the current <code>x</code> and <code>y</code> position within the image and the <code>i</code> and <code>j</code> indices. Both these values are clamped to the bounds of the image.</p>
-<pre><code>  int offsetX = x + i - halfSize;
-  int offsetY = y + j - halfSize;
-
-  offsetX = Mathf.Clamp(offsetX, 0, texture.width - 1);
-  offsetY = Mathf.Clamp(offsetY, 0, texture.height - 1);
-</code></pre></li>
-<li><p><strong>Retrieving and Updating the color values of pixels:</strong> The color values of pixels at calculated coordinates <code>offsetX</code> and <code>offsetY</code> are retrieved from the input texture. The RGB values intialized earlier are updated by adding the color values retrieved multiplied by the weight value from the Gaussian Kernel matrix from the <code>i</code> and <code>j</code> position. The final color obtained is returned.</p>
-<pre><code>  Color pixel = texture.GetPixel(offsetX, offsetY);
-  float weight = kernel[j, i];
-
-  r += pixel.r * weight;
-  g += pixel.g * weight;
-  b += pixel.b * weight;
-</code></pre></li>
-<li><p><strong>Applying the Gaussian Blur</strong> 
-Now we apply the gaussian blur to the image by calculating the kernel, processing the pixel and updating the image. </p>
-</li>
-<li><p><strong>Input Parameters:</strong> The <code>ApplyGaussianBlur()</code> method takes a Texture2D as input along with the <code>radius</code> of the Gaussian Blur needed (basically used as the size of the kernel) and returns the blurred texture.</p>
-<pre><code>  private Texture2D ApplyGaussianBlur(Texture2D sourceTexture, float radius) {}
-</code></pre></li>
-<li><p><strong>Calculating Kernel size and Kernel:</strong> The Kernel size is obtained by rounding the <code>radius</code> to the nearest integer, doubling it and then adding 1 to it, ensuring coverage of sufficient area around each pixel.</p>
-<pre><code>  int kernelSize = Mathf.RoundToInt(radius) * 2 + 1;
-  float[,] kernel = CreateGaussianKernel(kernelSize, radius);
-</code></pre></li>
-<li><p><strong>Creating Blurred Texture:</strong> A new <code>blurredTexture</code> with same dimensions as <code>sourceTexture</code> is initialized.</p>
-<pre><code>  Color[] pixels = sourceTexture.GetPixels();
-  Color[] blurredPixels = new Color[pixels.Length];
-</code></pre></li>
-<li><p><strong>Iterating through pixels:</strong> A nested loop is used to access the pixels of the <code>sourceTexture</code>. For each pixel at (<code>x</code>, <code>y</code>), the <code>ApplyKernel()</code> function is called to calculate the new color of that pixel. The calculated blurrer color is stored in the corresponding position of the <code>blurredPixels</code> array.</p>
-<pre><code>  for (int y = 0; y &lt; sourceTexture.height; y++)
-  {
-      for (int x = 0; x &lt; sourceTexture.width; x++)
-      {
-          Color blurredColor = ApplyKernel(sourceTexture, x, y, kernel, kernelSize);
-          blurredPixels[y * sourceTexture.width + x] = blurredColor;
-      }
-  }
-</code></pre></li>
-<li><p><strong>Applying Blurred pixels to the Texture:</strong> After processing all the pixels, the <code>blurredPixels</code> array is assigned to the <code>blurredTexture</code> and it is returned.</p>
-<pre><code>  blurredTexture.SetPixels(blurredPixels);
-  blurredTexture.Apply();
-
-  return blurredTexture;
-</code></pre></li>
-<li><p><strong>Blurred Sprite:</strong> A sprite is created from the blurred texture and is applied to the image.</p>
-<pre><code>  Sprite blurredSprite = Sprite.Create(blurredTexture,
-                                      new Rect(0, 0, blurredTexture.width, blurredTexture.height),
-                                      new Vector2(0.5f, 0.5f));
-  image.sprite = blurredSprite;
-</code></pre><table class="custom-table" style="width: 100%;">
-  <tr>
-      <td style="text-align: center;">
-          <img src="/assets/images/prev/blurRadius.png" alt="Gaussian Blur Control">
-          <br>
-          <strong>Gaussian Blur Control</strong>
-      </td>
-  </tr>
-</table>
-
-
-</li>
-</ul>
-<h2 id="3-0-image-compressor"><strong>3.0 Image Compressor</strong></h2>
-<p><strong><strong>The blog is still in Works</strong></strong></p>
-</div><div class="tools">C#, HLSL, Unity</div><br class="clear"></article></div></section><script>var jsonMap = {"collider-optimizer-unity":"Unity Collider Optimizer - Optimizes Mesh & Polygon colliders in Unity","raymarching-engine-unity":"Raymarching Engine - A raymarching engine for Unity that supports 28+ primitives and set operations","shapes-dataset-generator":"3D Shapes Dataset Generator - Helps procedurally generate tailored 3D shape datasets","hypercasual-games":"Hypercasual Games - Hypercasual Games and Prototypes I've worked upon","gamejam-entries":"Gamejam Entries - My participation in various gamejams","blogs":"Blogs - I write sometimes","lighting-system-2d":"2D lighting system - Making a 2D lighting system for the game Two Opposites","fiea-summer":"FIEA Summer Internship Work - Work at FIEA (Summer Internship) - Documented","image-editor-unity":"Image Editor developed in Unity - A janky photo editor that transforms any image into a “low-quality-meme”"};</script><script src="/assets/js/oxism.js?v=cb90716cd1e304787459e4d2bd48c63d"></script><script>(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+</div><div class="tools">Unreal Engine, Game Design</div><br class="clear"></article></div></section><script>var jsonMap = {"collider-optimizer-unity":"Unity Collider Optimizer - Optimizes Mesh & Polygon colliders in Unity","raymarching-engine-unity":"Raymarching Engine - A raymarching engine for Unity that supports 28+ primitives and set operations","shapes-dataset-generator":"3D Shapes Dataset Generator - Helps procedurally generate tailored 3D shape datasets","hypercasual-games":"Hypercasual Games - Hypercasual Games and Prototypes I've worked upon","gamejam-entries":"Gamejam Entries - My participation in various gamejams","blogs":"Blogs - I write sometimes","lighting-system-2d":"2D lighting system - Making a 2D lighting system for the game Two Opposites","fiea-summer":"FIEA Summer Internship Work - Work at FIEA (Summer Internship) - Documented","image-editor-unity":"Image Editor developed in Unity - A janky photo editor that transforms any image into a “low-quality-meme”"};</script><script src="/assets/js/oxism.js?v=cb90716cd1e304787459e4d2bd48c63d"></script><script>(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
 (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
 m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
 })(window,document,'script','//www.google-analytics.com/analytics.js','ga');

@@ -65,3 +65,11 @@
   images:  ['/prev/SoulShard (2).png', '/prev/19SOB.png']
   imageCount: 2
   tags:    ['Unreal Engine', 'Game Design']
+
+'image-editor-unity':
+  display: 'Image Editor developed in Unity'
+  line:    'A janky photo editor that transforms any image into a “low-quality-meme”'
+  dontDisplay: true
+  images:  ['/prev/Icon_Editor.png', '/prev/Editor_UI.jpg']
+  imageCount: 2
+  tags:    ['C#', 'HLSL', 'Unity']
