@@ -538,6 +538,8 @@ pre
   justify-content: center;
   align-items: center;
   font-family: $helv
+  width: 75rem !important
+  height: 75rem !important
 }
 
 .center-container .caption {
@@ -550,7 +552,7 @@ pre
   transition transform .3s ease-out
 
   &:hover
-    transform scale(1.05)
+    transform scale(1.05) !important
 
 pdf-container {
     width: 100%;
@@ -596,4 +598,23 @@ nav#grid {
     flex-wrap: wrap; 
     align-items: flex-start;
     justify-content: center;
+}
+
+@media only screen and (max-aspect-ratio: 10/16) {
+    .flex-container {
+        flex-direction: column;
+    }
+
+    nav#grid {
+        flex-direction: column;
+    }
+
+    .center-container {
+      width: 45rem !important
+      height: 45rem !important
+    }
+
+    #info, #meta {
+        width: 100%; /* Takes full width on portrait screens */
+    }
 }
