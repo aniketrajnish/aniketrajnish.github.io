@@ -3,6 +3,7 @@ html.no-js(lang='en')
   head
     include common
     title= locals.target ? locals.title : 'Aniket Rajnish'
+    link(rel="stylesheet", href="/assets/css/lightbox.css")
 
   body(class=locals.target ? 'perma' : '')
 
@@ -65,4 +66,6 @@ html.no-js(lang='en')
     script.
       var jsonMap = !{ locals.jsonMap };
     script(src='/assets/js/oxism.js?v=' + hashes.script)
+    script(src="/assets/js/lightbox.js")
+    script(src='./node_modules/jquery/dist/jquery.min.js')
     include analytics

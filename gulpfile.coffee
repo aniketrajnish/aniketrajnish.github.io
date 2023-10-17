@@ -92,5 +92,15 @@ gulp.task 'watch', ['server'], ->
   gulp.watch 'src/*.coffee', ['scripts']
   gulp.watch 'src/*.styl', ['styles']
 
+gulp.task 'lightbox-styles', ->
+  gulp.src 'node_modules/lightbox2/dist/css/lightbox.css'
+    .pipe(stylus(use: nib(), compress: true).on 'error', onErr)
+    .pipe(gulp.dest 'assets/css/')
+
+gulp.task 'lightbox-scripts', ->
+  gulp.src 'node_modules/lightbox2/dist/js/lightbox.js'
+    .pipe(uglify())
+    .pipe(gulp.dest 'assets/js/')
+
 
 gulp.task 'default', ['templates', 'scripts', 'styles']

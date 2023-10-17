@@ -2,7 +2,10 @@
 
 <table class="custom-table">
   <tr>
-    <td><img src="https://github.com/aniketrajnish/Unity-Collider-Optimizer/assets/58925008/62a658c3-487c-4d80-b303-b96a74804a99" alt="Original Sprite"></td>
+    <td><a href="https://github.com/aniketrajnish/Unity-Collider-Optimizer/assets/58925008/62a658c3-487c-4d80-b303-b96a74804a99" data-lightbox="polygon-collider-optimizer" data-title="">
+    <img src="https://github.com/aniketrajnish/Unity-Collider-Optimizer/assets/58925008/62a658c3-487c-4d80-b303-b96a74804a99" alt="Original Sprite">
+    </a>
+    </td>
     <td><img src="https://github.com/aniketrajnish/Unity-Collider-Optimizer/assets/58925008/cc114920-5bcd-4f06-81ad-9df9a176055d" alt="Unity Polygon Collider"></td>
     <td><img src="https://github.com/aniketrajnish/Unity-Collider-Optimizer/assets/58925008/dfd8c63e-11ed-4a74-a2e1-45e2829f017e" alt="Optimized Polygon Collider"></td>
   </tr>

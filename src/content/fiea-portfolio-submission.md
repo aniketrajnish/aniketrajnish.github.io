@@ -8,7 +8,9 @@ As the title suggests, this blog shall contain some of my favorite pieces of cod
 <table class="custom-table" style="width: 100%;">
     <tr>
         <td style="text-align: center;">
-            <img src="/assets/images/prev/2dlightsys.gif" alt="The first iteration">
+            <a href="/assets/images/prev/2dlightsys.gif" data-lightbox="image-1" data-title="The first iteration">
+                <img src="/assets/images/prev/2dlightsys.gif" alt="The first iteration">
+            </a>
             <br>
             <strong>The first iteration</strong>
         </td>

@@ -21,6 +21,8 @@
     "gulp-stylus": "^2.0.1",
     "gulp-uglify": "^2.0.0",
     "gulp-util": "^3.0.1",
+    "jquery": "^3.7.1",
+    "lightbox2": "^2.11.4",
     "live-server": "^1.0.0",
     "marked": "^0.3.2",
     "nib": "^1.0.4"
