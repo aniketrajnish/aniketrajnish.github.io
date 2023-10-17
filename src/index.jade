@@ -6,40 +6,45 @@ html.no-js(lang='en')
 
   body(class=locals.target ? 'perma' : '')
 
-    nav#grid
-      #info
-        div
-          .cover
-            h1 Aniket<br>Rajnish
-            br
-            h2 Portfolio
-          .image
+    .flex-container()
+      nav#grid()
+        #info
+          div
+            .cover
+              h1 Aniket<br>Rajnish
+              br
+              h2 Portfolio
+            .image
 
-      #meta
-        div
-          .cover
-            div
-              a.button#email email
-              a.button(href='https://www.linkedin.com/in/makra2077/') linkedin
-              a.button(href='https://github.com/aniketrajnish') github
-              a.button(href='/assets/pdf/AR_Resume.pdf') resume 
-              a.button(href='/works/blogs') blogs             
-
-      each val, key in locals.map
-        if !val.dontDisplay
-          if val.isMajor
-            a.major(id=key + '-link', href='/works/' + key)
+        #meta
+          div
+            .cover
               div
-                .cover
-                  h2!= val.gridName || val.display
-                .image
+                a.button#email email
+                a.button(href='https://www.linkedin.com/in/makra2077/') linkedin
+                a.button(href='https://github.com/aniketrajnish') github
+                a.button(href='/assets/pdf/AR_Resume.pdf') resume 
+                a.button(href='/works/blogs') blogs             
 
-          else
-            a(id=key + '-link', href='/works/' + key)
-              div
-                .cover
-                  h2!= val.gridName || val.display
+        each val, key in locals.map
+          if !val.dontDisplay
+            if val.isMajor
+              a.major(id=key + '-link', href='/works/' + key)
+                div
+                  .cover
+                    h2!= val.gridName || val.display
+                  .image
 
+            else
+              a(id=key + '-link', href='/works/' + key)
+                div
+                  .cover
+                    h2!= val.gridName || val.display
+
+        .center-container(style='width: 75rem; height: 75rem; perspective: 500rem')  
+          figure(style='display: flex; flex-direction: column; width: 100%; margin: 20px;')
+            video(controls loop playsinline src='/assets/images/demoreel.mp4' style='border: 5px solid white; border-radius: 30px; width: 100%;')
+            figcaption.caption(style='color: white; margin-top: 10px;') Demo Reel
 
     section#perma
       #perma-content
@@ -61,12 +66,3 @@ html.no-js(lang='en')
       var jsonMap = !{ locals.jsonMap };
     script(src='/assets/js/oxism.js?v=' + hashes.script)
     include analytics
-
-
-.center-container
-  figure(style='display: flex; flex-direction: column; align-items: center; width: 40%; margin: 20px auto;')
-    video(controls loop playsinline src='/assets/images/demoreel.mp4' style='border: 5px solid white; border-radius: 30px; width: 100%;')
-    figcaption.caption(style='color: white; margin-top: 10px;') Demo Reel
-
-
-
