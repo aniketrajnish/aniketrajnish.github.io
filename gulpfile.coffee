@@ -103,4 +103,4 @@ gulp.task 'lightbox-scripts', ->
     .pipe(gulp.dest 'assets/js/')
 
 
-gulp.task 'default', ['templates', 'scripts', 'styles']
+gulp.task 'default', ['templates', 'scripts', 'styles', 'lightbox-styles', 'lightbox-scripts']

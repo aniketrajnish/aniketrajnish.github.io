@@ -10,9 +10,11 @@ Initially, I designed various cloud textures with separate RGB channels for Base
 <table class="custom-table">
     <tr>
         <td>
-            <img src="/assets/images/prev/CloudRGB.png" alt="example image" >
+            <a href="/assets/images/prev/CloudRGB.png" data-lightbox="image-cloud-texture" data-title="Cloud Texture">
+                <img src="/assets/images/prev/CloudRGB.png" alt="Cloud Texture" >
+            </a>
         </td>
-    </tr>    
+    </tr>
 </table>
 
 ## 1.2 Smoke Material
@@ -21,9 +23,11 @@ Initially, I designed various cloud textures with separate RGB channels for Base
 <table class="custom-table">
     <tr>
         <td>
-            <img src="/assets/images/prev/CloudMat.png" alt="example image" >
+            <a href="/assets/images/prev/CloudMat.png" data-lightbox="image-smoke-material" data-title="Smoke Material">
+                <img src="/assets/images/prev/CloudMat.png" alt="Smoke Material" >
+            </a>
         </td>
-    </tr>    
+    </tr>
 </table>
 
 ## 1.3 Smoke Particles - 1st iteration
@@ -34,9 +38,11 @@ Initially, I designed various cloud textures with separate RGB channels for Base
 <table class="custom-table">
     <tr>
         <td>
-            <img src="/assets/images/prev/Smoke1.gif" alt="example image" >
+            <a href="/assets/images/prev/Smoke1.gif" data-lightbox="image-smoke-1" data-title="Smoke Particles - 1st iteration">
+                <img src="/assets/images/prev/Smoke1.gif" alt="Smoke Particles - 1st iteration" >
+            </a>
         </td>
-    </tr>    
+    </tr>
 </table>
 
 ## 1.4 Smoke Particles - 2nd iteration
@@ -46,18 +52,23 @@ Initially, I designed various cloud textures with separate RGB channels for Base
 <table class="custom-table">
     <tr>
         <td>
-            <img src="/assets/images/prev/Smoke2.gif" alt="example image" >
+            <a href="/assets/images/prev/Smoke2.gif" data-lightbox="image-smoke-2" data-title="Smoke Particles - 2nd iteration">
+                <img src="/assets/images/prev/Smoke2.gif" alt="Smoke Particles - 2nd iteration" >
+            </a>
         </td>
-    </tr>    
+    </tr>
 </table>
 
 ## 1.5 Debris Texture
 The debris texture was made in photoshop using online reference images and the brush tool.<table class="custom-table">
+<table class="custom-table">
     <tr>
         <td>
-            <img src="/assets/images/prev/DebrisTex.png" alt="example image" >
+            <a href="/assets/images/prev/DebrisTex.png" data-lightbox="image-debris-texture" data-title="Debris Texture">
+                <img src="/assets/images/prev/DebrisTex.png" alt="Debris Texture" >
+            </a>
         </td>
-    </tr>    
+    </tr>
 </table>
 
 ## 1.6 Debris Material
@@ -65,9 +76,11 @@ The debris material was created using the debris texture in a similar fashion to
 <table class="custom-table">
     <tr>
         <td>
-            <img src="/assets/images/prev/DebrisMat.png" alt="example image" >
+            <a href="/assets/images/prev/DebrisMat.png" data-lightbox="image-debris-material" data-title="Debris Material">
+                <img src="/assets/images/prev/DebrisMat.png" alt="Debris Material" >
+            </a>
         </td>
-    </tr>    
+    </tr>
 </table>
 
 ## 1.7 Smoke Particles - 3rd iteration
@@ -77,9 +90,11 @@ The debris material was created using the debris texture in a similar fashion to
 <table class="custom-table">
     <tr>
         <td>
-            <img src="/assets/images/prev/Smoke3.gif" alt="example image" >
+            <a href="/assets/images/prev/Smoke3.gif" data-lightbox="image-smoke-3" data-title="Smoke Particles - 3rd iteration">
+                <img src="/assets/images/prev/Smoke3.gif" alt="Smoke Particles - 3rd iteration" >
+            </a>
         </td>
-    </tr>    
+    </tr>
 </table>
 
 ## 1.8 Spark Texture
@@ -87,9 +102,11 @@ The spark texture with separate RGB channels was obtained online.
 <table class="custom-table">
     <tr>
         <td>
-            <img src="/assets/images/prev/Spark.png" alt="example image" >
+            <a href="/assets/images/prev/Spark.png" data-lightbox="image-spark-texture" data-title="Spark Texture">
+                <img src="/assets/images/prev/Spark.png" alt="Spark Texture" >
+            </a>
         </td>
-    </tr>    
+    </tr>
 </table>
 
 ## 1.9 Spark Material
@@ -99,9 +116,11 @@ The spark texture with separate RGB channels was obtained online.
 <table class="custom-table">
     <tr>
         <td>
-            <img src="/assets/images/prev/SparkMat.png" alt="example image" >
+            <a href="/assets/images/prev/SparkMat.png" data-lightbox="image-spark-material" data-title="Spark Material">
+                <img src="/assets/images/prev/SparkMat.png" alt="Spark Material" >
+            </a>
         </td>
-    </tr>    
+    </tr>
 </table>
 
 ## 1.10 Smoke Particles - Final iteration
@@ -109,9 +128,11 @@ The spark texture with separate RGB channels was obtained online.
 <table class="custom-table">
     <tr>
         <td>
-            <img src="/assets/images/prev/Smoke4.gif" alt="example image" >
+            <a href="/assets/images/prev/Smoke4.gif" data-lightbox="image-smoke-4" data-title="Smoke Particles - Final iteration">
+                <img src="/assets/images/prev/Smoke4.gif" alt="Smoke Particles - Final iteration" >
+            </a>
         </td>
-    </tr>    
+    </tr>
 </table>
 
 ## 1.11 Other Variations
@@ -119,19 +140,20 @@ Few other variations of the smoke system.
 <table class="custom-table">
     <tr>
         <td>
-            <img src="/assets/images/prev/Smoke5.gif" alt="Less stylized system" >
+            <a href="/assets/images/prev/Smoke5.gif" data-lightbox="image-smoke-5" data-title="Less stylized system">
+                <img src="/assets/images/prev/Smoke5.gif" alt="Less stylized system" >
+            </a>
         </td>
         <td>
-            <img src="/assets/images/prev/Smoke6.gif" alt="Debris only system" >
+            <a href="/assets/images/prev/Smoke6.gif" data-lightbox="image-smoke-6" data-title="Debris only system">
+                <img src="/assets/images/prev/Smoke6.gif" alt="Debris only system" >
+            </a>
         </td>
         <td>
-            <img src="/assets/images/prev/Smoke7.gif" alt="Puff system" >
+            <a href="/assets/images/prev/Smoke7.gif" data-lightbox="image-smoke-7" data-title="Puff system">
+                <img src="/assets/images/prev/Smoke7.gif" alt="Puff system" >
+            </a>
         </td>
-    </tr>
-    <tr>
-        <th>Less stylized system</th>
-        <th>Debris only system</th>
-        <th>Puff system</th>
     </tr>
 </table>
 
@@ -143,9 +165,11 @@ A stylized noise texture was created to serve as the opacity mask for the flame 
 <table class="custom-table">
     <tr>
         <td>
-            <img src="/assets/images/prev/NoiseTex.png" alt="example image" >
+            <a href="/assets/images/prev/NoiseTex.png" data-lightbox="image-noise-texture" data-title="Noise Texture">
+                <img src="/assets/images/prev/NoiseTex.png" alt="Noise Texture" >
+            </a>
         </td>
-    </tr>    
+    </tr>
 </table>
 
 ## 2.2 Flame Material
@@ -157,9 +181,11 @@ A stylized noise texture was created to serve as the opacity mask for the flame 
 <table class="custom-table">
     <tr>
         <td>
-            <img src="/assets/images/prev/FlameMat.gif" alt="example image" >
+            <a href="/assets/images/prev/FlameMat.gif" data-lightbox="image-flame-material" data-title="Flame Material">
+                <img src="/assets/images/prev/FlameMat.gif" alt="Flame Material" >
+            </a>
         </td>
-    </tr>    
+    </tr>
 </table>
 
 ## 2.3 Flame Particles - 1st iteration
@@ -169,9 +195,11 @@ A stylized noise texture was created to serve as the opacity mask for the flame 
 <table class="custom-table">
     <tr>
         <td>
-            <img src="/assets/images/prev/FlameVFX.gif" alt="example image" >
+            <a href="/assets/images/prev/FlameVFX.gif" data-lightbox="image-flame-1" data-title="Flame Particles - 1st iteration">
+                <img src="/assets/images/prev/FlameVFX.gif" alt="Flame Particles - 1st iteration" >
+            </a>
         </td>
-    </tr>    
+    </tr>
 </table>
 
 ## 2.4 Flame mesh
@@ -189,9 +217,11 @@ The flame material was created simply by assigning the particle color input to t
 <table class="custom-table">
     <tr>
         <td>
-            <img src="/assets/images/prev/FlameMat.png" alt="example image" >
+            <a href="/assets/images/prev/FlameMesh.png" data-lightbox="image-flame-mesh" data-title="Flame Mesh">
+                <img src="/assets/images/prev/FlameMesh.png" alt="Flame Mesh" >
+            </a>
         </td>
-    </tr>    
+    </tr>
 </table>
 
 ## 2.6 Flame Particles - Final iteration
@@ -203,9 +233,11 @@ The flame material was created simply by assigning the particle color input to t
 <table class="custom-table">
     <tr>
         <td>
-            <img src="/assets/images/prev/FlameVFX2.gif" alt="example image" >
+            <a href="/assets/images/prev/FlameVFX2.gif" data-lightbox="image-flame-2" data-title="Flame Particles - Final iteration">
+                <img src="/assets/images/prev/FlameVFX2.gif" alt="Flame Particles - Final iteration" >
+            </a>
         </td>
-    </tr>    
+    </tr>
 </table>
 
 ## 3.0 Footprint System
@@ -221,10 +253,14 @@ Further I was assigned the task to develop a snow-based footprint system over sn
     </tr>
     <tr>
         <td>
-            <img src="/assets/images/prev/AmbroseFI.png" alt="Ambrose Foot Impression" >
+            <a href="/assets/images/prev/AmbroseFI.png" data-lightbox="image-ambrose-foot-impression" data-title="Ambrose Foot Impression">
+                <img src="/assets/images/prev/AmbroseFI.png" alt="Ambrose Foot Impression">
+            </a>
         </td>
         <td>
-            <img src="/assets/images/prev/NimueFI.png" alt="Nimue Foot Impression" >
+            <a href="/assets/images/prev/NimueFI.png" data-lightbox="image-nimue-foot-impression" data-title="Nimue Foot Impression">
+                <img src="/assets/images/prev/NimueFI.png" alt="Nimue Foot Impression">
+            </a>
         </td>
     </tr>
     <tr>
@@ -236,16 +272,20 @@ Further I was assigned the task to develop a snow-based footprint system over sn
     </tr>    
     <tr>
         <td>
-            <img src="/assets/images/prev/AmbroseFPS1.png" alt="Ambrose Footprint Sprite" >
+            <a href="/assets/images/prev/AmbroseFPS1.png" data-lightbox="image-ambrose-footprint-sprite-1" data-title="Ambrose Footprint Sprite - 1st iteration">
+                <img src="/assets/images/prev/AmbroseFPS1.png" alt="Ambrose Footprint Sprite - 1st iteration">
+            </a>
         </td>
         <td>
-            <img src="/assets/images/prev/NimueFPS1.png" alt="Nimue Footprint Sprite" >
+            <a href="/assets/images/prev/NimueFPS1.png" data-lightbox="image-nimue-footprint-sprite-1" data-title="Nimue Footprint Sprite - 1st iteration">
+                <img src="/assets/images/prev/NimueFPS1.png" alt="Nimue Footprint Sprite - 1st iteration">
+            </a>
         </td>
     </tr>
     <tr>
-        <th>Ambrose Footprint Sprite</th>
-        <th>Nimue Footprint Sprite</th>
-    </tr>    
+        <th>Ambrose Footprint Sprite - 1st iteration</th>
+        <th>Nimue Footprint Sprite - 1st iteration</th>
+    </tr>
 </table>
 
 ## 3.2 Footprint Material - 1st iteration 
@@ -254,7 +294,9 @@ Further I was assigned the task to develop a snow-based footprint system over sn
 <table class="custom-table">
     <tr>
         <td>
-            <img src="/assets/images/prev/FPMat1.png" alt="example image" >
+            <a href="/assets/images/prev/FPMat1.png" data-lightbox="image-footprint-material-1" data-title="Footprint Material - 1st iteration">
+                <img src="/assets/images/prev/FPMat1.png" alt="Footprint Material - 1st iteration">
+            </a>
         </td>
     </tr>    
 </table>
@@ -266,7 +308,9 @@ Further I was assigned the task to develop a snow-based footprint system over sn
 <table class="custom-table">
     <tr>
         <td>
-            <img src="/assets/images/prev/FPBP.png" alt="example image" >
+            <a href="/assets/images/prev/FPBP.png" data-lightbox="image-footprint-blueprint" data-title="Footprint Blueprint">
+                <img src="/assets/images/prev/FPBP.png" alt="Footprint Blueprint">
+            </a>
         </td>
     </tr>    
 </table>
@@ -278,7 +322,9 @@ Further I was assigned the task to develop a snow-based footprint system over sn
 <table class="custom-table">
     <tr>
         <td>
-            <img src="/assets/images/prev/TPBP.png" alt="example image" >
+            <a href="/assets/images/prev/TPBP.png" data-lightbox="image-third-person-blueprint" data-title="Adding to the third person blueprint">
+                <img src="/assets/images/prev/TPBP.png" alt="Adding to the third person blueprint">
+            </a>
         </td>
     </tr>    
 </table>
@@ -295,13 +341,19 @@ Further I was assigned the task to develop a snow-based footprint system over sn
 <table class="custom-table">
     <tr>
         <td>
-            <img src="/assets/images/prev/AnimNoti.gif" alt="Adding run animation notifier" >
+            <a href="/assets/images/prev/AnimNoti.gif" data-lightbox="image-animation-notifier" data-title="Adding run animation notifier">
+                <img src="/assets/images/prev/AnimNoti.gif" alt="Adding run animation notifier">
+            </a>
         </td>
         <td>
-            <img src="/assets/images/prev/TPAnimBP.png" alt="Third person animation event graph" >
+            <a href="/assets/images/prev/TPAnimBP.png" data-lightbox="image-third-person-animation-blueprint" data-title="Third person animation event graph">
+                <img src="/assets/images/prev/TPAnimBP.png" alt="Third person animation event graph">
+            </a>
         </td>
         <td>
-            <img src="/assets/images/prev/TPCharBP.png" alt="Third person character event graph" >
+            <a href="/assets/images/prev/TPCharBP.png" data-lightbox="image-third-person-character-blueprint" data-title="Third person character event graph">
+                <img src="/assets/images/prev/TPCharBP.png" alt="Third person character event graph">
+            </a>
         </td>
     </tr>
     <tr>
@@ -314,7 +366,9 @@ Further I was assigned the task to develop a snow-based footprint system over sn
 <table class="custom-table">
     <tr>
         <td>
-            <img src="/assets/images/prev/FP1.gif" alt="First Output" >
+            <a href="/assets/images/prev/FP1.gif" data-lightbox="image-first-output" data-title="First Output">
+                <img src="/assets/images/prev/FP1.gif" alt="First Output">
+            </a>
         </td>
     </tr>
     <tr>
@@ -323,7 +377,7 @@ Further I was assigned the task to develop a snow-based footprint system over sn
 </table>
 
 ## 3.6 Footprint Sprites - Final iteration
-The team pinpointed that the current footprint lacked originality as snow footprints are generally a little darker (dark grey/blue) with blue tint on the edges. Apart from this, they suggested to add normal information to the footprints aswell.
+The team pinpointed that the current footprint lacked originality as snow footprints are generally a little darker (dark grey/blue) with blue tint on the edges. Apart from this, they suggested to add normal information to the footprints as well.
 * I decreased the exposure of the textures, added bluish tint on the edges using the brush (Chalk 2) tool.
 * Further, I generated the normals using the inbuilt 3D tools provided in Photoshop. (which turned out to be one of my most laggy workflow experiences with Photoshop).
 <table class="custom-table">
@@ -332,10 +386,14 @@ The team pinpointed that the current footprint lacked originality as snow footpr
     </tr>
     <tr>
         <td>
-            <img src="/assets/images/prev/AmbroseFPS2.png" alt="New Ambrose Footprint Texture" >
+            <a href="/assets/images/prev/AmbroseFPS2.png" data-lightbox="image-new-ambrose-footprint-texture" data-title="New Ambrose Footprint Texture">
+                <img src="/assets/images/prev/AmbroseFPS2.png" alt="New Ambrose Footprint Texture">
+            </a>
         </td>
         <td>
-            <img src="/assets/images/prev/NimueFPS2.png" alt="New Nimue Footprint Texture" >
+            <a href="/assets/images/prev/NimueFPS2.png" data-lightbox="image-new-nimue-footprint-texture" data-title="New Nimue Footprint Texture">
+                <img src="/assets/images/prev/NimueFPS2.png" alt="New Nimue Footprint Texture">
+            </a>
         </td>
     </tr>
     <tr>
@@ -347,10 +405,14 @@ The team pinpointed that the current footprint lacked originality as snow footpr
     </tr>
     <tr>
         <td>
-            <img src="/assets/images/prev/AmbroseFPN.png" alt="Ambrose footprint normal" >
+            <a href="/assets/images/prev/AmbroseFPN.png" data-lightbox="image-ambrose-footprint-normals" data-title="Ambrose footprint normal">
+                <img src="/assets/images/prev/AmbroseFPN.png" alt="Ambrose footprint normal">
+            </a>
         </td>
         <td>
-            <img src="/assets/images/prev/NimueFPN.png" alt="Nimue footprint normal" >
+            <a href="/assets/images/prev/NimueFPN.png" data-lightbox="image-nimue-footprint-normals" data-title="Nimue footprint normal">
+                <img src="/assets/images/prev/NimueFPN.png" alt="Nimue footprint normal">
+            </a>
         </td>
     </tr>
     <tr>
@@ -364,14 +426,18 @@ The footprint material was modified to support normal information and the normal
 <table class="custom-table">
     <tr>
         <td>
-            <img src="/assets/images/prev/FPMat2.png" alt="example image" >
+            <a href="/assets/images/prev/FPMat2.png" data-lightbox="image-footprint-material-2" data-title="Footprint Material - Final iteration">
+                <img src="/assets/images/prev/FPMat2.png" alt="Footprint Material - Final iteration">
+            </a>
         </td>
     </tr>    
 </table>
 <table class="custom-table">
     <tr>
         <td>
-            <img src="/assets/images/prev/FP2.gif" alt="example image" >
+            <a href="/assets/images/prev/FP2.gif" data-lightbox="image-final-output" data-title="Final Output">
+                <img src="/assets/images/prev/FP2.gif" alt="Final Output">
+            </a>
         </td>
     </tr>
     <tr>
@@ -391,20 +457,24 @@ My next task was to design and develop a snowstorm system for the yard area. I w
 <table class="custom-table">
     <tr>
         <td>
-            <img src="/assets/images/prev/Snow1.gif" alt="example image" >
+            <a href="/assets/images/prev/Snow1.gif" data-lightbox="image-snow-particles" data-title="Snow Particles">
+                <img src="/assets/images/prev/Snow1.gif" alt="Snow Particles">
+            </a>
         </td>
     </tr>    
 </table>
 
 ## 4.2 Wind Material
-As I had anticipated, I was suggested to add more depth to the snowstorm. The idea was to make the snow more dramatic by introducing a wind system. They provided a [reference video](https://www.youtube.com/watch?v=sGkh1W5cbH4) aswell.
+As I had anticipated, I was suggested to add more depth to the snowstorm. The idea was to make the snow more dramatic by introducing a wind system. They provided a [reference video](https://www.youtube.com/watch?v=sGkh1W5cbH4) as well.
 * A translucent unlit material was chosen for the wind particles.
 * The emissive color was made to be driven by the particle color. 
 * The opacity was controlled by the multiplication of the alpha value of the particle with a RadialGradientExponential to introduce a smooth gradient fall-off that would make the wind look natural.
 <table class="custom-table">
     <tr>
         <td>
-            <img src="/assets/images/prev/WindMat.png" alt="example image" >
+            <a href="/assets/images/prev/WindMat.png" data-lightbox="image-wind-material" data-title="Wind Material">
+                <img src="/assets/images/prev/WindMat.png" alt="Wind Material">
+            </a>
         </td>
     </tr>    
 </table>
@@ -420,7 +490,9 @@ As I had anticipated, I was suggested to add more depth to the snowstorm. The id
 <table class="custom-table">
     <tr>
         <td>
-            <img src="/assets/images/prev/WindPart.gif" alt="example image" >
+            <a href="/assets/images/prev/WindPart.gif" data-lightbox="image-wind-particles" data-title="Wind Particles">
+                <img src="/assets/images/prev/WindPart.gif" alt="Wind Particles">
+            </a>
         </td>
     </tr>    
 </table>
@@ -430,7 +502,9 @@ As I had anticipated, I was suggested to add more depth to the snowstorm. The id
 <table class="custom-table">
     <tr>
         <td>
-            <img src="/assets/images/prev/FogTex.png" alt="example image" >
+            <a href="/assets/images/prev/FogTex.png" data-lightbox="image-fog-texture" data-title="Fog Texture">
+                <img src="/assets/images/prev/FogTex.png" alt="Fog Texture">
+            </a>
         </td>
     </tr>    
 </table>
@@ -439,12 +513,14 @@ As I had anticipated, I was suggested to add more depth to the snowstorm. The id
 * A volume-based material with additive blending is created for the fog to be volumetric.
 * A sphere mask between world and particle position with particle radius as the mask's radius is used to control the rate of light absorption (extinction) of the material.
 * The mask is parametrically controlled by a hardness and extinction value multiplied by RGB value of the texture I obtained earlier.
-* The albedo of the material takes in the mutiplication of the sphere mask and the blend overlay between our texture and a RGB value parameter which we can control in the instance of that material.
+* The albedo of the material takes in the multiplication of the sphere mask and the blend overlay between our texture and a RGB value parameter which we can control in the instance of that material.
 * Thus we can control the hardness, light absorption rate and the color of the fog.
 <table class="custom-table">
     <tr>
         <td>
-            <img src="/assets/images/prev/FogMat.png" alt="example image" >
+            <a href="/assets/images/prev/FogMat.png" data-lightbox="image-fog-material" data-title="Fog Material">
+                <img src="/assets/images/prev/FogMat.png" alt="Fog Material">
+            </a>
         </td>
     </tr>    
 </table>
@@ -457,10 +533,14 @@ As I had anticipated, I was suggested to add more depth to the snowstorm. The id
 <table class="custom-table">
     <tr>
         <td>
-            <img src="/assets/images/prev/FogEH.gif" alt="Fog Extinction & Hardness" >
+            <a href="/assets/images/prev/FogEH.gif" data-lightbox="image-fog-extinction-hardness" data-title="Fog Extinction & Hardness">
+                <img src="/assets/images/prev/FogEH.gif" alt="Fog Extinction & Hardness">
+            </a>
         </td>
         <td>
-            <img src="/assets/images/prev/FogCol.gif" alt="Fog Color" >
+            <a href="/assets/images/prev/FogCol.gif" data-lightbox="image-fog-color" data-title="Fog Color">
+                <img src="/assets/images/prev/FogCol.gif" alt="Fog Color">
+            </a>
         </td>
     </tr>
     <tr>
@@ -473,7 +553,9 @@ As I had anticipated, I was suggested to add more depth to the snowstorm. The id
 <table class="custom-table">
     <tr>
         <td>
-            <img src="/assets/images/prev/SnowStormFinal.gif" alt="Snowstorm system" >
+            <a href="/assets/images/prev/SnowStormFinal.gif" data-lightbox="image-snowstorm-system" data-title="Snowstorm System">
+                <img src="/assets/images/prev/SnowStormFinal.gif" alt="Snowstorm System">
+            </a>
         </td>
     </tr>
 </table>
@@ -490,18 +572,22 @@ Fortunately, Unreal comes preloaded with cable actors with rope physics for on-t
 <table class="custom-table">
     <tr>
         <td>
-            <img src="/assets/images/prev/Cable.gif" alt="example image" >
+            <a href="/assets/images/prev/Cable.gif" data-lightbox="image-cable-actors" data-title="Cable Actors">
+                <img src="/assets/images/prev/Cable.gif" alt="Cable Actors">
+            </a>
         </td>
     </tr>    
 </table>
 
 
 ## 6.0 Glowing Crack Material
-The team then assigned me the task to come up with materials with glowing cracks. They provided me with [references](https://assetstore.unity.com/packages/vfx/particles/spells/mesh-effects-67803#description) aswell.
+The team then assigned me the task to come up with materials with glowing cracks. They provided me with [references](https://assetstore.unity.com/packages/vfx/particles/spells/mesh-effects-67803#description) as well.
 <table class="custom-table">
     <tr>
         <td>
-            <img src="/assets/images/prev/gcrackref.png" alt="example image" >
+            <a href="/assets/images/prev/gcrackref.png" data-lightbox="image-glowing-crack-material" data-title="Glowing Crack Material">
+                <img src="/assets/images/prev/gcrackref.png" alt="Glowing Crack Material">
+            </a>
         </td>
     </tr>    
 </table>
@@ -509,16 +595,20 @@ The team then assigned me the task to come up with materials with glowing cracks
 ## 6.1 Crack textures
 * As the reference for the material that I was provided with was a Unity asset, I tried reverse engineering the properties of the material to recreate it in Unreal.
 * I could make out that a single color channel of the base map (Albedo) was inverted and clamped between 0 and 1 and was multiplied with the emissivity input for the material.
-* The single channel input texture ensured that the light emitted took greyscale values according to the base map and we could control the intensity, rate, color tint, etc through the emissivity input.
+* The single channel input texture ensured that the light emitted took grayscale values according to the base map and we could control the intensity, rate, color tint, etc through the emissivity input.
 * A normal map was also used to add depth information to the cracks to make them look more realistic.
 * So I imported a non-uniform galvanized metal's texture maps (base & normal) from the Quixel Bridge for this purpose.
 <table class="custom-table">
     <tr>
         <td>
-            <img src="/assets/images/prev/CrackBase.png" alt="Base Map" >
+            <a href="/assets/images/prev/CrackBase.png" data-lightbox="image-crack-base-texture" data-title="Base Map">
+                <img src="/assets/images/prev/CrackBase.png" alt="Base Map">
+            </a>
         </td>
         <td>
-            <img src="/assets/images/prev/CrackNormal.png" alt="Normal Map" >
+            <a href="/assets/images/prev/CrackNormal.png" data-lightbox="image-crack-normal-map" data-title="Normal Map">
+                <img src="/assets/images/prev/CrackNormal.png" alt="Normal Map">
+            </a>
         </td>
     </tr>
     <tr>
@@ -533,12 +623,14 @@ The team then assigned me the task to come up with materials with glowing cracks
 * The sine input is given a `Rate` factor as its frequency, to control the rate of pulsation.
 * Then the wave is given an offset governed by the `Pulse Intensity`. Its value is preferably kept to be greater than one to avoid negative waves (this prevents lag between the pulse cycles).
 * The offseted wave function is amplified by a `Glow Intensity` factor to control the amplitude of the glow.
-* Finally the entire amplified function is multiplied by an `Emissive Color` Vector parameter which governs the color of the glow.
+* Finally, the entire amplified function is multiplied by an `Emissive Color` Vector parameter which governs the color of the glow.
 * The `Rate, Pulse Intensity, Glow Intensity, Emissive Color` are parametrically exposed to be controlled by the instance of that material.
 <table class="custom-table">
     <tr>
         <td>
-            <img src="/assets/images/prev/EmissionParameter.png" alt="example image" >
+            <a href="/assets/images/prev/EmissionParameter.png" data-lightbox="image-emission-parameters" data-title="Emission Parameters">
+                <img src="/assets/images/prev/EmissionParameter.png" alt="Emission Parameters">
+            </a>
         </td>
     </tr>    
 </table>
@@ -550,12 +642,14 @@ The team then assigned me the task to come up with materials with glowing cracks
 * The normal map is assigned as the material's normal as it is.
 * The shape of the emission is governed by a single color channel of the base map (all three were tried and the Red channel felt the most appealing to the eyes).
 * The color input is inverted using 1-x node and it is assigned a `Coverage` parameter as the exponent.
-* The value is clamped between 0 and 1 and is multiplied by amplified function obtained above and finally assigned to the emissive color property of the material. 
+* The value is clamped between 0 and 1 and is multiplied by the amplified function obtained above and finally assigned to the emissive color property of the material. 
 * The `Base Tint & Coverage` are parametrically exposed to be controlled by the instance of that material.
 <table class="custom-table">
     <tr>
         <td>
-            <img src="/assets/images/prev/EmissionShape.png" alt="example image" >
+            <a href="/assets/images/prev/EmissionShape.png" data-lightbox="image-emission-shape" data-title="Emission Shape">
+                <img src="/assets/images/prev/EmissionShape.png" alt="Emission Shape">
+            </a>
         </td>
     </tr>    
 </table>
@@ -564,10 +658,14 @@ The team then assigned me the task to come up with materials with glowing cracks
 <table class="custom-table">
     <tr>
         <td>
-            <img src="/assets/images/prev/Coverage.gif" alt="Changing Coverage" >
+            <a href="/assets/images/prev/Coverage.gif" data-lightbox="image-changing-coverage" data-title="Changing Coverage">
+                <img src="/assets/images/prev/Coverage.gif" alt="Changing Coverage">
+            </a>
         </td>
         <td>
-            <img src="/assets/images/prev/GlowIntensity.gif" alt="Changing Glow Intensity" >
+            <a href="/assets/images/prev/GlowIntensity.gif" data-lightbox="image-changing-glow-intensity" data-title="Changing Glow Intensity">
+                <img src="/assets/images/prev/GlowIntensity.gif" alt="Changing Glow Intensity">
+            </a>
         </td>
     </tr>
     <tr>
@@ -576,10 +674,14 @@ The team then assigned me the task to come up with materials with glowing cracks
     </tr>
     <tr>
         <td>
-            <img src="/assets/images/prev/PulseIntensity.gif" alt="Changing Pulse Intensity" >
+            <a href="/assets/images/prev/PulseIntensity.gif" data-lightbox="image-changing-pulse-intensity" data-title="Changing Pulse Intensity">
+                <img src="/assets/images/prev/PulseIntensity.gif" alt="Changing Pulse Intensity">
+            </a>
         </td>
         <td>
-            <img src="/assets/images/prev/Rate.gif" alt="Changing Rate" >
+            <a href="/assets/images/prev/Rate.gif" data-lightbox="image-changing-rate" data-title="Changing Rate">
+                <img src="/assets/images/prev/Rate.gif" alt="Changing Rate">
+            </a>
         </td>
     </tr>
     <tr>
@@ -588,10 +690,14 @@ The team then assigned me the task to come up with materials with glowing cracks
     </tr>
     <tr>
         <td>
-            <img src="/assets/images/prev/EmissiveColor.gif" alt="Changing Emissive Color" >
+            <a href="/assets/images/prev/EmissiveColor.gif" data-lightbox="image-changing-emissive-color" data-title="Changing Emissive Color">
+                <img src="/assets/images/prev/EmissiveColor.gif" alt="Changing Emissive Color">
+            </a>
         </td>
         <td>
-            <img src="/assets/images/prev/BaseTint.gif" alt="Changing Base Tint" >
+            <a href="/assets/images/prev/BaseTint.gif" data-lightbox="image-changing-base-tint" data-title="Changing Base Tint">
+                <img src="/assets/images/prev/BaseTint.gif" alt="Changing Base Tint">
+            </a>
         </td>
     </tr>
     <tr>
@@ -606,13 +712,15 @@ I decided to switch my role to explore the track of a tech designer. I was assig
 ## 7.0 Widget
 * A 16:9 widget was created to serve as the lock screen. 
 * A [video](https://drive.google.com/file/d/1AEvD9Qi2J3TZTnRo6RIspSqx6nZX-jSQ/view) was provided to be used as the background for the lock screen.
-* Since Unreal Engine doesn't support Video files for Widget as is, I had to do a walkaround. I imported the video as a media player and created a video texture out of it. Then I created a material with UI domain that could be used in the widget as an Image. (Image in widgets support the use of materials as a brush)
+* Since Unreal Engine doesn't support Video files for Widget as is, I had to do a workaround. I imported the video as a media player and created a video texture out of it. Then I created a material with UI domain that could be used in the widget as an Image. (Image in widgets support the use of materials as a brush)
 * The video was looped and precached to avoid any frame drops in between each loop.
 * The default Rendering Hardware Interface was changed to DirectX11 as Vulkan/DirectX12 eventually failed to cache the video and led to a black screen.
 <table class="custom-table">
     <tr>
         <td>
-            <img src="/assets/images/prev/loadscrmat.gif" alt="Video UI Material" >
+            <a href="/assets/images/prev/loadscrmat.gif" data-lightbox="image-widget-video-material" data-title="Video UI Material">
+                <img src="/assets/images/prev/loadscrmat.gif" alt="Video UI Material">
+            </a>
         </td>
     </tr>
     <tr>
@@ -621,41 +729,47 @@ I decided to switch my role to explore the track of a tech designer. I was assig
 </table>
 
 ## 7.1 Progress Bar
-The team wanted me to implement a progress bar whose colors can be controlled by us in the engine. Apart from this the progress bar's progress was to be linked with the amount of level content and lighting information was loaded in the level.
+The team wanted me to implement a progress bar whose colors can be controlled by us in the engine. Apart from this, the progress bar's progress was to be linked with the amount of level content and lighting information was loaded in the level.
 
 * I used the Progress Bar prefab provided by the Unreal Engine in the Widget Palette as the base. 
 * The progress percentage was bound with the `GetAsyncLoadPercentage` with an upper clamp on the timing. 
-* A custom sprite was used for the progress bar aswell.
+* A custom sprite was used for the progress bar as well.
 <table class="custom-table">
     <tr>
         <td>
-            <img src="/assets/images/prev/progressbarbp.png" alt="example image" >
+            <a href="/assets/images/prev/progressbarbp.png" data-lightbox="image-progress-bar" data-title="Progress Bar Blueprint">
+                <img src="/assets/images/prev/progressbarbp.png" alt="Progress Bar Blueprint">
+            </a>
         </td>
     </tr>    
 </table>
 
 ## 7.2 Tips System
-Next we decided upon implementing a tips system that would show up random tips on the widget while the level is loading. 
+Next, we decided upon implementing a tips system that would show up random tips on the widget while the level is loading. 
 
-* A semi transparent black box was used as the container for the textbox of the tips that would come randomly.
+* A semi-transparent black box was used as the container for the textbox of the tips that would come randomly.
 * DCC font was used for the text to keep it seamless with the game.
 * The text was randomly chosen from an array of strings and was set to switch to another string after a threshold time.
 * The sound designers even went on to implement a narration system that read out the tips that came out on the screen.
 <table class="custom-table">
     <tr>
         <td>
-            <img src="/assets/images/prev/tipbp.png" alt="example image" >
+            <a href="/assets/images/prev/tipbp.png" data-lightbox="image-tips-system" data-title="Tips System Blueprint">
+                <img src="/assets/images/prev/tipbp.png" alt="Tips System Blueprint">
+            </a>
         </td>
     </tr>    
 </table>
 
 ## 7.3 Widget & Level Blueprint
 * The widget was added to the viewport of the screen when a new level was opened. 
-* It was made to wait for `GetAsyncLoadPercentage` to get to 100 and then a prompt was shown to press any key (cross-platform) to disable the widget and open the newly loaded level. The blueprint was made to wait for a threshold time in case the level took too long to load. 
+* It was made to wait for `GetAsyncLoadPercentage` to get to 100, and then a prompt was shown to press any key (cross-platform) to disable the widget and open the newly loaded level. The blueprint was made to wait for a threshold time in case the level took too long to load. 
 <table class="custom-table">
     <tr>
         <td>
-            <img src="/assets/images/prev/lswidget.png" alt="example image" >
+            <a href="/assets/images/prev/lswidget.png" data-lightbox="image-widget-and-level-blueprint" data-title="Widget & Level Blueprint">
+                <img src="/assets/images/prev/lswidget.png" alt="Widget & Level Blueprint">
+            </a>
         </td>
     </tr>    
 </table>
@@ -666,7 +780,9 @@ Next we decided upon implementing a tips system that would show up random tips o
 <table class="custom-table">
     <tr>
         <td>
-            <img src="/assets/images/prev/LoadingScreen.gif" alt="example image" >
+            <a href="/assets/images/prev/LoadingScreen.gif" data-lightbox="image-final-touches" data-title="Final Touches">
+                <img src="/assets/images/prev/LoadingScreen.gif" alt="Final Touches">
+            </a>
         </td>
     </tr>    
 </table>

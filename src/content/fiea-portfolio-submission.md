@@ -23,7 +23,9 @@ As the title suggests, this blog shall contain some of my favorite pieces of cod
 <table class="custom-table" style="width: 100%;">
     <tr>
         <td style="text-align: center;">
-            <img src="/assets/images/prev/2dmeshlightsys.gif" alt="The second iteration (optimized)">
+            <a href="/assets/images/prev/2dmeshlightsys.gif" data-lightbox="image-2" data-title="The second iteration (optimized)">
+                <img src="/assets/images/prev/2dmeshlightsys.gif" alt="The second iteration (optimized)">
+            </a>
             <br>
             <strong>The second iteration (optimized)</strong>
         </td>
@@ -35,7 +37,9 @@ As the title suggests, this blog shall contain some of my favorite pieces of cod
 <table class="custom-table" style="width: 100%;">
     <tr>
         <td style="text-align: center;">
-            <img src="/assets/images/prev/2oppingame.gif" alt="In-game look">
+            <a href="/assets/images/prev/2oppingame.gif" data-lightbox="image-3" data-title="In-game look">
+                <img src="/assets/images/prev/2oppingame.gif" alt="In-game look">
+            </a>
             <br>
             <strong>In-game look</strong>
         </td>
@@ -51,17 +55,23 @@ As the title suggests, this blog shall contain some of my favorite pieces of cod
 <table class="custom-table" style="width: 100%;">
     <tr>
         <td style="text-align: center;">
-            <img src="/assets/images/prev/CHRIS_SIR.png" alt="Chris Sir">
+            <a href="/assets/images/prev/CHRIS_SIR.png" data-lightbox="image-4" data-title="Chris Sir">
+                <img src="/assets/images/prev/CHRIS_SIR.png" alt="Chris Sir">
+            </a>
             <br>
             <strong>Chris Sir</strong>
         </td>
         <td style="text-align: center;">
-            <img src="/assets/images/prev/RICK_SIR.png" alt="Rick Sir">
+            <a href="/assets/images/prev/RICK_SIR.png" data-lightbox="image-5" data-title="Rick Sir">
+                <img src="/assets/images/prev/RICK_SIR.png" alt="Rick Sir">
+            </a>
             <br>
             <strong>Rick Sir</strong>
         </td>
         <td style="text-align: center;">
-            <img src="/assets/images/prev/RON_SIR.png" alt="Ron Sir">
+            <a href="/assets/images/prev/RON_SIR.png" data-lightbox="image-6" data-title="Ron Sir">
+                <img src="/assets/images/prev/RON_SIR.png" alt="Ron Sir">
+            </a>
             <br>
             <strong>Ron Sir</strong>
         </td>
@@ -114,7 +124,9 @@ As the title suggests, this blog shall contain some of my favorite pieces of cod
 <table class="custom-table" style="width: 100%;">
     <tr>
         <td style="text-align: center;">
-            <img src="/assets/images/prev/Collage_LineArt.png" alt="Engraved Images">
+            <a href="/assets/images/prev/Collage_LineArt.png" data-lightbox="image-7" data-title="Engraved Images">
+                <img src="/assets/images/prev/Collage_LineArt.png" alt="Engraved Images">
+            </a>
             <br>
             <strong>Engraved Images</strong>
         </td>
@@ -172,19 +184,25 @@ As the title suggests, this blog shall contain some of my favorite pieces of cod
 <table class="custom-table" style="width: 100%;">
     <tr>
         <td style="text-align: center;">
-            <img src="/assets/images/prev/Snow1.gif" alt="A Snow Subsystem">
+            <a href="/assets/images/prev/Snow1.gif" data-lightbox="image-8" data-title="Snow Subsystem">
+                <img src="/assets/images/prev/Snow1.gif" alt="Snow Subsystem">
+            </a>
             <br>
             <strong>Snow Subsystem</strong>
         </td>
         <td style="text-align: center;">
-            <img src="/assets/images/prev/WindPart.gif" alt="A Wind Subsystem">
+            <a href="/assets/images/prev/WindPart.gif" data-lightbox="image-9" data-title="Wind Subsystem">
+                <img src="/assets/images/prev/WindPart.gif" alt="Wind Subsystem">
+            </a>
             <br>
-            <strong>A Wind Subsystem</strong>
+            <strong>Wind Subsystem</strong>
         </td>
         <td style="text-align: center;">
-            <img src="/assets/images/prev/FogEH.gif" alt="A Fog Subsystem">
+            <a href="/assets/images/prev/FogEH.gif" data-lightbox="image-10" data-title="Fog Subsystem">
+                <img src="/assets/images/prev/FogEH.gif" alt="Fog Subsystem">
+            </a>
             <br>
-            <strong>A Fog Subsystem</strong>
+            <strong>Fog Subsystem</strong>
         </td>
     </tr>
 </table>
@@ -204,13 +222,19 @@ As the title suggests, this blog shall contain some of my favorite pieces of cod
 <table class="custom-table">
     <tr>
         <td>
-            <img src="/assets/images/prev/TP_1.png" alt="Mockup">
+            <a href="/assets/images/prev/TP_1.png" data-lightbox="image-11" data-title="Mockup">
+                <img src="/assets/images/prev/TP_1.png" alt="Mockup">
+            </a>
         </td>
         <td>
-            <img src="/assets/images/prev/TP_2.png" alt="Mockup">
+            <a href="/assets/images/prev/TP_2.png" data-lightbox="image-12" data-title="Mockup">
+                <img src="/assets/images/prev/TP_2.png" alt="Mockup">
+            </a>
         </td>
         <td>
-            <img src="/assets/images/prev/TP_3.png" alt="Mockup">
+            <a href="/assets/images/prev/TP_3.png" data-lightbox="image-13" data-title="Mockup">
+                <img src="/assets/images/prev/TP_3.png" alt="Mockup">
+            </a>
         </td>
     </tr>
 </table>
@@ -219,16 +243,24 @@ As the title suggests, this blog shall contain some of my favorite pieces of cod
 <table class="custom-table">
     <tr>
         <td>
-            <img src="/assets/images/prev/BASMR_1.png" alt="Mockup">
+            <a href="/assets/images/prev/BASMR_1.png" data-lightbox="image-21" data-title="Mockup">
+                <img src="/assets/images/prev/BASMR_1.png" alt="Mockup">
+            </a>
         </td>
         <td>
-            <img src="/assets/images/prev/BASMR_2.png" alt="Mockup">
+            <a href="/assets/images/prev/BASMR_2.png" data-lightbox="image-22" data-title="Mockup">
+                <img src="/assets/images/prev/BASMR_2.png" alt="Mockup">
+            </a>
         </td>
         <td>
-            <img src="/assets/images/prev/BASMR_3.png" alt="Mockup">
+            <a href="/assets/images/prev/BASMR_3.png" data-lightbox="image-23" data-title="Mockup">
+                <img src="/assets/images/prev/BASMR_3.png" alt="Mockup">
+            </a>
         </td>
         <td>
-            <img src="/assets/images/prev/BASMR_4.png" alt="Mockup">
+            <a href="/assets/images/prev/BASMR_4.png" data-lightbox="image-24" data-title="Mockup">
+                <img src="/assets/images/prev/BASMR_4.png" alt="Mockup">
+            </a>
         </td>
     </tr>
 </table>
@@ -253,7 +285,9 @@ As the title suggests, this blog shall contain some of my favorite pieces of cod
 <table class="custom-table">
     <tr>
         <td>
-            <img src="/assets/images/prev/Doge_PA.png" alt="All Pixel Arts">
+            <a href="/assets/images/prev/Doge_PA.png" data-lightbox="image-doge" data-title="All Pixel Arts">
+                <img src="/assets/images/prev/Doge_PA.png" alt="All Pixel Arts">
+            </a>
         </td>
     </tr>
     <tr>
@@ -265,7 +299,9 @@ As the title suggests, this blog shall contain some of my favorite pieces of cod
 <table class="custom-table">
     <tr>
         <td>
-            <img src="/assets/images/prev/Doge_Hit_PA.png" alt="Glowing Pixel Arts">
+            <a href="/assets/images/prev/Doge_Hit_PA.png" data-lightbox="image-doge-hit" data-title="Glowing Pixel Arts">
+                <img src="/assets/images/prev/Doge_Hit_PA.png" alt="Glowing Pixel Arts">
+            </a>
         </td>
     </tr>
     <tr>
@@ -277,7 +313,9 @@ As the title suggests, this blog shall contain some of my favorite pieces of cod
 <table class="custom-table">
     <tr>
         <td>
-            <img src="/assets/images/prev/Doge_Anims_PA.png" alt="Animation Sprite Sheets">
+            <a href="/assets/images/prev/Doge_Anims_PA.png" data-lightbox="image-doge-anims" data-title="Animation Sprite Sheets">
+                <img src="/assets/images/prev/Doge_Anims_PA.png" alt="Animation Sprite Sheets">
+            </a>
         </td>
     </tr>
     <tr>
@@ -290,15 +328,21 @@ As the title suggests, this blog shall contain some of my favorite pieces of cod
 <table class="custom-table">
     <tr>
         <td>
-            <img src="/assets/images/prev/stars_PA.png" alt="Stars Section">
+            <a href="/assets/images/prev/stars_PA.png" data-lightbox="image-stars" data-title="Stars Section">
+                <img src="/assets/images/prev/stars_PA.png" alt="Stars Section">
+            </a>
             <div class="caption">Stars Section</div>
         </td>
         <td>
-            <img src="/assets/images/prev/Back_PA.png" alt="Background Section">
+            <a href="/assets/images/prev/Back_PA.png" data-lightbox="image-background" data-title="Background Section">
+                <img src="/assets/images/prev/Back_PA.png" alt="Background Section">
+            </a>
             <div class="caption">Background Section</div>
         </td>
         <td>
-            <img src="/assets/images/prev/Doge_Final.gif" alt="Final In-Game Look">
+            <a href="/assets/images/prev/Doge_Final.gif" data-lightbox="image-final-look" data-title="Final In-Game Look">
+                <img src="/assets/images/prev/Doge_Final.gif" alt="Final In-Game Look">
+            </a>
             <div class="caption">Final In-Game Look</div>
         </td>
     </tr>
@@ -342,7 +386,9 @@ As the title suggests, this blog shall contain some of my favorite pieces of cod
 <table class="custom-table">
     <tr>
         <td class="col-sm mt-3 mt-md-0">
-            <img src="/assets/images/prev/AFPS_TopView.png" alt="Stars Section">
+            <a href="/assets/images/prev/AFPS_TopView.png" data-lightbox="image-in-game-map" data-title="In-Game Look of the Map">
+                <img src="/assets/images/prev/AFPS_TopView.png" alt="In-Game Look of the Map">
+            </a>
         </td>
     </tr>
     <tr>
@@ -363,13 +409,17 @@ As the title suggests, this blog shall contain some of my favorite pieces of cod
 <table class="custom-table">
     <tr>
         <td>
-            <img src="/assets/images/prev/EmissionParameter.png" alt="Emission Parameters" title="Stars Section">
+            <a href="/assets/images/prev/EmissionParameter.png" data-lightbox="image-soul-shard" data-title="Emission Parameters">
+                <img src="/assets/images/prev/EmissionParameter.png" alt="Emission Parameters" title="Stars Section">
+            </a>
             <div class="caption">
                 Emission Parameters
             </div>
         </td>
         <td>
-            <img src="/assets/images/prev/EmissionShape.png" alt="Emission Shape" title="Background Section">
+            <a href="/assets/images/prev/EmissionShape.png" data-lightbox="image-soul-shard" data-title="Emission Shape">
+                <img src="/assets/images/prev/EmissionShape.png" alt="Emission Shape" title="Background Section">
+            </a>
             <div class="caption">
                 Emission Shape
             </div>
@@ -381,13 +431,17 @@ As the title suggests, this blog shall contain some of my favorite pieces of cod
 <table class="custom-table">
     <tr>
         <td>
-            <img src="/assets/images/prev/Coverage.gif" alt="Coverage" title="example image">
+            <a href="/assets/images/prev/Coverage.gif" data-lightbox="image-soul-shard" data-title="Coverage">
+                <img src="/assets/images/prev/Coverage.gif" alt="Coverage" title="example image">
+            </a>
             <div class="caption">
                 Coverage
             </div>
         </td>
         <td>
-            <img src="/assets/images/prev/GlowIntensity.gif" alt="Glow Intensity" title="example image">
+            <a href="/assets/images/prev/GlowIntensity.gif" data-lightbox="image-soul-shard" data-title="Glow Intensity">
+                <img src="/assets/images/prev/GlowIntensity.gif" alt="Glow Intensity" title="example image">
+            </a>
             <div class="caption">
                 Glow Intensity
             </div>
@@ -395,13 +449,17 @@ As the title suggests, this blog shall contain some of my favorite pieces of cod
     </tr>
     <tr>
         <td>
-            <img src="/assets/images/prev/PulseIntensity.gif" alt="Pulse Intensity" title="example image">
+            <a href="/assets/images/prev/PulseIntensity.gif" data-lightbox="image-soul-shard" data-title="Pulse Intensity">
+                <img src="/assets/images/prev/PulseIntensity.gif" alt="Pulse Intensity" title="example image">
+            </a>
             <div class="caption">
                 Pulse Intensity
             </div>
         </td>
         <td>
-            <img src="/assets/images/prev/Rate.gif" alt="Rate" title="example image">
+            <a href="/assets/images/prev/Rate.gif" data-lightbox="image-soul-shard" data-title="Rate">
+                <img src="/assets/images/prev/Rate.gif" alt="Rate" title="example image">
+            </a>
             <div class="caption">
                 Rate
             </div>
@@ -409,13 +467,17 @@ As the title suggests, this blog shall contain some of my favorite pieces of cod
     </tr>
     <tr>
         <td>
-            <img src="/assets/images/prev/EmissiveColor.gif" alt="Emissive Color" title="example image">
+            <a href="/assets/images/prev/EmissiveColor.gif" data-lightbox="image-soul-shard" data-title="Emissive Color">
+                <img src="/assets/images/prev/EmissiveColor.gif" alt="Emissive Color" title="example image">
+            </a>
             <div class="caption">
                 Emissive Color
             </div>
         </td>
         <td>
-            <img src="/assets/images/prev/BaseTint.gif" alt="Base Tint" title="example image">
+            <a href="/assets/images/prev/BaseTint.gif" data-lightbox="image-soul-shard" data-title="Base Tint">
+                <img src="/assets/images/prev/BaseTint.gif" alt="Base Tint" title="example image">
+            </a>
             <div class="caption">
                 Base Tint
             </div>

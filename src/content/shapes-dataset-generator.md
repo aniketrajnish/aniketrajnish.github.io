@@ -1,14 +1,20 @@
-<div align = center>
-<a href = "https://github.com/aniketrajnish/3D-Shapes-Dataset-Generator/releases/tag/1.0"><img width="300px" height="300px" src= "https://github.com/aniketrajnish/3D-Shapes-Dataset-Generator/assets/58925008/749e9463-8cd8-4f10-bcb0-ee8502ce946b"></a>
+<div align="center">
+  <a href="https://github.com/aniketrajnish/3D-Shapes-Dataset-Generator/assets/58925008/749e9463-8cd8-4f10-bcb0-ee8502ce946b" data-lightbox="3D-shapes-dataset-release" data-title="Release 1.0">
+    <img width="300px" height="300px" src="https://github.com/aniketrajnish/3D-Shapes-Dataset-Generator/assets/58925008/749e9463-8cd8-4f10-bcb0-ee8502ce946b">
+  </a>
 </div>
 
 This tool is designed to help users create procedurally generated 3D shape datasets customized to their needs. It's built on top of my open source [Raymarching Engine](https://github.com/aniketrajnish/CS499-SDFNet/tree/main/Renderer) and runs over GPU. The engine supports over thirty primitives, three set operations (Union, Intersection, and Subtraction), and varying color values (along with shadows).
 <p align="center">  
-  <img src="https://github.com/aniketrajnish/3D-Shapes-Dataset-Generator/assets/58925008/4f245e7e-36d9-48ca-a34f-abc9d5d1d6be" width="50%"><br>
+  <a href="https://github.com/aniketrajnish/3D-Shapes-Dataset-Generator/assets/58925008/4f245e7e-36d9-48ca-a34f-abc9d5d1d6be" data-lightbox="3D-shapes-dataset" data-title="A glimpse of the Final Dataset">
+    <img src="https://github.com/aniketrajnish/3D-Shapes-Dataset-Generator/assets/58925008/4f245e7e-36d9-48ca-a34f-abc9d5d1d6be" width="50%">
+  </a><br>
   A glimpse of the Final Dataset
 </p>
 <p align="center">
-  <img src="https://github.com/aniketrajnish/3D-Shapes-Dataset-Generator/assets/58925008/3817574b-e8a2-43fa-a694-9f42faa3d324" width="50%"><br>
+  <a href="https://github.com/aniketrajnish/3D-Shapes-Dataset-Generator/assets/58925008/3817574b-e8a2-43fa-a694-9f42faa3d324" data-lightbox="3D-shapes-dataset" data-title="Sample image with operations: Cone (Union) + Sphere (Union) + Box Frame (Subtraction)">
+    <img src="https://github.com/aniketrajnish/3D-Shapes-Dataset-Generator/assets/58925008/3817574b-e8a2-43fa-a694-9f42faa3d324" width="50%">
+  </a><br>
   Sample image with operations: Cone (Union) + Sphere (Union) + Box Frame (Subtraction)
 </p>
 

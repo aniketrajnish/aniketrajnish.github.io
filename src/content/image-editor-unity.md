@@ -41,7 +41,9 @@ The first control I wished to establish was for Saturation i.e the intensity of 
 <table class="custom-table" style="width: 100%;">
     <tr>
         <td style="text-align: center;">
-            <img style ="border:none;" src="/assets/images/prev/Saturation_Diagram.png" alt="Algorithm for Saturation Control" >
+            <a href="/assets/images/prev/Saturation_Diagram.png" data-lightbox="algorithm-diagrams">
+                <img style="border:none;" src="/assets/images/prev/Saturation_Diagram.png" alt="Algorithm for Saturation Control">
+            </a>
             <br>
             <strong>Algorithm for Saturation Control</strong>
         </td>
@@ -99,13 +101,14 @@ So the basic algorithm I used to achieve saturation control was--
 <table class="custom-table" style="width: 100%;">
     <tr>
         <td style="text-align: center;">
-            <img src="/assets/images/prev/saturationFactor.png" alt="Saturation Control" >
+            <a href="/assets/images/prev/saturationFactor.png" data-lightbox="saturation-diagrams">
+                <img src="/assets/images/prev/saturationFactor.png" alt="Saturation Control">
+            </a>
             <br>
             <strong>Saturation Control</strong>
         </td>
     </tr>
 </table>
-
 
 ## **2.2 Adding Gaussian Blur**
 
@@ -116,7 +119,9 @@ Next in the list are algorithms that helps blur an image using a Gaussian Functi
 * First we create a gaussian kernel of a given size and radius. The gaussian kernel is a float 2D matrix (`float[,]`). Each element in the matrix is a weight that determines the contribution of each pixel to the blurring process. These weights are caluclated based on the Gaussian distribution formula.
 
 <p align="center">
-  <img src="https://latex.codecogs.com/svg.image?{f(x)&space;=&space;\frac{1}{\sigma\sqrt{2\pi}}&space;e^{-\frac{(x-\mu)^2}{2\sigma^2}}}" />
+  <a href="https://latex.codecogs.com/svg.image?{f(x)&space;=&space;\frac{1}{\sigma\sqrt{2\pi}}&space;e^{-\frac{(x-\mu)^2}{2\sigma^2}}}" data-lightbox="equation" data-title="Gaussian Distribution Formula">
+  <img src="https://latex.codecogs.com/svg.image?{f(x)&space;=&space;\frac{1}{\sigma\sqrt{2\pi}}&space;e^{-\frac{(x-\mu)^2}{2\sigma^2}}}" alt="Gaussian Distribution Formula">
+  </a>
 </p>
 
 * **Input Parameters:** The `CreateGaussianKernel()` method takes the `radius` and `size` of the kernel as the parameter and returns a 2D matrix (`float[,]`). The `size` represents the dimensions of the kernel, and the `radius` controls the spread of the blur effect.
@@ -259,7 +264,9 @@ Now we apply the gaussian blur to the image by calculating the kernel, processin
 <table class="custom-table" style="width: 100%;">
     <tr>
         <td style="text-align: center;">
-            <img src="/assets/images/prev/blurRadius.png" alt="Gaussian Blur Control" >
+            <a href="/assets/images/prev/blurRadius.png" data-lightbox="gaussian-blur" data-title="Gaussian Blur Control">
+            <img src="/assets/images/prev/blurRadius.png" alt="Gaussian Blur Control">
+            </a>
             <br>
             <strong>Gaussian Blur Control</strong>
         </td>

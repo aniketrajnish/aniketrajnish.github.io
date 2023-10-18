@@ -35,10 +35,14 @@ for (float i = 0; i < theta; i += steps)
 <table class="custom-table">
     <tr>
         <td>
-            <img src="/assets/images/prev/theta.gif" alt="Adjusting theta" >
+            <a href="/assets/images/prev/theta.gif" data-lightbox="adjustments" data-title="Adjusting theta">
+                <img src="/assets/images/prev/theta.gif" alt="Adjusting theta">
+            </a>
         </td>
         <td>
-            <img src="/assets/images/prev/steps.gif" alt="Adjusting steps" >
+            <a href="/assets/images/prev/steps.gif" data-lightbox="adjustments" data-title="Adjusting steps">
+                <img src="/assets/images/prev/steps.gif" alt="Adjusting steps">
+            </a>
         </td>
     </tr>
     <tr>
@@ -47,10 +51,14 @@ for (float i = 0; i < theta; i += steps)
     </tr>
     <tr>
         <td>
-            <img src="/assets/images/prev/col.gif" alt="Adjusting color" >
+            <a href="/assets/images/prev/col.gif" data-lightbox="adjustments" data-title="Adjusting color">
+                <img src="/assets/images/prev/col.gif" alt="Adjusting color">
+            </a>
         </td>
         <td>
-            <img src="/assets/images/prev/maxvdist.gif" alt="Adjusting max visibility distance" >
+            <a href="/assets/images/prev/maxvdist.gif" data-lightbox="adjustments" data-title="Adjusting max visibility distance">
+                <img src="/assets/images/prev/maxvdist.gif" alt="Adjusting max visibility distance">
+            </a>
         </td>
     </tr>
     <tr>
@@ -75,7 +83,9 @@ lineMat.color.a));
 <table class="custom-table">
     <tr>
         <td>
-            <img src="/assets/images/prev/TRays.gif" alt="With transparency controls, the rays looked more natural." >
+            <a href="/assets/images/prev/TRays.gif" data-lightbox="rays-lightbox" data-title="With transparency controls, the rays looked more natural.">
+                <img src="/assets/images/prev/TRays.gif" alt="With transparency controls, the rays looked more natural.">
+            </a>
         </td>
     </tr>
     <tr>
@@ -128,7 +138,9 @@ lineMat.color.a));
 <table class="custom-table">
     <tr>
         <td>
-            <img src="/assets/images/prev/2dlightsys.gif" alt="Final Output" >
+            <a href="/assets/images/prev/2dmeshlightsys.gif" data-lightbox="2dmeshlightsys-lightbox" data-title="Final Output">
+                <img src="/assets/images/prev/2dmeshlightsys.gif" alt="Final Output">
+            </a>
         </td>
     </tr>
     <tr>
@@ -154,7 +166,9 @@ LightMesh.mesh.triangles = triangles;
 <table class="custom-table">
     <tr>
         <td>
-            <img src="/assets/images/prev/2dmeshlightsys.gif" alt="Final Output" >
+            <a href="/assets/images/prev/2dmeshlightsys.gif" data-lightbox="final-output-lightbox" data-title="Final Output">
+                <img src="/assets/images/prev/2dmeshlightsys.gif" alt="Final Output">
+            </a>
         </td>
     </tr>
     <tr>
@@ -181,7 +195,9 @@ void Update()
 <table class="custom-table">
     <tr>
         <td>
-            <img src="/assets/images/prev/inversion.gif" alt="example image" >
+            <a href="/assets/images/prev/inversion.gif" data-lightbox="example-lightbox" data-title="Example Image">
+                <img src="/assets/images/prev/inversion.gif" alt="example image">
+            </a>
         </td>
     </tr>    
 </table>
@@ -192,10 +208,14 @@ void Update()
 <table class="custom-table">
     <tr>
         <td>
-            <img src="/assets/images/prev/BoySprite.png" alt="Boy Sprite Sheet" >
+            <a href="/assets/images/prev/BoySprite.png" data-lightbox="sprites-lightbox" data-title="Boy Sprite Sheet">
+                <img src="/assets/images/prev/BoySprite.png" alt="Boy Sprite Sheet">
+            </a>
         </td>
         <td>
-            <img src="/assets/images/prev/GirlSprite.png" alt="Girl Sprite Sheet" >
+            <a href="/assets/images/prev/GirlSprite.png" data-lightbox="sprites-lightbox" data-title="Girl Sprite Sheet">
+                <img src="/assets/images/prev/GirlSprite.png" alt="Girl Sprite Sheet">
+            </a>
         </td>
     </tr>
     <tr>
@@ -247,7 +267,9 @@ void Update()
 <table class="custom-table">
     <tr>
         <td>
-            <img src="/assets/images/prev/Sprites.gif" >
+            <a href="/assets/images/prev/Sprites.gif" data-lightbox="sprite-image" data-title="Sprite Animation">
+                <img src="/assets/images/prev/Sprites.gif" alt="Sprite Animation Thumbnail">
+            </a>
         </td>
     </tr>
 </table>
@@ -260,10 +282,11 @@ We decided to come up with a button mechanic system. The idea was to spawn two b
 <table class="custom-table">
     <tr>
         <td>
-            <img src="/assets/images/prev/Buttons.gif" alt="example image" >
+            <a href="/assets/images/prev/Buttons.gif" data-lightbox="buttons-mechanic" data-title="Button Mechanic Animation">
+                <img src="/assets/images/prev/Buttons.gif" alt="Button Mechanic Animation">
+            </a>
         </td>
     </tr>
-    <tr>
 </table>
 
 ## 5.0 Movable Objects
@@ -273,10 +296,14 @@ To add more depth to the puzzles, we decided to come up with a few objects that 
 <table class="custom-table">
     <tr>
         <td>
-            <img src="/assets/images/prev/crate.png" alt="Crate Base Map" >
+            <a href="/assets/images/prev/crate.png" data-lightbox="crate" data-title="Crate Base Map">
+                <img src="/assets/images/prev/crate.png" alt="Crate Base Map" >
+            </a>
         </td>
         <td>
-            <img src="/assets/images/prev/cratenormal.jpg" alt="Crate Normal Map" >
+            <a href="/assets/images/prev/cratenormal.jpg" data-lightbox="crate" data-title="Crate Normal Map">
+                <img src="/assets/images/prev/cratenormal.jpg" alt="Crate Normal Map" >
+            </a>
         </td>
     </tr>
     <tr>
@@ -290,7 +317,9 @@ To add more depth to the puzzles, we decided to come up with a few objects that 
 <table class="custom-table">
     <tr>
         <td>
-            <img src="/assets/images/prev/Pushable.gif" alt="example image" >
+            <a href="/assets/images/prev/Pushable.gif" data-lightbox="pushable" data-title="Pushable Example">
+                <img src="/assets/images/prev/Pushable.gif" alt="example image">
+            </a>
         </td>
     </tr>
 </table>
@@ -313,35 +342,45 @@ We decided to include spikes in the game. They would kill the players on contact
 ## 6.1 Spike Texture
 * Since our core idea was to make the game atmospheric & appealing to eyes we wanted to keep environment ques pretty detailed. We decided to do the same with the spikes.
 * The spike texture maps were hand-drawn by one of the teammates. We had initially thought of including a height/bump map but later replaced it with a normal map.
-    <table class="custom-table">
-        <tr>
-            <td>
-                <img src="/assets/images/prev/spikes.png" alt="Spike Base Map" >
-            </td>
-            <td>
-                <img src="/assets/images/prev/SpikesNormal.png" alt="Spike Normal Map" >
-            </td>
-            <td>
-                <img src="/assets/images/prev/spike height.png" alt="Spike Height Map" >
-            </td>
-        </tr>
-        <tr>
-            <th>Spike Base Map</th>
-            <th>Spike Normal Map</th>
-            <th>Spike Height Map</th>
-        </tr>
-    </table>
+<table class="custom-table">
+    <tr>
+        <td>
+            <a href="/assets/images/prev/spikes.png" data-lightbox="spike-maps" data-title="Spike Base Map">
+                <img src="/assets/images/prev/spikes.png" alt="Spike Base Map">
+            </a>
+        </td>
+        <td>
+            <a href="/assets/images/prev/SpikesNormal.png" data-lightbox="spike-maps" data-title="Spike Normal Map">
+                <img src="/assets/images/prev/SpikesNormal.png" alt="Spike Normal Map">
+            </a>
+        </td>
+        <td>
+            <a href="/assets/images/prev/spike height.png" data-lightbox="spike-maps" data-title="Spike Height Map">
+                <img src="/assets/images/prev/spike height.png" alt="Spike Height Map">
+            </a>
+        </td>
+    </tr>
+    <tr>
+        <th>Spike Base Map</th>
+        <th>Spike Normal Map</th>
+        <th>Spike Height Map</th>
+    </tr>
+</table>
+
 * These textures are assigned to the URP's default lit sprite material.
 
 ## 6.2 Death Animation
 * A sprite sheet for hand-drawn animation of blood splash was imported.
-    <table class="custom-table">
-        <tr>
-            <td>
-                <img src="/assets/images/prev/BloodSplash.png" alt="example image" >
-            </td>
-        </tr>
-    </table>
+<table class="custom-table">
+    <tr>
+        <td>
+            <a href="/assets/images/prev/BloodSplash.png" data-lightbox="gallery" data-title="Blood Splash">
+                <img src="/assets/images/prev/BloodSplash.png" alt="Blood Splash">
+            </a>
+        </td>
+    </tr>
+</table>
+
 * This sprite sheet was played on collision with the spikes.
 * The movement state of the players were changed from animated to static.
 * The movement vector of the players were overridden to be zero.
@@ -360,7 +399,9 @@ We decided to include spikes in the game. They would kill the players on contact
 <table class="custom-table">
     <tr>
         <td>
-            <img src="/assets/images/prev/death2opp.gif" alt="Final Output" >
+            <a href="/assets/images/prev/death2opp.gif" data-lightbox="gallery" data-title="Final Output">
+                <img src="/assets/images/prev/death2opp.gif" alt="Final Output">
+            </a>
         </td>
     </tr>
     <tr>
@@ -378,10 +419,14 @@ The biggest challenge ahead of us was actually to come up with a level design th
 <table class="custom-table">
     <tr>
         <td>
-            <img src="/assets/images/prev/WSADGame.png" alt="Key Sprite in Game" >
+            <a href="/assets/images/prev/WSADGame.png" data-lightbox="gallery" data-title="Key Sprite in Game">
+                <img src="/assets/images/prev/WSADGame.png" alt="Key Sprite in Game">
+            </a>
         </td>
         <td>
-            <img src="/assets/images/prev/WSADXD.png" alt="Key Sprite made in Adobe XD" >
+            <a href="/assets/images/prev/WSADXD.png" data-lightbox="gallery" data-title="Key Sprite made in Adobe XD">
+                <img src="/assets/images/prev/WSADXD.png" alt="Key Sprite made in Adobe XD">
+            </a>
         </td>
     </tr>
     <tr>
@@ -394,10 +439,14 @@ The biggest challenge ahead of us was actually to come up with a level design th
 <table class="custom-table">
     <tr>
         <td>
-            <img src="/assets/images/prev/ArrowGame.png" alt="Arrow Sprite in Game" >
+            <a href="/assets/images/prev/ArrowGame.png" data-lightbox="gallery" data-title="Arrow Sprite in Game">
+                <img src="/assets/images/prev/ArrowGame.png" alt="Arrow Sprite in Game">
+            </a>
         </td>
         <td>
-            <img src="/assets/images/prev/ArrowPS.png" alt="Arrow Sprite made in Photoshop" >
+            <a href="/assets/images/prev/ArrowPS.png" data-lightbox="gallery" data-title="Arrow Sprite made in Photoshop">
+                <img src="/assets/images/prev/ArrowPS.png" alt="Arrow Sprite made in Photoshop">
+            </a>
         </td>
     </tr>
     <tr>
@@ -410,7 +459,9 @@ The biggest challenge ahead of us was actually to come up with a level design th
 <table class="custom-table">
     <tr>
         <td>
-            <img src="/assets/images/prev/Lev1.png" alt="example image" >
+            <a href="/assets/images/prev/Lev4.png" data-lightbox="gallery" data-title="Level 4">
+                <img src="/assets/images/prev/Lev4.png" alt="example image">
+            </a>
         </td>
     </tr>
 </table>
@@ -419,7 +470,9 @@ The biggest challenge ahead of us was actually to come up with a level design th
 <table class="custom-table">
     <tr>
         <td>
-            <img src="/assets/images/prev/Lev2.png" alt="example image" >
+            <a href="/assets/images/prev/Lev2.png" data-lightbox="game-images">
+                <img src="/assets/images/prev/Lev2.png" alt="example image">
+            </a>
         </td>
     </tr>
 </table>
@@ -428,11 +481,12 @@ The biggest challenge ahead of us was actually to come up with a level design th
 <table class="custom-table">
     <tr>
         <td>
-            <img src="/assets/images/prev/Lev3.png" alt="example image" >
+            <a href="/assets/images/prev/Lev2.png" data-lightbox="gallery" data-title="Challenge Level 2">
+                <img src="/assets/images/prev/Lev2.png" alt="Challenge Level 2">
+            </a>
         </td>
     </tr>
 </table>
-
 
 ## 7.2 Later Levels
 * The difficulty for the game was now gradually increased and the game now focused more on the player creatively finding out a way to solve the puzzles rather than teaching the player how to play.
@@ -440,7 +494,9 @@ The biggest challenge ahead of us was actually to come up with a level design th
 <table class="custom-table">
     <tr>
         <td>
-            <img src="/assets/images/prev/Lev4.png" alt="example image" >
+            <a href="/assets/images/prev/Lev3.png" data-lightbox="gallery" data-title="Button Mechanic Level 3">
+                <img src="/assets/images/prev/Lev3.png" alt="Button Mechanic Level 3">
+            </a>
         </td>
     </tr>
 </table>
@@ -449,7 +505,9 @@ The biggest challenge ahead of us was actually to come up with a level design th
 <table class="custom-table">
     <tr>
         <td>
-            <img src="/assets/images/prev/Lev5.png" alt="example image" >
+            <a href="/assets/images/prev/Lev5.png" data-lightbox="gallery" data-title="Level 5 Image">
+                <img src="/assets/images/prev/Lev5.png" alt="Level 5 Image">
+            </a>
         </td>
     </tr>
 </table>
@@ -458,7 +516,9 @@ The biggest challenge ahead of us was actually to come up with a level design th
 <table class="custom-table">
     <tr>
         <td>
-            <img src="/assets/images/prev/Lev6.png" alt="example image" >
+            <a href="/assets/images/prev/Lev6.png" data-lightbox="gallery" data-title="Level 6 Image">
+                <img src="/assets/images/prev/Lev6.png" alt="Level 6 Image">
+            </a>
         </td>
     </tr>
 </table>
@@ -467,7 +527,9 @@ The biggest challenge ahead of us was actually to come up with a level design th
 <table class="custom-table">
     <tr>
         <td>
-            <img src="/assets/images/prev/Lev7.png" alt="example image" >
+            <a href="/assets/images/prev/Lev7.png" data-lightbox="gallery" data-title="Level 7 Image">
+                <img src="/assets/images/prev/Lev7.png" alt="Level 7 Image">
+            </a>
         </td>
     </tr>
 </table>
@@ -476,7 +538,9 @@ The biggest challenge ahead of us was actually to come up with a level design th
 <table class="custom-table">
     <tr>
         <td>
-            <img src="/assets/images/prev/Lev8.png" alt="example image" >
+            <a href="/assets/images/prev/Lev8.png" data-lightbox="gallery" data-title="Level 8 Image">
+                <img src="/assets/images/prev/Lev8.png" alt="Level 8 Image">
+            </a>
         </td>
     </tr>
 </table>
@@ -485,17 +549,20 @@ The biggest challenge ahead of us was actually to come up with a level design th
 <table class="custom-table">
     <tr>
         <td>
-            <img src="/assets/images/prev/Lev9.png" alt="example image" >
+            <a href="/assets/images/prev/Lev9.png" data-lightbox="gallery" data-title="Level 9 Image">
+                <img src="/assets/images/prev/Lev9.png" alt="Level 9 Image">
+            </a>
         </td>
     </tr>
 </table>
 
 * The final level involved a cliffhanger ending followed by the credit screen. Play the game to know more ;)
-
 <table class="custom-table">
     <tr>
         <td>
-            <img src="/assets/images/prev/LevFin.png" alt="example image" >
+            <a href="/assets/images/prev/LevFin.png" data-lightbox="gallery" data-title="Final Level Image">
+                <img src="/assets/images/prev/LevFin.png" alt="Final Level Image">
+            </a>
         </td>
     </tr>
 </table>
@@ -507,7 +574,9 @@ We used post processing to increase the immersion that the game offers. We decid
 <table class="custom-table">
     <tr>
         <td>
-            <img src="/assets/images/prev/PP.gif" alt="example image" >
+            <a href="/assets/images/prev/PP.gif" data-lightbox="game-gifs">
+                <img src="/assets/images/prev/PP.gif" alt="example image">
+            </a>
         </td>
     </tr>
 </table>
@@ -519,7 +588,9 @@ We used post processing to increase the immersion that the game offers. We decid
 <table class="custom-table">
     <tr>
         <td>
-            <img src="/assets/images/prev/amatic.png" alt="example image" >
+            <a href="/assets/images/prev/amatic.png" data-lightbox="game-images">
+                <img src="/assets/images/prev/amatic.png" alt="Amatic Font Image">
+            </a>
         </td>
     </tr>
 </table>
@@ -530,15 +601,15 @@ We used post processing to increase the immersion that the game offers. We decid
 <table class="custom-table">
     <tr>
         <td>
-            <img src="/assets/images/prev/menuanim.gif" alt="Main Menu" >
+            <a href="/assets/images/prev/menuanim.gif" data-lightbox="game-images">
+                <img src="/assets/images/prev/menuanim.gif" alt="Main Menu Animation">
+            </a>
         </td>
         <td>
-            <img src="/assets/images/prev/pausemenu.gif" alt="Pause Menu" >
+            <a href="/assets/images/prev/pausemenu.gif" data-lightbox="game-images">
+                <img src="/assets/images/prev/pausemenu.gif" alt="Pause Menu Animation">
+            </a>
         </td>
-    </tr>
-    <tr>
-        <th>Main Menu</th>
-        <th>Pause Menu</th>
     </tr>
 </table>
 
@@ -547,7 +618,9 @@ We created a small clip using Unity's timeline as with the text only, the menu s
 <table class="custom-table">
     <tr>
         <td>
-            <img src="/assets/images/prev/mainmenu.gif" alt="example image" >
+            <a href="/assets/images/prev/mainmenu.gif" data-lightbox="game-images">
+                <img src="/assets/images/prev/mainmenu.gif" alt="Intro Clip Image">
+            </a>
         </td>
     </tr>
 </table>

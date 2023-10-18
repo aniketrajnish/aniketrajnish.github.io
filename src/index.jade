@@ -64,8 +64,8 @@ html.no-js(lang='en')
               include ./article.jade
 
     script.
-      var jsonMap = !{ locals.jsonMap };
+      var jsonMap = !{ locals.jsonMap };      
+    script(src='/node_modules/jquery/dist/jquery.min.js')
     script(src='/assets/js/oxism.js?v=' + hashes.script)
     script(src="/assets/js/lightbox.js")
-    script(src='./node_modules/jquery/dist/jquery.min.js')
     include analytics

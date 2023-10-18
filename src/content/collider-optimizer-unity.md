@@ -2,12 +2,21 @@
 
 <table class="custom-table">
   <tr>
-    <td><a href="https://github.com/aniketrajnish/Unity-Collider-Optimizer/assets/58925008/62a658c3-487c-4d80-b303-b96a74804a99" data-lightbox="polygon-collider-optimizer" data-title="">
-    <img src="https://github.com/aniketrajnish/Unity-Collider-Optimizer/assets/58925008/62a658c3-487c-4d80-b303-b96a74804a99" alt="Original Sprite">
-    </a>
+    <td>
+      <a href="https://github.com/aniketrajnish/Unity-Collider-Optimizer/assets/58925008/62a658c3-487c-4d80-b303-b96a74804a99" data-lightbox="polygon-collider-optimizer" data-title="Original Sprite">
+        <img src="https://github.com/aniketrajnish/Unity-Collider-Optimizer/assets/58925008/62a658c3-487c-4d80-b303-b96a74804a99" alt="Original Sprite">
+      </a>
     </td>
-    <td><img src="https://github.com/aniketrajnish/Unity-Collider-Optimizer/assets/58925008/cc114920-5bcd-4f06-81ad-9df9a176055d" alt="Unity Polygon Collider"></td>
-    <td><img src="https://github.com/aniketrajnish/Unity-Collider-Optimizer/assets/58925008/dfd8c63e-11ed-4a74-a2e1-45e2829f017e" alt="Optimized Polygon Collider"></td>
+    <td>
+      <a href="https://github.com/aniketrajnish/Unity-Collider-Optimizer/assets/58925008/cc114920-5bcd-4f06-81ad-9df9a176055d" data-lightbox="polygon-collider-optimizer" data-title="Unity Polygon Collider">
+        <img src="https://github.com/aniketrajnish/Unity-Collider-Optimizer/assets/58925008/cc114920-5bcd-4f06-81ad-9df9a176055d" alt="Unity Polygon Collider">
+      </a>
+    </td>
+    <td>
+      <a href="https://github.com/aniketrajnish/Unity-Collider-Optimizer/assets/58925008/dfd8c63e-11ed-4a74-a2e1-45e2829f017e" data-lightbox="polygon-collider-optimizer" data-title="Optimized Polygon Collider">
+        <img src="https://github.com/aniketrajnish/Unity-Collider-Optimizer/assets/58925008/dfd8c63e-11ed-4a74-a2e1-45e2829f017e" alt="Optimized Polygon Collider">
+      </a>
+    </td>
   </tr>
   <tr>
     <td style="text-align:center;">Original Sprite</td>
@@ -34,9 +43,21 @@ The tool uses a [C# implementation](https://www.codeproject.com/Articles/18936/A
 
 <table class="custom-table">
   <tr>
-    <td><img src="https://github.com/aniketrajnish/Unity-Collider-Optimizer/assets/58925008/e23b8db9-c301-41b1-8ef0-31b2216057d6" alt="Original Mesh"></td>
-    <td><img src="https://github.com/aniketrajnish/Unity-Collider-Optimizer/assets/58925008/7a88b61c-2c35-40df-a181-23e7d0d7c05c" alt="Unity Mesh Collider"></td>
-    <td><img src="https://github.com/aniketrajnish/Unity-Collider-Optimizer/assets/58925008/06a5fb01-3c08-4a1c-bb82-2b30a534693e" alt="Optimized Mesh Collider"></td>
+    <td>
+      <a href="https://github.com/aniketrajnish/Unity-Collider-Optimizer/assets/58925008/e23b8db9-c301-41b1-8ef0-31b2216057d6" data-lightbox="mesh-collider-optimizer" data-title="Original Mesh">
+        <img src="https://github.com/aniketrajnish/Unity-Collider-Optimizer/assets/58925008/e23b8db9-c301-41b1-8ef0-31b2216057d6" alt="Original Mesh">
+      </a>
+    </td>
+    <td>
+      <a href="https://github.com/aniketrajnish/Unity-Collider-Optimizer/assets/58925008/7a88b61c-2c35-40df-a181-23e7d0d7c05c" data-lightbox="mesh-collider-optimizer" data-title="Unity Mesh Collider">
+        <img src="https://github.com/aniketrajnish/Unity-Collider-Optimizer/assets/58925008/7a88b61c-2c35-40df-a181-23e7d0d7c05c" alt="Unity Mesh Collider">
+      </a>
+    </td>
+    <td>
+      <a href="https://github.com/aniketrajnish/Unity-Collider-Optimizer/assets/58925008/06a5fb01-3c08-4a1c-bb82-2b30a534693e" data-lightbox="mesh-collider-optimizer" data-title="Optimized Mesh Collider">
+        <img src="https://github.com/aniketrajnish/Unity-Collider-Optimizer/assets/58925008/06a5fb01-3c08-4a1c-bb82-2b30a534693e" alt="Optimized Mesh Collider">
+      </a>
+    </td>
   </tr>
   <tr>
     <td style="text-align:center;">Original Mesh</td>
@@ -66,7 +87,7 @@ The tool uses the [Computational Geometry Unity Library](https://github.com/Habr
 * Added the functionality to save and load the optimized colliders as assets.
 * Fixed the refresh bug.
 <center>
-<video autoplay loop style="width: 90%; border: 3px solid black; border-radius: 15px;">
+<video controls loop style="width: 90%; border: 3px solid black; border-radius: 15px;">
   <source src="https://github.com/aniketrajnish/Unity-Collider-Optimizer/assets/58925008/ba42c61c-4ea1-419d-bf81-324304a218b8" type="video/mp4">
 </video>
 </center>
