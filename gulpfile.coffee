@@ -102,9 +102,4 @@ gulp.task 'lightbox-scripts', ->
     .pipe(uglify())
     .pipe(gulp.dest 'assets/js/')
 
-gulp.task 'jquery-scripts', ->
-  gulp.src 'node_modules/jquery/dist/jquery.min.js'
-    .pipe(uglify())
-    .pipe(gulp.dest 'assets/js/')
-
-gulp.task 'default', ['templates', 'scripts', 'styles', 'lightbox-styles', 'lightbox-scripts', 'jquery-scripts']
+gulp.task 'default', ['templates', 'scripts', 'styles']
