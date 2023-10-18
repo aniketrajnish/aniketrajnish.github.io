@@ -80,3 +80,9 @@
   dontDisplay: true
   images:  ['/prev/FIEA_PORTFOLIO.png']
   tags:    ['C#', 'HLSL', 'Unity', 'GameMaker', 'GameJam', 'Game Design']
+
+'miscellaneous':
+  display: 'more work'
+  line:    'The rest of the mess.'
+  tags:    ['C#', 'HLSL', 'Unity', 'GameMaker', 'GameJam', 'Game Design']
+
