@@ -1,23 +1,208 @@
 ## Games for community
-Took burts of week-long project to publish a game in a week for my undergraduate college community to play and compete in. The competion was known as PlayPro and saw participation by 400+ people for each game. I published the following games for this purpose. For these games I implemented an leaderboard using dreamlo:
+Took burts of *week-long solo projects* to publish a game in a week for my undergraduate college community to play and compete in. The competion was known as PlayPro and saw participation by 400+ people for each game. I published the following games for this purpose. For these games I implemented an leaderboard using dreamlo:
 
 **1. Banana Warrior**
+<div style="display: flex; justify-content: space-between; align-items: flex-start; width: 100%; padding: 20px;">
+
+<video controls style="width: 40%; border: 3px solid black; border-radius: 15px;">
+  <source src="/assets/images/bw0.mp4" type="video/mp4">
+</video>
+
+<div style="width: 55%; padding-left: 10px; font-size: 2.3rem; color: black;">
+
+  <table class="custom-table">    
+    <tr>
+        <td>
+            <a href="/assets/images/prev/bw3.webp" data-lightbox="image-bw" data-title="Menu">
+                <img src="/assets/images/prev/bw3.webp" alt="Menu" title="bw">
+            </a>
+            <div class="caption">
+                Menu
+            </div>
+        </td>
+        <td>
+            <a href="/assets/images/prev/bw4.jpg" data-lightbox="image-bw" data-title="Leaderboard">
+                <img src="/assets/images/prev/bw4.jpg" alt="Leaderboard" title="bw">
+            </a>
+            <div class="caption">
+                Leaderboard
+            </div>
+        </td>
+    </tr>    
+</table>
+</div>
+</div>
 
 **2. Fertilize.io**
+<table class="custom-table">    
+    <tr>
+        <td>
+            <a href="/assets/images/prev/fer1.webp" data-lightbox="image-fer" data-title="Menu">
+                <img src="/assets/images/prev/fer1.webp" alt="Menu" title="fer">
+            </a>
+            <div class="caption">
+                Menu
+            </div>
+        </td>
+        <td>
+            <a href="/assets/images/prev/fer2.webp" data-lightbox="image-fer" data-title="Gameplay">
+                <img src="/assets/images/prev/fer2.webp" alt="Gameplay" title="fer">
+            </a>
+            <div class="caption">
+                Gameplay
+            </div>
+        </td>
+        <td>
+            <a href="/assets/images/prev/fer3.webp" data-lightbox="image-fer" data-title="Death Screen">
+                <img src="/assets/images/prev/fer3.webp" alt="Death Screen" title="fer">
+            </a>
+            <div class="caption">
+                Death Screen
+            </div>
+        </td>
+    </tr>    
+</table>
 
 **3. 2048 Jelly**
 
+<center>
+<video controls loop style="width: 90%; border: 3px solid black; border-radius: 15px;">
+  <source src="/assets/images/jelly0.mp4" type="video/mp4">
+</video>
+</center>
+
+<table class="custom-table">    
+    <tr>
+        <td>
+            <a href="/assets/images/prev/j1.webp" data-lightbox="image-j" data-title="Menu">
+                <img src="/assets/images/prev/j1.webp" alt="Menu" title="j">
+            </a>
+            <div class="caption">
+                Menu
+            </div>
+        </td>
+        <td>
+            <a href="/assets/images/prev/j2.webp" data-lightbox="image-j" data-title="Gameplay">
+                <img src="/assets/images/prev/j2.webp" alt="Gameplay" title="j">
+            </a>
+            <div class="caption">
+                Gameplay
+            </div>
+        </td>
+    </tr>    
+</table>
+
 **4. Toilet Spinner**
 
-**5. Chrome Dino Remastered**
+<div style="display: flex; justify-content: space-between; align-items: flex-start; width: 100%; padding: 20px;">
+
+<video controls style="width: 40%; border: 3px solid black; border-radius: 15px;">
+  <source src="/assets/images/spinner0.mp4" type="video/mp4">
+</video>
+
+<div style="width: 55%; padding-left: 10px; font-size: 2.3rem; color: black;">
+
+  <table class="custom-table">    
+    <tr>
+        <td>
+            <a href="/assets/images/prev/ts1.webp" data-lightbox="image-ts" data-title="Menu">
+                <img src="/assets/images/prev/ts1.webp" alt="Menu" title="ts">
+            </a>
+            <div class="caption">
+                Menu
+            </div>
+        </td>
+        <td>
+            <a href="/assets/images/prev/ts5.webp" data-lightbox="image-ts" data-title="Leaderboard">
+                <img src="/assets/images/prev/ts5.webp" alt="Leaderboard" title="ts">
+            </a>
+            <div class="caption">
+                Leaderboard
+            </div>
+        </td>
+    </tr>    
+</table>
+</div>
+</div>
+
+**5. Chrome Dino Remastered** <br>
+Developed this to learn Pocket Code - A visual scripting based game development app on android.
+<table class="custom-table">    
+    <tr>
+        <td>
+            <a href="/assets/images/prev/cd3.jpeg" data-lightbox="image-cd" data-title="Menu">
+                <img src="/assets/images/prev/cd3.jpeg" alt="Menu" title="cd">
+            </a>
+            <div class="caption">
+                Menu
+            </div>
+        </td>
+        <td>
+            <a href="/assets/images/prev/cd2.jpeg" data-lightbox="image-cd" data-title="Gameplay">
+                <img src="/assets/images/prev/cd2.jpeg" alt="Gameplay" title="cd">
+            </a>
+            <div class="caption">
+                Gameplay
+            </div>
+        </td>
+    </tr>    
+</table>
 
 **6. Return To Monke**
+<table class="custom-table">    
+    <tr>
+        <td>
+            <a href="/assets/images/prev/r2m1.png" data-lightbox="image-r2m" data-title="Menu">
+                <img src="/assets/images/prev/r2m1.png" alt="Menu" title="r2m">
+            </a>
+            <div class="caption">
+                Menu
+            </div>
+        </td>
+        <td>
+            <a href="/assets/images/prev/r2m2.png" data-lightbox="image-r2m" data-title="Gameplay">
+                <img src="/assets/images/prev/r2m2.png" alt="Gameplay" title="r2m">
+            </a>
+            <div class="caption">
+                Gameplay
+            </div>
+        </td>
+    </tr>    
+</table>
 
 **7. Obamium Maker**
+<table class="custom-table">    
+    <tr>
+        <td>
+            <a href="/assets/images/prev/ob2.webp" data-lightbox="image-ob" data-title="Placeholder">
+                <img src="/assets/images/prev/ob2.webp" alt="Placeholder" title="ob">
+            </a>
+            <div class="caption">
+                Placeholder
+            </div>
+        </td>
+        <td>
+            <a href="/assets/images/prev/ob1.webp" data-lightbox="image-ob" data-title="Textured">
+                <img src="/assets/images/prev/ob1.webp" alt="Textured" title="ob">
+            </a>
+            <div class="caption">
+                Textured
+            </div>
+        </td>
+    </tr>    
+</table>
 
 *Update: Most of these apps were removed from the Play Store as they used a deprecated Unity Ads SDK that didn't align with the store's policy.  Remember, don't be greedy, folks!*
 
 ## Soul Shard
+
+<center>
+<a href="/assets/images/prev/soulsh.jpg" data-lightbox="soul-sh" data-title="SS Logo">
+    <img src="/assets/images/prev/soulsh.jpg" alt="soul-sh" title="ss">
+</a>
+</center>
+
+* Assisted the Cohort-18 [19SOB](https://www.19soulsonboard.com/about) team at FIEA with their capstone project as a tech artist  & designer for shader &  gameplay programming, whilst developing various Particle & VFX systems.
 * Provided assistance in shader & gameplay programming, and the development of particle & VFX systems.
 * Developed a dynamic footprint system for main characters and VFX effects such as stylized fire, smoke, debris, and flames.
 * Created a dynamic snowstorm system and implemented rope physics for cables, as well as a dynamic loading screen for various scene transitions.
