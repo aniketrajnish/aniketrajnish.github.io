@@ -201,22 +201,64 @@ Developed this to learn Pocket Code - A visual scripting based game development 
     <img src="/assets/images/prev/soulsh.jpg" alt="soul-sh" title="ss">
 </a>
 </center>
+<br>
 
 * Assisted the Cohort-18 [19SOB](https://www.19soulsonboard.com/about) team at FIEA with their capstone project as a tech artist  & designer for shader &  gameplay programming, whilst developing various Particle & VFX systems.
 * Provided assistance in shader & gameplay programming, and the development of particle & VFX systems.
 * Developed a dynamic footprint system for main characters and VFX effects such as stylized fire, smoke, debris, and flames.
 * Created a dynamic snowstorm system and implemented rope physics for cables, as well as a dynamic loading screen for various scene transitions.
-* Curated development logs and documentation about my contribution that can be found [here](/works/fiea-summer/). 
+* Curated development logs and documentation about my contribution that can be found [here](/works/fiea-summer/).
 
 ## Optimized Bullet-Time Destruction Pipeline in Unity
 
+<div style="display: flex; justify-content: center; align-items: center;">
+    <video controls loop style="width: 90%; border: 3px solid black; border-radius: 15px;">
+        <source src="/assets/images/optimizedBTPipeline.mp4" type="video/mp4">
+    </video>
+</div>
+<br>
+
 ## Front Flip Animation State Machine & IK Rig in Unreal Engine
 
+<div style="display: flex; justify-content: center; align-items: center;">
+    <video controls loop style="width: 90%; border: 3px solid black; border-radius: 15px;">
+        <source src="/assets/images/asm.mp4" type="video/mp4">
+    </video>
+</div>
+<br>
+
 ## Project Holly
-Created an interactive movie experience using Unity. For this project, I developed an asset that allows one to stream a video in small chunks accroding to the user's choices. This allows you to take control of the characters and make choices on not only the direction of the narrative of the film but also fine control on the character's movement.
+Created an interactive movie experience using Unity. For this project, I developed an asset that allows one to stream a video in small chunks accroding to the user's choices. This allows you to take control of the characters and make choices on not only the direction of the narrative of the film but also fine control on the character's movement. You can try the demo [here](https://play.google.com/store/apps/details?id=com.makra.Holly&pli=1).
+
+<div style="display: flex; justify-content: center; align-items: center;">
+    <video controls loop style="width: 90%; border: 3px solid black; border-radius: 15px;">
+        <source src="/assets/images/asm.mp4" type="video/mp4">
+    </video>
+</div>
+<br>
 
 ## Mathematical Model for Rendering using Gaussian Elimination
-Mathematically modeled and implemented a 3D rendering technique that uses numerical methods to calculate the intersection of planes and render 3D objects. Extended this approach to render the 3D projection of [4D hypercubes](https://github.com/aniketrajnish/4d-rendering-ma202-project).
+[Mathematically modeled and implemented](https://github.com/aniketrajnish/numerical-methods-for-3d-rendering-ma202-project) a 3D rendering technique that uses numerical methods to calculate the intersection of planes and render 3D objects. Extended this approach to render the 3D projection of [4D hypercubes](https://github.com/aniketrajnish/4d-rendering-ma202-project).
+<table class="custom-table">    
+    <tr>
+        <td>
+            <a href="/assets/images/prev/tess.gif" data-lightbox="image-ma202" data-title="Rotating Hypervube">
+                <img src="/assets/images/prev/tess.gif" alt="Rotating Hypervube" title="ma202">
+            </a>
+            <div class="caption">
+                Rotating Hypervube
+            </div>
+        </td>
+        <td>
+            <a href="/assets/images/prev/cub.gif" data-lightbox="image-ma202" data-title="Rotating Cube">
+                <img src="/assets/images/prev/cub.gif" alt="Rotating Cube" title="MA202">
+            </a>
+            <div class="caption">
+                Rotating Cube
+            </div>
+        </td>
+    </tr>    
+</table>
 
 ## ASCII Line Art
 
@@ -304,15 +346,79 @@ Mathematically modeled and implemented a 3D rendering technique that uses numeri
 </table>
 
 ## Procedural Generation of 3D space from 2D map using Raycasts
-Developed a 3D Renderer in Scratch using principles of raycasting, with features such as varying FOV  and shadow-mapping. Any 2D map input gets converted into a procedurally generated 3D world.
+Developed a [3D Renderer in Scratch](https://scratch.mit.edu/projects/510603211/) using principles of raycasting, with features such as varying FOV  and shadow-mapping. Any 2D map input gets converted into a procedurally generated 3D world.
+<table class="custom-table">
+    <tr>
+        <td style="text-align: center;">
+            <a href="/assets/images/prev/Raycast3D.gif" data-lightbox="RaycastRenderer" data-title="2D Image to 3D Map">
+                <img src="/assets/images/prev/Raycast3D.gif" alt="2D Image to 3D Map">
+            </a>
+            <br>
+            <strong>2D Image to 3D Map</strong>
+        </td>
+    </tr>
+</table>
 
 ## Unity First!
 Tried using Unity & Blender for most of my assignments instead of softwares like AutoCAD and Matlab.
+<table class="custom-table">
+    <tr>
+        <td style="text-align: center;">
+            <a href="/assets/images/prev/4BarRubiks_low.gif" data-lightbox="4Bar" data-title="4 Bar Mechanism in Unity">
+                <img src="/assets/images/prev/4BarRubiks_low.gif" alt="4 Bar Mechanism in Unity">
+            </a>
+            <br>
+            <strong>4 Bar Mechanism in Unity</strong>
+        </td>
+    </tr>
+</table>
 
 ## Tried Proving CodeParade wrong :3
-* I worked on various Non-Euclidean world simulations inside of Unity, especially after CodeParade announced that [it’s technically impossible to develop Non-Euclidean worlds in Unity without low-level access to its Rendering Engine](https://youtu.be/kEB11PQ9Eo8?t=233).
+* I worked on various Non-Euclidean world simulations inside of Unity, after CodeParade, in one of his videos, said that [it’s technically impossible to develop Non-Euclidean worlds in Unity without low-level access to its Rendering Engine](https://youtu.be/kEB11PQ9Eo8?t=233).
 * The first simulation consisted of cameras rendering over a render texture in the opening of a tunnel and colliders that teleported the player between different worlds seamlessly, offering a non-euclidean illusion.
+<iframe width="560" height="315" src="https://www.youtube.com/embed/Jv5gQzI1xhk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen style="display: block; margin: 0 auto;"></iframe>
+
+* The subsequent two simulations used multiple intersecting single-sided planes instead of a 3d mesh to give a non-euclidean look.
+<table class="custom-table">
+    <tr>
+        <td>
+            <div class="yt-container">
+                <iframe src="https://www.youtube.com/embed/wi1RoQJWHbk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+        </td>
+        <td>
+            <div class="yt-container">
+                <iframe src="https://www.youtube.com/embed/4zfHbw6GRes" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+        </td>
+    </tr>
+</table>
 
 ## Made a go-kart!!
+Built this in a team of 10!!
+<table class="custom-table">
+    <tr>
+        <td style="text-align: center;">
+            <a href="/assets/images/prev/gokart.png" data-lightbox="gk" data-title="Go Kart">
+                <img src="/assets/images/prev/gokart.png" alt="Go Kart">
+            </a>            
+        </td>
+    </tr>
+</table>
 
 ## VFX and Edits
+<iframe width="560" height="315" src="https://www.youtube.com/embed/4zfHbw6GRes" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen style="display: block; margin: 0 auto;"></iframe>
+<br>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/kPlAOdrKgbw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen style="display: block; margin: 0 auto;"></iframe>
+<br>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/ofWcNlWYwnI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen style="display: block; margin: 0 auto;"></iframe>
+<br>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/9tfnqnrit_0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen style="display: block; margin: 0 auto;"></iframe>
+<br>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/_QH19dipOxY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen style="display: block; margin: 0 auto;"></iframe>
+<br>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/fMwoglpPgFk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen style="display: block; margin: 0 auto;"></iframe>
+<br>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/a__DdXiYQ-U" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen style="display: block; margin: 0 auto;"></iframe>
+<br>
+
