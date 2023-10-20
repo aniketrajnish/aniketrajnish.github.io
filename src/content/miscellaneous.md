@@ -422,3 +422,6 @@ Built this in a team of 10!!
 <iframe width="560" height="315" src="https://www.youtube.com/embed/a__DdXiYQ-U" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen style="display: block; margin: 0 auto;"></iframe>
 <br>
 
+## Remade Dani's games
+Remade Dani's Flash Gamesh amassing 1M+ plays and 15k+ views on YouTube and recognition from Dani himself. Watch [here](https://www.youtube.com/playlist?list=PLQi4IKEYBPHUisVkBGx31KaW5VgUB64z2).
+
