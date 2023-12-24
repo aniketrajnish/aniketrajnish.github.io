@@ -35,13 +35,6 @@ html.no-js(lang='en')
                   .cover
                     h2!= val.gridName || val.display
                   .image
-
-            else
-              a(id=key + '-link', href='/works/' + key)
-                div
-                  .cover
-                    h2!= val.gridName || val.display
-
         .center-container(style='perspective: 500rem;')  
           figure(style='display: flex; flex-direction: column; width: 100%; margin: 20px;')
             video(controls loop playsinline src='/assets/images/demoreel.mp4' style='border: 5px solid white; border-radius: 30px;')
