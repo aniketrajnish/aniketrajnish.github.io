@@ -194,6 +194,150 @@ Developed this to learn Pocket Code - A visual scripting based game development 
 
 *Update: Most of these apps were removed from the Play Store as they used a deprecated Unity Ads SDK that didn't align with the store's policy.  Remember, don't be greedy, folks!*
 
+## Crate Project
+* Created this realtime prop following the entire 3D art asset creation pipeline going through proxy, high-res and game-res modelling phases.
+* Textured the asset, created an inifinte wall and product shot lighting setup in Unreal Engine 5.
+<table class="custom-table">
+    <tr>
+        <td>
+            <a href="/assets/images/crate_fin_1.png" data-lightbox="image-crate-final-render" data-title="Final Crate Render">
+                <img src="/assets/images/crate_fin_1.png" alt="Final Crate Render" >
+            </a>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <a href="/assets/images/crate_fin_2.png" data-lightbox="image-crate-final-render" data-title="Final Crate Render">
+                <img src="/assets/images/crate_fin_2.png" alt="Final Crate Render" >
+            </a>
+        </td>
+    </tr>
+</table>
+
+<table class="custom-table">
+    <tr>
+        <td>
+            <a href="/assets/images/crate_proxy_1.png" data-lightbox="proxy-crate" data-title="Proxy Shot1">
+                <img src="/assets/images/crate_proxy_1.png" alt="Proxy Shot1">
+            </a>
+        </td>
+        <td>
+            <a href="/assets/images/crate_proxy_2.png" data-lightbox="proxy-crate" data-title="Proxy Shot2">
+                <img src="/assets/images/crate_proxy_2.png" alt="Proxy Shot2">
+            </a>
+        </td>
+    </tr>
+    <tr>
+        <th colspan="2" style="text-align: center;">Proxy and Game-Res Crate Model</th>       
+    </tr>
+</table>
+
+<table class="custom-table">
+    <tr>
+        <td>
+            <a href="/assets/images/crate_highres.jpg" data-lightbox="highres-crate" data-title="Highres Shot1">
+                <img src="/assets/images/crate_highres.jpg" alt="Highres Shot1">
+            </a>
+        </td>        
+    </tr>
+    <tr>
+        <th style="text-align: center;">High Resolution Sculpting Model</th>       
+    </tr>
+</table>
+
+<table class="custom-table">
+    <tr>
+        <td>
+            <a href="/assets/images/crate_tex.png" data-lightbox="crate-tex" data-title="Tex&Mat Crate">
+                <img src="/assets/images/crate_tex.png" alt="Tex&Mat Crate">
+            </a>
+        </td>   
+        <td>
+            <a href="/assets/images/crate_mat.png" data-lightbox="crate-mat" data-title="Tex&Mat Crate">
+                <img src="/assets/images/crate_mat.png" alt="Highres Shot1">
+            </a>
+        </td>     
+    </tr>
+    <tr>
+        <th style="text-align: center;">Substance Painter Texturing</th>
+        <th style="text-align: center;">UE5 Material Node</th>        
+    </tr>
+</table>
+
+<table class="custom-table">
+    <tr>
+        <td>
+            <a href="/assets/images/crate_uv.png" data-lightbox="crate-uv" data-title="Crate UV">
+                <img src="/assets/images/crate_uv.png" alt="Crate UV">
+            </a>
+        </td>   
+        <td>
+            <a href="/assets/images/crate_high_game_res.png" data-lightbox="high-game-res" data-title="High&Game Res">
+                <img src="/assets/images/crate_high_game_res.png" alt="High&Game Res">
+            </a>
+        </td>     
+    </tr>
+    <tr>
+        <th style="text-align: center;">UV Unwrapping</th>
+        <th style="text-align: center;">High-Res and Game-Res Mesh</th>        
+    </tr>
+</table>
+
+## VR Project
+* Created a Spongebob VR experience in Unreal Engine 5 with a team of 4 artists.
+* I was responsible for the lighting, post-processing, animation state machines, rigging and the overall blueprinting of the project.
+<table class="custom-table">
+    <tr>
+        <td>
+            <a href="/assets/images/vr1.png" data-lightbox="vr-project" data-title="VR Project">
+                <img src="/assets/images/vr1.png" alt="VR Project">
+            </a>
+        </td>   
+        <td>
+            <a href="/assets/images/vr2.png" data-lightbox="vr-project" data-title="VR Project">
+                <img src="/assets/images/vr2.png" alt="VR Project">
+            </a>
+        </td>     
+    </tr>
+    <tr>
+        <td>
+            <a href="/assets/images/vr3.png" data-lightbox="vr-project" data-title="VR Project">
+                <img src="/assets/images/vr3.png" alt="VR Project">
+            </a>
+        </td>   
+        <td>
+            <a href="/assets/images/vr4.png" data-lightbox="vr-project" data-title="VR Project">
+                <img src="/assets/images/vr4.png" alt="VR Project">
+            </a>
+        </td>     
+    </tr>
+    <tr>
+        <th colspan="2" style="text-align: center;">Screenshots from the engine</th>        
+    </tr>
+</table>
+
+**Proxy Pass**<br>
+My primary focus in the proxy-pass week was on enhancing the visual aesthetics of the scene through lighting and post-processing effects to give it a blue underwater ambience. I also integrated trigger volumes within the environment to initiate the "Breaking Animation" sequence which could be used around the prop later as well as worked on its animation blueprint. Lastly I assisted in navmesh for teleporation, the grey material and rigged the SpongeBob hands. See the screenshots for this week [here](https://aniketrajnishfiea.blogspot.com/2023/10/fiea-common-art-project-7-vr-proxy-pass.html).
+
+**Clean Pass**<br>
+This week I fixed the physics collisions between objects, fixed the teleportation mechanic, did a second pass on the lighting and implemented grabbing and snapping of props. See the screenshots for this week [here](https://aniketrajnishfiea.blogspot.com/2023/11/fiea-common-art-project-10-vr-clean-pass.html).
+
+**Environment Final Pass**<br>
+This week I did a final pass on the lighting by simulating fake lighting using emissive materials. I created a blueprint to open and close the cabinet, did a final pass on the Animation blueprints to fix the hand breaking upon trigger, fixed the spatula grab pose using animation state machine and finally created a modular parent material for the scene and props. See the screenshots for this week [here](https://aniketrajnishfiea.blogspot.com/2023/11/fiea-common-art-project-11-vr-final-pass.html).
+
+**Character Final Pass**<br>
+This week I worked upon the blueprint animation blueprint of Plankton, added behaviour to sauce bottle, worked on audio trigger, worked on Fluid VFX which somehow didn't work in VR. See the screenshots for this week [here](https://aniketrajnishfiea.blogspot.com/2023/11/fiea-common-art-project-12-vr-character.html).
+
+## Mesh To Point Cloud Tool for Houdini
+A python shelf tool to convert mesh to point clouds using Houdini.
+<center>
+  <video controls loop style="width: 90%; border: 3px solid black; border-radius: 15px;">
+    <source src="https://github.com/aniketrajnish/MeshToPointClouds-Houdini/assets/58925008/2ee677dc-05d4-4988-bc64-b5f4941af769" type="video/mp4">
+  </video>
+</center>
+* It uses a scatter node to scatter points on the mesh.
+* It retains the color and UV info using attribfrommap node and the mesh's texture that it searches for automatically.
+
 ## Soul Shard
 
 <center>
