@@ -1,0 +1,3630 @@
+<!DOCTYPE html><html lang="en" class="no-js"><head><link href="/assets/css/oxism.css?v=fbf4687a4a2c3ae74447feafeacb087f" rel="stylesheet" type="text/css"><link href="//fonts.googleapis.com/css?family=Playfair+Display:700" rel="stylesheet" type="text/css"><link href="/assets/images/logo.png" rel="icon" type="image/png"><link href="/assets/images/logo.png" rel="apple-touch-icon-precomposed"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no"><meta name="author" content="Aniket Rajnish"><meta name="description" content="Aniket Rajnish :: Portfolio"><title>Multi Window Sync - PyQt - Windows GUI multiple window synchronization using PyQt5 and pyqtSignal</title><link rel="stylesheet" href="/assets/css/lightbox.css"></head><body class="perma"><div class="flex-container"><nav id="grid"><div id="info"><div><div class="cover"><h1>Aniket<br>Rajnish</h1><br><h2>Portfolio</h2></div><div class="image"></div></div></div><div id="meta"><div><div class="cover"><div><a id="email" class="button">email</a><a href="https://www.linkedin.com/in/makra2077/" class="button">linkedin</a><a href="https://github.com/aniketrajnish" class="button">github</a><a href="/assets/pdf/AR_Resume.pdf" class="button">resume </a><a href="/works/blogs" class="button">blogs             </a></div></div></div></div><a id="collider-optimizer-unity-link" href="/works/collider-optimizer-unity" class="major"><div><div class="cover"><h2>Unity Collider Optimizer</h2></div><div class="image"></div></div></a><a id="multi-window-sync-link" href="/works/multi-window-sync" class="major"><div><div class="cover"><h2>Multi Window Sync - PyQt</h2></div><div class="image"></div></div></a><a id="spiderverse-pp-link" href="/works/spiderverse-pp" class="major"><div><div class="cover"><h2>Spiderverse Post Processing</h2></div><div class="image"></div></div></a><a id="trippy-pp-link" href="/works/trippy-pp" class="major"><div><div class="cover"><h2>Trippy Post Processing</h2></div><div class="image"></div></div></a><a id="unity-4d-engine-link" href="/works/unity-4d-engine" class="major"><div><div class="cover"><h2>4D Engine - Unity</h2></div><div class="image"></div></div></a><a id="raymarching-engine-unity-link" href="/works/raymarching-engine-unity" class="major"><div><div class="cover"><h2>Raymarching Engine - Unity</h2></div><div class="image"></div></div></a><a id="shapes-dataset-generator-link" href="/works/shapes-dataset-generator" class="major"><div><div class="cover"><h2>3D Shapes Dataset Generator</h2></div><div class="image"></div></div></a><a id="alembic-to-fbx-link" href="/works/alembic-to-fbx" class="major"><div><div class="cover"><h2>Alembic to FBX Converter</h2></div><div class="image"></div></div></a><a id="hypercasual-games-link" href="/works/hypercasual-games" class="major"><div><div class="cover"><h2>Hypercasual Games</h2></div><div class="image"></div></div></a><a id="gamejam-entries-link" href="/works/gamejam-entries" class="major"><div><div class="cover"><h2>Gamejam Entries</h2></div><div class="image"></div></div></a><a id="miscellaneous-link" href="/works/miscellaneous"><div><div class="cover"><h2>more work</h2></div></div></a><div style="perspective: 500rem;" class="center-container"> <figure style="display: flex; flex-direction: column; width: 100%; margin: 20px;"><video controls loop playsinline src="/assets/images/demoreel.mp4" style="border: 5px solid white; border-radius: 30px;"></video><figcaption style="color: white; margin-top: 10px;" class="caption">Demo Reel</figcaption></figure></div></nav></div><section id="perma"><div id="perma-content"><a id="x" href="/">&times;</a><main id="content-multi-window-sync" role="main" class="active"><h1>Multi Window Sync - PyQt</h1><h2>Windows GUI multiple window synchronization using PyQt5 and pyqtSignal.</h2><div class="images"><video autoplay loop playsinline muted src="/assets/images/multiwindowsync0.mp4" style="width: 100%;"></video></div><div class="buttons"><a href="https://github.com/aniketrajnish/MultiWindowSync-PyQt" class="button">github</a><a href="https://github.com/aniketrajnish/MultiWindowSync-PyQt/releases/tag/v001" class="button">Windows x64 Installer</a></div><div class="content"><p>Windows GUI application developed using <code>PyQt5</code>. It demonstrates the synchronization of multiple windows using <code>pyqtSignal</code>. Inspired by the <a href="https://twitter.com/_nonfigurativ_/status/1727322594570027343">work</a> of Bjørn Staal. </p>
+<h2 id="usage">Usage</h2>
+<ul>
+<li>Clone the repository<pre><code>git clone https://github.com/aniketrajnish/MultiWindowSync-PyQt.git
+</code></pre></li>
+<li>Open Terminal and change directory to the script’s folder.<pre><code>cd &lt;path-to-repo&gt;\src
+</code></pre></li>
+<li>Install Dependencies<pre><code>pip install -r requirements.txt
+</code></pre></li>
+<li>Run the main script<pre><code>python MultiWindowTest.py
+</code></pre></li>
+<li>Use your own image/GIF.<pre><code>File -&gt; Open Image/GIF
+</code></pre></li>
+<li>In case you don’t wanna go through all of this hassle, I’ve added an executable file in the <a href="https://github.com/aniketrajnish/MultiWindowSync-PyQt/releases/tag/v001">Releases Section</a> that you can directly try on your machine.</li>
+</ul>
+<h2 id="contributing">Contributing</h2>
+<p>Contributions to the project are welcome. Currently working on:</p>
+<ul>
+<li>Expanding the environment to 3D using PyOpenGL.</li>
+<li>Fix the bug where the parent image window always moves the image along with it for ref to other windows even if <code>Move With Window</code> is unchecked.</li>
+</ul>
+<h2 id="license">License</h2>
+<p>MIT License</p>
+</div><div class="tools">Python, PyQt5, qtSignal</div><br class="clear"></main><article id="content-collider-optimizer-unity"><h1>Unity Collider Optimizer</h1><h2>Optimizes Mesh &amp; Polygon colliders in Unity.</h2><div class="images"><video autoplay loop playsinline muted src="/assets/images/collideroptimizer2.mp4" style="width: 100%;"></video></div><div class="buttons"><a href="https://github.com/aniketrajnish/Unity-Collider-Optimizer" class="button">github [300+ stars]</a><a href="https://80.lv/articles/a-new-tool-for-optimizing-mesh-polygon-colliders-in-unity/" class="button">80.lv Article</a><a href="https://github.com/aniketrajnish/Unity-Collider-Optimizer/releases/tag/v004" class="button">unitypackage</a></div><div class="content"><h2 id="polygon-collider-optimizer">Polygon Collider Optimizer</h2>
+<table class="custom-table">
+  <tr>
+    <td>
+      <a href="https://github.com/aniketrajnish/Unity-Collider-Optimizer/assets/58925008/62a658c3-487c-4d80-b303-b96a74804a99" data-lightbox="polygon-collider-optimizer" data-title="Original Sprite">
+        <img src="https://github.com/aniketrajnish/Unity-Collider-Optimizer/assets/58925008/62a658c3-487c-4d80-b303-b96a74804a99" alt="Original Sprite">
+      </a>
+    </td>
+    <td>
+      <a href="https://github.com/aniketrajnish/Unity-Collider-Optimizer/assets/58925008/cc114920-5bcd-4f06-81ad-9df9a176055d" data-lightbox="polygon-collider-optimizer" data-title="Unity Polygon Collider">
+        <img src="https://github.com/aniketrajnish/Unity-Collider-Optimizer/assets/58925008/cc114920-5bcd-4f06-81ad-9df9a176055d" alt="Unity Polygon Collider">
+      </a>
+    </td>
+    <td>
+      <a href="https://github.com/aniketrajnish/Unity-Collider-Optimizer/assets/58925008/dfd8c63e-11ed-4a74-a2e1-45e2829f017e" data-lightbox="polygon-collider-optimizer" data-title="Optimized Polygon Collider">
+        <img src="https://github.com/aniketrajnish/Unity-Collider-Optimizer/assets/58925008/dfd8c63e-11ed-4a74-a2e1-45e2829f017e" alt="Optimized Polygon Collider">
+      </a>
+    </td>
+  </tr>
+  <tr>
+    <td style="text-align:center;">Original Sprite</td>
+    <td style="text-align:center;">Unity Polygon Collider</td>
+    <td style="text-align:center;">Optimized Polygon Collider</td>
+  </tr>
+  <tr>
+    <td style="text-align:center;"><strong>Path Count</strong></td>
+    <td style="text-align:center;"><em>213 paths</em></td>
+    <td style="text-align:center;"><em>23 paths</em></td>
+  </tr>
+</table>
+
+<p>The tool uses a <a href="https://www.codeproject.com/Articles/18936/A-C-Implementation-of-Douglas-Peucker-Line-Appro">C# implementation</a> of the Ramer Douglas Peucker Algorithm to smooth the polylines and reduce the number of paths created by a Polygon Collider in Unity.</p>
+<h2 id="usage">Usage</h2>
+<ul>
+<li>Download the <code>collideroptimizationpackage_2d_v004.unitypackage</code> package from the <a href="https://github.com/aniketrajnish/Unity-Collider-Optimizer/releases/">Releases</a>.</li>
+<li>Import all the assets from the package in your unity project.</li>
+<li>Attach the <code>PolygonColliderOptimizer.cs</code> script on your 2D sprite.</li>
+<li>Adjust the <code>optimizationFactor</code> to control the amount of optimzation you need. </li>
+<li>Run the performance comparision test on your machine by cloning the project &amp; going to the <code>Polygon Collider Optimization Test</code> scene in Unity.</li>
+</ul>
+<h2 id="mesh-collider-optimizer">Mesh Collider Optimizer</h2>
+<table class="custom-table">
+  <tr>
+    <td>
+      <a href="https://github.com/aniketrajnish/Unity-Collider-Optimizer/assets/58925008/e23b8db9-c301-41b1-8ef0-31b2216057d6" data-lightbox="mesh-collider-optimizer" data-title="Original Mesh">
+        <img src="https://github.com/aniketrajnish/Unity-Collider-Optimizer/assets/58925008/e23b8db9-c301-41b1-8ef0-31b2216057d6" alt="Original Mesh">
+      </a>
+    </td>
+    <td>
+      <a href="https://github.com/aniketrajnish/Unity-Collider-Optimizer/assets/58925008/7a88b61c-2c35-40df-a181-23e7d0d7c05c" data-lightbox="mesh-collider-optimizer" data-title="Unity Mesh Collider">
+        <img src="https://github.com/aniketrajnish/Unity-Collider-Optimizer/assets/58925008/7a88b61c-2c35-40df-a181-23e7d0d7c05c" alt="Unity Mesh Collider">
+      </a>
+    </td>
+    <td>
+      <a href="https://github.com/aniketrajnish/Unity-Collider-Optimizer/assets/58925008/06a5fb01-3c08-4a1c-bb82-2b30a534693e" data-lightbox="mesh-collider-optimizer" data-title="Optimized Mesh Collider">
+        <img src="https://github.com/aniketrajnish/Unity-Collider-Optimizer/assets/58925008/06a5fb01-3c08-4a1c-bb82-2b30a534693e" alt="Optimized Mesh Collider">
+      </a>
+    </td>
+  </tr>
+  <tr>
+    <td style="text-align:center;">Original Mesh</td>
+    <td style="text-align:center;">Unity Mesh Collider</td>
+    <td style="text-align:center;">Optimized Mesh Collider</td>
+  </tr>
+  <tr>
+    <td style="text-align:center;"><strong>Triangles Count</strong></td>
+    <td style="text-align:center;"><em>9132 tris</em></td>
+    <td style="text-align:center;"><em>2416 tris</em></td>
+  </tr>
+</table>
+
+<p>The tool uses the <a href="https://github.com/Habrador/Computational-geometry">Computational Geometry Unity Library</a> by Erik Nordeus 🐐 to perfrom the Quadric Error Metric simplification on the shared mesh of the mesh collider.</p>
+<h4 id="usage">Usage</h4>
+<ul>
+<li>Download the <code>collideroptimizationpackage_3d_v004.unitypackage</code> package from the <a href="https://github.com/aniketrajnish/Unity-Collider-Optimizer/releases/">Releases</a>.</li>
+<li>Import all the assets from the package in your unity project.</li>
+<li>Attach the <code>MeshColliderOptimizer.cs</code> script on your 2D sprite.</li>
+<li>Choose the connecting mode between <em>Fast, Precise, and No.</em></li>
+<li>Adjust the <code>optimizationFactor</code> to control the amount of optimzation you need.</li>
+<li>Choose the mesh style to be <em>Soft, Hard or both</em>.</li>
+<li><strong>Warning:</strong> Choosing the “Fast” mode would likely lead to errors, Precise mode is recommended for most of the meshes.</li>
+<li>Run the performance comparision test on your machine by cloning the project &amp; going to the <code>Mesh Collider Optimization Test</code> scene in Unity.</li>
+</ul>
+<h2 id="updates">Updates</h2>
+<ul>
+<li>Added the functionality to save and load the optimized colliders as assets.</li>
+<li>Fixed the refresh bug.<center>
+<video controls loop style="width: 90%; border: 3px solid black; border-radius: 15px;">
+<source src="https://github.com/aniketrajnish/Unity-Collider-Optimizer/assets/58925008/ba42c61c-4ea1-419d-bf81-324304a218b8" type="video/mp4">
+</video>
+</center>
+
+</li>
+</ul>
+<h2 id="contribution">Contribution</h2>
+<p>Contributions to the project are welcome. Currently working on converting the QEM algorithm to a couroutine to stop the main Unity thread from freezing.
+<br>
+<br></p>
+<h2 id="known-bugs">Known Bugs</h2>
+<ul>
+<li><del>If a prefab is made out of a gameobject having Polygon Collider Optimizer, it keeps refreshing itself.</del> <strong>[FIXED]</strong></li>
+<li>Choosing Hard Edge Mesh Style decreases the number of triangles but induces additional vertices (doesn’t affect the performance).</li>
+</ul>
+</div><div class="tools">C#, Unity</div><br class="clear"></article><article id="content-spiderverse-pp"><h1>Spiderverse Post Processing</h1><h2>Spiderverse inspired stylized post-processing effect for Unreal Engine and Unity.</h2><div class="images"><video autoplay loop playsinline muted src="/assets/images/spiderversepp0.mp4" style="width: 100%;"></video></div><div class="buttons"><a href="https://github.com/aniketrajnish/SpiderVersePostProcess-Unreal-Unity" class="button">github</a><a href="https://github.com/aniketrajnish/SpiderVersePostProcess-Unreal-Unity/releases/tag/v001-unity" class="button">unitypackage</a><a href="https://github.com/aniketrajnish/SpiderVersePostProcess-Unreal-Unity/releases/tag/v001-unreal" class="button">unreal package</a></div><div class="content"><p>Spiderverse-inspired stylized post-processing effect for Unreal Engine and Unity.</p>
+<h2 id="usage">Usage</h2>
+<p><strong>Unity</strong></p>
+<ul>
+<li>Download the <code>.unitypackage</code> from the <a href="https://github.com/aniketrajnish/StylizedPostProcess-Unreal-Unity/releases/tag/v001-unity">Releases Section</a>.</li>
+<li>Open/Create a new URP Unity project.</li>
+<li>Import the package into the project.</li>
+<li>Enable the Stylized Renderer Feature in your URP Renderer (generally in <code>Assets/Settings</code> folder) by adding the <code>Stylized Renderer Feature</code> to the Renderer Features.</li>
+<li>Control the Renderer Feature’s properties by adding a <code>Global Volume</code> component to your scene.</li>
+<li><p>Add <code>Makra/Stylized PP</code> override to the Volume component. The custom post-processing contains the following components-</p>
+<table class="custom-table">
+  <tr>
+    <th>Property</th>
+    <th>Description</th>
+  </tr>
+  <tr>
+    <td><strong>Threshold</strong></td>
+    <td>Minimum brightness for the effect to be applied.</td>
+  </tr>
+  <tr>
+    <td><strong>Intensity</strong></td>
+    <td>Strength/Brightness of the effect.</td>
+  </tr>
+  <tr>
+    <td><strong>Scatter</strong></td>
+    <td>How much screen space the effect occupies.</td>
+  </tr>
+  <tr>
+    <td><strong>Dots Density</strong></td>
+    <td>Density of the benday dots.</td>
+  </tr>
+  <tr>
+    <td><strong>Dots Cutoff</strong></td>
+    <td>Cutoff value of benday dots.</td>
+  </tr>
+  <tr>
+    <td><strong>Scroll Velocity</strong></td>
+    <td>Velocity of the dots scrolling over the screen.</td>
+  </tr>
+</table>
+</li>
+<li><p>You can use the Unity Project in <code>src/UnityStylizedPP</code> for reference.</p>
+<center>
+<video controls loop style="width: 90%; border: 3px solid black; border-radius: 15px;">
+  <source src="https://github.com/aniketrajnish/SpiderVersePostProcess-Unreal-Unity/assets/58925008/5b4cba4b-7982-4098-b80e-482948f007dc" type="video/mp4">
+</video>
+</center>
+
+</li>
+</ul>
+<p><strong>Unreal Engine</strong></p>
+<ul>
+<li>Download the Unreal Project from the <a href="https://github.com/aniketrajnish/SpiderVersePostProcess-Unreal-Unity/releases/tag/v001-unreal">Releases Section</a>.</li>
+<li>Use the map in the Unreal Project as a reference.</li>
+<li>To implement the stylized post-processing in your project, migrate the <code>Content/StylizedPP</code> from the project you downloaded above to your Unreal Project.</li>
+<li>Add a <code>PostProcessVolume</code> component to the level.</li>
+<li>Make sure that <code>Infinite Extent</code> is checked in the Post Process Volume Settings.</li>
+<li>Assign the <code>M_PP_Stylized_Inst</code> material to the Post Process Materials.</li>
+<li><p>Control the post process properties by going to thet <code>M_PP_Stylized_Inst</code> and changing the following parameters-</p>
+<table class="custom-table">
+  <tr>
+    <th>Property</th>
+    <th>Description</th>
+  </tr>
+  <tr>
+    <td><strong>Benday Clip</strong></td>
+    <td>Minimum brightness for the effect to be applied.</td>
+  </tr>
+  <tr>
+    <td><strong>Density Benday</strong></td>
+    <td>Density of the benday dots.</td>
+  </tr>
+  <tr>
+    <td><strong>Density Line</strong></td>
+    <td>Density of the hatching lines.</td>
+  </tr>
+  <tr>
+    <td><strong>Direction Benday</strong></td>
+    <td>Direction of Benday Pattern.</td>
+  </tr>
+  <tr>
+    <td><strong>Direction Line</strong></td>
+    <td>Direction of Hatching Pattern.</td>
+  </tr>
+  <tr>
+    <td><strong>Spec Mult</strong></td>
+    <td>Intensity and spread of specular highlights.</td>
+  </tr>
+</table>
+</li>
+<li><p>To create a stencil mask for the benday dots to be applied only on specific objects, go to project settings and change the <code>Custom Depth-Stencil Pass</code> to <code>Enabled with Stencil</code>.</p>
+</li>
+<li>In the mesh that you want to render the benday dots upon, enable the <code>Render CustomDepth Pass</code> option and change the <code>Custom Stencil Value</code> to 1. <center>
+<video controls loop style="width: 90%; border: 3px solid black; border-radius: 15px;">
+  <source src="https://github.com/aniketrajnish/SpiderVersePostProcess-Unreal-Unity/assets/58925008/040f165c-beb3-4eb2-b466-0c11bd1f2c14" type="video/mp4">
+</video>
+</center>
+
+</li>
+</ul>
+<h2 id="contributing">Contributing</h2>
+<p>Contributions to the project are welcome. Currently working on:</p>
+<ul>
+<li>Fixing glitches with persistent shadows in UE5.</li>
+<li>Add hatching lines to the shadows in Unity.</li>
+</ul>
+<h2 id="license">License</h2>
+<p>MIT License</p>
+</div><div class="tools">C#, Unity, HLSL, Shader Graph, Unreal Engine, Material Graph</div><br class="clear"></article><article id="content-trippy-pp"><h1>Trippy Post Processing</h1><h2>A trippy post-processing and render feature for Unity's URP.</h2><div class="images"><video autoplay loop playsinline muted src="/assets/images/trippypp0.mp4" style="width: 100%;"></video></div><div class="buttons"><a href="https://github.com/aniketrajnish/TrippyPostProcessing-Unity" class="button">github</a><a href="https://github.com/aniketrajnish/TrippyPostProcessing-Unity/releases/tag/v001" class="button">unitypackage</a></div><div class="content"><p> A trippy post-processing and render feature for Unity’s URP based on <a href="https://en.wikipedia.org/wiki/Sobel_operator">Sobel Filter Edge Detection</a>. I wrote this so that the next time I get high, I would work on projects with this ON :] </p>
+<h2 id="usage">Usage</h2>
+<ul>
+<li>Download the <code>.unitypackage</code> from the <a href="https://github.com/aniketrajnish/TrippyPostProcessing-Unity/releases/tag/v001">Releases Section</a>.<ul>
+<li><code>Trippy_PP_min_v001.1.unitypackage</code> just contains the backend for the post-processing.</li>
+<li><code>Trippy_PP_all_v001.1.unitypackage</code> contains the backend as well as a demo scene with the implementation for reference.</li>
+</ul>
+</li>
+<li>Open/Create a new URP Unity project.</li>
+<li>Import the package into the project.</li>
+<li>Enable the Trippy Renderer Feature in your URP Renderer (generally in <code>Assets/Settings</code> folder) by adding the <code>Trippy Renderer Feature</code> to the Renderer Features.</li>
+<li>Control the Renderer Feature’s properties by adding a <code>Global Volume</code> component to your scene.</li>
+<li><p>Add <code>Makra/Trippy</code> override to the Volume component. The custom post-processing contains the following components-    </p>
+<table class="custom-table">
+  <tr>
+    <th>Name</th>
+    <th>Description</th>
+  </tr>
+  <tr>
+    <td>Enable Effect</td>
+    <td>Toggles the effect on or off.</td>
+  </tr>
+  <tr>
+    <td>Intensity</td>
+    <td>Intensity of the Trippy effect.</td>
+  </tr>
+  <tr>
+    <td>Edge Color</td>
+    <td>Color of the edges.</td>
+  </tr>
+  <tr>
+    <td>Edge Width</td>
+    <td>Width of the edges.</td>
+  </tr>
+  <tr>
+    <td>Base Color</td>
+    <td>Base color of the environment.</td>
+  </tr>
+  <tr>
+    <td>Use Gradient</td>
+    <td>Toggles if a gradient texture is used as the edge color.</td>
+  </tr>
+  <tr>
+    <td>Gradient Tex</td>
+    <td>The gradient texture to be used.</td>
+  </tr>
+</table>
+</li>
+<li><p>If you wanna have some fun consider adding the <code>TrippyVolumeAnimator.cs</code> script to the Volume component ;)</p>
+<center>
+<video controls loop style="width: 90%; border: 3px solid black; border-radius: 15px;">
+  <source src="https://github.com/aniketrajnish/TrippyPostProcessing-Unity/assets/58925008/c0dd9c55-ced7-45ee-85c3-e9a21e509cb7" type="video/mp4">
+</video>
+</center>
+
+</li>
+</ul>
+<h2 id="contributing">Contributing</h2>
+<p>Contributions to the project are welcome. Currently working on:</p>
+<ul>
+<li>A better algorithm for edge width calculation. </li>
+</ul>
+<h2 id="license">License</h2>
+<p>MIT License</p>
+</div><div class="tools">C#, Unity, HLSL</div><br class="clear"></article><article id="content-unity-4d-engine"><h1>4D Engine - Unity</h1><h2>A 4D Raymarching Engine for Unity that helps render 4D objects in Unity's 3D space.</h2><div class="images"><video autoplay loop playsinline muted src="/assets/images/4dengine0.mp4" style="width: 100%;"></video></div><div class="buttons"><a href="https://github.com/aniketrajnish/4D-Engine-Unity" class="button">github</a><a href="https://github.com/aniketrajnish/4D-Engine-Unity/releases/tag/v001" class="button">unitypackage</a></div><div class="content"><p>A 4D Raymarching Engine for Unity that helps render 4D objects and has the following features:</p>
+<ul>
+<li>20+ 4D shapes to choose from.</li>
+<li>Control over shape’s dimensions and color.</li>
+<li>Control over shape’s 3D translation and rotation.</li>
+<li>Supports ambient occlusion, lighting information, hard and soft shadows.</li>
+<li>Control over both global and local 4D translation and rotation.</li>
+</ul>
+<p>I have made a 4D pacman game using this engine. You can check it out <a href="https://makra.itch.io/pacman-4d-into-the-4th-dimension">here</a>.<br>
+If you want to learn more about what 4D is, check out <a href="https://youtu.be/6Gim95bukm8?si=ROa28v9MgNcfmv7B">this</a> video that I made using this engine as the backend.</p>
+<h2 id="usage">Usage</h2>
+<p><strong>Importing the Package</strong></p>
+<ul>
+<li>Clone the repository or download the <code>.unitypackage</code> from the <a href="https://github.com/aniketrajnish/4D-Engine-Unity/releases/tag/v001">Releases Section</a> and import it in your project. <br><br><pre><code>git clone https://github.com/aniketrajnish/4D-Engine-Unity.git
+</code></pre></li>
+<li>Import the <a href="https://docs.unity3d.com/Packages/com.unity.mathematics@1.0/manual/index.html">Unity.Mathematics</a> package from the package manager.</li>
+<li>The package includes a pre-configured <code>Test</code> scene that serves as a reference. You can use this as a starting point for your project.</li>
+<li>If you want to setup a new scene by yourself, simply follow the steps outlined below.</li>
+</ul>
+<p><strong>Setting up a scene</strong></p>
+<ul>
+<li>Open a new scene and add the <code>Raymarcher</code> component to the Main Camera.</li>
+<li><p>The <code>Raymarcher</code> script has the following parameters in the inspector:</p>
+<table class="custom-table">
+  <tr>
+    <th>Category</th>
+    <th>Variable</th>
+    <th>Description</th>
+  </tr>
+  <tr>
+    <td><strong>General Settings</strong></td>
+    <td>Shader</td>
+    <td>Shader used for raymarching.</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td>Sun</td>
+    <td>Directional light in the scene.</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td>Loop</td>
+    <td>Repetition of structures in the raymarching shader.</td>
+  </tr>
+  <tr>
+    <td><strong>4D Settings</strong></td>
+    <td>W Pos</td>
+    <td>Global W position in 4D space.</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td>W Rot</td>
+    <td>Global W rotation in 4D space.</td>
+  </tr>
+  <tr>
+    <td><strong>Light Settings</strong></td>
+    <td>Is Lit</td>
+    <td>Toggle lighting calculations on/off.</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td>Is Shadow Hard</td>
+    <td>Toggle between hard and soft shadows.</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td>Is AO</td>
+    <td>Enable or disable Ambient Occlusion.</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td>Light Col</td>
+    <td>Color of the light.</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td>Light Intensity</td>
+    <td>Intensity of the light.</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td>Shadow Intensity</td>
+    <td>Intensity of shadows.</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td>Shadow Min</td>
+    <td>Minimum shadow distance.</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td>Shadow Max</td>
+    <td>Maximum shadow distance.</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td>Shadow Smooth</td>
+    <td>Smoothness of shadow edges.</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td>AO Step</td>
+    <td>Step size for AO calculation.</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td>AO Intensity</td>
+    <td>Intensity of AO.</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td>AO Iteration</td>
+    <td>Number of iterations for AO calculation.</td>
+  </tr>
+  <tr>
+    <td><strong>Render Settings</strong></td>
+    <td>Max Steps</td>
+    <td>Maximum number of steps for raymarching.</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td>Max Dist</td>
+    <td>Maximum distance to raymarch before considering a hit.</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td>Surf Dist</td>
+    <td>Threshold for considering a hit in raymarching.</td>
+  </tr>
+</table>
+
+</li>
+</ul>
+<p><strong>Rendering a shape</strong></p>
+<ul>
+<li>After adding the <code>Raymarcher</code> component to the Main Camera, create an empty gameobject and add the <code>RaymarchRenderer</code> component to it.</li>
+<li>Click the <code>Create New Dimensions</code> button to create a scriptable object containing all the data about the shape’s dimension that you can control using the custom editor for each shape.</li>
+<li><p>The <code>RaymarchRenderer</code> script has the following paramters in the inspector:</p>
+<table class="custom-table">
+  <tr>
+    <th>Category</th>
+    <th>Variable</th>
+    <th>Description</th>
+  </tr>
+  <tr>
+    <td><strong>Default Inspector</strong></td>
+    <td>Shape</td>
+    <td>4D shape to be rendered.</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td>Operation</td>
+    <td>Operation to be performed (union, subtraction, intersection).</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td>Color</td>
+    <td>Color of the shape.</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td>Rot W</td>
+    <td>Local W rotation in 4D space.</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td>Pos W</td>
+    <td>Local W position in 4D space.</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td>Blend Factor</td>
+    <td>Currently not implemented.</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td>Dimensions</td>
+    <td>Scriptable Object holding the shape’s dimension data.</td>
+  </tr>
+  <tr>
+    <td><strong>Shape Dimensions</strong></td>
+    <td>Dimension Props</td>
+    <td>The dimension properties based on the chosen 4D shape.</td>
+  </tr>
+</table>
+
+</li>
+</ul>
+<h2 id="contributing">Contributing</h2>
+<p>Contributions to the project are welcome. Things that need work:</p>
+<ul>
+<li>Currently operations triggers global operation on the last object. Need to change it to local operations with the objects in proximity/chosen objects.</li>
+<li>Make a better collision detection system.</li>
+<li>Implement a system to blend different shapes.</li>
+<li>Implementing <a href="https://marctenbosch.com/ndphysics/">n-dimensional rigid body dynamics</a>.</li>
+</ul>
+<h2 id="license">License</h2>
+<p>MIT License</p>
+</div><div class="tools">C#, Unity, HLSL</div><br class="clear"></article><article id="content-raymarching-engine-unity"><h1>Raymarching Engine - Unity</h1><h2>A raymarching engine for Unity that supports 28+ primitives and set operations.</h2><div class="images"><video autoplay loop playsinline muted src="/assets/images/raymarchingengine2.mp4" style="width: 100%;"></video></div><div class="buttons"><a href="https://github.com/aniketrajnish/Raymarching-Engine-Unity" class="button">github</a><a href="https://github.com/aniketrajnish/Raymarching-Engine-Unity/releases/tag/v001" class="button">unitypackage</a></div><div class="content"><p>A fast GPU-accelerated raymarching engine for Unity with support for over 28 primitives (including fractals, n-dimensional objects, volumetric clouds) and set operations (Union, Subtract, Intersect). Includes a custom interface for manipulating shader parameters through the editor.<br></p>
+<h2 id="rendering-the-shapes-provided">Rendering the shapes provided</h2>
+<p><strong>1. Using an Image Effect Shader</strong></p>
+<ul>
+<li>Attach <code>Raymarcher.cs</code> to the Main Camera and <code>RaymarchRenderer.cs</code> to an empty gameobject and set the properties and type of shape to render in the inspector.</li>
+<li>Drag the <code>ImageEffectRaymarcher.shader</code> in Shader field of <code>Raymarcher.cs</code> in inspector and direction light to the Sun’s transform field.</li>
+</ul>
+<p><strong>2. Using an Unlit Shader</strong></p>
+<ul>
+<li><p>Append the following lines in <code>Raymarcher</code> class of <code>Raymarcher.cs</code></p>
+<pre><code>private void Awake()
+{
+   GetComponent&lt;MeshRenderer&gt;().material = _raymarchMaterial;
+}
+private void OnEnable()
+{
+   EditorApplication.update += OnUpdate;
+}   
+private void OnUpdate()
+{
+   RaymarchRender();
+   EditorApplication.QueuePlayerLoopUpdate();
+} 
+private void Update()
+{
+   RaymarchRender();
+}
+private void OnDisable()
+{
+   EditorApplication.update -= OnUpdate;
+   foreach (var buffer in disposable)
+   {
+       buffer.Dispose();
+   }
+}
+
+// Append this in RaymarchRender function
+void RaymarchRender()
+{  
+   for (int i = 0; i &lt; renderers.Count; i++)
+   {
+       if (renderers[i] == GetComponent&lt;RaymarchRenderer&gt;())            
+           _raymarchMaterial.SetInt(&quot;rank&quot;, i);
+   }
+}
+</code></pre></li>
+<li>Attach <code>RaymarchRenderer.cs</code> and <code>Raymarcher.cs</code> to a gameobject having a mesh renderer and set the properties and type of shape to render in the inspector.</li>
+<li>Drag the <code>Raymarcher.shader</code> in Shader field of <code>Raymarcher.cs</code> in inspector and direction light to the Sun’s transform field. </li>
+</ul>
+<h2 id="rendering-a-custom-shape">Rendering a custom shape</h2>
+<ul>
+<li>Append the distance function of the shape in <code>DFs.cginc</code> like<pre><code>float sdShape(float3 p, // dimension parameters)    
+{
+  // distance function here
+}
+</code></pre></li>
+<li>Append the distance function created above in <code>GetDist()</code> in <code>Raymarcher.shader</code> (if using the unlit shader) or in the <code>ImageEffectRaymarcher.shader</code> (if using the Image Effect shader).<pre><code>float GetDist(Shape shape, float3 p) {
+  switch (shape.shapeIndex) {
+  case n:
+      return sdShape(float3 p, // dimension parameters);
+  }
+}
+</code></pre></li>
+<li>Add the shape in Shape enum and create a struct for its default dimension parameters in <code>RaymarchRenderer.cs</code>. <pre><code>public enum Shape {
+  // shape name
+};
+public struct shapeDimensions
+{
+ // default shape dimensions;
+};
+</code></pre></li>
+<li>Make the dimension array in <code>Helpers.cs</code> to be sent as a compute buffer to the Raymarching shader.<pre><code>public static vector12 GetDimensionVectors(int i)
+{
+  //dimension array
+}
+</code></pre></li>
+<li>Finally make a custom editor for your shape in the <code>PropertiesEdior.cs</code><pre><code>public override void OnInspectorGUI()
+{
+  base.OnInspectorGUI();
+  EditorGUILayout.Space();
+  EditorGUILayout.LabelField(&quot;Dimensions&quot;, EditorStyles.boldLabel);
+  RaymarchRenderer rr = (RaymarchRenderer)target;
+  switch ((int)rr.shape)
+  {
+      //property editor here
+  }
+}
+</code></pre></li>
+</ul>
+</div><div class="tools">C#, Unity, HLSL</div><br class="clear"></article><article id="content-shapes-dataset-generator"><h1>3D Shapes Dataset Generator</h1><h2>Helps procedurally generate tailored 3D shape datasets.</h2><div class="images"><video autoplay loop playsinline muted src="/assets/images/datasetgenerator0.mp4" style="width: 100%;"></video></div><div class="buttons"><a href="https://github.com/aniketrajnish/3D-Shapes-Dataset-Generator" class="button">github</a><a href="/assets/pdf/CS399.pdf" class="button">Project Report</a><a href="https://www.kaggle.com/makra2077/datasets?scroll=true" class="button">Sample Datasets [Kaggle]</a><a href="https://github.com/aniketrajnish/3D-Shapes-Dataset-Generator/releases/tag/1.0" class="button">Windows x64 Installer</a></div><div class="content"><div align="center">
+  <a href="https://github.com/aniketrajnish/3D-Shapes-Dataset-Generator/assets/58925008/749e9463-8cd8-4f10-bcb0-ee8502ce946b" data-lightbox="3D-shapes-dataset-release" data-title="Release 1.0">
+    <img width="300px" height="300px" src="https://github.com/aniketrajnish/3D-Shapes-Dataset-Generator/assets/58925008/749e9463-8cd8-4f10-bcb0-ee8502ce946b">
+  </a>
+</div>
+
+<p>This tool is designed to help users create procedurally generated 3D shape datasets customized to their needs. It’s built on top of my open source <a href="https://github.com/aniketrajnish/CS499-SDFNet/tree/main/Renderer">Raymarching Engine</a> and runs over GPU. The engine supports over thirty primitives, three set operations (Union, Intersection, and Subtraction), and varying color values (along with shadows).</p>
+<p align="center"><br>  <a href="https://github.com/aniketrajnish/3D-Shapes-Dataset-Generator/assets/58925008/4f245e7e-36d9-48ca-a34f-abc9d5d1d6be" data-lightbox="3D-shapes-dataset" data-title="A glimpse of the Final Dataset">
+    <img src="https://github.com/aniketrajnish/3D-Shapes-Dataset-Generator/assets/58925008/4f245e7e-36d9-48ca-a34f-abc9d5d1d6be" width="50%">
+  </a><br>
+  A glimpse of the Final Dataset
+</p>
+<p align="center">
+  <a href="https://github.com/aniketrajnish/3D-Shapes-Dataset-Generator/assets/58925008/3817574b-e8a2-43fa-a694-9f42faa3d324" data-lightbox="3D-shapes-dataset" data-title="Sample image with operations: Cone (Union) + Sphere (Union) + Box Frame (Subtraction)">
+    <img src="https://github.com/aniketrajnish/3D-Shapes-Dataset-Generator/assets/58925008/3817574b-e8a2-43fa-a694-9f42faa3d324" width="50%">
+  </a><br>
+  Sample image with operations: Cone (Union) + Sphere (Union) + Box Frame (Subtraction)
+</p>
+
+<h2 id="getting-started">Getting Started</h2>
+<ul>
+<li>Download the build file/windows installer from the <a href="https://github.com/aniketrajnish/3D-Shapes-Dataset-Generator/releases/tag/1.0">Releases</a>.</li>
+<li>If you need over the top features -<ul>
+<li>Clone the repository<pre><code>git clone https://github.com/aniketrajnish/3D-Shapes-Dataset-Generator.git
+</code></pre></li>
+<li>Open and edit the source code (in the <code>/src</code> folder) in <code>Unity 2020.3.30f1</code> or later.</li>
+</ul>
+</li>
+</ul>
+<h2 id="usage">Usage</h2>
+<ul>
+<li><code>Varying Camera Angle</code> (currently not functional): Set to <code>True</code> if you want to assign a different camera angle to each image in the dataset. Otherwise, the camera will look at the object keeping it in the center using <code>transform.LookAt()</code>.</li>
+<li><code>Varying Orientation</code>: Set to <code>True</code> if you want to assign a unique random orientation (angle) to the individual shapes in the dataset. Otherwise, the shapes will be aligned with the axis using <code>Quaternion.identity</code>.</li>
+<li><code>Varying Position</code>: Set to <code>True</code> if you want to assign a unique random position to the individual shapes in a cube of dimension 2 units centered at the origin. Otherwise, the shapes will be centered at the origin.</li>
+<li><code>Randomize Shape Count</code>: Set to <code>True</code> if you want to randomize the number of shapes in each image between 0 and the <code>Max Shape Count</code>. Otherwise, every image will be generated with <code>Max Shape Count</code> number of shapes.</li>
+<li><code>Max Shape Count</code>: Set the maximum number of shapes that each image in the dataset should have.</li>
+<li><code>Dataset Size</code>: Set the number of images to be generated in the dataset.</li>
+<li><code>Dataset Path</code>: Set the path where the dataset folder is to be created.</li>
+<li><code>Resolution</code>: Set the width and height of the images (in pixels) to generate them accordingly.</li>
+<li><code>Shapes and Operations</code>: These are enums that determine which shape index and operation index are to be taken into * consideration while generating each shape.</li>
+<li><code>Seed</code>: Input a seed value to generate a dataset that has already been created before by assigning the seed value to the Random State.</li>
+</ul>
+<p>Note that the <code>Varying Camera Angle</code> parameter is still under development and is not functional.</p>
+<h2 id="datasets">Datasets</h2>
+<ul>
+<li>The images are saved in the <code>../images</code> folder.</li>
+<li>The seed value of each random state is also exported in a txt file and can be used to
+re-generate a dataset.</li>
+<li>These parameters are exported in the CSV sheet with all the image information as shown in table below.<table class="custom-table">
+  <thead>
+      <tr>
+          <th>Column Name</th>
+          <th>Info</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td>filename</td>
+          <td>Name of the image file</td>
+      </tr>
+      <tr>
+          <td>shape</td>
+          <td>Shape Index</td>
+      </tr>
+      <tr>
+          <td>operation</td>
+          <td>Operation Index</td>
+      </tr>
+      <tr>
+          <td>a,b,c,d,e,f,g,h,i,j,k,l</td>
+          <td>Dimensional parameters</td>
+      </tr>
+      <tr>
+          <td>hue, sat, val</td>
+          <td>HSV Values of the color</td>
+      </tr>
+      <tr>
+          <td>rot_x, rot_y, rot_z</td>
+          <td>Euler Angles</td>
+      </tr>
+      <tr>
+          <td>pos_x, pos_y, pos_z</td>
+          <td>Position Vector</td>
+      </tr>
+  </tbody>
+</table></li>
+<li>Each row depicts information about a shape in the image of a dataset.</li>
+</ul>
+<h2 id="contributing">Contributing</h2>
+<p>If you find a bug or have a feature request, please open an issue or submit a pull request.</p>
+</div><div class="tools">C#, HLSL, Unity</div><br class="clear"></article><article id="content-alembic-to-fbx"><h1>Alembic to FBX Converter</h1><h2>Converts Alembic files to FBX files.</h2><div class="images"><video autoplay loop playsinline muted src="/assets/images/alembictofbx0.mp4" style="width: 100%;"></video></div><div class="buttons"><a href="https://github.com/aniketrajnish/Alembic-to-FBX-File-Maya" class="button">github</a></div><div class="content"><p>A python script that converts an Alembic file to animated FBX files using Maya while retaining the texture information.</p>
+<h2 id="usage">Usage</h2>
+<ul>
+<li>Clone the repository<pre><code> git clone https://github.com/aniketrajnish/Alembic-to-FBX-File-Maya.git
+</code></pre></li>
+<li>Import the <code>alem_to_fbx.py</code> script into Maya.</li>
+<li>Import the alembic file into Maya.   </li>
+<li>Select the alembic node and run the python script.</li>
+<li>To export the texture information along with the mesh, change to blinn/lambert materials.</li>
+</ul>
+<h2 id="contribution">Contribution</h2>
+<p>Contributions to the project are welcome. 
+Currently working on:</p>
+<ul>
+<li><del>Changing the FBX import preset through the script itself.</del> [Done!] </li>
+<li>Exporting blend shapes with a single mesh file for the alembic files with same topology across the animation cycle.</li>
+<li>Supporting bigger files.</li>
+<li><del>Exporting texture information.</del> [Done!]</li>
+<li><del>Ability to work with multiple Alembic nodes at once.</del> [Done!]</li>
+</ul>
+<h2 id="license">License</h2>
+<p>MIT License</p>
+</div><div class="tools">python, maya, pymel</div><br class="clear"></article><article id="content-hypercasual-games"><h1>Hypercasual Games</h1><h2>Hypercasual Games and Prototypes I've worked upon.</h2><div class="images"><video autoplay loop playsinline muted src="/assets/images/hypercasual0.mp4" style="width: 100%;"></video></div><div class="content"><h2 id="jelly-cleaner">Jelly Cleaner</h2>
+<div style="display: flex; justify-content: space-between; align-items: flex-start; width: 100%; padding: 20px;">
+
+<video controls style="width: 50%; border: 3px solid black; border-radius: 15px;">
+  <source src="/assets/images/jelly.mp4" type="video/mp4">
+</video>
+
+<div style="width: 45%; padding-left: 10px; font-size: 2.3rem; color: black;">
+
+  <strong>Metrics</strong><br><br>    CPI : $0.28<br>    D1 : 12%<br>    Usage 24h : 00:42
+    <br>
+    <br>
+  <strong>My Responsibilities:</strong> <br><br>
+    - Led a team of two and looked after game mechanics, lighting and the overall production of the game and CPI video.
+    <br> 
+    - Wrote Jelly physics algorithms that’s performant over mobile devices using spring joints. <br>
+    - Wrote a shader for Jelly leveraging the use of perlin noise and sine functions. <br>
+
+</div>
+
+<p></p></div><p></p>
+<h2 id="dodge-master">Dodge Master</h2>
+<div style="display: flex; justify-content: space-between; align-items: flex-start; width: 100%; padding: 20px;">
+
+<video controls style="width: 40%; border: 3px solid black; border-radius: 15px;">
+  <source src="/assets/images/dodge.mp4" type="video/mp4">
+</video>
+
+<div style="width: 55%; padding-left: 10px; font-size: 2.3rem; color: black;">
+
+  <strong>Metrics</strong><br><br>    CPI : $0.59<br>    Usage 24h : 01:13
+    <br>
+    <br>
+  <strong>My Responsibilities:</strong> <br><br>
+    - Led a team of three and looked after game mechanics, lighting and the overall production of the game and CPI video.
+    <br> 
+    - Wrote time control and bullet-time destruction mechanic. <br><br>
+</div>
+
+<p></p></div><p></p>
+<h2 id="body-adjustment-asmr">Body Adjustment ASMR</h2>
+<div style="display: flex; justify-content: space-between; align-items: flex-start; width: 100%; padding: 20px;">
+
+<video controls style="width: 40%; border: 3px solid black; border-radius: 15px;">
+  <source src="/assets/images/body.mp4" type="video/mp4">
+</video>
+
+<div style="width: 55%; padding-left: 10px; font-size: 2.3rem; color: black;">
+
+  <strong>Metrics</strong><br><br>    CPI : $0.76
+    <br>
+    <br>
+  <strong>My Responsibilities:</strong> <br><br>
+    - Led a team of three and looked after game mechanics, lighting and the overall production of the game and CPI video.
+    <br> 
+    - Wrote skinned mesh deformation and reformation algorithm. <br> 
+    - Developed a mesh outline tool that’s performant on mobile devices <br><br>
+</div>
+
+<p></p></div><p></p>
+<h2 id="shoot-the-numbers">Shoot The Numbers</h2>
+<div style="display: flex; justify-content: space-between; align-items: flex-start; width: 100%; padding: 20px;">
+
+<video controls style="width: 40%; border: 3px solid black; border-radius: 15px;">
+  <source src="/assets/images/stn.mp4" type="video/mp4">
+</video>
+
+<div style="width: 55%; padding-left: 10px; font-size: 2.3rem; color: black;">
+
+  <strong>Metrics</strong><br><br>    CPI : $1.48
+    <br>
+    <br>
+  <strong>My Responsibilities:</strong> <br><br>
+    - Led a team of four and looked after game mechanics, lighting and the overall production of the game and CPI video.
+    <br> 
+    - Wrote pathfinding algorithms instead of using Navmesh to increase performance on mobile devices. <br> 
+    - Wrote a shader that supports both transparency and interpolation between two colours. <br><br>    - Wrote swerve mechanics and mechanics for algebraic gates trending in hypercasual games back then. <br>
+
+</div>
+
+<p></p></div><p></p>
+<h2 id="human-canon">Human Canon</h2>
+<div style="display: flex; justify-content: space-between; align-items: flex-start; width: 100%; padding: 20px;">
+
+<video controls style="width: 40%; border: 3px solid black; border-radius: 15px;">
+  <source src="/assets/images/canon.mp4" type="video/mp4">
+</video>
+
+<div style="width: 55%; padding-left: 10px; font-size: 2.3rem; color: black;">
+
+  <strong>Metrics</strong><br><br>    CPI : $2.36
+    <br>
+    <br>
+  <strong>My Responsibilities:</strong> <br><br>
+    - Led a team of three and looked after game mechanics, lighting and the overall production of the game and CPI video.
+    <br> 
+    - Worte ragdoll crowd control mechanics. <br> 
+    - Wrote canon projectile mechanics. <br><br>    - Wrote a low poly water shader. <br>
+    - Optimized clouds by using raymarched clouds from the <a href="/works/raymarching-engine-unity">raymarching engine</a> I developed instead of particle based clouds. <br>
+
+</div>
+
+<p></p></div><p></p>
+<h2 id="hoof-cleaning-asmr">Hoof Cleaning ASMR</h2>
+<div style="display: flex; justify-content: space-between; align-items: flex-start; width: 100%; padding: 20px;">
+
+<video controls style="width: 40%; border: 3px solid black; border-radius: 15px;">
+  <source src="/assets/images/hoof.mp4" type="video/mp4">
+</video>
+
+<div style="width: 55%; padding-left: 10px; font-size: 2.3rem; color: black;">
+
+  <strong>Metrics</strong><br><br>    CPI : $0.89
+    <br>
+    <br>
+  <strong>My Responsibilities:</strong> <br><br>
+    - Led a team of two and looked after game mechanics, lighting and the overall production of the game and CPI video.
+    <br> 
+    - Wrote texture masking algorithm to erase / paint textures over meshes. <br>
+</div>
+
+<p></p></div><p></p>
+<h2 id="faster-than-light-hypercasual">Faster Than Light Hypercasual</h2>
+<div style="display: flex; justify-content: space-between; align-items: flex-start; width: 100%; padding: 20px;">
+
+<video controls style="width: 35%; border: 3px solid black; border-radius: 15px;">
+  <source src="/assets/images/ftl.mp4" type="video/mp4">
+</video>
+
+<div style="width: 60%; padding-left: 10px; font-size: 2.3rem; color: black;">
+
+  <strong>Metrics</strong><br><br>    CPI : $0.58
+    <br>
+    <br>
+  <strong>My Responsibilities:</strong> <br><br>
+    - Led a team of three and looked after game mechanics, lighting &amp; shaders, UI design, sound design, and the overall production of the game.
+    <br>
+    - Won the JAMBOOST game jam hosted by Chartboost and a prize of 1000$. <br>
+    - Optimized indoor lighting on mobile platform using baked lighting. <br>
+    - Programmed every mechanic &amp; enemy AI of the game. <br>
+    <a href="https://play.google.com/store/apps/details?id=com.makra.FasterThanLight" target="_blank">
+      <img src="/assets/images/play_badge.png" style="width: 50%; margin-top: 20px; border-radius: 10px;">
+    </a>
+</div>
+
+<p></p></div><p></p>
+<h2 id="game-pitches">Game Pitches</h2>
+<p>I have conceptualized and presented these hypercasual game pitches. <br><br></p>
+<div class="pdf-container">
+        <embed src="/assets/pdf/pitches/BaggageClaim.pdf#toolbar=0" type="application/pdf">
+        <embed src="/assets/pdf/pitches/BananaSwing.pdf#toolbar=0" type="application/pdf">
+        <embed src="/assets/pdf/pitches/BodyCrackASMR.pdf#toolbar=0" type="application/pdf">
+        <embed src="/assets/pdf/pitches/BossFight.pdf#toolbar=0" type="application/pdf">
+        <embed src="/assets/pdf/pitches/BulletDodge.pdf#toolbar=0" type="application/pdf">
+        <embed src="/assets/pdf/pitches/CatAndMouse.pdf#toolbar=0" type="application/pdf">
+        <embed src="/assets/pdf/pitches/ColorMyBullet.pdf#toolbar=0" type="application/pdf">
+        <embed src="/assets/pdf/pitches/CrowdBalancer.pdf#toolbar=0" type="application/pdf">
+        <embed src="/assets/pdf/pitches/DeckDeckGo.pdf#toolbar=0" type="application/pdf">
+        <embed src="/assets/pdf/pitches/FoodPop.pdf#toolbar=0" type="application/pdf">
+        <embed src="/assets/pdf/pitches/FreezeNBreeze.pdf#toolbar=0" type="application/pdf">
+        <embed src="/assets/pdf/pitches/GasUp.pdf#toolbar=0" type="application/pdf">
+        <embed src="/assets/pdf/pitches/HeadphoneUntangler.pdf#toolbar=0" type="application/pdf">
+        <embed src="/assets/pdf/pitches/HoofCleaningASMR.pdf#toolbar=0" type="application/pdf">
+        <embed src="/assets/pdf/pitches/HumanCanon3D.pdf#toolbar=0" type="application/pdf">
+        <embed src="/assets/pdf/pitches/HumanRush.pdf#toolbar=0" type="application/pdf">
+        <embed src="/assets/pdf/pitches/JellyCleaner.pdf#toolbar=0" type="application/pdf">
+        <embed src="/assets/pdf/pitches/MowEmDown.pdf#toolbar=0" type="application/pdf">
+        <embed src="/assets/pdf/pitches/RainbowDriver.pdf#toolbar=0" type="application/pdf">
+        <embed src="/assets/pdf/pitches/ShootTheNumbers.pdf#toolbar=0" type="application/pdf">
+        <embed src="/assets/pdf/pitches/SnakePass.pdf#toolbar=0" type="application/pdf">
+        <embed src="/assets/pdf/pitches/StonePaperBhoom.pdf#toolbar=0" type="application/pdf">
+        <embed src="/assets/pdf/pitches/StopTheRoaches.pdf#toolbar=0" type="application/pdf">
+        <embed src="/assets/pdf/pitches/TakeOff.pdf#toolbar=0" type="application/pdf">
+        <embed src="/assets/pdf/pitches/TiltPaint.pdf#toolbar=0" type="application/pdf">
+        <embed src="/assets/pdf/pitches/ToiletPaperRun.pdf#toolbar=0" type="application/pdf">
+        <embed src="/assets/pdf/pitches/VehicleEvolution.pdf#toolbar=0" type="application/pdf">
+        <embed src="/assets/pdf/pitches/ZombieRush.pdf#toolbar=0" type="application/pdf"><br></div></div><div class="tools">C#, HLSL, Unity, Game Design</div><br class="clear"></article><article id="content-gamejam-entries"><h1>Gamejam Entries</h1><h2>My participation in various gamejams.</h2><div class="images"><video autoplay loop playsinline muted src="/assets/images/gamejam1.mp4" style="width: 100%;"></video></div><div class="content"><h2 id="two-opposites">Two Opposites</h2>
+<center>
+    <video controls style="width: 90%; border: 3px solid black; border-radius: 15px;">
+      <source src="/assets/images/twoopp.mp4" type="video/mp4">
+    </video>
+    <a href="https://makra.itch.io/two-opposites" target="_blank">
+        <img src="/assets/images/itch_badge.svg" style="width: 30%; margin-top: 20px; border-radius: 10px;">
+    </a>
+</center>    
+
+<p><br></p>
+<p><strong>Brackeys Gamejam 2021.1</strong> </p>
+<ul>
+<li>Total Particpants: 10000+</li>
+<li>My Rank: 22 (Innovation), 44 (Game Design), 71 (Overall)</li>
+</ul>
+<p><strong>About the game:</strong> </p>
+<ul>
+<li>Two opposites is a game about the journey of two opposites (characters with mirrored controls) separated by a mirror.</li>
+<li>Players need to solve puzzles to escape the mirror world and finally meet each other. However, the challenge lies in the fact that they can only solve these puzzles together.</li>
+</ul>
+<p><strong>My Responsibilities:</strong></p>
+<ul>
+<li>Led a team of three and looked after game mechanics, lighting &amp; shaders, UI design, sound design, and the overall production of the game. Made within a week</li>
+<li>Programmed every mechanic of the game which included, but not limited to mirror movement, multiple camera setup, etc.</li>
+<li>Formulated and developed a <a href="https://makra.wtf/docs/2022/two-opoosites/#10-2d-lighting-system">2D Lighting System</a> in C# for Unity using raycasts and Unity started official support for it in a later update.</li>
+</ul>
+<h2 id="faster-than-light-">Faster Than Light?</h2>
+<center>
+    <video controls style="width: 90%; border: 3px solid black; border-radius: 15px;">
+      <source src="/assets/images/ftl1.mp4" type="video/mp4">
+    </video>
+    <a href="https://makra.itch.io/faster-than-light" target="_blank">
+        <img src="/assets/images/itch_badge.svg" style="width: 30%; margin-top: 20px; border-radius: 10px;">
+    </a>
+</center>    
+
+<p><br></p>
+<p><strong>Brackeys Gamejam 2020.2</strong> </p>
+<ul>
+<li>Total Particpants: 9000+</li>
+<li>My Rank: 71 (Audio), 132 (Overall)</li>
+<li>Popularity Rank: 3rd</li>
+</ul>
+<p><strong>About the game:</strong> </p>
+<ul>
+<li>To ‘REWIND’ the time one has to achieve the speed of light. Can you?</li>
+<li>Corona has taken over the world. Vaccines have failed to stop it. Scientists have figured out that the only option left is to travel back in time and stop the root cause of the virus. To ‘REWIND’ the time one has to achieve the speed of light. Can you? 5/5 people who play-tested it couldn’t do so :P</li>
+</ul>
+<p><strong>My Responsibilities:</strong></p>
+<ul>
+<li>Led a team of three and looked after game mechanics, lighting &amp; shaders, UI design, sound design, and the overall production of the game. Made within a week</li>
+<li>Programmed every mechanic &amp; enemy AI of the game.</li>
+<li>Developed player physics in 48 hours, allowing for <a href="https://github.com/aniketrajnish/time-scale-independent-controller">timescale-independent movement</a> in space, timescale manipulation, &amp; <a href="https://github.com/aniketrajnish/superhot">bullet-time mechanics</a>.</li>
+</ul>
+<h2 id="are-ya-winning-son-">ARE YA WINNING, SON?</h2>
+<center>
+    <video controls style="width: 90%; border: 3px solid black; border-radius: 15px;">
+      <source src="/assets/images/ayws.mp4" type="video/mp4">
+    </video>
+    <a href="https://makra.itch.io/are-ya-winning-son" target="_blank">
+        <img src="/assets/images/itch_badge.svg" style="width: 30%; margin-top: 20px; border-radius: 10px;">
+    </a>
+</center>    
+
+<p><br></p>
+<p><strong>Brackeys Gamejam 2020.2</strong> </p>
+<ul>
+<li>Total Particpants: 20000+</li>
+<li>My Rank: 223 (Presentation), 725 (Overall)</li>
+</ul>
+<p><strong>About the game:</strong> </p>
+<ul>
+<li>A game in which the AI won’t let you win!</li>
+<li>The A.I. of this game has taken over and the game is OUT OF your CONTROL and he challenges that he won’t let you win.</li>
+</ul>
+<p><strong>My Responsibilities:</strong></p>
+<ul>
+<li>Led a team of three and looked after game mechanics, lighting &amp; shaders, UI design, sound design, and the overall production of the game. Made within a week</li>
+<li>Became proficient in generating ideas &amp; quickly prototyping them in Unity.</li>
+<li>Developed shaders &amp; implemented post-processing effects to create a <a href="https://makra.wtf/docs/2022/fiea-tech-art-portfolio-copy#70-retro-shader--post-processing---are-ya-winning-son">CRT TV aesthetic</a>, gaining technical expertise in implementing visual effects.</li>
+</ul>
+<h2 id="faster-than-light-hypercasual">Faster Than Light Hypercasual</h2>
+<div style="display: flex; justify-content: space-between; align-items: flex-start; width: 100%; padding: 20px;">
+
+<video controls style="width: 35%; border: 3px solid black; border-radius: 15px;">
+  <source src="/assets/images/ftl.mp4" type="video/mp4">
+</video>
+
+<div style="width: 60%; padding-left: 10px; font-size: 2.3rem; color: black;">
+
+  <strong>JAMBOOST Gamejam</strong><br><br>    Total Particpants: 305<br>
+    My Rank: 1<br>
+    Prize Won: 1000$<br>
+    <br>
+    <br>
+  <strong>My Responsibilities:</strong> <br><br>
+    - Led a team of three and looked after game mechanics, lighting &amp; shaders, UI design, sound design, and the overall production of the game.
+    <br>
+    - Achieved a CPI of $0.58. <br>
+    - Optimized indoor lighting on mobile platform using baked lighting. <br>
+    - Programmed every mechanic &amp; enemy AI of the game. <br>
+    <a href="https://play.google.com/store/apps/details?id=com.makra.FasterThanLight" target="_blank">
+      <img src="/assets/images/play_badge.png" style="width: 50%; margin-top: 20px; border-radius: 10px;">
+    </a>
+</div>
+
+<p></p></div><p></p>
+<h2 id="doge-to-the-moon">Doge To The Moon</h2>
+<div style="display: flex; justify-content: space-between; align-items: flex-start; width: 100%; padding: 20px;">
+
+<video controls style="width: 35%; border: 3px solid black; border-radius: 15px;">
+  <source src="/assets/images/doge.mp4" type="video/mp4">
+</video>
+
+<div style="width: 60%; padding-left: 10px; font-size: 2.3rem; color: black;">
+
+  <strong>Opera GX Gamejam</strong><br><br>    Total Particpants: 5000+<br><br>
+  <strong>My Responsibilities:</strong> <br><br>
+    - Led a team of two and looked after game mechanics, UI design, sound design, and the overall production of the game.
+    <br>
+    - Learnt and developed in over the weekend in GameMaker.<br>
+    <a href="https://gamejolt.com/games/doge2themoon/636263" target="_blank">
+      <img src="/assets/images/gamejolt_badge.png" style="width: 50%; margin-top: 20px; border-radius: 10px;">
+    </a>
+</div>
+
+<p></p></div><p></p>
+</div><div class="tools">C#, HLSL, Unity, GameMaker, GameJam, Game Design</div><br class="clear"></article><article id="content-blogs"><h1>Blogs</h1><h2>I write sometimes.</h2><div class="content"><ol>
+<li><a href="/works/lighting-system-2d">Making a 2D lighting system for Two Opposites</a></li>
+<li><a href="/works/fiea-summer">Work at FIEA (Summer Internship) - Documented!</a></li>
+<li><a href="/works/image-editor-unity">Image Editor developed in Unity</a></li>
+<li><a href="/works/fiea-portfolio-submission">FIEA Technical Artist Portfolio Submission</a></li>
+</ol>
+</div><div class="tools">C#, HLSL, Unity, GameMaker, GameJam, Game Design</div><br class="clear"></article><article id="content-lighting-system-2d"><h1>2D lighting system</h1><h2>Making a 2D lighting system for the game Two Opposites.</h2><div class="images"><img src="/assets/images//prev/TwoOppLogo.png" style="width: 100%;"></div><div class="content"><p>Two opposites is a game about the journey of two opposites (characters with mirrored controls) separated by a mirror. They need to solve puzzles to escape the mirror world and finally meet each other. However, the challenge lies in the fact that they can only solve these puzzles together. You can play it in your browser <a href="https://makra.itch.io/two-opposites">here</a>.</p>
+<p>The game was made in a week (in a team of three) for the Brackeys Game Jam (10k+ people participated worldwide) and ranked <strong>#22 in the innovation category.</strong> </p>
+<h2 id="1-0-2d-lighting-system">1.0 2D Lighting System</h2>
+<p>Upon initial analysis, we decided that the atmosphere should be given the most priority while developing this game. And the visual appeal of the game played a significant role in that. Back when we started working on this project, Unity didn’t have any rendering pipeline that supported 2D lighting. So my task was to develop a 2D lighting system for the game.</p>
+<h2 id="1-1-2d-raycaster-gl-1st-iteration">1.1 2D Raycaster (GL) - 1st iteration</h2>
+<ul>
+<li>The basic idea was to draw transparent lines originating radially outwards from a sprite with negligible separation to give a sense of light coming out.</li>
+<li>I used the Unity’s low level <a href="https://docs.unity3d.com/ScriptReference/GL.html">Graphics Library (gl)</a> to draw lines between two points.</li>
+<li><p>The raycast loop formulated-</p>
+<pre><code>for (float i = 0; i &lt; theta; i += steps)
+{
+  GL.Begin(GL.LINES);               
+  GL.Color(col); // Initializing GL Library with white color as input
+
+  GL.Vertex3(player.transform.position.x, player.transform.position.y, 0); //strating point
+  GL.Vertex3(player.transform.position.x + 
+  Mathf.Cos(i * Mathf.Deg2Rad) * maxVisiblityDistance, 
+  player.transform.position.y + 
+  Mathf.Sin(i * Mathf.Deg2Rad) * maxVisiblityDistance, 
+  0); //ending point
+
+  GL.End(); //clearing garbage            
+}
+</code></pre></li>
+<li>This loop draws rays from the player’s position to equally spaced points around the player.</li>
+<li>The angle that light covers is governed by <code>theta</code>.</li>
+<li>The spacing between each ray is governed by <code>steps</code>.</li>
+<li>The color of the rays is governed by <code>col</code>.</li>
+<li>The length of light ray is governed by <code>maxVisiblityDistance</code>.</li>
+<li>All of these variables were serialized in the inspector.</li>
+<li>This script is attached to the MainCamera and the loop is called in <code>OnPostRender()</code> method so that the lines are rendered as soon as the camera finishes rendering the scene.<table class="custom-table">
+  <tr>
+      <td>
+          <a href="/assets/images/prev/theta.gif" data-lightbox="adjustments" data-title="Adjusting theta">
+              <img src="/assets/images/prev/theta.gif" alt="Adjusting theta">
+          </a>
+      </td>
+      <td>
+          <a href="/assets/images/prev/steps.gif" data-lightbox="adjustments" data-title="Adjusting steps">
+              <img src="/assets/images/prev/steps.gif" alt="Adjusting steps">
+          </a>
+      </td>
+  </tr>
+  <tr>
+      <th>Adjusting theta</th>
+      <th>Adjusting steps</th>
+  </tr>
+  <tr>
+      <td>
+          <a href="/assets/images/prev/col.gif" data-lightbox="adjustments" data-title="Adjusting color">
+              <img src="/assets/images/prev/col.gif" alt="Adjusting color">
+          </a>
+      </td>
+      <td>
+          <a href="/assets/images/prev/maxvdist.gif" data-lightbox="adjustments" data-title="Adjusting max visibility distance">
+              <img src="/assets/images/prev/maxvdist.gif" alt="Adjusting max visibility distance">
+          </a>
+      </td>
+  </tr>
+  <tr>
+      <th>Adjusting color</th>
+      <th>Adjusting max visibility distance</th>
+  </tr>
+</table>
+
+</li>
+</ul>
+<h2 id="1-2-ray-material">1.2 Ray Material</h2>
+<ul>
+<li>The next task to make the light rays feel more natural by introducing transparency.</li>
+<li>While pondering I found that GL library by default uses the Unlit material provided by Unity to create the lines.</li>
+<li>As the Unlit Material doesn’t support transparency by default, I wrote an Unlit Shader that supported both transparency and vertex colors.</li>
+<li>The RGBA values of the colors of the material based upon this shader was passed as an input. <pre><code>GL.Begin(GL.LINES);
+lineMat.SetPass(0);
+GL.Color(new Color(lineMat.color.r,
+lineMat.color.g,
+lineMat.color.b,
+lineMat.color.a));
+</code></pre><table class="custom-table">
+  <tr>
+      <td>
+          <a href="/assets/images/prev/TRays.gif" data-lightbox="rays-lightbox" data-title="With transparency controls, the rays looked more natural.">
+              <img src="/assets/images/prev/TRays.gif" alt="With transparency controls, the rays looked more natural.">
+          </a>
+      </td>
+  </tr>
+  <tr>
+      <th>With transparency controls, the rays looked more natural.</th>
+  </tr>
+</table>
+
+</li>
+</ul>
+<h2 id="1-3-environment-lighting">1.3 Environment Lighting</h2>
+<ul>
+<li>The next step would be to make the scene react to the light rays emitted by the player.</li>
+<li><p>This involved two steps:</p>
+<ol>
+<li><p>Making the light ray stop when it hits an object. This is done by Raycasting along the light rays that GL draws and checking if we’ve hit something.</p>
+<pre><code>RaycastHit2D hit = Physics2D.Raycast(player.transform.position,
+new Vector2(Mathf.Cos(i * Mathf.Deg2Rad),
+Mathf.Sin(i * Mathf.Deg2Rad)),
+maxVisiblityDistance);
+
+if (hit)
+{
+ GL.Vertex3(player.transform.position.x, player.transform.position.y, 0);
+ GL.Vertex3(hit.point.x, hit.point.y, 0);
+}
+
+else
+{
+ GL.Vertex3(player.transform.position.x, player.transform.position.y, 0);
+ GL.Vertex3(player.transform.position.x +
+ Mathf.Cos(i * Mathf.Deg2Rad)* maxVisiblityDistance,
+ player.transform.position.y +
+ Mathf.Sin(i * Mathf.Deg2Rad)* maxVisiblityDistance,
+ 0);
+} 
+</code></pre></li>
+<li><p>Making the sprite color of the object depend upon its distance from the light source.</p>
+<pre><code>SpriteRenderer sp = hit.transform.GetComponent&lt;SpriteRenderer&gt;();
+if (sp != null)
+{
+ sp.color = new Color(1 / Mathf.Pow(Vector3.Distance(
+     hit.transform.position, player.transform.position),
+     1.5f),
+     1 / Mathf.Pow(Vector3.Distance(hit.transform.position, player.transform.position),
+     1.5f),
+     1 / Mathf.Pow(Vector3.Distance(hit.transform. position, player.transform. position),
+     1.5f));
+}
+</code></pre><table class="custom-table">
+<tr>
+ <td>
+     <a href="/assets/images/prev/2dmeshlightsys.gif" data-lightbox="2dmeshlightsys-lightbox" data-title="Final Output">
+         <img src="/assets/images/prev/2dmeshlightsys.gif" alt="Final Output">
+     </a>
+ </td>
+</tr>
+<tr>
+ <th>Final Output</th>
+</tr>
+</table>
+
+</li>
+</ol>
+</li>
+</ul>
+<h2 id="1-4-2d-raycaster-gl-2nd-iteration">1.4 2D Raycaster (GL) - 2nd iteration</h2>
+<ul>
+<li>The previous method for generating rays was very inefficient with time complexity of O(n) as the loop had to run 3600 times every frame with a step size of 0.1.</li>
+<li>This issue was solved by detecting the edges of nearby objects and casting rays at them and then filling the space by generating mesh between them.<pre><code>int numRays = Caster.LightContour.Count - 1;
+LightMesh.mesh.vertices = Caster. LightContour. ToArray();
+int[] triangles = new int[numRays * 3];
+for (int i = 0; i &lt; numRays * 3; i += 3)
+{
+triangles[i] = (i / 3 + 1) % numRays;
+triangles[i + 1] = numRays;
+triangles[i + 2] = (i7 3 + 2) % numRays;
+}
+LightMesh.mesh.triangles = triangles;
+</code></pre><table class="custom-table">
+  <tr>
+      <td>
+          <a href="/assets/images/prev/2dmeshlightsys.gif" data-lightbox="final-output-lightbox" data-title="Final Output">
+              <img src="/assets/images/prev/2dmeshlightsys.gif" alt="Final Output">
+          </a>
+      </td>
+  </tr>
+  <tr>
+      <th>Final Output</th>
+  </tr>
+</table>
+
+</li>
+</ul>
+<p><strong>This 2D Lighting System that I incorporated in the project was implemented by Unity in the later versions as a Package in URP Render Pipeline.</strong><br><br>
+<em>The blog discussing the 2D Lighting System has concluded. However, you can proceed to read further to know the remaining development and design process.</em></p>
+<h2 id="2-0-environment-reflection">2.0 Environment Reflection</h2>
+<ul>
+<li>Two players (each with their own top down camera) were added in either sides of the map separated by a box collider.</li>
+<li>The screen was split into two (one for each camera) by decreasing the width of the both camera’s viewport rect to 0.5 and offsetting one of them to 0.5.</li>
+</ul>
+<h2 id="3-0-player-movement">3.0 Player Movement</h2>
+<ul>
+<li>A simple rigidbody top down controller was yoinked from one of Brackeys tutorials for the first player while the movement of the second player was made to be governed by that of the first player’s.<pre><code>void Update()
+{
+  transform.position = player.transform.position * new Vector2(-1, 1);
+}
+</code></pre></li>
+<li>This inverts the movement of the second player horizontally (lateral inversion) as if their movements were mirrored.<table class="custom-table">
+  <tr>
+      <td>
+          <a href="/assets/images/prev/inversion.gif" data-lightbox="example-lightbox" data-title="Example Image">
+              <img src="/assets/images/prev/inversion.gif" alt="example image">
+          </a>
+      </td>
+  </tr><br></table>
+
+</li>
+</ul>
+<h2 id="3-1-player-sprites-animations">3.1 Player Sprites &amp; Animations</h2>
+<ul>
+<li>Two sprite sheets of the top-down view of a male &amp; female character (drawn by one of my teammates) walking were imported into the game. </li>
+<li><p>These sprites were split into frames for animation using Unity’s inbuilt sprite editor.</p>
+<table class="custom-table">
+  <tr>
+      <td>
+          <a href="/assets/images/prev/BoySprite.png" data-lightbox="sprites-lightbox" data-title="Boy Sprite Sheet">
+              <img src="/assets/images/prev/BoySprite.png" alt="Boy Sprite Sheet">
+          </a>
+      </td>
+      <td>
+          <a href="/assets/images/prev/GirlSprite.png" data-lightbox="sprites-lightbox" data-title="Girl Sprite Sheet">
+              <img src="/assets/images/prev/GirlSprite.png" alt="Girl Sprite Sheet">
+          </a>
+      </td>
+  </tr>
+  <tr>
+      <th>Boy Sprite Sheet</th>
+      <th>Girl Sprite Sheet</th>
+  </tr>
+</table>
+</li>
+<li><p>These were animated at 10 fps.</p>
+</li>
+<li><p>The controller was tweaked to support both animation and smooth rotation of the player sprites.</p>
+<pre><code>  void Update()
+  {
+      movement = Vector2.zero;
+      if (Input.GetAxis(&quot;Horizontal&quot;) != 0)
+          movement.x = Input.GetAxis(&quot;Horizontal&quot;);
+      if (Input.GetAxis(&quot;Vertical&quot;) != 0)
+          movement.y = Input.GetAxis(&quot;Vertical&quot;);
+
+      AnimatorEnable();
+
+      Vector2 movedir = rb. position - prevpos;
+      if (movedir.magnitude*100 &gt; 1)
+          sprite. transform.rotation = Quaternion. Lerp(sprite.transform.rotation,
+          Quaternion.Euler(0,
+          0,
+          Mathf.Rad2Deg * Mathf.Atan2(movedir.y * 100, movedir.x * 100) - 90),
+          rotSpeed*Time.deltaTime);
+  }
+
+  private void FixedUpdate()
+  {
+      rb.MovePosition(rb.position + movement.normalized * speed);
+      prevpos = rb.position;
+  }
+
+  AnimatorEnable()
+  {
+      if (Input.GetAxis(&quot;Horizontal&quot;) != 0 || Input.GetAxis(&quot;Vertical&quot;) != 0)
+          GetComponentInchildren&lt;Animator&gt;().Play(&quot;PlayerWalk&quot;);
+      else
+          GetComponentInChildren&lt;Animator&gt;().Play(&quot;New State&quot;);
+  }
+</code></pre></li>
+<li>The translation is governed by Unity’s Physics engine (using rigidbodies) and is executed in the <code>FixedUpdate()</code> method to keep it independent of frame rate.</li>
+<li>The rotation of the sprite changes with its direction (governed by the combination of vertical and horizontal input).</li>
+<li>The translation and rotation speed is parametrically controlled by <code>speed</code> and <code>rotSpeed</code> variable exposed in the inspector.</li>
+<li>The animation is simply enabled if we’re sending an input, else it stays disabled.<table class="custom-table">
+  <tr>
+      <td>
+          <a href="/assets/images/prev/Sprites.gif" data-lightbox="sprite-image" data-title="Sprite Animation">
+              <img src="/assets/images/prev/Sprites.gif" alt="Sprite Animation Thumbnail">
+          </a>
+      </td>
+  </tr>
+</table>
+
+</li>
+</ul>
+<h2 id="4-0-button-mechanic">4.0 Button Mechanic</h2>
+<p>We decided to come up with a button mechanic system. The idea was to spawn two buttons (one in each world) and the player was expected to walk over both the buttons simultaneously to open the gates so that he can people can proceed to the next level.</p>
+<ul>
+<li>When the player walked over a button, the button’s sprite renderer glowed.</li>
+<li>Also, an event was called to check if the other button is pressed as well.</li>
+<li>If the other button was pressed, the gates (which were hinged at their corner) would rotate and the player could pass through them.<table class="custom-table">
+  <tr>
+      <td>
+          <a href="/assets/images/prev/Buttons.gif" data-lightbox="buttons-mechanic" data-title="Button Mechanic Animation">
+              <img src="/assets/images/prev/Buttons.gif" alt="Button Mechanic Animation">
+          </a>
+      </td>
+  </tr>
+</table>
+
+</li>
+</ul>
+<h2 id="5-0-movable-objects">5.0 Movable Objects</h2>
+<p>To add more depth to the puzzles, we decided to come up with a few objects that the players could push in order to block or press something. </p>
+<ul>
+<li>A physics material (with high coefficient of friction value &amp; 0 bounciness) is created.</li>
+<li><p>Sprites for movable objects (with hand-drawn texture maps by one of the teammates) are imported.</p>
+<table class="custom-table">
+  <tr>
+      <td>
+          <a href="/assets/images/prev/crate.png" data-lightbox="crate" data-title="Crate Base Map">
+              <img src="/assets/images/prev/crate.png" alt="Crate Base Map">
+          </a>
+      </td>
+      <td>
+          <a href="/assets/images/prev/cratenormal.jpg" data-lightbox="crate" data-title="Crate Normal Map">
+              <img src="/assets/images/prev/cratenormal.jpg" alt="Crate Normal Map">
+          </a>
+      </td>
+  </tr>
+  <tr>
+      <th>Crate Base Map</th>
+      <th>Crate Normal Map</th>
+  </tr>
+</table>
+</li>
+<li><p>These textures are assigned to the URP’s default lit sprite material.</p>
+</li>
+<li>Their prefabs are created with Box Collider 2D &amp; Rigidbody 2D components having the physics material assigned to them.<table class="custom-table">
+  <tr>
+      <td>
+          <a href="/assets/images/prev/Pushable.gif" data-lightbox="pushable" data-title="Pushable Example">
+              <img src="/assets/images/prev/Pushable.gif" alt="example image">
+          </a>
+      </td>
+  </tr>
+</table>
+
+</li>
+</ul>
+<h2 id="6-0-death-mechanic">6.0 Death Mechanic</h2>
+<p>We decided to include spikes in the game. They would kill the players on contact, rendering few areas of the game as unapproachable. The death animations and effect were kept as brutal and gross (taking inspiration from Limbo) to add to the dark atmosphere of the game.</p>
+<ul>
+<li>Colliders were set up on the spikes (with ‘Death’ tag) and the player.</li>
+<li>If the player comes in contact with the spike a Coroutine containing all the relevant methods for death of the player is called.<pre><code>  private void onCollisionEnter2D(Collision2D collision)
+  {
+      if (collision.gameObject.CompareTag(&quot;Death&quot;))
+      {
+          dead = true; 
+          StartCoroutine(Death());
+      }
+  }
+</code></pre><h2 id="6-1-spike-texture">6.1 Spike Texture</h2>
+</li>
+<li>Since our core idea was to make the game atmospheric &amp; appealing to eyes we wanted to keep environment ques pretty detailed. We decided to do the same with the spikes.</li>
+<li><p>The spike texture maps were hand-drawn by one of the teammates. We had initially thought of including a height/bump map but later replaced it with a normal map.</p>
+<table class="custom-table">
+  <tr>
+      <td>
+          <a href="/assets/images/prev/spikes.png" data-lightbox="spike-maps" data-title="Spike Base Map">
+              <img src="/assets/images/prev/spikes.png" alt="Spike Base Map">
+          </a>
+      </td>
+      <td>
+          <a href="/assets/images/prev/SpikesNormal.png" data-lightbox="spike-maps" data-title="Spike Normal Map">
+              <img src="/assets/images/prev/SpikesNormal.png" alt="Spike Normal Map">
+          </a>
+      </td>
+      <td>
+          <a href="/assets/images/prev/spike height.png" data-lightbox="spike-maps" data-title="Spike Height Map">
+              <img src="/assets/images/prev/spike height.png" alt="Spike Height Map">
+          </a>
+      </td>
+  </tr>
+  <tr>
+      <th>Spike Base Map</th>
+      <th>Spike Normal Map</th>
+      <th>Spike Height Map</th>
+  </tr>
+</table>
+</li>
+<li><p>These textures are assigned to the URP’s default lit sprite material.</p>
+</li>
+</ul>
+<h2 id="6-2-death-animation">6.2 Death Animation</h2>
+<ul>
+<li><p>A sprite sheet for hand-drawn animation of blood splash was imported.</p>
+<table class="custom-table">
+  <tr>
+      <td>
+          <a href="/assets/images/prev/BloodSplash.png" data-lightbox="gallery" data-title="Blood Splash">
+              <img src="/assets/images/prev/BloodSplash.png" alt="Blood Splash">
+          </a>
+      </td>
+  </tr>
+</table>
+</li>
+<li><p>This sprite sheet was played on collision with the spikes.</p>
+</li>
+<li>The movement state of the players were changed from animated to static.</li>
+<li>The movement vector of the players were overridden to be zero.</li>
+<li>The canvas was fade out to black and the level was reloaded.<pre><code>  IEnumerator Death()
+  {
+      bloodsplash.SetActive(true);
+      dead = true; GetComponentInChildren&lt;Animator&gt;().Play(&quot;Static&quot;);
+      movement = Vector3.zero;
+      GameObject.Find(&quot;CanvasGame&quot;).GetComponent&lt;Animator&gt;().Play(&quot;FadeOut&quot;);
+      yield return new WaitForSeconds(.7f);
+      SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+  }
+</code></pre><table class="custom-table">
+  <tr>
+      <td>
+          <a href="/assets/images/prev/death2opp.gif" data-lightbox="gallery" data-title="Final Output">
+              <img src="/assets/images/prev/death2opp.gif" alt="Final Output">
+          </a>
+      </td>
+  </tr>
+  <tr>
+      <th>Final Output</th>
+  </tr>
+</table>
+
+</li>
+</ul>
+<h2 id="7-0-level-design">7.0 Level Design</h2>
+<p>The biggest challenge ahead of us was actually to come up with a level design that would keep the people engaged till the end of the game and not feel tiring at the same time (Since atmospheric games heavily rely on the level design). As the game was a submission to a gamejam we decided to keep the total play time around 10-15 minutes.</p>
+<h2 id="7-1-initial-levels">7.1 Initial levels</h2>
+<ul>
+<li>The key concept of an accessible game design is to keep the initial levels of the game feel more like tutorials that help people stumble upon the core mechanics and gameplay features that game has to offer.</li>
+<li>The challenge with atmospheric though is that they can’t give away much visual cues about the game, the player is expected to explore and find it himself. But again, the game was a part of a game jam submission wherein the attention span of the players playing the game is quite small, so keeping things extremely vague might lead to less player retention. So we decided a sweet spot in between them.</li>
+<li><p>The game started with a WSAD key sprite I made using Adobe XD fading into the scene giving the player idea of the controls.</p>
+<table class="custom-table">
+  <tr>
+      <td>
+          <a href="/assets/images/prev/WSADGame.png" data-lightbox="gallery" data-title="Key Sprite in Game">
+              <img src="/assets/images/prev/WSADGame.png" alt="Key Sprite in Game">
+          </a>
+      </td>
+      <td>
+          <a href="/assets/images/prev/WSADXD.png" data-lightbox="gallery" data-title="Key Sprite made in Adobe XD">
+              <img src="/assets/images/prev/WSADXD.png" alt="Key Sprite made in Adobe XD">
+          </a>
+      </td>
+  </tr>
+  <tr>
+      <th>Key Sprite in Game</th>
+      <th>Key Sprite made in Adobe XD</th>
+  </tr>
+</table>
+</li>
+<li><p>An arrow sprite was made using Photoshop which was spawned in the game’s first level to guide directions to the gate that next level. These arrows were spawned if the player exceeded a certain threshold time to reach the gates.</p>
+<table class="custom-table">
+  <tr>
+      <td>
+          <a href="/assets/images/prev/ArrowGame.png" data-lightbox="gallery" data-title="Arrow Sprite in Game">
+              <img src="/assets/images/prev/ArrowGame.png" alt="Arrow Sprite in Game">
+          </a>
+      </td>
+      <td>
+          <a href="/assets/images/prev/ArrowPS.png" data-lightbox="gallery" data-title="Arrow Sprite made in Photoshop">
+              <img src="/assets/images/prev/ArrowPS.png" alt="Arrow Sprite made in Photoshop">
+          </a>
+      </td>
+  </tr>
+  <tr>
+      <th>Arrow Sprite in Game</th>
+      <th>Arrow Sprite made in Photoshop</th>
+  </tr>
+</table>
+</li>
+<li><p>This level was kept simple and most importantly symmetric. The players were just expected to roam around, get familiar with the inversion mechanic and the gates that would progress them to the next level.</p>
+<table class="custom-table">
+  <tr>
+      <td>
+          <a href="/assets/images/prev/Lev4.png" data-lightbox="gallery" data-title="Level 4">
+              <img src="/assets/images/prev/Lev4.png" alt="example image">
+          </a>
+      </td>
+  </tr>
+</table>
+</li>
+<li><p>The first challenge was introduced in the next level as the it was kept asymmetric. Now players needed to figure out a way to make both the characters back in sync with each other so that they reach the gates.</p>
+<table class="custom-table">
+  <tr>
+      <td>
+          <a href="/assets/images/prev/Lev2.png" data-lightbox="game-images">
+              <img src="/assets/images/prev/Lev2.png" alt="example image">
+          </a>
+      </td>
+  </tr>
+</table>
+</li>
+<li><p>The third level introduced the button mechanic in the game. The gates are kept locked and the players are expected to align both the characters over the button simultaneously to unlock the game. The player would use the same method he used to sync both the characters in the previous level as the outline of both the levels is kept the same.</p>
+<table class="custom-table">
+  <tr>
+      <td>
+          <a href="/assets/images/prev/Lev2.png" data-lightbox="gallery" data-title="Challenge Level 2">
+              <img src="/assets/images/prev/Lev2.png" alt="Challenge Level 2">
+          </a>
+      </td>
+  </tr>
+</table>
+
+</li>
+</ul>
+<h2 id="7-2-later-levels">7.2 Later Levels</h2>
+<ul>
+<li>The difficulty for the game was now gradually increased and the game now focused more on the player creatively finding out a way to solve the puzzles rather than teaching the player how to play.</li>
+<li><p>For the next level, the the button for one of the characters was spawned right next to him. Our solution to this was locking one of the players in the slots next to the button while the other traveled to his button. To our surprise the players came up with various other solutions to this puzzle too (This is true in the case of the subsequent levels as well).</p>
+<table class="custom-table">
+  <tr>
+      <td>
+          <a href="/assets/images/prev/Lev3.png" data-lightbox="gallery" data-title="Button Mechanic Level 3">
+              <img src="/assets/images/prev/Lev3.png" alt="Button Mechanic Level 3">
+          </a>
+      </td>
+  </tr>
+</table>
+</li>
+<li><p>The next level had both the puzzles on different vertical levels but symmetric to each other.</p>
+<table class="custom-table">
+  <tr>
+      <td>
+          <a href="/assets/images/prev/Lev5.png" data-lightbox="gallery" data-title="Level 5 Image">
+              <img src="/assets/images/prev/Lev5.png" alt="Level 5 Image">
+          </a>
+      </td>
+  </tr>
+</table>
+</li>
+<li><p>Now that the player knew how to sync the characters and solve the puzzles in both vertical and horizontal directions, it was now the time to introduce the spikes into the level. So the next was similar to the previous one except for the addition of spikes on some of the walls. This limited the areas that the player could explore to solve the puzzle.</p>
+<table class="custom-table">
+  <tr>
+      <td>
+          <a href="/assets/images/prev/Lev6.png" data-lightbox="gallery" data-title="Level 6 Image">
+              <img src="/assets/images/prev/Lev6.png" alt="Level 6 Image">
+          </a>
+      </td>
+  </tr>
+</table>
+</li>
+<li><p>The next level drastically increased the difficulty of the game by introducing a maze like map with the buttons at the end of the maze and spikes on a few of the walls. Lots of players exclaimed about getting stuck on this level.</p>
+<table class="custom-table">
+  <tr>
+      <td>
+          <a href="/assets/images/prev/Lev7.png" data-lightbox="gallery" data-title="Level 7 Image">
+              <img src="/assets/images/prev/Lev7.png" alt="Level 7 Image">
+          </a>
+      </td>
+  </tr>
+</table>
+</li>
+<li><p>Now the players were introduced to the movable boxes that were to be strategically used to solve the puzzles. </p>
+<table class="custom-table">
+  <tr>
+      <td>
+          <a href="/assets/images/prev/Lev8.png" data-lightbox="gallery" data-title="Level 8 Image">
+              <img src="/assets/images/prev/Lev8.png" alt="Level 8 Image">
+          </a>
+      </td>
+  </tr>
+</table>
+</li>
+<li><p>The next few levels combined the usage of both box and spikes along with maze-like level designs.</p>
+<table class="custom-table">
+  <tr>
+      <td>
+          <a href="/assets/images/prev/Lev9.png" data-lightbox="gallery" data-title="Level 9 Image">
+              <img src="/assets/images/prev/Lev9.png" alt="Level 9 Image">
+          </a>
+      </td>
+  </tr>
+</table>
+</li>
+<li><p>The final level involved a cliffhanger ending followed by the credit screen. Play the game to know more ;)</p>
+<table class="custom-table">
+  <tr>
+      <td>
+          <a href="/assets/images/prev/LevFin.png" data-lightbox="gallery" data-title="Final Level Image">
+              <img src="/assets/images/prev/LevFin.png" alt="Final Level Image">
+          </a>
+      </td>
+  </tr>
+</table>
+
+</li>
+</ul>
+<h2 id="8-0-post-processing">8.0 Post Processing</h2>
+<p>We used post processing to increase the immersion that the game offers. We decided to limit ourselves to the stack that were well optimized for WebGL builds. </p>
+<ul>
+<li>Lens distortion and Chromatic Aberration were added to the images rendered by the camera a more natural. This causes the shape of the images rendered by the camera to distort at the edges and thus increase the focus of the environment in proximity of both the players.</li>
+<li>We had planned on adding Bloom as well but since we weren’t Unity’s lighting system we would have to write the Bloom system for our lighting system. Due to deadlines for the gamejam approaching, we decided to shelve the idea.<table class="custom-table">
+  <tr>
+      <td>
+          <a href="/assets/images/prev/PP.gif" data-lightbox="game-gifs">
+              <img src="/assets/images/prev/PP.gif" alt="example image">
+          </a>
+      </td>
+  </tr>
+</table>
+
+</li>
+</ul>
+<h2 id="9-1-font">9.1 Font</h2>
+<ul>
+<li>We browsed through a bunch of hand-drawn fonts for the game’s UI. </li>
+<li>We shortlisted to Architects Daughter, Amatic, and Blokletters and finally finalized Amatic. </li>
+<li>The color palette was kept limited and preferably lerped between black and white. <table class="custom-table">
+  <tr>
+      <td>
+          <a href="/assets/images/prev/amatic.png" data-lightbox="game-images">
+              <img src="/assets/images/prev/amatic.png" alt="Amatic Font Image">
+          </a>
+      </td>
+  </tr>
+</table>
+
+</li>
+</ul>
+<h2 id="9-2-animations">9.2 Animations</h2>
+<ul>
+<li>The animations were kept minimal - fading, scaling, and translations. </li>
+<li>A canvas with black panel was used as an overlay and it was used for fading transitions between different scenes and menus.<table class="custom-table">
+  <tr>
+      <td>
+          <a href="/assets/images/prev/menuanim.gif" data-lightbox="game-images">
+              <img src="/assets/images/prev/menuanim.gif" alt="Main Menu Animation">
+          </a>
+      </td>
+      <td>
+          <a href="/assets/images/prev/pausemenu.gif" data-lightbox="game-images">
+              <img src="/assets/images/prev/pausemenu.gif" alt="Pause Menu Animation">
+          </a>
+      </td>
+  </tr>
+</table>
+
+</li>
+</ul>
+<h3 id="9-3-intro-clip">9.3 Intro clip</h3>
+<p>We created a small clip using Unity’s timeline as with the text only, the menu seemed a little lifeless. Again, minimalism and dark atmosphere were the key.</p>
+<table class="custom-table">
+    <tr>
+        <td>
+            <a href="/assets/images/prev/mainmenu.gif" data-lightbox="game-images">
+                <img src="/assets/images/prev/mainmenu.gif" alt="Intro Clip Image">
+            </a>
+        </td>
+    </tr>
+</table>
+
+<h3 id="9-4-music-sound-effects">9.4 Music &amp; Sound Effects</h3>
+<ul>
+<li>Simple sound effects imported from <a href="https://www.zapsplat.com/">ZapSplat</a> were used to for clicks, death, button press, gates and various other purposes.</li>
+</ul>
+</div><div class="tools">C#, HLSL, Unity, Game Design</div><br class="clear"></article><article id="content-fiea-summer"><h1>FIEA Summer Internship Work</h1><h2>Work at FIEA (Summer Internship) - Documented.</h2><div class="images"><img src="/assets/images//prev/SoulShard (2).png" style="NaN%;"><img src="/assets/images//prev/19SOB.png" style="NaN%;"></div><div class="content"><p>Soul Shard is a cooperative puzzle platformer that draws inspiration from EA’s ‘It Takes Two’. It is being developed by <a href="https://www.19soulsonboard.com/about">19 Souls on Board</a>, a team of 19 student developers from Cohort 18 at the Florida Interactive Entertainment Academy on the downtown campus of the University of Central Florida. I’m assisting the team as a technical artist this summer.</p>
+<ul>
+<li>The development update to the game can be viewed <a href="https://www.youtube.com/watch?v=0S1EbyBRVhw">here</a>. </li>
+<li>The repository containing my contributions to the project can be found <a href="https://github.com/19SOB/ucf-fiea-19sob-capstone-project-temp">here</a>.</li>
+</ul>
+<h2 id="1-0-smoke-system">1.0 Smoke System</h2>
+<p>My first task was to design and develop a stylized explosive smoke particles for various machinery and explosions in the game. The basic idea was to develop a functional prototype and then refine it in the iterative design process.</p>
+<h2 id="1-1-cloud-texture">1.1 Cloud Texture</h2>
+<p>Initially, I designed various cloud textures with separate RGB channels for Base Color, Emmisivity and Opacity Mask.</p>
+<table class="custom-table">
+    <tr>
+        <td>
+            <a href="/assets/images/prev/CloudRGB.png" data-lightbox="image-cloud-texture" data-title="Cloud Texture">
+                <img src="/assets/images/prev/CloudRGB.png" alt="Cloud Texture">
+            </a>
+        </td>
+    </tr>
+</table>
+
+<h2 id="1-2-smoke-material">1.2 Smoke Material</h2>
+<ul>
+<li>The smoke material was made using these textures. </li>
+<li>The emmisivity and particle colors were exposed for editing while making the particles.<table class="custom-table">
+  <tr>
+      <td>
+          <a href="/assets/images/prev/CloudMat.png" data-lightbox="image-smoke-material" data-title="Smoke Material">
+              <img src="/assets/images/prev/CloudMat.png" alt="Smoke Material">
+          </a>
+      </td>
+  </tr>
+</table>
+
+</li>
+</ul>
+<h2 id="1-3-smoke-particles-1st-iteration">1.3 Smoke Particles - 1st iteration</h2>
+<ul>
+<li>The smoke particles were made using the Niagara VFX system. </li>
+<li>The particles (100) were made to spawn in a burst around a cylinder with an initial velocity radially outwards. </li>
+<li>A positive gravitational force was added to make the particles rise with a drag coefficient to smoothen things and make it feel natural. </li>
+<li>Individual particles also received rotation in addition to a colour (the exposed parameter) that was lerped from grey to black.<table class="custom-table">
+  <tr>
+      <td>
+          <a href="/assets/images/prev/Smoke1.gif" data-lightbox="image-smoke-1" data-title="Smoke Particles - 1st iteration">
+              <img src="/assets/images/prev/Smoke1.gif" alt="Smoke Particles - 1st iteration">
+          </a>
+      </td>
+  </tr>
+</table>
+
+</li>
+</ul>
+<h2 id="1-4-smoke-particles-2nd-iteration">1.4 Smoke Particles - 2nd iteration</h2>
+<ul>
+<li>A light renderer was added to the particles to further intricately define the explosion.</li>
+<li>The light renderer was started off at the same initial position as the smoke particles.</li>
+<li>The intensity was lerped from 100 to 0.<table class="custom-table">
+  <tr>
+      <td>
+          <a href="/assets/images/prev/Smoke2.gif" data-lightbox="image-smoke-2" data-title="Smoke Particles - 2nd iteration">
+              <img src="/assets/images/prev/Smoke2.gif" alt="Smoke Particles - 2nd iteration">
+          </a>
+      </td>
+  </tr>
+</table>
+
+</li>
+</ul>
+<h2 id="1-5-debris-texture">1.5 Debris Texture</h2>
+<p>The debris texture was made in photoshop using online reference images and the brush tool.<table class="custom-table"></table></p>
+<table class="custom-table">
+    <tr>
+        <td>
+            <a href="/assets/images/prev/DebrisTex.png" data-lightbox="image-debris-texture" data-title="Debris Texture">
+                <img src="/assets/images/prev/DebrisTex.png" alt="Debris Texture">
+            </a>
+        </td>
+    </tr>
+</table>
+
+<h2 id="1-6-debris-material">1.6 Debris Material</h2>
+<p>The debris material was created using the debris texture in a similar fashion to the smoke material.</p>
+<table class="custom-table">
+    <tr>
+        <td>
+            <a href="/assets/images/prev/DebrisMat.png" data-lightbox="image-debris-material" data-title="Debris Material">
+                <img src="/assets/images/prev/DebrisMat.png" alt="Debris Material">
+            </a>
+        </td>
+    </tr>
+</table>
+
+<h2 id="1-7-smoke-particles-3rd-iteration">1.7 Smoke Particles - 3rd iteration</h2>
+<ul>
+<li>The debris particle was given the same parameters as the smoke particle.</li>
+<li>Since the debris appeared lighter, the drag was reduced and gravitational force (positive) was raised to increase the spread.</li>
+<li>Apart from that, a fountain emitter was assigned the same debris material to make the spread look more abrupt.<table class="custom-table">
+  <tr>
+      <td>
+          <a href="/assets/images/prev/Smoke3.gif" data-lightbox="image-smoke-3" data-title="Smoke Particles - 3rd iteration">
+              <img src="/assets/images/prev/Smoke3.gif" alt="Smoke Particles - 3rd iteration">
+          </a>
+      </td>
+  </tr>
+</table>
+
+</li>
+</ul>
+<h2 id="1-8-spark-texture">1.8 Spark Texture</h2>
+<p>The spark texture with separate RGB channels was obtained online.</p>
+<table class="custom-table">
+    <tr>
+        <td>
+            <a href="/assets/images/prev/Spark.png" data-lightbox="image-spark-texture" data-title="Spark Texture">
+                <img src="/assets/images/prev/Spark.png" alt="Spark Texture">
+            </a>
+        </td>
+    </tr>
+</table>
+
+<h2 id="1-9-spark-material">1.9 Spark Material</h2>
+<ul>
+<li>The spark material was made using the spark texture. </li>
+<li>The blue channel was used as the opacity mask.</li>
+<li>The emmisive color was obtained after combining red and yellow.<table class="custom-table">
+  <tr>
+      <td>
+          <a href="/assets/images/prev/SparkMat.png" data-lightbox="image-spark-material" data-title="Spark Material">
+              <img src="/assets/images/prev/SparkMat.png" alt="Spark Material">
+          </a>
+      </td>
+  </tr>
+</table>
+
+</li>
+</ul>
+<h2 id="1-10-smoke-particles-final-iteration">1.10 Smoke Particles - Final iteration</h2>
+<ul>
+<li>The spark particles were given the same parameter as the debris particle, i.e. a higher spread emitter and a fountain emitter.<table class="custom-table">
+  <tr>
+      <td>
+          <a href="/assets/images/prev/Smoke4.gif" data-lightbox="image-smoke-4" data-title="Smoke Particles - Final iteration">
+              <img src="/assets/images/prev/Smoke4.gif" alt="Smoke Particles - Final iteration">
+          </a>
+      </td>
+  </tr>
+</table>
+
+</li>
+</ul>
+<h2 id="1-11-other-variations">1.11 Other Variations</h2>
+<p>Few other variations of the smoke system.</p>
+<table class="custom-table">
+    <tr>
+        <td>
+            <a href="/assets/images/prev/Smoke5.gif" data-lightbox="image-smoke-5" data-title="Less stylized system">
+                <img src="/assets/images/prev/Smoke5.gif" alt="Less stylized system">
+            </a>
+        </td>
+        <td>
+            <a href="/assets/images/prev/Smoke6.gif" data-lightbox="image-smoke-6" data-title="Debris only system">
+                <img src="/assets/images/prev/Smoke6.gif" alt="Debris only system">
+            </a>
+        </td>
+        <td>
+            <a href="/assets/images/prev/Smoke7.gif" data-lightbox="image-smoke-7" data-title="Puff system">
+                <img src="/assets/images/prev/Smoke7.gif" alt="Puff system">
+            </a>
+        </td>
+    </tr>
+</table>
+
+<h2 id="2-0-flame-system">2.0 Flame system</h2>
+<p>My subsequent task was to design &amp; develop flame systems for different purposes like burning coal, chimneys, explosion, etc.</p>
+<h2 id="2-1-noise-texture">2.1 Noise Texture</h2>
+<p>A stylized noise texture was created to serve as the opacity mask for the flame material.</p>
+<table class="custom-table">
+    <tr>
+        <td>
+            <a href="/assets/images/prev/NoiseTex.png" data-lightbox="image-noise-texture" data-title="Noise Texture">
+                <img src="/assets/images/prev/NoiseTex.png" alt="Noise Texture">
+            </a>
+        </td>
+    </tr>
+</table>
+
+<h2 id="2-2-flame-material">2.2 Flame Material</h2>
+<ul>
+<li>Parametrically controlled texture coordinate was masked to obtain a controllable gradient. The value is clamped between 0 and 1 to prevent excessive bleeding.</li>
+<li>The noise texture was added to give fire-like shape to the mask.</li>
+<li>The UV map of the texture was given a panner (with texture coordinate as input) to animate it, depicting a burning fire.</li>
+<li>A RadialGradientExponential (with texture coordinate as input) was subtracted from the mask to prevent square edges.</li>
+<li>The tiling, erosion &amp; color of the material were exposed as dynamic parameters to be controlled by the Niagara system. <table class="custom-table">
+  <tr>
+      <td>
+          <a href="/assets/images/prev/FlameMat.gif" data-lightbox="image-flame-material" data-title="Flame Material">
+              <img src="/assets/images/prev/FlameMat.gif" alt="Flame Material">
+          </a>
+      </td>
+  </tr>
+</table>
+
+</li>
+</ul>
+<h2 id="2-3-flame-particles-1st-iteration">2.3 Flame Particles - 1st iteration</h2>
+<ul>
+<li>Majorly, the structure of flame system was completed during the formation of material itself.</li>
+<li>The sprites were spawned in a circular grid with different rotations to give a 3D look.</li>
+<li>The color was lerped between yellow and red. <table class="custom-table">
+  <tr>
+      <td>
+          <a href="/assets/images/prev/FlameVFX.gif" data-lightbox="image-flame-1" data-title="Flame Particles - 1st iteration">
+              <img src="/assets/images/prev/FlameVFX.gif" alt="Flame Particles - 1st iteration">
+          </a>
+      </td>
+  </tr>
+</table>
+
+</li>
+</ul>
+<h2 id="2-4-flame-mesh">2.4 Flame mesh</h2>
+<p>The flame system previously made was disapproved by the team for being too toony and not matching the game tone setting. So I decided to replace the sprite based particle system to a mesh one. I modeled an icoshpere mesh with decimate modifier for this purpose to provide randomness.</p>
+<table class="custom-table">
+    <tr>
+        <td>
+            <img src="/assets/images/prev/FlameMesh.png" alt="example image">
+        </td>
+    </tr><br></table>
+
+<h2 id="2-5-flame-material">2.5 Flame material</h2>
+<p>The flame material was created simply by assigning the particle color input to the emmisive color of the material so that we can assign it later in the emmiter itself.</p>
+<table class="custom-table">
+    <tr>
+        <td>
+            <a href="/assets/images/prev/FlameMesh.png" data-lightbox="image-flame-mesh" data-title="Flame Mesh">
+                <img src="/assets/images/prev/FlameMesh.png" alt="Flame Mesh">
+            </a>
+        </td>
+    </tr>
+</table>
+
+<h2 id="2-6-flame-particles-final-iteration">2.6 Flame Particles - Final iteration</h2>
+<ul>
+<li>A fountain based emitter is used after removing gravity, cone velocity, drag and scaleColor just retaining the initial properties.</li>
+<li>The default sprite renderer is replaced with a mesh renderer and the icosphere and the flame material we created is assigned.</li>
+<li>The particles were assigned a random vertical velocity so that variance in the fire’s peak giving it a natural eye.</li>
+<li>They’re scaled down in size as they reach up to give an inverted conical shape by using bezier curves to keep the transition smooth.</li>
+<li>The color is lerped between yellow and red with the lifetime of the particle.<table class="custom-table">
+  <tr>
+      <td>
+          <a href="/assets/images/prev/FlameVFX2.gif" data-lightbox="image-flame-2" data-title="Flame Particles - Final iteration">
+              <img src="/assets/images/prev/FlameVFX2.gif" alt="Flame Particles - Final iteration">
+          </a>
+      </td>
+  </tr>
+</table>
+
+</li>
+</ul>
+<h2 id="3-0-footprint-system">3.0 Footprint System</h2>
+<p>Further I was assigned the task to develop a snow-based footprint system over snow for the main characters (Ambrose and Nimue).  </p>
+<h2 id="3-1-footprint-sprites-1st-iteration">3.1 Footprint Sprites - 1st iteration</h2>
+<ul>
+<li>I used a snow texture which I found online to make the footprint sprites.</li>
+<li>The foot impressions of the right foot of both the characters were traced using the pen tool and the texture was masked to make the footprint sprites.</li>
+<li>The left footprint sprite was simply made by inverting the image horizontally.<table class="custom-table">
+  <tr>
+      <th colspan="2" style="text-align: center;">Foot Impressions</th>
+  </tr>
+  <tr>
+      <td>
+          <a href="/assets/images/prev/AmbroseFI.png" data-lightbox="image-ambrose-foot-impression" data-title="Ambrose Foot Impression">
+              <img src="/assets/images/prev/AmbroseFI.png" alt="Ambrose Foot Impression">
+          </a>
+      </td>
+      <td>
+          <a href="/assets/images/prev/NimueFI.png" data-lightbox="image-nimue-foot-impression" data-title="Nimue Foot Impression">
+              <img src="/assets/images/prev/NimueFI.png" alt="Nimue Foot Impression">
+          </a>
+      </td>
+  </tr>
+  <tr>
+      <th>Ambrose Foot Impression</th>
+      <th>Nimue Foot Impression</th>
+  </tr>
+  <tr>
+      <th colspan="2" style="text-align: center;">Footprint Sprites</th>
+  </tr><br>  <tr>
+      <td>
+          <a href="/assets/images/prev/AmbroseFPS1.png" data-lightbox="image-ambrose-footprint-sprite-1" data-title="Ambrose Footprint Sprite - 1st iteration">
+              <img src="/assets/images/prev/AmbroseFPS1.png" alt="Ambrose Footprint Sprite - 1st iteration">
+          </a>
+      </td>
+      <td>
+          <a href="/assets/images/prev/NimueFPS1.png" data-lightbox="image-nimue-footprint-sprite-1" data-title="Nimue Footprint Sprite - 1st iteration">
+              <img src="/assets/images/prev/NimueFPS1.png" alt="Nimue Footprint Sprite - 1st iteration">
+          </a>
+      </td>
+  </tr>
+  <tr>
+      <th>Ambrose Footprint Sprite - 1st iteration</th>
+      <th>Nimue Footprint Sprite - 1st iteration</th>
+  </tr>
+</table>
+
+</li>
+</ul>
+<h2 id="3-2-footprint-material-1st-iteration">3.2 Footprint Material - 1st iteration</h2>
+<ul>
+<li>The material used for the footprints was a deferred decal material with blending mode set to translucent so that you can apply it as a decal.</li>
+<li>The alpha of the texture/sprite was assigned to the opacity of the material and the RGB values to the base color.<table class="custom-table">
+  <tr>
+      <td>
+          <a href="/assets/images/prev/FPMat1.png" data-lightbox="image-footprint-material-1" data-title="Footprint Material - 1st iteration">
+              <img src="/assets/images/prev/FPMat1.png" alt="Footprint Material - 1st iteration">
+          </a>
+      </td>
+  </tr><br></table>
+
+</li>
+</ul>
+<h2 id="3-3-footprint-blueprint">3.3 Footprint Blueprint</h2>
+<ul>
+<li>An actor blueprint is created for both left and right footprints.</li>
+<li>A decal facing downwards with the footprint material is added as the child to the DefaultSceneRoot.</li>
+<li>The decal is made to fade away gradually after 5 seconds.<table class="custom-table">
+  <tr>
+      <td>
+          <a href="/assets/images/prev/FPBP.png" data-lightbox="image-footprint-blueprint" data-title="Footprint Blueprint">
+              <img src="/assets/images/prev/FPBP.png" alt="Footprint Blueprint">
+          </a>
+      </td>
+  </tr><br></table>
+
+</li>
+</ul>
+<h2 id="3-4-adding-to-the-third-person-blueprint">3.4 Adding to the third person blueprint</h2>
+<ul>
+<li>I used the default third person character provided by Unreal to playtest the footprints.</li>
+<li>In the TPC blueprint, planes are added as a child of the mesh and the respective foot as the parent socket so that it snaps perfectly with the foot’s movement.</li>
+<li>The planes are rendered as invisible (hidden in game), events are prevented from overlapping, and collisions are disabled as they’re just meant for spawn reference to the footprints. <table class="custom-table">
+  <tr>
+      <td>
+          <a href="/assets/images/prev/TPBP.png" data-lightbox="image-third-person-blueprint" data-title="Adding to the third person blueprint">
+              <img src="/assets/images/prev/TPBP.png" alt="Adding to the third person blueprint">
+          </a>
+      </td>
+  </tr><br></table>
+
+</li>
+</ul>
+<h2 id="3-5-animation-notifier">3.5 Animation Notifier</h2>
+<ul>
+<li>Animation notifiers are added for each footprint to spawn at the appropriate time in the running animation.</li>
+<li>In the third person animation blueprint’s event graph, a character reference is set and cast to the third person character as the blueprint awakes.</li>
+<li>In the third person character blueprint’s event graph, two new custom events are introduced to spawn the footprints.</li>
+<li>The event is meant to spawn an actor from the footprint class we created earlier. </li>
+<li>The foot reference is assigned to the spawn location. </li>
+<li>The actor rotation is assigned to the spawn rotation.</li>
+<li>The spawn scale was decided after playtesting.</li>
+<li>The custom events are assigned to the animation notifier in the third person animation blueprint’s event graph.<table class="custom-table">
+  <tr>
+      <td>
+          <a href="/assets/images/prev/AnimNoti.gif" data-lightbox="image-animation-notifier" data-title="Adding run animation notifier">
+              <img src="/assets/images/prev/AnimNoti.gif" alt="Adding run animation notifier">
+          </a>
+      </td>
+      <td>
+          <a href="/assets/images/prev/TPAnimBP.png" data-lightbox="image-third-person-animation-blueprint" data-title="Third person animation event graph">
+              <img src="/assets/images/prev/TPAnimBP.png" alt="Third person animation event graph">
+          </a>
+      </td>
+      <td>
+          <a href="/assets/images/prev/TPCharBP.png" data-lightbox="image-third-person-character-blueprint" data-title="Third person character event graph">
+              <img src="/assets/images/prev/TPCharBP.png" alt="Third person character event graph">
+          </a>
+      </td>
+  </tr>
+  <tr>
+      <th>Adding run animation notifier</th>
+      <th>Third person animation event graph</th>
+      <th>Third person character event graph</th>
+  </tr>
+</table>
+
+</li>
+</ul>
+<table class="custom-table">
+    <tr>
+        <td>
+            <a href="/assets/images/prev/FP1.gif" data-lightbox="image-first-output" data-title="First Output">
+                <img src="/assets/images/prev/FP1.gif" alt="First Output">
+            </a>
+        </td>
+    </tr>
+    <tr>
+        <th>First Output</th>
+    </tr>
+</table>
+
+<h2 id="3-6-footprint-sprites-final-iteration">3.6 Footprint Sprites - Final iteration</h2>
+<p>The team pinpointed that the current footprint lacked originality as snow footprints are generally a little darker (dark grey/blue) with blue tint on the edges. Apart from this, they suggested to add normal information to the footprints as well.</p>
+<ul>
+<li>I decreased the exposure of the textures, added bluish tint on the edges using the brush (Chalk 2) tool.</li>
+<li>Further, I generated the normals using the inbuilt 3D tools provided in Photoshop. (which turned out to be one of my most laggy workflow experiences with Photoshop).<table class="custom-table">
+  <tr>
+      <th colspan="2" style="text-align: center;">Footprint Textures/Sprites</th>
+  </tr>
+  <tr>
+      <td>
+          <a href="/assets/images/prev/AmbroseFPS2.png" data-lightbox="image-new-ambrose-footprint-texture" data-title="New Ambrose Footprint Texture">
+              <img src="/assets/images/prev/AmbroseFPS2.png" alt="New Ambrose Footprint Texture">
+          </a>
+      </td>
+      <td>
+          <a href="/assets/images/prev/NimueFPS2.png" data-lightbox="image-new-nimue-footprint-texture" data-title="New Nimue Footprint Texture">
+              <img src="/assets/images/prev/NimueFPS2.png" alt="New Nimue Footprint Texture">
+          </a>
+      </td>
+  </tr>
+  <tr>
+      <th>New Ambrose Footprint Texture</th>
+      <th>New Nimue Footprint Texture</th>
+  </tr>
+  <tr>
+      <th colspan="2" style="text-align: center;">Footprint Normals</th>
+  </tr>
+  <tr>
+      <td>
+          <a href="/assets/images/prev/AmbroseFPN.png" data-lightbox="image-ambrose-footprint-normals" data-title="Ambrose footprint normal">
+              <img src="/assets/images/prev/AmbroseFPN.png" alt="Ambrose footprint normal">
+          </a>
+      </td>
+      <td>
+          <a href="/assets/images/prev/NimueFPN.png" data-lightbox="image-nimue-footprint-normals" data-title="Nimue footprint normal">
+              <img src="/assets/images/prev/NimueFPN.png" alt="Nimue footprint normal">
+          </a>
+      </td>
+  </tr>
+  <tr>
+      <th>Ambrose footprint normal</th>
+      <th>Nimue footprint normal</th>
+  </tr>
+</table>
+
+</li>
+</ul>
+<h2 id="3-7-footprint-material-final-iteration">3.7 Footprint Material - Final iteration</h2>
+<p>The footprint material was modified to support normal information and the normal map textures generated were assigned.</p>
+<table class="custom-table">
+    <tr>
+        <td>
+            <a href="/assets/images/prev/FPMat2.png" data-lightbox="image-footprint-material-2" data-title="Footprint Material - Final iteration">
+                <img src="/assets/images/prev/FPMat2.png" alt="Footprint Material - Final iteration">
+            </a>
+        </td>
+    </tr><br></table>
+<table class="custom-table">
+    <tr>
+        <td>
+            <a href="/assets/images/prev/FP2.gif" data-lightbox="image-final-output" data-title="Final Output">
+                <img src="/assets/images/prev/FP2.gif" alt="Final Output">
+            </a>
+        </td>
+    </tr>
+    <tr>
+        <th colspan="1">Final Output</th>
+    </tr>
+</table>
+
+<h2 id="4-0-snowstorm-system">4.0 Snowstorm System</h2>
+<p>My next task was to design and develop a snowstorm system for the yard area. I was provided with a <a href="https://www.shutterstock.com/video/clip-1058627680-dense-heavy-blizzard-snowstorm-vfx-insert-slow-motion">reference video</a> for the same.</p>
+<h2 id="4-1-snow-particles">4.1 Snow Particles</h2>
+<ul>
+<li>I found this task quite easy and felt that simply a fountain emitter with the default particle renderer would do the trick.</li>
+<li>So, I created a fountain emitter and inverted its initial velocity to make the particles fall downwards instead of upwards. </li>
+<li>The particles were made to spawn around a big sphere.</li>
+<li>The trajectory cone’s apex angle was increased as well to increase the spread of the particles.</li>
+<li>The gravity was decreased and drag was increased to make the snowfall appear more genuine.<table class="custom-table">
+  <tr>
+      <td>
+          <a href="/assets/images/prev/Snow1.gif" data-lightbox="image-snow-particles" data-title="Snow Particles">
+              <img src="/assets/images/prev/Snow1.gif" alt="Snow Particles">
+          </a>
+      </td>
+  </tr><br></table>
+
+</li>
+</ul>
+<h2 id="4-2-wind-material">4.2 Wind Material</h2>
+<p>As I had anticipated, I was suggested to add more depth to the snowstorm. The idea was to make the snow more dramatic by introducing a wind system. They provided a <a href="https://www.youtube.com/watch?v=sGkh1W5cbH4">reference video</a> as well.</p>
+<ul>
+<li>A translucent unlit material was chosen for the wind particles.</li>
+<li>The emissive color was made to be driven by the particle color. </li>
+<li>The opacity was controlled by the multiplication of the alpha value of the particle with a RadialGradientExponential to introduce a smooth gradient fall-off that would make the wind look natural.<table class="custom-table">
+  <tr>
+      <td>
+          <a href="/assets/images/prev/WindMat.png" data-lightbox="image-wind-material" data-title="Wind Material">
+              <img src="/assets/images/prev/WindMat.png" alt="Wind Material">
+          </a>
+      </td>
+  </tr><br></table>
+
+</li>
+</ul>
+<h2 id="4-3-wind-particles">4.3 Wind Particles</h2>
+<ul>
+<li>A new Cascade particle system is created and the rendering for the default emitter is turned off.</li>
+<li>The particle is given random horizontal velocity with minor deviations in other directions.</li>
+<li>An emitter for trails is added and it’s made to follow the first emitter and spawn alongside it.</li>
+<li>The wind material created earlier is added to the trail emitter.</li>
+<li>The scale is made to represent a long trail.</li>
+<li>The direction of velocity is made to ribbon over its lifetime to make the trail follow a wave-like pattern.</li>
+<li>The particles are made to spawn around a sphere with controllable radius to control the spread.<table class="custom-table">
+  <tr>
+      <td>
+          <a href="/assets/images/prev/WindPart.gif" data-lightbox="image-wind-particles" data-title="Wind Particles">
+              <img src="/assets/images/prev/WindPart.gif" alt="Wind Particles">
+          </a>
+      </td>
+  </tr><br></table>
+
+</li>
+</ul>
+<h2 id="4-4-fog-texture">4.4 Fog Texture</h2>
+<ul>
+<li>A smooth noise texture (obtained online) was used as the fog texture for smooth light absorption (extinction).<table class="custom-table">
+  <tr>
+      <td>
+          <a href="/assets/images/prev/FogTex.png" data-lightbox="image-fog-texture" data-title="Fog Texture">
+              <img src="/assets/images/prev/FogTex.png" alt="Fog Texture">
+          </a>
+      </td>
+  </tr><br></table>
+
+</li>
+</ul>
+<h2 id="4-5-fog-material">4.5 Fog Material</h2>
+<ul>
+<li>A volume-based material with additive blending is created for the fog to be volumetric.</li>
+<li>A sphere mask between world and particle position with particle radius as the mask’s radius is used to control the rate of light absorption (extinction) of the material.</li>
+<li>The mask is parametrically controlled by a hardness and extinction value multiplied by RGB value of the texture I obtained earlier.</li>
+<li>The albedo of the material takes in the multiplication of the sphere mask and the blend overlay between our texture and a RGB value parameter which we can control in the instance of that material.</li>
+<li>Thus we can control the hardness, light absorption rate and the color of the fog.<table class="custom-table">
+  <tr>
+      <td>
+          <a href="/assets/images/prev/FogMat.png" data-lightbox="image-fog-material" data-title="Fog Material">
+              <img src="/assets/images/prev/FogMat.png" alt="Fog Material">
+          </a>
+      </td>
+  </tr><br></table>
+
+</li>
+</ul>
+<h2 id="4-6-fog-particle">4.6 Fog Particle</h2>
+<ul>
+<li>A new Cascade particle system is created and an instance of the fog material is assigned to it. </li>
+<li>The particle is scaled only along the X-axis &amp; Z-axis to represent a flat surface and its velocity is set to zero.</li>
+<li>This particle needs to be paired with an exponential height fog (with volumetric fog enabled) to render over the screen.</li>
+<li><p>The particles are spawned around a cylinder (having zero thickness) with its flat edge in the X-Z plane.</p>
+<table class="custom-table">
+  <tr>
+      <td>
+          <a href="/assets/images/prev/FogEH.gif" data-lightbox="image-fog-extinction-hardness" data-title="Fog Extinction & Hardness">
+              <img src="/assets/images/prev/FogEH.gif" alt="Fog Extinction & Hardness">
+          </a>
+      </td>
+      <td>
+          <a href="/assets/images/prev/FogCol.gif" data-lightbox="image-fog-color" data-title="Fog Color">
+              <img src="/assets/images/prev/FogCol.gif" alt="Fog Color">
+          </a>
+      </td>
+  </tr>
+  <tr>
+      <th>Fog Extinction &amp; Hardness</th>
+      <th>Fog Color</th>
+  </tr>
+</table>
+</li>
+<li><p>Finally the snow niagara system, wind cascade system, fog cascade system &amp; an exponential height fog (with volumetric fog enabled) are added into a single blueprint actor to be used in the yard scene as a snowstorm system.</p>
+<table class="custom-table">
+  <tr>
+      <td>
+          <a href="/assets/images/prev/SnowStormFinal.gif" data-lightbox="image-snowstorm-system" data-title="Snowstorm System">
+              <img src="/assets/images/prev/SnowStormFinal.gif" alt="Snowstorm System">
+          </a>
+      </td>
+  </tr>
+</table>
+
+</li>
+</ul>
+<h2 id="5-0-cable-system">5.0 Cable system</h2>
+<p>My next task was to come up with a physics-based cable system that was mostly to be used for cosmetic purposes in the game.</p>
+<h2 id="5-1-cable-actors">5.1 Cable Actors</h2>
+<p>Fortunately, Unreal comes preloaded with cable actors with rope physics for on-the-go usage. </p>
+<ul>
+<li>These cables implement the traditional way for rope physics i.e. using a series of particles with motion constraints between them.</li>
+<li>The texture maps were obtained from the Quixel Megascans.</li>
+<li>The physics is constrained between objects that the cable is attached to them by using Physics constraint actor between the two objects.</li>
+<li>Cable’s end is attached to any one of the objects.<table class="custom-table">
+  <tr>
+      <td>
+          <a href="/assets/images/prev/Cable.gif" data-lightbox="image-cable-actors" data-title="Cable Actors">
+              <img src="/assets/images/prev/Cable.gif" alt="Cable Actors">
+          </a>
+      </td>
+  </tr><br></table>
+
+
+</li>
+</ul>
+<h2 id="6-0-glowing-crack-material">6.0 Glowing Crack Material</h2>
+<p>The team then assigned me the task to come up with materials with glowing cracks. They provided me with <a href="https://assetstore.unity.com/packages/vfx/particles/spells/mesh-effects-67803#description">references</a> as well.</p>
+<table class="custom-table">
+    <tr>
+        <td>
+            <a href="/assets/images/prev/gcrackref.png" data-lightbox="image-glowing-crack-material" data-title="Glowing Crack Material">
+                <img src="/assets/images/prev/gcrackref.png" alt="Glowing Crack Material">
+            </a>
+        </td>
+    </tr><br></table>
+
+<h2 id="6-1-crack-textures">6.1 Crack textures</h2>
+<ul>
+<li>As the reference for the material that I was provided with was a Unity asset, I tried reverse engineering the properties of the material to recreate it in Unreal.</li>
+<li>I could make out that a single color channel of the base map (Albedo) was inverted and clamped between 0 and 1 and was multiplied with the emissivity input for the material.</li>
+<li>The single channel input texture ensured that the light emitted took grayscale values according to the base map and we could control the intensity, rate, color tint, etc through the emissivity input.</li>
+<li>A normal map was also used to add depth information to the cracks to make them look more realistic.</li>
+<li>So I imported a non-uniform galvanized metal’s texture maps (base &amp; normal) from the Quixel Bridge for this purpose.<table class="custom-table">
+  <tr>
+      <td>
+          <a href="/assets/images/prev/CrackBase.png" data-lightbox="image-crack-base-texture" data-title="Base Map">
+              <img src="/assets/images/prev/CrackBase.png" alt="Base Map">
+          </a>
+      </td>
+      <td>
+          <a href="/assets/images/prev/CrackNormal.png" data-lightbox="image-crack-normal-map" data-title="Normal Map">
+              <img src="/assets/images/prev/CrackNormal.png" alt="Normal Map">
+          </a>
+      </td>
+  </tr>
+  <tr>
+      <th>Base Map</th>
+      <th>Normal Map</th>
+  </tr>
+</table>
+
+
+</li>
+</ul>
+<h2 id="6-2-emission-parameters">6.2 Emission Parameters</h2>
+<ul>
+<li>The emissive color parameter of the material is governed by a time-dependent sine wave that leads to pulsating behavior by the glowing cracks.</li>
+<li>The sine input is given a <code>Rate</code> factor as its frequency, to control the rate of pulsation.</li>
+<li>Then the wave is given an offset governed by the <code>Pulse Intensity</code>. Its value is preferably kept to be greater than one to avoid negative waves (this prevents lag between the pulse cycles).</li>
+<li>The offseted wave function is amplified by a <code>Glow Intensity</code> factor to control the amplitude of the glow.</li>
+<li>Finally, the entire amplified function is multiplied by an <code>Emissive Color</code> Vector parameter which governs the color of the glow.</li>
+<li>The <code>Rate, Pulse Intensity, Glow Intensity, Emissive Color</code> are parametrically exposed to be controlled by the instance of that material.<table class="custom-table">
+  <tr>
+      <td>
+          <a href="/assets/images/prev/EmissionParameter.png" data-lightbox="image-emission-parameters" data-title="Emission Parameters">
+              <img src="/assets/images/prev/EmissionParameter.png" alt="Emission Parameters">
+          </a>
+      </td>
+  </tr><br></table>
+
+</li>
+</ul>
+<h2 id="6-3-emission-shape">6.3 Emission Shape</h2>
+<ul>
+<li>The base color of the material is governed by the base map of texture and a <code>Base Tint</code> Vector factor.</li>
+<li>The base map is blend overlayed with the <code>Base Tint</code> as the base. This ensures that whenever the blend is greater than half the grey value, it will get screened else it will get multiplied. (Every blend option was tried and the Overlay type was found to be best suited for our purpose).</li>
+<li>The final blend output is multiplied again with the base map and assigned to the base color of the material.</li>
+<li>The normal map is assigned as the material’s normal as it is.</li>
+<li>The shape of the emission is governed by a single color channel of the base map (all three were tried and the Red channel felt the most appealing to the eyes).</li>
+<li>The color input is inverted using 1-x node and it is assigned a <code>Coverage</code> parameter as the exponent.</li>
+<li>The value is clamped between 0 and 1 and is multiplied by the amplified function obtained above and finally assigned to the emissive color property of the material. </li>
+<li><p>The <code>Base Tint &amp; Coverage</code> are parametrically exposed to be controlled by the instance of that material.</p>
+<table class="custom-table">
+  <tr>
+      <td>
+          <a href="/assets/images/prev/EmissionShape.png" data-lightbox="image-emission-shape" data-title="Emission Shape">
+              <img src="/assets/images/prev/EmissionShape.png" alt="Emission Shape">
+          </a>
+      </td>
+  </tr><br></table>
+</li>
+<li><p>A material instance of this material was created and assigned to one of the items in the game.</p>
+<table class="custom-table">
+  <tr>
+      <td>
+          <a href="/assets/images/prev/Coverage.gif" data-lightbox="image-changing-coverage" data-title="Changing Coverage">
+              <img src="/assets/images/prev/Coverage.gif" alt="Changing Coverage">
+          </a>
+      </td>
+      <td>
+          <a href="/assets/images/prev/GlowIntensity.gif" data-lightbox="image-changing-glow-intensity" data-title="Changing Glow Intensity">
+              <img src="/assets/images/prev/GlowIntensity.gif" alt="Changing Glow Intensity">
+          </a>
+      </td>
+  </tr>
+  <tr>
+      <th>Changing Coverage</th>
+      <th>Changing Glow Intensity</th>
+  </tr>
+  <tr>
+      <td>
+          <a href="/assets/images/prev/PulseIntensity.gif" data-lightbox="image-changing-pulse-intensity" data-title="Changing Pulse Intensity">
+              <img src="/assets/images/prev/PulseIntensity.gif" alt="Changing Pulse Intensity">
+          </a>
+      </td>
+      <td>
+          <a href="/assets/images/prev/Rate.gif" data-lightbox="image-changing-rate" data-title="Changing Rate">
+              <img src="/assets/images/prev/Rate.gif" alt="Changing Rate">
+          </a>
+      </td>
+  </tr>
+  <tr>
+      <th>Changing Pulse Intensity</th>
+      <th>Changing Rate</th>
+  </tr>
+  <tr>
+      <td>
+          <a href="/assets/images/prev/EmissiveColor.gif" data-lightbox="image-changing-emissive-color" data-title="Changing Emissive Color">
+              <img src="/assets/images/prev/EmissiveColor.gif" alt="Changing Emissive Color">
+          </a>
+      </td>
+      <td>
+          <a href="/assets/images/prev/BaseTint.gif" data-lightbox="image-changing-base-tint" data-title="Changing Base Tint">
+              <img src="/assets/images/prev/BaseTint.gif" alt="Changing Base Tint">
+          </a>
+      </td>
+  </tr>
+  <tr>
+      <th>Changing Emissive Color</th>
+      <th>Changing Base Tint</th>
+  </tr>
+</table>
+
+</li>
+</ul>
+<h2 id="7-0-loading-screen">7.0 Loading Screen</h2>
+<p>I decided to switch my role to explore the track of a tech designer. I was assigned the task to design a loading screen for the various scene transitions in the game. </p>
+<h2 id="7-0-widget">7.0 Widget</h2>
+<ul>
+<li>A 16:9 widget was created to serve as the lock screen. </li>
+<li>A <a href="https://drive.google.com/file/d/1AEvD9Qi2J3TZTnRo6RIspSqx6nZX-jSQ/view">video</a> was provided to be used as the background for the lock screen.</li>
+<li>Since Unreal Engine doesn’t support Video files for Widget as is, I had to do a workaround. I imported the video as a media player and created a video texture out of it. Then I created a material with UI domain that could be used in the widget as an Image. (Image in widgets support the use of materials as a brush)</li>
+<li>The video was looped and precached to avoid any frame drops in between each loop.</li>
+<li>The default Rendering Hardware Interface was changed to DirectX11 as Vulkan/DirectX12 eventually failed to cache the video and led to a black screen.<table class="custom-table">
+  <tr>
+      <td>
+          <a href="/assets/images/prev/loadscrmat.gif" data-lightbox="image-widget-video-material" data-title="Video UI Material">
+              <img src="/assets/images/prev/loadscrmat.gif" alt="Video UI Material">
+          </a>
+      </td>
+  </tr>
+  <tr>
+      <th>Video UI Material</th>
+  </tr>
+</table>
+
+</li>
+</ul>
+<h2 id="7-1-progress-bar">7.1 Progress Bar</h2>
+<p>The team wanted me to implement a progress bar whose colors can be controlled by us in the engine. Apart from this, the progress bar’s progress was to be linked with the amount of level content and lighting information was loaded in the level.</p>
+<ul>
+<li>I used the Progress Bar prefab provided by the Unreal Engine in the Widget Palette as the base. </li>
+<li>The progress percentage was bound with the <code>GetAsyncLoadPercentage</code> with an upper clamp on the timing. </li>
+<li>A custom sprite was used for the progress bar as well.<table class="custom-table">
+  <tr>
+      <td>
+          <a href="/assets/images/prev/progressbarbp.png" data-lightbox="image-progress-bar" data-title="Progress Bar Blueprint">
+              <img src="/assets/images/prev/progressbarbp.png" alt="Progress Bar Blueprint">
+          </a>
+      </td>
+  </tr><br></table>
+
+</li>
+</ul>
+<h2 id="7-2-tips-system">7.2 Tips System</h2>
+<p>Next, we decided upon implementing a tips system that would show up random tips on the widget while the level is loading. </p>
+<ul>
+<li>A semi-transparent black box was used as the container for the textbox of the tips that would come randomly.</li>
+<li>DCC font was used for the text to keep it seamless with the game.</li>
+<li>The text was randomly chosen from an array of strings and was set to switch to another string after a threshold time.</li>
+<li>The sound designers even went on to implement a narration system that read out the tips that came out on the screen.<table class="custom-table">
+  <tr>
+      <td>
+          <a href="/assets/images/prev/tipbp.png" data-lightbox="image-tips-system" data-title="Tips System Blueprint">
+              <img src="/assets/images/prev/tipbp.png" alt="Tips System Blueprint">
+          </a>
+      </td>
+  </tr><br></table>
+
+</li>
+</ul>
+<h2 id="7-3-widget-level-blueprint">7.3 Widget &amp; Level Blueprint</h2>
+<ul>
+<li>The widget was added to the viewport of the screen when a new level was opened. </li>
+<li>It was made to wait for <code>GetAsyncLoadPercentage</code> to get to 100, and then a prompt was shown to press any key (cross-platform) to disable the widget and open the newly loaded level. The blueprint was made to wait for a threshold time in case the level took too long to load. <table class="custom-table">
+  <tr>
+      <td>
+          <a href="/assets/images/prev/lswidget.png" data-lightbox="image-widget-and-level-blueprint" data-title="Widget & Level Blueprint">
+              <img src="/assets/images/prev/lswidget.png" alt="Widget & Level Blueprint">
+          </a>
+      </td>
+  </tr><br></table>
+
+</li>
+</ul>
+<h2 id="7-4-final-touches">7.4 Final Touches</h2>
+<ul>
+<li>All the widgets and elements were animated To give a more professional look.</li>
+<li>The game’s logo was added in the center and was made to fade into a text prompt that asked the players to press a key to continue once the level had been loaded.<table class="custom-table">
+  <tr>
+      <td>
+          <a href="/assets/images/prev/LoadingScreen.gif" data-lightbox="image-final-touches" data-title="Final Touches">
+              <img src="/assets/images/prev/LoadingScreen.gif" alt="Final Touches">
+          </a>
+      </td>
+  </tr><br></table></li>
+</ul>
+</div><div class="tools">Unreal Engine, Game Design</div><br class="clear"></article><article id="content-image-editor-unity"><h1>Image Editor developed in Unity</h1><h2>A janky photo editor that transforms any image into a “low-quality-meme”.</h2><div class="images"><img src="/assets/images//prev/Icon_Editor.png" style="NaN%;"><img src="/assets/images//prev/Editor_UI.jpg" style="NaN%;"></div><div class="content"><p>I was recently accepted into the Florida Interactive Entertainment Academy for the Technical Art track. I was checking out some medium blogs to to learn some image manipulation to brush up some of my technical art skils. Them medium gods were actually pretty darn helpful and I somehow ended up developing a janky photo editor using Unity. It transforms any regular image into a “low-quality-meme”. I call it the “Low Res Meme Editor”. I’ll be discussing my approach towards developing the photo editor in this blog.</p>
+<h2 id="1-0-preparing-images-for-editing"><strong>1.0 Preparing Images for Editing</strong></h2>
+<p>The first step was transforming the images into a suitable format for easy manipulation. <code>Texture2D</code> felt appopriate for this purpose, as it gives me more control over the pixel data. I could directly manipulate pixel values using the <code>GetPixel()</code> and <code>SetPixel()</code> methods of any Texture2D object.</p>
+<ul>
+<li><p>So I created method that took an image an returned a Texture2D corresponding to it.</p>
+<pre><code>private Texture2D GetTextureFromImage(Image targetImage) {}
+</code></pre></li>
+<li><p>Then I created an empty texture with the width and height of the image.</p>
+<pre><code>Rect rect = targetImage.sprite.rect;
+Texture2D texture = new Texture2D((int)rect.width, (int)rect.height);                
+</code></pre></li>
+<li><p>Finally the pixels on the original image are mirrored on the pixels of the empty texture using the <code>SetPixels()</code> method.</p>
+<pre><code>texture.SetPixels(
+      targetImage.sprite.texture.GetPixels(
+          (int)rect.x,
+          (int)rect.y,
+          (int)rect.width, 
+          (int)rect.height));
+  texture.Apply();
+  return texture;                
+</code></pre></li>
+</ul>
+<h2 id="2-0-image-editing-algorithms-approach"><strong>2.0 Image Editing Algorithms: Approach</strong></h2>
+<p>I chose to work on a series of image editing techniques. My plan was to apply these algorithms with different settings, essentially creating pre-defined configurations for editing images. <strong>Most of these algorithms shall serve the sole purpose of giving the image a low-quality-meme look”.</strong></p>
+<h2 id="2-1-saturation-control"><strong>2.1 Saturation Control</strong></h2>
+<p>The first control I wished to establish was for Saturation i.e the intensity of the color of each pixel of the image. </p>
+<ul>
+<li>A saturation value of 0 makes the image grayscale.</li>
+<li>A value of 1 keeps the original colors unchanged.</li>
+<li>Anything above 1 makes the image more vibrant.<table class="custom-table" style="width: 100%;">
+  <tr>
+      <td style="text-align: center;">
+          <a href="/assets/images/prev/Saturation_Diagram.png" data-lightbox="algorithm-diagrams">
+              <img style="border:none;" src="/assets/images/prev/Saturation_Diagram.png" alt="Algorithm for Saturation Control">
+          </a>
+          <br>
+          <strong>Algorithm for Saturation Control</strong>
+      </td>
+  </tr>
+</table>
+
+</li>
+</ul>
+<p>So the basic algorithm I used to achieve saturation control was–</p>
+<ol>
+<li><p>Getting the texture from the image and creating an empty texture to assign the edits texture to.</p>
+<pre><code> originalTexture = GetTextureFromImage(image);
+ modifiedTexture = new Texture2D(originalTexture.width, originalTexture.height);
+</code></pre></li>
+<li><p>Looping through the pixels to access the HSV values from their color. The <code>saturation</code> value is of importance here as we are going to alter it, so it is passed as a reference type.</p>
+<pre><code> // accessing the texture code here
+
+ Color[] pixels = originalTexture.GetPixels();
+ int totalPixels = pixels.Length;
+
+ for (int i = 0; i &lt; totalPixels; i++)
+ {
+     Color pixelColor = pixels[index];
+     Color.RGBToHSV(pixelColor, out float hue, out float saturation, out float value);    
+ }
+</code></pre></li>
+<li><p>Applying the saturation to each pixel. The <code>saturation</code> value is multiplied by  a <code>saturationFactor</code> to alter it. And finally a new array of Color of length the same as the original image is assigned the color with the new <code>saturation</code> value.</p>
+<pre><code> Color[] modifiedPixels = new Color[totalPixels];
+
+ for (int i = 0; i &lt; totalPixels; i++)
+ {
+     // accessing HSV code here
+     saturation *= _saturationFactor;
+     modifiedPixels[index] = Color.HSVToRGB(hue, saturation, value);
+ }
+</code></pre></li>
+<li><p>A new texture with the saturated pixels is created and assigned to a sprite.</p>
+<pre><code> modifiedTexture.SetPixels(modifiedPixels);
+ modifiedTexture.Apply();
+
+ Sprite modifiedSprite = Sprite.Create(modifiedTexture,
+                                     new Rect(0, 0,
+                                     modifiedTexture.width, modifiedTexture.height),
+                                     new Vector2(0.5f, 0.5f));
+ image.sprite = modifiedSprite;
+</code></pre><table class="custom-table" style="width: 100%;">
+ <tr>
+     <td style="text-align: center;">
+         <a href="/assets/images/prev/saturationFactor.png" data-lightbox="saturation-diagrams">
+             <img src="/assets/images/prev/saturationFactor.png" alt="Saturation Control">
+         </a>
+         <br>
+         <strong>Saturation Control</strong>
+     </td>
+ </tr>
+</table>
+
+</li>
+</ol>
+<h2 id="2-2-adding-gaussian-blur"><strong>2.2 Adding Gaussian Blur</strong></h2>
+<p>Next in the list are algorithms that helps blur an image using a Gaussian Function. This helps achieve the bokeh effect. It has the effect of reducing an image’s high frequency components and thus acting like a low-pass filter. </p>
+<ol>
+<li><p><strong>Creating the Gaussian Kernel</strong></p>
+</li>
+<li><p>First we create a gaussian kernel of a given size and radius. The gaussian kernel is a float 2D matrix (<code>float[,]</code>). Each element in the matrix is a weight that determines the contribution of each pixel to the blurring process. These weights are caluclated based on the Gaussian distribution formula.</p>
+</li>
+</ol>
+<p align="center">
+  <a href="https://latex.codecogs.com/svg.image?{f(x)&space;=&space;\frac{1}{\sigma\sqrt{2\pi}}&space;e^{-\frac{(x-\mu)^2}{2\sigma^2}}}" data-lightbox="equation" data-title="Gaussian Distribution Formula">
+  <img src="https://latex.codecogs.com/svg.image?{f(x)&space;=&space;\frac{1}{\sigma\sqrt{2\pi}}&space;e^{-\frac{(x-\mu)^2}{2\sigma^2}}}" alt="Gaussian Distribution Formula">
+  </a>
+</p>
+
+<ul>
+<li><p><strong>Input Parameters:</strong> The <code>CreateGaussianKernel()</code> method takes the <code>radius</code> and <code>size</code> of the kernel as the parameter and returns a 2D matrix (<code>float[,]</code>). The <code>size</code> represents the dimensions of the kernel, and the <code>radius</code> controls the spread of the blur effect.</p>
+<pre><code>  private float[,] CreateGaussianKernel(int size, float radius) {}
+</code></pre></li>
+<li><p><strong>Initialization:</strong> An empty 2D array called <code>kernel</code> of size x size is initialized. This array will store the weights that determine the strength of blurring for each pixel. The variable <code>sigma</code> is calculated as <code>radius / 3f</code>. <code>sigma</code> is a parameter that affects the spread of the Gaussian distribution. A larger sigma value results in a wider spread of the blur. The constant for the gaussian distribution is calculated as twice the <code>sigma</code> squared.</p>
+<pre><code>  float[,] kernel = new float[size, size];
+  float sigma = radius / 3f; 
+  float twoSigmaSquare = 2f * sigma * sigma; 
+  float totalWeight = 0f; 
+</code></pre></li>
+<li><p><strong>Gaussian and Total Weight Calculation:</strong> The nested loops iterate over each element of the <code>kernel</code> array. For each element at position [y, x], it calculates the squared distance from the center of the kernel. The formula <em>x<em>x + y</em>y</em> calculates the squared Euclidean distance. Using the squared distance, it calculates the weight using the formula <em>Mathf.Exp(-distance / twoSigmaSquare)</em>. This weight is a measure of how much influence a pixel at that distance should have on the blurring process. The greater the distance, the smaller the weight. The calculated weight is assigned to the corresponding position in the kernel array. The <code>totalWeight</code> variable keeps track of the sum of all the weights in the kernel. This sum is used to normalize the kernel later.</p>
+<pre><code>  // intialization code here
+
+  for (int y = -size / 2; y &lt;= size / 2; y++) // -size / 2 to size / 2
+  {
+      for (int x = -size / 2; x &lt;= size / 2; x++) // -size / 2 to size / 2
+      {
+          float distance = x * x + y * y; 
+          float weight = Mathf.Exp(-distance / twoSigmaSquare); 
+          kernel[y + size / 2, x + size / 2] = weight; 
+          totalWeight += weight;
+      }
+  }
+</code></pre></li>
+<li><p><strong>Kernel Normalization:</strong>  After calculating all the weights, the kernel is normalized to ensure that the sum of all the weights equals 1. This step is essential to maintain the overall brightness of the image during blurring. The nested loops iterate over each element of the <code>kernel</code> array again. Each weight is divided by the <code>totalWeight</code>, effectively scaling down the weights to ensure their sum equals 1. And then the <code>kernel</code> is returned.</p>
+<pre><code>  // intialization code here
+
+  // weight calculation code here
+
+  for (int y = 0; y &lt; size; y++)
+  {
+      for (int x = 0; x &lt; size; x++)
+      {
+          kernel[y, x] /= totalWeight;
+      }
+  }
+
+  return kernel;
+</code></pre></li>
+<li><p><strong>Applying the Gaussian Kernel</strong>
+The gaussian kernel created above is applied to the pixels of the image thereby convulating the kernel with the particular pixel and its neighbouring pixels, thus calculating the weighted sum of their colors. This sum becomes the new color value for the central pixel, resulting in the blurring effect.</p>
+</li>
+<li><p><strong>Input Parameters:</strong> The <code>ApplyKernel()</code> method takes a Texture2D as input along with a <code>kernel</code>, <code>x</code>, <code>y</code> (position within the image) and <code>size</code> of the kernel as the parameter. It then calculates and returns the weighted average of colors in the neighborhood around the (x, y) position using the provided Gaussian kernel.</p>
+<pre><code>  private Color ApplyKernel(Texture2D texture, int x, int y, float[,] kernel, int size) {}
+</code></pre></li>
+<li><p><strong>Initialization:</strong> The 3 float variables for the RGB values are initalized to accumulate the weighted sum of red, green, and blue color channels. The half-size of the kernel is calculated as well and this is used to determine the bounds of the neighborhood around the (x, y) position.</p>
+<pre><code>  float r = 0f, g = 0f, b = 0f;
+  int halfSize = size / 2;
+</code></pre></li>
+<li><p><strong>Looping through the Kernel:</strong> Nested for loops iterate over each cell in kernel. The outer <code>j</code> loop iterates over the rows of the kernel whereas the inner <code>i</code> loop iterates over its columns. </p>
+<pre><code>  for (int j = 0; j &lt; size; j++)
+  {
+      for (int i = 0; i &lt; size; i++)
+      {
+
+      }
+  }
+</code></pre></li>
+<li><p><strong>Calculating pixel coordinates of Input Image:</strong> <code>offsetX</code> and <code>offsetY</code> is calculated inside the loop to represent the corresponding pixel coordinates in the input image based on the current <code>x</code> and <code>y</code> position within the image and the <code>i</code> and <code>j</code> indices. Both these values are clamped to the bounds of the image.</p>
+<pre><code>  int offsetX = x + i - halfSize;
+  int offsetY = y + j - halfSize;
+
+  offsetX = Mathf.Clamp(offsetX, 0, texture.width - 1);
+  offsetY = Mathf.Clamp(offsetY, 0, texture.height - 1);
+</code></pre></li>
+<li><p><strong>Retrieving and Updating the color values of pixels:</strong> The color values of pixels at calculated coordinates <code>offsetX</code> and <code>offsetY</code> are retrieved from the input texture. The RGB values intialized earlier are updated by adding the color values retrieved multiplied by the weight value from the Gaussian Kernel matrix from the <code>i</code> and <code>j</code> position. The final color obtained is returned.</p>
+<pre><code>  Color pixel = texture.GetPixel(offsetX, offsetY);
+  float weight = kernel[j, i];
+
+  r += pixel.r * weight;
+  g += pixel.g * weight;
+  b += pixel.b * weight;
+</code></pre></li>
+<li><p><strong>Applying the Gaussian Blur</strong> 
+Now we apply the gaussian blur to the image by calculating the kernel, processing the pixel and updating the image. </p>
+</li>
+<li><p><strong>Input Parameters:</strong> The <code>ApplyGaussianBlur()</code> method takes a Texture2D as input along with the <code>radius</code> of the Gaussian Blur needed (basically used as the size of the kernel) and returns the blurred texture.</p>
+<pre><code>  private Texture2D ApplyGaussianBlur(Texture2D sourceTexture, float radius) {}
+</code></pre></li>
+<li><p><strong>Calculating Kernel size and Kernel:</strong> The Kernel size is obtained by rounding the <code>radius</code> to the nearest integer, doubling it and then adding 1 to it, ensuring coverage of sufficient area around each pixel.</p>
+<pre><code>  int kernelSize = Mathf.RoundToInt(radius) * 2 + 1;
+  float[,] kernel = CreateGaussianKernel(kernelSize, radius);
+</code></pre></li>
+<li><p><strong>Creating Blurred Texture:</strong> A new <code>blurredTexture</code> with same dimensions as <code>sourceTexture</code> is initialized.</p>
+<pre><code>  Color[] pixels = sourceTexture.GetPixels();
+  Color[] blurredPixels = new Color[pixels.Length];
+</code></pre></li>
+<li><p><strong>Iterating through pixels:</strong> A nested loop is used to access the pixels of the <code>sourceTexture</code>. For each pixel at (<code>x</code>, <code>y</code>), the <code>ApplyKernel()</code> function is called to calculate the new color of that pixel. The calculated blurrer color is stored in the corresponding position of the <code>blurredPixels</code> array.</p>
+<pre><code>  for (int y = 0; y &lt; sourceTexture.height; y++)
+  {
+      for (int x = 0; x &lt; sourceTexture.width; x++)
+      {
+          Color blurredColor = ApplyKernel(sourceTexture, x, y, kernel, kernelSize);
+          blurredPixels[y * sourceTexture.width + x] = blurredColor;
+      }
+  }
+</code></pre></li>
+<li><p><strong>Applying Blurred pixels to the Texture:</strong> After processing all the pixels, the <code>blurredPixels</code> array is assigned to the <code>blurredTexture</code> and it is returned.</p>
+<pre><code>  blurredTexture.SetPixels(blurredPixels);
+  blurredTexture.Apply();
+
+  return blurredTexture;
+</code></pre></li>
+<li><p><strong>Blurred Sprite:</strong> A sprite is created from the blurred texture and is applied to the image.</p>
+<pre><code>  Sprite blurredSprite = Sprite.Create(blurredTexture,
+                                      new Rect(0, 0, blurredTexture.width, blurredTexture.height),
+                                      new Vector2(0.5f, 0.5f));
+  image.sprite = blurredSprite;
+</code></pre><table class="custom-table" style="width: 100%;">
+  <tr>
+      <td style="text-align: center;">
+          <a href="/assets/images/prev/blurRadius.png" data-lightbox="gaussian-blur" data-title="Gaussian Blur Control">
+          <img src="/assets/images/prev/blurRadius.png" alt="Gaussian Blur Control">
+          </a>
+          <br>
+          <strong>Gaussian Blur Control</strong>
+      </td>
+  </tr>
+</table>
+
+
+</li>
+</ul>
+<h2 id="3-0-image-compressor"><strong>3.0 Image Compressor</strong></h2>
+<p><strong><strong>The blog is still in Works</strong></strong></p>
+</div><div class="tools">C#, HLSL, Unity</div><br class="clear"></article><article id="content-fiea-portfolio-submission"><h1>FIEA Technical Artist Portfolio</h1><h2>My submission for Technical Artist Portfolio (for admission to FIEA).</h2><div class="images"><img src="/assets/images//prev/FIEA_PORTFOLIO.png" style="width: 100%;"></div><div class="content"><p>As the title suggests, this blog shall contain some of my favorite pieces of code/artwork that I’d be submitting for my Technical Artist Portfolio (for <a href="https://fiea.ucf.edu/">FIEA</a>) in no particular order.</p>
+<p><br></p>
+<h2 id="1-0-2d-lighting-system-unity"><strong>1.0 2D Lighting System - Unity</strong></h2>
+<ul>
+<li>While competing for the <a href="https://itch.io/jam/brackeys-5">Brackeys Game Jam 2021.1</a>, we decided to make a top-down atmospheric 2D game as they were trending a lot on <a href="https://itch.io/">itch.io</a> back then.</li>
+<li>Back when we started working on this project, Unity didn’t have any rendering pipeline that supported 2D lighting, so I developed my own lighting system for it. This was primarily done to add to the atmospheric look of the game.</li>
+<li><p>The detailed documentation and source code can be found <a href="https://makra.wtf/docs/2022/two-opoosites/">here</a>.</p>
+<table class="custom-table" style="width: 100%;">
+  <tr>
+      <td style="text-align: center;">
+          <a href="/assets/images/prev/2dlightsys.gif" data-lightbox="image-1" data-title="The first iteration">
+              <img src="/assets/images/prev/2dlightsys.gif" alt="The first iteration">
+          </a>
+          <br>
+          <strong>The first iteration</strong>
+      </td>
+  </tr>
+</table>
+</li>
+<li><p>The first iteration uses the Unity’s low level <a href="https://docs.unity3d.com/ScriptReference/GL.html">Graphics Library (gl)</a> to draw rays emerging from the player.</p>
+</li>
+<li>An Unlit Shader that supports both transparency and vertex colors is used as the ray’s material to make the light rays feel natural.</li>
+<li><p>The environment is scripted to react to the lighting.</p>
+<table class="custom-table" style="width: 100%;">
+  <tr>
+      <td style="text-align: center;">
+          <a href="/assets/images/prev/2dmeshlightsys.gif" data-lightbox="image-2" data-title="The second iteration (optimized)">
+              <img src="/assets/images/prev/2dmeshlightsys.gif" alt="The second iteration (optimized)">
+          </a>
+          <br>
+          <strong>The second iteration (optimized)</strong>
+      </td>
+  </tr>
+</table>
+</li>
+<li><p>The previous lighting method was very inefficient with time complexity of <code>O(n)</code> as the loop had to run 3600 times every frame with a step size of 0.1.</p>
+</li>
+<li><p>I solved this issue by detecting the edges of nearby objects, casting rays at them, and then filling the space by generating mesh between them in the second iteration.</p>
+<table class="custom-table" style="width: 100%;">
+  <tr>
+      <td style="text-align: center;">
+          <a href="/assets/images/prev/2oppingame.gif" data-lightbox="image-3" data-title="In-game look">
+              <img src="/assets/images/prev/2oppingame.gif" alt="In-game look">
+          </a>
+          <br>
+          <strong>In-game look</strong>
+      </td>
+  </tr>
+</table>
+</li>
+<li><p>This is how the lighting finally looked in the game, with some post-processing thrown on top of it. You can try it yourself <a href="https://makra.itch.io/two-opposites">here</a>.</p>
+</li>
+</ul>
+<h2 id="2-0-ascii-line-art-p5js"><strong>2.0 ASCII Line Art - p5js</strong></h2>
+<ul>
+<li>After getting an experience as a tech artist at FIEA this summer, I was confident this was the track that I’d be applying to.</li>
+<li>To provide a testimony to it, I decided to make ASCII Line art for all professors and mentors this Teacher’s Day.</li>
+<li><p>I designed 52 of these in total and made one for Prof. Chris Roda, Prof. Rick Hall, and Prof. Ron Weaver as well.</p>
+<table class="custom-table" style="width: 100%;">
+  <tr>
+      <td style="text-align: center;">
+          <a href="/assets/images/prev/CHRIS_SIR.png" data-lightbox="image-4" data-title="Chris Sir">
+              <img src="/assets/images/prev/CHRIS_SIR.png" alt="Chris Sir">
+          </a>
+          <br>
+          <strong>Chris Sir</strong>
+      </td>
+      <td style="text-align: center;">
+          <a href="/assets/images/prev/RICK_SIR.png" data-lightbox="image-5" data-title="Rick Sir">
+              <img src="/assets/images/prev/RICK_SIR.png" alt="Rick Sir">
+          </a>
+          <br>
+          <strong>Rick Sir</strong>
+      </td>
+      <td style="text-align: center;">
+          <a href="/assets/images/prev/RON_SIR.png" data-lightbox="image-6" data-title="Ron Sir">
+              <img src="/assets/images/prev/RON_SIR.png" alt="Ron Sir">
+          </a>
+          <br>
+          <strong>Ron Sir</strong>
+      </td>
+  </tr>
+</table>
+</li>
+<li><p>These were made using <a href="https://p5js.org/">p5js</a> by detecting changes in the overall RGB values of different parts of images.</p>
+<pre><code>  //text to be used in the image
+  const name = &#39;chrisroda&#39;;
+
+  function draw() {
+
+  //setting background to black
+  background(0);
+
+  let w =  width / img.width;
+  let h =  height / img.height;
+  img.loadPixels();
+
+  //iterating through pixels and assigning letters based on average rgb values
+  for (let i = 0; i &lt; img.width; i++) {
+      for (let j = 0; j &lt; img.height; j++) {
+      const pixelIndex = (i + j * img.width) * 4;
+      const r = img.pixels[pixelIndex + 0];
+      const g = img.pixels[pixelIndex + 1];
+      const b = img.pixels[pixelIndex + 2];
+      const avg = (r + g + b) / 3;
+
+      noStroke();
+      fill(255);
+
+      const len = name.length;
+      const charIndex = floor(map(avg,0,255,len,0));  
+
+      textSize(w);
+      textAlign(CENTER, CENTER);
+
+      //edge detection (hardcoded)
+      if(avg &gt; 100 &amp;&amp; avg &lt; 180)     
+          text(name.charAt(charIndex), i * w + w * 0.5, j * h + h * 0.5);     
+
+      }
+  }
+  }
+</code></pre></li>
+<li><p>If you zoom onto the images (by clicking on them), you’ll find out that the pixels of the images are converted into letters of the name of the person that it’s made for.</p>
+</li>
+<li>Many of these images were converted into DXF format and engraved on acrylic sheets to be gifted to the professors.<table class="custom-table" style="width: 100%;">
+  <tr>
+      <td style="text-align: center;">
+          <a href="/assets/images/prev/Collage_LineArt.png" data-lightbox="image-7" data-title="Engraved Images">
+              <img src="/assets/images/prev/Collage_LineArt.png" alt="Engraved Images">
+          </a>
+          <br>
+          <strong>Engraved Images</strong>
+      </td>
+  </tr>
+</table>
+
+</li>
+</ul>
+<h2 id="3-0-raymarched-clouds"><strong>3.0 Raymarched Clouds</strong></h2>
+<ul>
+<li>While working on Human Canon prototype for CrazyLabs, I encountered the classic problem of optimizing volumetric clouds for low-end devices (especially mobile).</li>
+<li>While doing my research over the internet, I came across this <a href="https://youtu.be/4QOcCGI6xOU">video</a> about raymarched clouds by Sebastian Lague.</li>
+<li>This video eventually drew my attention towards raymarching, and eventually, I wrote my own raymarcher for Unity. You can find the project <a href="https://github.com/aniketrajnish/Raymarching-Engine-Unity">here</a>. The HLSL (Shader) files can be found <a href="https://github.com/aniketrajnish/Raymarching-Engine-Unity/tree/main/Assets/Shaders">here</a>.</li>
+<li>Further, I followed <a href="https://shaderbits.com/blog/creating-volumetric-ray-marcher">this article</a> about making raymarched volumetric clouds in Unreal engine to develop my own version of the same in Unity.<center>
+<video autoplay loop style="width: 90%; border: 3px solid black; border-radius: 15px;">
+<source src="/assets/images/prev/Raymarch_Clouds.mp4" type="video/mp4">
+</video>
+<strong>Raymarched Clouds in Unity</strong>
+</center>
+
+</li>
+</ul>
+<h2 id="4-0-raymarched-4d-environment"><strong>4.0 Raymarched 4D Environment</strong></h2>
+<ul>
+<li><p>I further extended the raymarching engine to render 3D sections of Four-dimensional objects like HyperCube, HyperSphere and DuoCylinder.</p>
+<center>
+<video autoplay loop style="width: 90%; border: 3px solid black; border-radius: 15px;">
+<source src="/assets/images/prev/Raymarch_4d.mp4" type="video/mp4">
+</video>
+<strong>Raymarched 4D Objects in Unity</strong>
+</center>
+</li>
+<li><p>The 4D shape distance functions—</p>
+<pre><code>  //Hypercube
+  float Hypercube(float4 p, float4 b)
+  {
+      float4 d = abs(p) - b;
+      return min(max(d.x,max(d.y,max(d.z,d.w))),0.0) + length(max(d,0.0));
+  }
+
+  //Hypershpere
+  float Hypersphere(float4 p, float s)
+  {
+      return length(p) - s;
+  }
+
+  //Duo Cylinder
+  float DuoCylinder( float4 p, float2 r1r2) {
+  float2 d = abs(float2(length(p.xz),length(p.yw))) - r1r2;
+  return min(max(d.x,d.y),0.) + length(max(d,0.));
+  }
+</code></pre></li>
+</ul>
+<h2 id="5-0-snowstorm-system-soul-shard"><strong>5.0 Snowstorm System - Soul Shard</strong></h2>
+<ul>
+<li>I assisted the <a href="https://www.19soulsonboard.com/about">19 Souls on Board</a> team at FIEA as a technical artist for their capstone project <a href="https://store.steampowered.com/app/2005820/Soul_Shard/">Soul Shard</a>. The game is getting processed by Steam and will be out soon!</li>
+<li>As a part of this engagement, one of my tasks was to develop a snowstorm system for the yard area that’s situated in the middle of the map by looking at a <a href="https://www.youtube.com/watch?v=sGkh1W5cbH4">reference video</a>.</li>
+<li>The detailed documentation and source code can be found <a href="https://makra.wtf/docs/2022/soul-shard/">here</a>.</li>
+<li><p>To simulate a natural looking snowstorm, I decided to divide the snowstorm into three subsystems—  </p>
+<table class="custom-table" style="width: 100%;">
+  <tr>
+      <td style="text-align: center;">
+          <a href="/assets/images/prev/Snow1.gif" data-lightbox="image-8" data-title="Snow Subsystem">
+              <img src="/assets/images/prev/Snow1.gif" alt="Snow Subsystem">
+          </a>
+          <br>
+          <strong>Snow Subsystem</strong>
+      </td>
+      <td style="text-align: center;">
+          <a href="/assets/images/prev/WindPart.gif" data-lightbox="image-9" data-title="Wind Subsystem">
+              <img src="/assets/images/prev/WindPart.gif" alt="Wind Subsystem">
+          </a>
+          <br>
+          <strong>Wind Subsystem</strong>
+      </td>
+      <td style="text-align: center;">
+          <a href="/assets/images/prev/FogEH.gif" data-lightbox="image-10" data-title="Fog Subsystem">
+              <img src="/assets/images/prev/FogEH.gif" alt="Fog Subsystem">
+          </a>
+          <br>
+          <strong>Fog Subsystem</strong>
+      </td>
+  </tr>
+</table>
+</li>
+<li><p>Putting these together after proper scaling gave the following result—</p>
+<center>
+<video autoplay loop style="width: 90%; border: 3px solid black; border-radius: 15px;">
+<source src="/assets/images/prev/SnowStormFinal.mp4" type="video/mp4">
+</video>
+<strong>Snowstorm System Final In-Game Look</strong>
+</center>
+
+</li>
+</ul>
+<h2 id="6-0-digital-art-hypercasual-concept-pitches"><strong>6.0 Digital Art - Hypercasual Concept Pitches</strong></h2>
+<ul>
+<li>As a part of the PPP (Pay-Per-Prototype) deal by CrazyLabs, I was expected to deliver Concept Pitches of various Hypercasual ideas and they approved the best ones for me to develop.</li>
+<li>To make the digital art mockups for these, I used Procreate on iPad.</li>
+<li><p>These are the mockups for the game Tilt Paint (the original concept pitch can be found <a href="https://makra.wtf/assets/pdf/TiltPaint.pdf">here</a>)—</p>
+<table class="custom-table">
+  <tr>
+      <td>
+          <a href="/assets/images/prev/TP_1.png" data-lightbox="image-11" data-title="Mockup">
+              <img src="/assets/images/prev/TP_1.png" alt="Mockup">
+          </a>
+      </td>
+      <td>
+          <a href="/assets/images/prev/TP_2.png" data-lightbox="image-12" data-title="Mockup">
+              <img src="/assets/images/prev/TP_2.png" alt="Mockup">
+          </a>
+      </td>
+      <td>
+          <a href="/assets/images/prev/TP_3.png" data-lightbox="image-13" data-title="Mockup">
+              <img src="/assets/images/prev/TP_3.png" alt="Mockup">
+          </a>
+      </td>
+  </tr>
+</table>
+</li>
+<li><p>Some mockups were rendered in Blender too. Take for instance the mockup of Body Crack ASMR (the original concept pitch can be found <a href="https://makra.wtf/assets/pdf/BodyCrackASMR.pdf">here</a>)—</p>
+<table class="custom-table">
+  <tr>
+      <td>
+          <a href="/assets/images/prev/BASMR_1.png" data-lightbox="image-21" data-title="Mockup">
+              <img src="/assets/images/prev/BASMR_1.png" alt="Mockup">
+          </a>
+      </td>
+      <td>
+          <a href="/assets/images/prev/BASMR_2.png" data-lightbox="image-22" data-title="Mockup">
+              <img src="/assets/images/prev/BASMR_2.png" alt="Mockup">
+          </a>
+      </td>
+      <td>
+          <a href="/assets/images/prev/BASMR_3.png" data-lightbox="image-23" data-title="Mockup">
+              <img src="/assets/images/prev/BASMR_3.png" alt="Mockup">
+          </a>
+      </td>
+      <td>
+          <a href="/assets/images/prev/BASMR_4.png" data-lightbox="image-24" data-title="Mockup">
+              <img src="/assets/images/prev/BASMR_4.png" alt="Mockup">
+          </a>
+      </td>
+  </tr>
+</table>
+</li>
+<li><p>The comprehensive list and source files for all the 30 concept pitches delivered can be found <a href="https://makra.wtf/projects/">here</a> by scrolling to the <code>concept pitches</code> section.</p>
+</li>
+</ul>
+<h2 id="7-0-retro-shader-post-processing-are-ya-winning-son-"><strong>7.0 Retro Shader &amp; Post Processing - Are Ya Winning, Son?</strong></h2>
+<ul>
+<li>While participating in the GMTK Game Jam 2020, we worked on a retro-styled game where the AI won’t let you win. </li>
+<li><p>To add to the retro theme, we decided to use shaders and post-processing effects so that the game feels as if it’s being played on a CRT TV.</p>
+<center>
+<video autoplay loop style="width: 90%; border: 3px solid black; border-radius: 15px;">
+<source src="/assets/images/prev/AYWS_fin.mp4" type="video/mp4">
+</video>
+</center>
+</li>
+<li><p>This was achieved by using Post-Processing &amp; a distorted render texture layered on top of it.</p>
+</li>
+<li>You can play the game <a href="https://makra.itch.io/are-ya-winning-son">here</a> and watch its devlog <a href="https://youtu.be/Anhjc7sRoFc">here</a>.</li>
+</ul>
+<h2 id="8-0-pixel-art-doge-to-the-moon"><strong>8.0 Pixel Art - Doge to the Moon</strong></h2>
+<ul>
+<li>While competing for the Opera GX Game Jam, I worked on Pixel Art of various characters of our game <a href="https://gamejolt.com/games/doge2themoon/636263">Doge to The Moon</a>. </li>
+<li><p>All of these Pixel Arts were made using the GameMaker Studio 2’s Sprite Editor.</p>
+<table class="custom-table">
+  <tr>
+      <td>
+          <a href="/assets/images/prev/Doge_PA.png" data-lightbox="image-doge" data-title="All Pixel Arts">
+              <img src="/assets/images/prev/Doge_PA.png" alt="All Pixel Arts">
+          </a>
+      </td>
+  </tr>
+  <tr>
+      <td class="caption">All Pixel Arts</td>
+  </tr>
+</table>
+</li>
+<li><p>All of these assets also had their glowing counterpart to mimic the animation of getting hit.</p>
+<table class="custom-table">
+  <tr>
+      <td>
+          <a href="/assets/images/prev/Doge_Hit_PA.png" data-lightbox="image-doge-hit" data-title="Glowing Pixel Arts">
+              <img src="/assets/images/prev/Doge_Hit_PA.png" alt="Glowing Pixel Arts">
+          </a>
+      </td>
+  </tr>
+  <tr>
+      <td class="caption">Glowing Pixel Arts</td>
+  </tr>
+</table>
+</li>
+<li><p>Most of the sprites were converted into sprite sheets to animate the sprites with slight variations in each slice of the sprite sheet.</p>
+<table class="custom-table">
+  <tr>
+      <td>
+          <a href="/assets/images/prev/Doge_Anims_PA.png" data-lightbox="image-doge-anims" data-title="Animation Sprite Sheets">
+              <img src="/assets/images/prev/Doge_Anims_PA.png" alt="Animation Sprite Sheets">
+          </a>
+      </td>
+  </tr>
+  <tr>
+      <td class="caption">Animation Sprite Sheets</td>
+  </tr>
+</table>
+</li>
+<li><p>Apart from these sprites, I also designed the background images (starts and the space) and made them scroll vertically at different speeds to give a parallax effect.</p>
+</li>
+</ul>
+<table class="custom-table">
+    <tr>
+        <td>
+            <a href="/assets/images/prev/stars_PA.png" data-lightbox="image-stars" data-title="Stars Section">
+                <img src="/assets/images/prev/stars_PA.png" alt="Stars Section">
+            </a>
+            <div class="caption">Stars Section</div>
+        </td>
+        <td>
+            <a href="/assets/images/prev/Back_PA.png" data-lightbox="image-background" data-title="Background Section">
+                <img src="/assets/images/prev/Back_PA.png" alt="Background Section">
+            </a>
+            <div class="caption">Background Section</div>
+        </td>
+        <td>
+            <a href="/assets/images/prev/Doge_Final.gif" data-lightbox="image-final-look" data-title="Final In-Game Look">
+                <img src="/assets/images/prev/Doge_Final.gif" alt="Final In-Game Look">
+            </a>
+            <div class="caption">Final In-Game Look</div>
+        </td>
+    </tr>
+</table>
+
+<h2 id="9-0-vfx-graph-in-unity"><strong>9.0 VFX Graph in Unity</strong></h2>
+<ul>
+<li>I had to make a theme reveal video for a <a href="https://itch.io/jam/gamejam-2020-ad">Game Jam</a> that my college was hosting. </li>
+<li>I decided to utilize this opportunity and learn VFX graphs in Unity. </li>
+<li>VFX graph help simulate over a million particles in real-time as they use the parallel processing capabilities of GPU, unlike the default particle system that runs on CPU.</li>
+<li>Everything that you see in this video is made out of ‘2020’, which was the theme for the JAM itself.<div class="yt-container">
+<iframe width="560" height="315" src="https://www.youtube.com/embed/kPlAOdrKgbw?si=caCEYcrqZjXpN_JO" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+</div>
+
+</li>
+</ul>
+<h2 id="10-0-non-euclidean-worlds-in-unity"><strong>10.0 Non-Euclidean Worlds in Unity</strong></h2>
+<ul>
+<li>I worked on various Non-Euclidean world simulations inside of Unity, especially after CodeParade announced that <a href="https://youtu.be/kEB11PQ9Eo8?t=233">it’s technically impossible to develop Non-Euclidean worlds in Unity without low-level access to its Rendering Engine</a>.</li>
+<li><p>The first simulation consisted of cameras rendering over a render texture in the opening of a tunnel and colliders that teleported the player between different worlds seamlessly, offering a non-euclidean illusion.</p>
+<div class="yt-container">
+<iframe width="560" height="315" src="https://www.youtube.com/embed/Jv5gQzI1xhk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>        
+</li>
+<li><p>The subsequent two simulations used multiple intersecting single-sided planes instead of a 3d mesh to give a non-euclidean look.</p>
+<table class="custom-table">
+  <tr>
+      <td>
+          <div class="yt-container">
+              <iframe src="https://www.youtube.com/embed/wi1RoQJWHbk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          </div>
+      </td>
+      <td>
+          <div class="yt-container">
+              <iframe src="https://www.youtube.com/embed/4zfHbw6GRes" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          </div>
+      </td>
+  </tr>
+</table>
+
+</li>
+</ul>
+<h2 id="11-0-terrain-sculpting-map-of-india-for-afps"><strong>11.0 Terrain Sculpting - Map of India for AFPS</strong></h2>
+<ul>
+<li>I led a team of 25 individuals to develop an Indian-themed battle royale game.</li>
+<li><p>The top view of the map was sculpted to represent the Indian map.</p>
+<table class="custom-table">
+  <tr>
+      <td class="col-sm mt-3 mt-md-0">
+          <a href="/assets/images/prev/AFPS_TopView.png" data-lightbox="image-in-game-map" data-title="In-Game Look of the Map">
+              <img src="/assets/images/prev/AFPS_TopView.png" alt="In-Game Look of the Map">
+          </a>
+      </td>
+  </tr>
+  <tr>
+      <td class="caption">
+          In-Game Look of the Map
+      </td>
+  </tr>
+</table>
+</li>
+<li><p>This terrain was sculpted using the Unity’s default Terrain Editor, and this is the timelapse video of developing this map-</p>
+<div class="yt-container">
+  <iframe src="https://www.youtube.com/embed/n17XMTDp_Ns?si=bdonN04iqX-myi1C" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+</div>
+
+</li>
+</ul>
+<h2 id="12-0-glowing-crack-material-soul-shard"><strong>12.0 Glowing Crack Material - Soul Shard</strong></h2>
+<ul>
+<li><p>I developed a material with glowing cracks governed by various parameters for Soul Shard.</p>
+<table class="custom-table">
+  <tr>
+      <td>
+          <a href="/assets/images/prev/EmissionParameter.png" data-lightbox="image-soul-shard" data-title="Emission Parameters">
+              <img src="/assets/images/prev/EmissionParameter.png" alt="Emission Parameters" title="Stars Section">
+          </a>
+          <div class="caption">
+              Emission Parameters
+          </div>
+      </td>
+      <td>
+          <a href="/assets/images/prev/EmissionShape.png" data-lightbox="image-soul-shard" data-title="Emission Shape">
+              <img src="/assets/images/prev/EmissionShape.png" alt="Emission Shape" title="Background Section">
+          </a>
+          <div class="caption">
+              Emission Shape
+          </div>
+      </td>
+  </tr>
+</table>
+</li>
+<li><p>The material’s properties were governed by six parameters in total—</p>
+<table class="custom-table">
+  <tr>
+      <td>
+          <a href="/assets/images/prev/Coverage.gif" data-lightbox="image-soul-shard" data-title="Coverage">
+              <img src="/assets/images/prev/Coverage.gif" alt="Coverage" title="example image">
+          </a>
+          <div class="caption">
+              Coverage
+          </div>
+      </td>
+      <td>
+          <a href="/assets/images/prev/GlowIntensity.gif" data-lightbox="image-soul-shard" data-title="Glow Intensity">
+              <img src="/assets/images/prev/GlowIntensity.gif" alt="Glow Intensity" title="example image">
+          </a>
+          <div class="caption">
+              Glow Intensity
+          </div>
+      </td>
+  </tr>
+  <tr>
+      <td>
+          <a href="/assets/images/prev/PulseIntensity.gif" data-lightbox="image-soul-shard" data-title="Pulse Intensity">
+              <img src="/assets/images/prev/PulseIntensity.gif" alt="Pulse Intensity" title="example image">
+          </a>
+          <div class="caption">
+              Pulse Intensity
+          </div>
+      </td>
+      <td>
+          <a href="/assets/images/prev/Rate.gif" data-lightbox="image-soul-shard" data-title="Rate">
+              <img src="/assets/images/prev/Rate.gif" alt="Rate" title="example image">
+          </a>
+          <div class="caption">
+              Rate
+          </div>
+      </td>
+  </tr>
+  <tr>
+      <td>
+          <a href="/assets/images/prev/EmissiveColor.gif" data-lightbox="image-soul-shard" data-title="Emissive Color">
+              <img src="/assets/images/prev/EmissiveColor.gif" alt="Emissive Color" title="example image">
+          </a>
+          <div class="caption">
+              Emissive Color
+          </div>
+      </td>
+      <td>
+          <a href="/assets/images/prev/BaseTint.gif" data-lightbox="image-soul-shard" data-title="Base Tint">
+              <img src="/assets/images/prev/BaseTint.gif" alt="Base Tint" title="example image">
+          </a>
+          <div class="caption">
+              Base Tint
+          </div>
+      </td>
+  </tr>
+</table></li>
+</ul>
+</div><div class="tools">C#, HLSL, Unity, GameMaker, GameJam, Game Design</div><br class="clear"></article><article id="content-miscellaneous"><h1>more work</h1><h2>The rest of the mess..</h2><div class="content"><h2 id="games-for-community">Games for community</h2>
+<p>Took burts of <em>week-long solo projects</em> to publish a game in a week for my undergraduate college community to play and compete in. The competion was known as PlayPro and saw participation by 400+ people for each game. I published the following games for this purpose. For these games I implemented an leaderboard using dreamlo:</p>
+<p><strong>1. Banana Warrior</strong></p>
+<div style="display: flex; justify-content: space-between; align-items: flex-start; width: 100%; padding: 20px;">
+
+<video controls style="width: 40%; border: 3px solid black; border-radius: 15px;">
+  <source src="/assets/images/bw0.mp4" type="video/mp4">
+</video>
+
+<div style="width: 55%; padding-left: 10px; font-size: 2.3rem; color: black;">
+
+  <table class="custom-table"><br>    <tr>
+        <td>
+            <a href="/assets/images/prev/bw3.webp" data-lightbox="image-bw" data-title="Menu">
+                <img src="/assets/images/prev/bw3.webp" alt="Menu" title="bw">
+            </a>
+            <div class="caption">
+                Menu
+            </div>
+        </td>
+        <td>
+            <a href="/assets/images/prev/bw4.jpg" data-lightbox="image-bw" data-title="Leaderboard">
+                <img src="/assets/images/prev/bw4.jpg" alt="Leaderboard" title="bw">
+            </a>
+            <div class="caption">
+                Leaderboard
+            </div>
+        </td>
+    </tr><br></table>
+</div>
+</div>
+
+<p><strong>2. Fertilize.io</strong></p>
+<table class="custom-table"><br>    <tr>
+        <td>
+            <a href="/assets/images/prev/fer1.webp" data-lightbox="image-fer" data-title="Menu">
+                <img src="/assets/images/prev/fer1.webp" alt="Menu" title="fer">
+            </a>
+            <div class="caption">
+                Menu
+            </div>
+        </td>
+        <td>
+            <a href="/assets/images/prev/fer2.webp" data-lightbox="image-fer" data-title="Gameplay">
+                <img src="/assets/images/prev/fer2.webp" alt="Gameplay" title="fer">
+            </a>
+            <div class="caption">
+                Gameplay
+            </div>
+        </td>
+        <td>
+            <a href="/assets/images/prev/fer3.webp" data-lightbox="image-fer" data-title="Death Screen">
+                <img src="/assets/images/prev/fer3.webp" alt="Death Screen" title="fer">
+            </a>
+            <div class="caption">
+                Death Screen
+            </div>
+        </td>
+    </tr><br></table>
+
+<p><strong>3. 2048 Jelly</strong></p>
+<center>
+<video controls loop style="width: 90%; border: 3px solid black; border-radius: 15px;">
+  <source src="/assets/images/jelly0.mp4" type="video/mp4">
+</video>
+</center>
+
+<table class="custom-table"><br>    <tr>
+        <td>
+            <a href="/assets/images/prev/j1.webp" data-lightbox="image-j" data-title="Menu">
+                <img src="/assets/images/prev/j1.webp" alt="Menu" title="j">
+            </a>
+            <div class="caption">
+                Menu
+            </div>
+        </td>
+        <td>
+            <a href="/assets/images/prev/j2.webp" data-lightbox="image-j" data-title="Gameplay">
+                <img src="/assets/images/prev/j2.webp" alt="Gameplay" title="j">
+            </a>
+            <div class="caption">
+                Gameplay
+            </div>
+        </td>
+    </tr><br></table>
+
+<p><strong>4. Toilet Spinner</strong></p>
+<div style="display: flex; justify-content: space-between; align-items: flex-start; width: 100%; padding: 20px;">
+
+<video controls style="width: 40%; border: 3px solid black; border-radius: 15px;">
+  <source src="/assets/images/spinner0.mp4" type="video/mp4">
+</video>
+
+<div style="width: 55%; padding-left: 10px; font-size: 2.3rem; color: black;">
+
+  <table class="custom-table"><br>    <tr>
+        <td>
+            <a href="/assets/images/prev/ts1.webp" data-lightbox="image-ts" data-title="Menu">
+                <img src="/assets/images/prev/ts1.webp" alt="Menu" title="ts">
+            </a>
+            <div class="caption">
+                Menu
+            </div>
+        </td>
+        <td>
+            <a href="/assets/images/prev/ts5.webp" data-lightbox="image-ts" data-title="Leaderboard">
+                <img src="/assets/images/prev/ts5.webp" alt="Leaderboard" title="ts">
+            </a>
+            <div class="caption">
+                Leaderboard
+            </div>
+        </td>
+    </tr><br></table>
+</div>
+</div>
+
+<p><strong>5. Chrome Dino Remastered</strong> <br>
+Developed this to learn Pocket Code - A visual scripting based game development app on android.</p>
+<table class="custom-table"><br>    <tr>
+        <td>
+            <a href="/assets/images/prev/cd3.jpeg" data-lightbox="image-cd" data-title="Menu">
+                <img src="/assets/images/prev/cd3.jpeg" alt="Menu" title="cd">
+            </a>
+            <div class="caption">
+                Menu
+            </div>
+        </td>
+        <td>
+            <a href="/assets/images/prev/cd2.jpeg" data-lightbox="image-cd" data-title="Gameplay">
+                <img src="/assets/images/prev/cd2.jpeg" alt="Gameplay" title="cd">
+            </a>
+            <div class="caption">
+                Gameplay
+            </div>
+        </td>
+    </tr><br></table>
+
+<p><strong>6. Return To Monke</strong></p>
+<table class="custom-table"><br>    <tr>
+        <td>
+            <a href="/assets/images/prev/r2m1.png" data-lightbox="image-r2m" data-title="Menu">
+                <img src="/assets/images/prev/r2m1.png" alt="Menu" title="r2m">
+            </a>
+            <div class="caption">
+                Menu
+            </div>
+        </td>
+        <td>
+            <a href="/assets/images/prev/r2m2.png" data-lightbox="image-r2m" data-title="Gameplay">
+                <img src="/assets/images/prev/r2m2.png" alt="Gameplay" title="r2m">
+            </a>
+            <div class="caption">
+                Gameplay
+            </div>
+        </td>
+    </tr><br></table>
+
+<p><strong>7. Obamium Maker</strong></p>
+<table class="custom-table"><br>    <tr>
+        <td>
+            <a href="/assets/images/prev/ob2.webp" data-lightbox="image-ob" data-title="Placeholder">
+                <img src="/assets/images/prev/ob2.webp" alt="Placeholder" title="ob">
+            </a>
+            <div class="caption">
+                Placeholder
+            </div>
+        </td>
+        <td>
+            <a href="/assets/images/prev/ob1.webp" data-lightbox="image-ob" data-title="Textured">
+                <img src="/assets/images/prev/ob1.webp" alt="Textured" title="ob">
+            </a>
+            <div class="caption">
+                Textured
+            </div>
+        </td>
+    </tr><br></table>
+
+<p><em>Update: Most of these apps were removed from the Play Store as they used a deprecated Unity Ads SDK that didn’t align with the store’s policy.  Remember, don’t be greedy, folks!</em></p>
+<h2 id="soul-shard">Soul Shard</h2>
+<p><center>
+<a href="/assets/images/prev/soulsh.jpg" data-lightbox="soul-sh" data-title="SS Logo">
+    <img src="/assets/images/prev/soulsh.jpg" alt="soul-sh" title="ss">
+</a>
+</center>
+<br></p>
+<ul>
+<li>Assisted the Cohort-18 <a href="https://www.19soulsonboard.com/about">19SOB</a> team at FIEA with their capstone project as a tech artist  &amp; designer for shader &amp;  gameplay programming, whilst developing various Particle &amp; VFX systems.</li>
+<li>Provided assistance in shader &amp; gameplay programming, and the development of particle &amp; VFX systems.</li>
+<li>Developed a dynamic footprint system for main characters and VFX effects such as stylized fire, smoke, debris, and flames.</li>
+<li>Created a dynamic snowstorm system and implemented rope physics for cables, as well as a dynamic loading screen for various scene transitions.</li>
+<li>Curated development logs and documentation about my contribution that can be found <a href="/works/fiea-summer/">here</a>.</li>
+</ul>
+<h2 id="optimized-bullet-time-destruction-pipeline-in-unity">Optimized Bullet-Time Destruction Pipeline in Unity</h2>
+<p></p><div style="display: flex; justify-content: center; align-items: center;">
+    <video controls loop style="width: 90%; border: 3px solid black; border-radius: 15px;">
+        <source src="/assets/images/optimizedBTPipeline.mp4" type="video/mp4">
+    </video>
+</div>
+<br><p></p>
+<h2 id="front-flip-animation-state-machine-ik-rig-in-unreal-engine">Front Flip Animation State Machine &amp; IK Rig in Unreal Engine</h2>
+<p></p><div style="display: flex; justify-content: center; align-items: center;">
+    <video controls loop style="width: 90%; border: 3px solid black; border-radius: 15px;">
+        <source src="/assets/images/asm.mp4" type="video/mp4">
+    </video>
+</div>
+<br><p></p>
+<h2 id="project-holly">Project Holly</h2>
+<p>Created an interactive movie experience using Unity. For this project, I developed an asset that allows one to stream a video in small chunks accroding to the user’s choices. This allows you to take control of the characters and make choices on not only the direction of the narrative of the film but also fine control on the character’s movement. You can try the demo <a href="https://play.google.com/store/apps/details?id=com.makra.Holly&amp;pli=1">here</a>.</p>
+<p></p><div style="display: flex; justify-content: center; align-items: center;">
+    <video controls loop style="width: 90%; border: 3px solid black; border-radius: 15px;">
+        <source src="/assets/images/asm.mp4" type="video/mp4">
+    </video>
+</div>
+<br><p></p>
+<h2 id="mathematical-model-for-rendering-using-gaussian-elimination">Mathematical Model for Rendering using Gaussian Elimination</h2>
+<p><a href="https://github.com/aniketrajnish/numerical-methods-for-3d-rendering-ma202-project">Mathematically modeled and implemented</a> a 3D rendering technique that uses numerical methods to calculate the intersection of planes and render 3D objects. Extended this approach to render the 3D projection of <a href="https://github.com/aniketrajnish/4d-rendering-ma202-project">4D hypercubes</a>.</p>
+<table class="custom-table"><br>    <tr>
+        <td>
+            <a href="/assets/images/prev/tess.gif" data-lightbox="image-ma202" data-title="Rotating Hypervube">
+                <img src="/assets/images/prev/tess.gif" alt="Rotating Hypervube" title="ma202">
+            </a>
+            <div class="caption">
+                Rotating Hypervube
+            </div>
+        </td>
+        <td>
+            <a href="/assets/images/prev/cub.gif" data-lightbox="image-ma202" data-title="Rotating Cube">
+                <img src="/assets/images/prev/cub.gif" alt="Rotating Cube" title="MA202">
+            </a>
+            <div class="caption">
+                Rotating Cube
+            </div>
+        </td>
+    </tr><br></table>
+
+<h2 id="ascii-line-art">ASCII Line Art</h2>
+<ul>
+<li>Made ASCII Line art for all my dear professors and mentors on Teacher’s Day.</li>
+<li><p>I made 52 of these in total.</p>
+<table class="custom-table" style="width: 100%;">
+  <tr>
+      <td style="text-align: center;">
+          <a href="/assets/images/prev/CHRIS_SIR.png" data-lightbox="image-4" data-title="Chris Sir">
+              <img src="/assets/images/prev/CHRIS_SIR.png" alt="Chris Sir">
+          </a>
+          <br>
+          <strong>Chris Sir</strong>
+      </td>
+      <td style="text-align: center;">
+          <a href="/assets/images/prev/RICK_SIR.png" data-lightbox="image-5" data-title="Rick Sir">
+              <img src="/assets/images/prev/RICK_SIR.png" alt="Rick Sir">
+          </a>
+          <br>
+          <strong>Rick Sir</strong>
+      </td>
+      <td style="text-align: center;">
+          <a href="/assets/images/prev/RON_SIR.png" data-lightbox="image-6" data-title="Ron Sir">
+              <img src="/assets/images/prev/RON_SIR.png" alt="Ron Sir">
+          </a>
+          <br>
+          <strong>Ron Sir</strong>
+      </td>
+  </tr>
+</table>
+</li>
+<li><p>These were made using <a href="https://p5js.org/">p5js</a> by detecting changes in the overall RGB values of different parts of images.</p>
+<pre><code>  //text to be used in the image
+  const name = &#39;chrisroda&#39;;
+
+  function draw() {
+
+  //setting background to black
+  background(0);
+
+  let w =  width / img.width;
+  let h =  height / img.height;
+  img.loadPixels();
+
+  //iterating through pixels and assigning letters based on average rgb values
+  for (let i = 0; i &lt; img.width; i++) {
+      for (let j = 0; j &lt; img.height; j++) {
+      const pixelIndex = (i + j * img.width) * 4;
+      const r = img.pixels[pixelIndex + 0];
+      const g = img.pixels[pixelIndex + 1];
+      const b = img.pixels[pixelIndex + 2];
+      const avg = (r + g + b) / 3;
+
+      noStroke();
+      fill(255);
+
+      const len = name.length;
+      const charIndex = floor(map(avg,0,255,len,0));  
+
+      textSize(w);
+      textAlign(CENTER, CENTER);
+
+      //edge detection (hardcoded)
+      if(avg &gt; 100 &amp;&amp; avg &lt; 180)     
+          text(name.charAt(charIndex), i * w + w * 0.5, j * h + h * 0.5);     
+
+      }
+  }
+  }
+</code></pre></li>
+<li><p>If you zoom onto the images (by clicking on them), you’ll find out that the pixels of the images are converted into letters of the name of the person that it’s made for.</p>
+</li>
+<li>Many of these images were converted into DXF format and engraved on acrylic sheets to be gifted to the professors.<table class="custom-table" style="width: 100%;">
+  <tr>
+      <td style="text-align: center;">
+          <a href="/assets/images/prev/Collage_LineArt.png" data-lightbox="image-7" data-title="Engraved Images">
+              <img src="/assets/images/prev/Collage_LineArt.png" alt="Engraved Images">
+          </a>
+          <br>
+          <strong>Engraved Images</strong>
+      </td>
+  </tr>
+</table>
+
+</li>
+</ul>
+<h2 id="procedural-generation-of-3d-space-from-2d-map-using-raycasts">Procedural Generation of 3D space from 2D map using Raycasts</h2>
+<p>Developed a <a href="https://scratch.mit.edu/projects/510603211/">3D Renderer in Scratch</a> using principles of raycasting, with features such as varying FOV  and shadow-mapping. Any 2D map input gets converted into a procedurally generated 3D world.</p>
+<table class="custom-table">
+    <tr>
+        <td style="text-align: center;">
+            <a href="/assets/images/prev/Raycast3D.gif" data-lightbox="RaycastRenderer" data-title="2D Image to 3D Map">
+                <img src="/assets/images/prev/Raycast3D.gif" alt="2D Image to 3D Map">
+            </a>
+            <br>
+            <strong>2D Image to 3D Map</strong>
+        </td>
+    </tr>
+</table>
+
+<h2 id="unity-first-">Unity First!</h2>
+<p>Tried using Unity &amp; Blender for most of my assignments instead of softwares like AutoCAD and Matlab.</p>
+<table class="custom-table">
+    <tr>
+        <td style="text-align: center;">
+            <a href="/assets/images/prev/4BarRubiks_low.gif" data-lightbox="4Bar" data-title="4 Bar Mechanism in Unity">
+                <img src="/assets/images/prev/4BarRubiks_low.gif" alt="4 Bar Mechanism in Unity">
+            </a>
+            <br>
+            <strong>4 Bar Mechanism in Unity</strong>
+        </td>
+    </tr>
+</table>
+
+<h2 id="tried-proving-codeparade-wrong-3">Tried Proving CodeParade wrong :3</h2>
+<ul>
+<li>I worked on various Non-Euclidean world simulations inside of Unity, after CodeParade, in one of his videos, said that <a href="https://youtu.be/kEB11PQ9Eo8?t=233">it’s technically impossible to develop Non-Euclidean worlds in Unity without low-level access to its Rendering Engine</a>.</li>
+<li><p>The first simulation consisted of cameras rendering over a render texture in the opening of a tunnel and colliders that teleported the player between different worlds seamlessly, offering a non-euclidean illusion.</p>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/Jv5gQzI1xhk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen style="display: block; margin: 0 auto;"></iframe>
+</li>
+<li><p>The subsequent two simulations used multiple intersecting single-sided planes instead of a 3d mesh to give a non-euclidean look.</p>
+<table class="custom-table">
+  <tr>
+      <td>
+          <div class="yt-container">
+              <iframe src="https://www.youtube.com/embed/wi1RoQJWHbk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          </div>
+      </td>
+      <td>
+          <div class="yt-container">
+              <iframe src="https://www.youtube.com/embed/4zfHbw6GRes" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          </div>
+      </td>
+  </tr>
+</table>
+
+</li>
+</ul>
+<h2 id="made-a-go-kart-">Made a go-kart!!</h2>
+<p>Built this in a team of 10!!</p>
+<table class="custom-table">
+    <tr>
+        <td style="text-align: center;">
+            <a href="/assets/images/prev/gokart.png" data-lightbox="gk" data-title="Go Kart">
+                <img src="/assets/images/prev/gokart.png" alt="Go Kart">
+            </a><br>        </td>
+    </tr>
+</table>
+
+<h2 id="vfx-and-edits">VFX and Edits</h2>
+<p><iframe width="560" height="315" src="https://www.youtube.com/embed/4zfHbw6GRes" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen style="display: block; margin: 0 auto;"></iframe>
+<br></p>
+<p><iframe width="560" height="315" src="https://www.youtube.com/embed/kPlAOdrKgbw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen style="display: block; margin: 0 auto;"></iframe>
+<br></p>
+<p><iframe width="560" height="315" src="https://www.youtube.com/embed/ofWcNlWYwnI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen style="display: block; margin: 0 auto;"></iframe>
+<br></p>
+<p><iframe width="560" height="315" src="https://www.youtube.com/embed/_QH19dipOxY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen style="display: block; margin: 0 auto;"></iframe>
+<br></p>
+<p><iframe width="560" height="315" src="https://www.youtube.com/embed/pGvQrE8Plsc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen style="display: block; margin: 0 auto;"></iframe>
+<br></p>
+<p><iframe width="560" height="315" src="https://www.youtube.com/embed/fMwoglpPgFk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen style="display: block; margin: 0 auto;"></iframe>
+<br></p>
+<p><iframe width="560" height="315" src="https://www.youtube.com/embed/wUAmlUGZVNs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen style="display: block; margin: 0 auto;"></iframe>
+<br></p>
+<p><iframe width="560" height="315" src="https://www.youtube.com/embed/U-OdQiJ65jQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen style="display: block; margin: 0 auto;"></iframe>
+<br></p>
+<p><iframe width="560" height="315" src="https://www.youtube.com/embed/gy9gc2orpCY?si=8KL6aLTTMQx9J26z" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen style="display: block; margin: 0 auto;"></iframe>
+<br></p>
+<h2 id="remade-dani-s-games">Remade Dani’s games</h2>
+<p>Remade Dani’s Flash Gamesh amassing 1M+ plays and 15k+ views on YouTube and recognition from Dani himself. Watch <a href="https://www.youtube.com/playlist?list=PLQi4IKEYBPHUisVkBGx31KaW5VgUB64z2">here</a>.</p>
+</div><div class="tools">C#, HLSL, Unity, GameMaker, GameJam, Game Design</div><br class="clear"></article></div></section><script>var jsonMap = {"collider-optimizer-unity":"Unity Collider Optimizer - Optimizes Mesh & Polygon colliders in Unity","multi-window-sync":"Multi Window Sync - PyQt - Windows GUI multiple window synchronization using PyQt5 and pyqtSignal","spiderverse-pp":"Spiderverse Post Processing - Spiderverse inspired stylized post-processing effect for Unreal Engine and Unity","trippy-pp":"Trippy Post Processing - A trippy post-processing and render feature for Unity's URP","unity-4d-engine":"4D Engine - Unity - A 4D Raymarching Engine for Unity that helps render 4D objects in Unity's 3D space","raymarching-engine-unity":"Raymarching Engine - Unity - A raymarching engine for Unity that supports 28+ primitives and set operations","shapes-dataset-generator":"3D Shapes Dataset Generator - Helps procedurally generate tailored 3D shape datasets","alembic-to-fbx":"Alembic to FBX Converter - Converts Alembic files to FBX files","hypercasual-games":"Hypercasual Games - Hypercasual Games and Prototypes I've worked upon","gamejam-entries":"Gamejam Entries - My participation in various gamejams","blogs":"Blogs - I write sometimes","lighting-system-2d":"2D lighting system - Making a 2D lighting system for the game Two Opposites","fiea-summer":"FIEA Summer Internship Work - Work at FIEA (Summer Internship) - Documented","image-editor-unity":"Image Editor developed in Unity - A janky photo editor that transforms any image into a “low-quality-meme”","fiea-portfolio-submission":"FIEA Technical Artist Portfolio - My submission for Technical Artist Portfolio (for admission to FIEA)","miscellaneous":"more work - The rest of the mess."};      </script><script src="https://code.jquery.com/jquery-3.6.0.min.js"></script><script src="/assets/js/oxism.js?v=cb90716cd1e304787459e4d2bd48c63d"></script><script src="/assets/js/lightbox.js"></script><script>(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+ga('create', 'LAWDA', 'auto');
+ga('send', 'pageview');</script></body></html>
