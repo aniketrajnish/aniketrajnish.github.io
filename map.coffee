@@ -1,3 +1,33 @@
+'lighting-system-2d':
+  display: '2D lighting system'
+  line:    'Making a 2D lighting system for the game Two Opposites'
+  dontDisplay: true
+  images:  ['/prev/TwoOppLogo.png']
+  tags:    ['C#', 'HLSL', 'Unity', 'Game Design']
+
+'fiea-summer':
+  display: 'FIEA Summer Internship Work'
+  line:    'Work at FIEA (Summer Internship) - Documented'
+  dontDisplay: true
+  images:  ['/prev/SoulShard (2).png', '/prev/19SOB.png']
+  imageCount: 2
+  tags:    ['Unreal Engine', 'Game Design']
+
+'image-editor-unity':
+  display: 'Image Editor developed in Unity'
+  line:    'A janky photo editor that transforms any image into a “low-quality-meme”'
+  dontDisplay: true
+  images:  ['/prev/Icon_Editor.png', '/prev/Editor_UI.jpg']
+  imageCount: 2
+  tags:    ['C#', 'HLSL', 'Unity']
+
+'fiea-portfolio-submission':
+  display: 'FIEA Technical Artist Portfolio'
+  line:    'My submission for Technical Artist Portfolio (for admission to FIEA)'
+  dontDisplay: true
+  images:  ['/prev/FIEA_PORTFOLIO.png']
+  tags:    ['C#', 'HLSL', 'Unity', 'GameMaker', 'GameJam', 'Game Design']
+  
 'collider-optimizer-unity':
   display: 'Unity Collider Optimizer'
   isMajor: true
@@ -100,38 +130,7 @@
   display: 'Blogs'
   line:    'I write sometimes'
   dontDisplay: true
-  tags:    ['C#', 'HLSL', 'Unity', 'GameMaker', 'GameJam', 'Game Design']
-
-'lighting-system-2d':
-  display: '2D lighting system'
-  line:    'Making a 2D lighting system for the game Two Opposites'
-  dontDisplay: true
-  images:  ['/prev/TwoOppLogo.png']
-  tags:    ['C#', 'HLSL', 'Unity', 'Game Design']
-
-'fiea-summer':
-  display: 'FIEA Summer Internship Work'
-  line:    'Work at FIEA (Summer Internship) - Documented'
-  dontDisplay: true
-  images:  ['/prev/SoulShard (2).png', '/prev/19SOB.png']
-  imageCount: 2
-  tags:    ['Unreal Engine', 'Game Design']
-
-'image-editor-unity':
-  display: 'Image Editor developed in Unity'
-  line:    'A janky photo editor that transforms any image into a “low-quality-meme”'
-  dontDisplay: true
-  images:  ['/prev/Icon_Editor.png', '/prev/Editor_UI.jpg']
-  imageCount: 2
-  tags:    ['C#', 'HLSL', 'Unity']
-
-'fiea-portfolio-submission':
-  display: 'FIEA Technical Artist Portfolio'
-  line:    'My submission for Technical Artist Portfolio (for admission to FIEA)'
-  dontDisplay: true
-  images:  ['/prev/FIEA_PORTFOLIO.png']
-  tags:    ['C#', 'HLSL', 'Unity', 'GameMaker', 'GameJam', 'Game Design']
-  
+  tags:    ['C#', 'HLSL', 'Unity', 'GameMaker', 'GameJam', 'Game Design'] 
 
 'miscellaneous':
   display: 'more work'
