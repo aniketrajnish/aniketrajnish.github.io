@@ -19,6 +19,16 @@
     github : 'https://github.com/aniketrajnish/MultiWindowSync-PyQt'
     'Windows x64 Installer' : 'https://github.com/aniketrajnish/MultiWindowSync-PyQt/releases/tag/v001'
 
+'unity-4d-engine':
+  display: '4D Engine - Unity'
+  isMajor: true
+  line:    'A 4D Raymarching Engine for Unity that helps render 4D objects in Unity\'s 3D space'
+  images:  ['4dengine0.mp4']
+  tags:    ['C#', 'Unity', 'HLSL']
+  links:
+    github : 'https://github.com/aniketrajnish/4D-Engine-Unity'
+    'unitypackage' : 'https://github.com/aniketrajnish/4D-Engine-Unity/releases/tag/v001'
+
 'spiderverse-pp':
   display: 'Spiderverse Post Processing'
   isMajor: true
@@ -39,16 +49,6 @@
   links:
     github : 'https://github.com/aniketrajnish/TrippyPostProcessing-Unity'
     'unitypackage' : 'https://github.com/aniketrajnish/TrippyPostProcessing-Unity/releases/tag/v001'
-
-'unity-4d-engine':
-  display: '4D Engine - Unity'
-  isMajor: true
-  line:    'A 4D Raymarching Engine for Unity that helps render 4D objects in Unity\'s 3D space'
-  images:  ['4dengine0.mp4']
-  tags:    ['C#', 'Unity', 'HLSL']
-  links:
-    github : 'https://github.com/aniketrajnish/4D-Engine-Unity'
-    'unitypackage' : 'https://github.com/aniketrajnish/4D-Engine-Unity/releases/tag/v001'
 
 'raymarching-engine-unity':
   display: 'Raymarching Engine - Unity'
