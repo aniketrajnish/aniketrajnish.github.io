@@ -286,35 +286,11 @@ Developed this to learn Pocket Code - A visual scripting based game development 
 ## VR Project
 * Created a Spongebob VR experience in Unreal Engine 5 with a team of 4 artists.
 * I was responsible for the lighting, post-processing, animation state machines, rigging and the overall blueprinting of the project.
-<table class="custom-table">
-    <tr>
-        <td>
-            <a href="/assets/images/vr1.png" data-lightbox="vr-project" data-title="VR Project">
-                <img src="/assets/images/vr1.png" alt="VR Project">
-            </a>
-        </td>   
-        <td>
-            <a href="/assets/images/vr2.png" data-lightbox="vr-project" data-title="VR Project">
-                <img src="/assets/images/vr2.png" alt="VR Project">
-            </a>
-        </td>     
-    </tr>
-    <tr>
-        <td>
-            <a href="/assets/images/vr3.png" data-lightbox="vr-project" data-title="VR Project">
-                <img src="/assets/images/vr3.png" alt="VR Project">
-            </a>
-        </td>   
-        <td>
-            <a href="/assets/images/vr4.png" data-lightbox="vr-project" data-title="VR Project">
-                <img src="/assets/images/vr4.png" alt="VR Project">
-            </a>
-        </td>     
-    </tr>
-    <tr>
-        <th colspan="2" style="text-align: center;">Screenshots from the engine</th>        
-    </tr>
-</table>
+  <center>
+  <video controls loop style="width: 90%; border: 3px solid black; border-radius: 15px;">
+    <source src="/assets/images/vr_project.mp4" type="video/mp4">
+  </video>
+  </center>
 
 **Proxy Pass**<br>
 My primary focus in the proxy-pass week was on enhancing the visual aesthetics of the scene through lighting and post-processing effects to give it a blue underwater ambience. I also integrated trigger volumes within the environment to initiate the "Breaking Animation" sequence which could be used around the prop later as well as worked on its animation blueprint. Lastly I assisted in navmesh for teleporation, the grey material and rigged the SpongeBob hands. See the screenshots for this week [here](https://aniketrajnishfiea.blogspot.com/2023/10/fiea-common-art-project-7-vr-proxy-pass.html).
