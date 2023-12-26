@@ -59,7 +59,7 @@
   tags:    ['C#', 'Unity', 'HLSL']
   links:
     github : 'https://github.com/aniketrajnish/Raymarching-Engine-Unity'
-    'unitypackage' : 'https://github.com/aniketrajnish/Raymarching-Engine-Unity/releases/tag/v001'
+    'unitypackage' : 'https://github.com/aniketrajnish/Raymarching-Engine-Unity/releases/tag/v002'
   
 'shapes-dataset-generator':
   display: '3D Shapes Dataset Generator'
