@@ -326,6 +326,11 @@ If you want to learn more about what 4D is, check out <a href="https://youtu.be/
     <td>Scriptable Object holding the shape’s dimension data.</td>
   </tr>
   <tr>
+    <td></td>
+    <td>Create New Dimensions</td>
+    <td>Button to create new dimenion scriptable object for the shape</td>
+  </tr>
+  <tr>
     <td><strong>Shape Dimensions</strong></td>
     <td>Dimension Props</td>
     <td>The dimension properties based on the chosen 4D shape.</td>
@@ -517,92 +522,199 @@ If you want to learn more about what 4D is, check out <a href="https://youtu.be/
 <h2 id="license">License</h2>
 <p>MIT License</p>
 </div><div class="tools">C#, Unity, HLSL</div><br class="clear"></article><article id="content-raymarching-engine-unity"><h1>Raymarching Engine - Unity</h1><h2>A raymarching engine for Unity that supports 28+ primitives and set operations.</h2><div class="images"><video autoplay loop playsinline muted src="/assets/images/raymarchingengine2.mp4" style="width: 100%;"></video></div><div class="buttons"><a href="https://github.com/aniketrajnish/Raymarching-Engine-Unity" class="button">github</a><a href="https://github.com/aniketrajnish/Raymarching-Engine-Unity/releases/tag/v002" class="button">unitypackage</a></div><div class="content"><p>A fast GPU-accelerated raymarching engine for Unity with support for over 28 primitives (including fractals, n-dimensional objects, volumetric clouds) and set operations (Union, Subtract, Intersect). Includes a custom interface for manipulating shader parameters through the editor.<br></p>
+<h2 id="updates">Updates</h2>
+<p><strong>v002</strong></p>
+<ul>
+<li>The engine now stores the dimensions of the shapes as scriptable objects, to keep multiple instances of same shape persistant across sessions.</li>
+<li>Added support for Ambient Occlussion, Hard/Soft Shadows and various render setting exposed for the users to play around with.</li>
+<li>Download the <code>.unitypackage</code> <a href="https://github.com/aniketrajnish/Raymarching-Engine-Unity/releases/tag/v002">here</a>.</li>
+</ul>
 <h2 id="rendering-the-shapes-provided">Rendering the shapes provided</h2>
 <p><strong>1. Using an Image Effect Shader</strong></p>
 <ul>
-<li>Attach <code>Raymarcher.cs</code> to the Main Camera and <code>RaymarchRenderer.cs</code> to an empty gameobject and set the properties and type of shape to render in the inspector.</li>
+<li>Attach <code>Raymarcher.cs</code> to the Main Camera and <code>RaymarchRenderer.cs</code> to an empty gameobject.</li>
 <li>Drag the <code>ImageEffectRaymarcher.shader</code> in Shader field of <code>Raymarcher.cs</code> in inspector and direction light to the Sun’s transform field.</li>
-</ul>
-<p><strong>2. Using an Unlit Shader</strong></p>
-<ul>
-<li><p>Append the following lines in <code>Raymarcher</code> class of <code>Raymarcher.cs</code></p>
-<pre><code>private void Awake()
-{
-   GetComponent&lt;MeshRenderer&gt;().material = _raymarchMaterial;
-}
-private void OnEnable()
-{
-   EditorApplication.update += OnUpdate;
-}   
-private void OnUpdate()
-{
-   RaymarchRender();
-   EditorApplication.QueuePlayerLoopUpdate();
-} 
-private void Update()
-{
-   RaymarchRender();
-}
-private void OnDisable()
-{
-   EditorApplication.update -= OnUpdate;
-   foreach (var buffer in disposable)
-   {
-       buffer.Dispose();
-   }
-}
+<li>Click on <code>Create New Dimensions</code> in the <code>RaymarchRenderer.cs</code> to create a scriptable object to hold the dimesnion data of the shapes.</li>
+<li><p>You can control the following settings for the raymarching using the <code>Raymarcher</code> component-</p>
+  <table class="custom-table">
+  <tr>
+    <th>Category</th>
+    <th>Variable</th>
+    <th>Description</th>
+  </tr>
+  <tr>
+    <td><strong>General Settings</strong></td>
+    <td>Shader</td>
+    <td>Shader used for raymarching.</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td>Sun</td>
+    <td>Directional light in the scene.</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td>Loop</td>
+    <td>Repetition of structures in the raymarching shader.</td>
+  </tr>
+  <tr>
+    <td><strong>Light Settings</strong></td>
+    <td>Is Lit</td>
+    <td>Toggle lighting calculations on/off.</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td>Is Shadow Hard</td>
+    <td>Toggle between hard and soft shadows.</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td>Is AO</td>
+    <td>Enable or disable Ambient Occlusion.</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td>Light Col</td>
+    <td>Color of the light.</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td>Light Intensity</td>
+    <td>Intensity of the light.</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td>Shadow Intensity</td>
+    <td>Intensity of shadows.</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td>Shadow Min</td>
+    <td>Minimum shadow distance.</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td>Shadow Max</td>
+    <td>Maximum shadow distance.</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td>Shadow Smooth</td>
+    <td>Smoothness of shadow edges.</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td>AO Step</td>
+    <td>Step size for AO calculation.</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td>AO Intensity</td>
+    <td>Intensity of AO.</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td>AO Iteration</td>
+    <td>Number of iterations for AO calculation.</td>
+  </tr>
+  <tr>
+    <td><strong>Render Settings</strong></td>
+    <td>Max Steps</td>
+    <td>Maximum number of steps for raymarching.</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td>Max Dist</td>
+    <td>Maximum distance to raymarch before considering a hit.</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td>Surf Dist</td>
+    <td>Threshold for considering a hit in raymarching.</td>
+  </tr>
+  </table></li>
+<li>You can control the following properties of the individual shapes using the <code>RaymarchRenderer</code> componnent-<table class="custom-table">
+  <tr>
+    <th>Category</th>
+    <th>Variable</th>
+    <th>Description</th>
+  </tr>
+  <tr>
+    <td><strong>Default Inspector</strong></td>
+    <td>Shape</td>
+    <td>Shape to be rendered.</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td>Operation</td>
+    <td>Operation to be performed (union, subtraction, intersection).</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td>Color</td>
+    <td>Color of the shape.</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td>Create New Dimensions</td>
+    <td>Button to create new dimenion scriptable object for the shape</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td>Dimensions</td>
+    <td>Scriptable Object holding the shape’s dimension data.</td>
+  </tr>
+  <tr>
+    <td><strong>Shape Dimensions</strong></td>
+    <td>Dimension Props</td>
+    <td>The dimension properties based on the chosen 4D shape.</td>
+  </tr>
+</table>
 
-// Append this in RaymarchRender function
-void RaymarchRender()
-{  
-   for (int i = 0; i &lt; renderers.Count; i++)
-   {
-       if (renderers[i] == GetComponent&lt;RaymarchRenderer&gt;())            
-           _raymarchMaterial.SetInt(&quot;rank&quot;, i);
-   }
-}
-</code></pre></li>
-<li>Attach <code>RaymarchRenderer.cs</code> and <code>Raymarcher.cs</code> to a gameobject having a mesh renderer and set the properties and type of shape to render in the inspector.</li>
-<li>Drag the <code>Raymarcher.shader</code> in Shader field of <code>Raymarcher.cs</code> in inspector and direction light to the Sun’s transform field. </li>
+</li>
 </ul>
 <h2 id="rendering-a-custom-shape">Rendering a custom shape</h2>
 <ul>
-<li>Append the distance function of the shape in <code>DFs.cginc</code> like<pre><code>float sdShape(float3 p, // dimension parameters)    
-{
-  // distance function here
-}
-</code></pre></li>
-<li>Append the distance function created above in <code>GetDist()</code> in <code>Raymarcher.shader</code> (if using the unlit shader) or in the <code>ImageEffectRaymarcher.shader</code> (if using the Image Effect shader).<pre><code>float GetDist(Shape shape, float3 p) {
-  switch (shape.shapeIndex) {
-  case n:
-      return sdShape(float3 p, // dimension parameters);
-  }
-}
-</code></pre></li>
-<li>Add the shape in Shape enum and create a struct for its default dimension parameters in <code>RaymarchRenderer.cs</code>. <pre><code>public enum Shape {
-  // shape name
-};
-public struct shapeDimensions
-{
- // default shape dimensions;
-};
-</code></pre></li>
-<li>Make the dimension array in <code>Helpers.cs</code> to be sent as a compute buffer to the Raymarching shader.<pre><code>public static vector12 GetDimensionVectors(int i)
-{
-  //dimension array
-}
-</code></pre></li>
-<li>Finally make a custom editor for your shape in the <code>PropertiesEdior.cs</code><pre><code>public override void OnInspectorGUI()
-{
-  base.OnInspectorGUI();
-  EditorGUILayout.Space();
-  EditorGUILayout.LabelField(&quot;Dimensions&quot;, EditorStyles.boldLabel);
-  RaymarchRenderer rr = (RaymarchRenderer)target;
-  switch ((int)rr.shape)
+<li>Append the distance function of the shape in <code>DFs.cginc</code> like<pre><code>  float sdShape(float3 p, // dimension parameters)    
   {
-      //property editor here
+      // distance function here
   }
-}
+</code></pre></li>
+<li>Append the distance function created above in <code>GetDist()</code> in the <code>ImageEffectRaymarcher.shader</code>.<pre><code>  float GetDist(Shape shape, float3 p) {
+      switch (shape.shapeIndex) {
+      case n:
+          return sdShape(float3 p, // dimension parameters);
+      }
+  }
+</code></pre></li>
+<li>Add the shape data in the scriptable object <code>ShapeDimensions.cs</code><pre><code>public float shapeDimension = default dimenison
+</code></pre></li>
+<li>Add the shape in Shape enum in <code>RaymarchRenderer.cs</code> <pre><code>  public enum Shape {
+      // shape name
+  };  
+</code></pre></li>
+<li>Make the dimension array in <code>Helpers.cs</code> to be sent as a compute buffer to the Raymarching shader.<pre><code>  public static vector12 GetDimensionVectors(int i)
+  {
+      //dimension vector12 object
+  }
+</code></pre></li>
+<li><p>Finally make a custom editor for your shape in the <code>PropertiesEditor.cs</code></p>
+<pre><code>  public override void OnInspectorGUI()
+  {
+      base.OnInspectorGUI();
+      RaymarchRenderer renderer = (RaymarchRenderer)target;        
+
+      if (GUILayout.Button(&quot;Create New Dimensions&quot;))
+         renderer.dimensions = CreateShapeDimensionsAsset();
+
+      if (renderer.dimensions == null)
+         return;
+
+      switch (renderer.shape)
+      {
+          //property editor here
+      }
+  }
 </code></pre></li>
 </ul>
 </div><div class="tools">C#, Unity, HLSL</div><br class="clear"></article><article id="content-shapes-dataset-generator"><h1>3D Shapes Dataset Generator</h1><h2>Helps procedurally generate tailored 3D shape datasets.</h2><div class="images"><video autoplay loop playsinline muted src="/assets/images/datasetgenerator0.mp4" style="width: 100%;"></video></div><div class="buttons"><a href="https://github.com/aniketrajnish/3D-Shapes-Dataset-Generator" class="button">github</a><a href="/assets/pdf/CS399.pdf" class="button">Project Report</a><a href="https://www.kaggle.com/makra2077/datasets?scroll=true" class="button">Sample Datasets [Kaggle]</a><a href="https://github.com/aniketrajnish/3D-Shapes-Dataset-Generator/releases/tag/1.0" class="button">Windows x64 Installer</a></div><div class="content"><div align="center">

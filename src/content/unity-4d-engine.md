@@ -178,6 +178,11 @@ If you want to learn more about what 4D is, check out [this](https://youtu.be/6G
       <td>Scriptable Object holding the shape's dimension data.</td>
     </tr>
     <tr>
+      <td></td>
+      <td>Create New Dimensions</td>
+      <td>Button to create new dimenion scriptable object for the shape</td>
+    </tr>
+    <tr>
       <td><strong>Shape Dimensions</strong></td>
       <td>Dimension Props</td>
       <td>The dimension properties based on the chosen 4D shape.</td>
