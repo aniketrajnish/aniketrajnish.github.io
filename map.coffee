@@ -96,6 +96,13 @@
   images:  ['gamejam1.mp4']
   tags:    ['C#', 'HLSL', 'Unity', 'GameMaker', 'GameJam', 'Game Design']
 
+'spongebob-vr-project':
+  display: 'Spongebob VR Project'
+  isMajor: true
+  line:    'a Spongebob VR experience in Unreal Engine 5'
+  images:  ['spongebobvr0.mp4']
+  tags:    ['C#', 'HLSL', 'Unity', 'VR', 'Game Design']
+
 'miscellaneous':
   display: 'more work'
   line:    'The rest of the mess.'

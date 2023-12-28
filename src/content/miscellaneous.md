@@ -283,27 +283,6 @@ Developed this to learn Pocket Code - A visual scripting based game development 
     </tr>
 </table>
 
-## VR Project
-* Created a Spongebob VR experience in Unreal Engine 5 with a team of 4 artists.
-* I was responsible for the lighting, post-processing, animation state machines, rigging and the overall blueprinting of the project.
-  <center>
-  <video controls loop style="width: 90%; border: 3px solid black; border-radius: 15px;">
-    <source src="/assets/images/vr_project.mp4" type="video/mp4">
-  </video>
-  </center>
-
-**Proxy Pass**<br>
-My primary focus in the proxy-pass week was on enhancing the visual aesthetics of the scene through lighting and post-processing effects to give it a blue underwater ambience. I also integrated trigger volumes within the environment to initiate the "Breaking Animation" sequence which could be used around the prop later as well as worked on its animation blueprint. Lastly I assisted in navmesh for teleporation, the grey material and rigged the SpongeBob hands. See the screenshots for this week [here](https://aniketrajnishfiea.blogspot.com/2023/10/fiea-common-art-project-7-vr-proxy-pass.html).
-
-**Clean Pass**<br>
-This week I fixed the physics collisions between objects, fixed the teleportation mechanic, did a second pass on the lighting and implemented grabbing and snapping of props. See the screenshots for this week [here](https://aniketrajnishfiea.blogspot.com/2023/11/fiea-common-art-project-10-vr-clean-pass.html).
-
-**Environment Final Pass**<br>
-This week I did a final pass on the lighting by simulating fake lighting using emissive materials. I created a blueprint to open and close the cabinet, did a final pass on the Animation blueprints to fix the hand breaking upon trigger, fixed the spatula grab pose using animation state machine and finally created a modular parent material for the scene and props. See the screenshots for this week [here](https://aniketrajnishfiea.blogspot.com/2023/11/fiea-common-art-project-11-vr-final-pass.html).
-
-**Character Final Pass**<br>
-This week I worked upon the blueprint animation blueprint of Plankton, added behaviour to sauce bottle, worked on audio trigger, worked on Fluid VFX which somehow didn't work in VR. See the screenshots for this week [here](https://aniketrajnishfiea.blogspot.com/2023/11/fiea-common-art-project-12-vr-character.html).
-
 ## Mesh To Point Cloud Tool for Houdini
 A python shelf tool to convert mesh to point clouds using Houdini.
 <center>
