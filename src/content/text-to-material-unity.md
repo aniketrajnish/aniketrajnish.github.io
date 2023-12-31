@@ -1,5 +1,9 @@
 Generate materials from text prompts in Unity. Uses `chatgpt` and `dall-e` models.
 
+## Updates 
+* Support for URP and HDRP available now, download from the [Releases Section](https://github.com/aniketrajnish/Text-To-Material-Unity/releases/tag/v001).
+* For URP, import `Editor Coroutines` into the project from the Package Manager, if it's not available by default.
+
 ## Usage
 * Download the `.unitypackage` from the [Releases Section](https://github.com/aniketrajnish/Text-To-Material-Unity/releases/tag/v001).
 * Create/Login to your OpenAI account and get your API key from [here](https://platform.openai.com/api-keys).
@@ -16,7 +20,7 @@ Generate materials from text prompts in Unity. Uses `chatgpt` and `dall-e` model
 
 ## Contributing
 Contributions to the project are welcome. Currently working on:
-* Support for URP & HDRP materials.
+* ~~Support for URP & HDRP materials.~~ [Done!]
 * Support more texture maps. (Bump map, Normal map, Roughness map etc.)
 * Support for materials based on different shaders.
 * Better prompts for texture generation, to ensure seamless textures.
