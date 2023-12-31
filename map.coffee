@@ -9,6 +9,16 @@
     '80.lv Article':  'https://80.lv/articles/a-new-tool-for-optimizing-mesh-polygon-colliders-in-unity/'     
     'unitypackage' : 'https://github.com/aniketrajnish/Unity-Collider-Optimizer/releases/tag/v004'  
 
+'text-to-material-unity':
+  display: 'Text to Material - Unity'
+  isMajor: true
+  line:    'Generate materials from text prompts in Unity'
+  images:  ['texttomaterial0.mp4']
+  tags:    ['C#', 'Unity']
+  links:
+    github : 'https://github.com/aniketrajnish/Text-To-Material-Unity'
+    'unitypackage' : 'https://github.com/aniketrajnish/Text-To-Material-Unity/releases/tag/v001'
+
 'multi-window-sync':
   display: 'Multi Window Sync - PyQt'
   isMajor: true
