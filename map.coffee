@@ -113,6 +113,11 @@
   images:  ['spongebobvr0.mp4']
   tags:    ['C#', 'HLSL', 'Unity', 'VR', 'Game Design']
 
+'math-tools':
+  display: 'Math Tools & Libraries'
+  line:    'Mathematical tools and libraries that I have worked upon'
+  tags:    ['C#', 'Python', 'PyQt', '3D Math', 'Trigonometry']
+
 'miscellaneous':
   display: 'more work'
   line:    'The rest of the mess.'
