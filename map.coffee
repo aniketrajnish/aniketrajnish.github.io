@@ -26,7 +26,7 @@
   images:  ['multiwindowsync0.mp4']
   tags:    ['Python', 'PyQt5', 'qtSignal']
   links:
-    'github [200+ stars]' : 'https://github.com/aniketrajnish/MultiWindowSync-PyQt'
+    'github [300+ stars]' : 'https://github.com/aniketrajnish/MultiWindowSync-PyQt'
     'Windows x64 Installer' : 'https://github.com/aniketrajnish/MultiWindowSync-PyQt/releases/tag/v001'
 
 'unity-4d-engine':
