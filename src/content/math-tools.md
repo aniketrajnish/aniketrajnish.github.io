@@ -37,3 +37,4 @@
 
 ## [C# 4D Signed Distance Functions](https://github.com/aniketrajnish/4D-Engine-Unity/blob/main/4D%20Engine%20Unity/Assets/Scripts/Raymarching%20Engine/DFs.cs)
 * Collection of C# analogs of the HLSL Signed Distance Functions for 4D shapes.
+* These are just limited to the 4D shapes, will expand to regurlar 3D shapes soon.
