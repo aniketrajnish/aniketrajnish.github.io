@@ -106,16 +106,23 @@
   images:  ['gamejam1.mp4']
   tags:    ['C#', 'HLSL', 'Unity', 'GameMaker', 'GameJam', 'Game Design']
 
+'capstone-project':
+  display: 'Capstone Project'
+  isMajor: true
+  line:    'My contributions to the FIEA Capstone Project - Chroma'
+  images:  ['capstone0.mp4']
+  tags:    ['Unreal Engine', 'Material Graph']
+
 'spongebob-vr-project':
   display: 'Spongebob VR Project'
   isMajor: true
-  line:    'a Spongebob VR experience in Unreal Engine 5'
+  line:    'a Spongebob VR experience created in Unreal Engine 5'
   images:  ['spongebobvr0.mp4']
   tags:    ['C#', 'HLSL', 'Unity', 'VR', 'Game Design']
 
 'math-tools':
   display: 'Math Tools & Libraries'
-  line:    'Mathematical tools and libraries that I have worked upon'
+  line:    'Mathematical tools, libraries and gists that I have worked upon'
   tags:    ['C#', 'Python', 'PyQt', '3D Math', 'Trigonometry']
 
 'miscellaneous':

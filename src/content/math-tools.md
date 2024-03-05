@@ -23,7 +23,7 @@
 * I plan to create a visual calculator for the same using PyQt5 similar to the Triangle Calculator.
 
 ## [C# Shader Math Library](https://github.com/aniketrajnish/4D-Engine-Unity/blob/main/4D%20Engine%20Unity/Assets/Scripts/Utils/Shader%20Math%20Utils/MakraMathUtils.cs)
-* A C# library that adds on to the Unity.Mathematics library to add additional shader math functionality to it like:
+* Gist of C# functions that adds on to the Unity.Mathematics library to add additional shader math functionality to it like:
     * dot2, ndot
     * union, intersection, difference
     * Fmod, 4D Transformations
@@ -37,6 +37,3 @@
 
 ## [C# 4D Signed Distance Functions](https://github.com/aniketrajnish/4D-Engine-Unity/blob/main/4D%20Engine%20Unity/Assets/Scripts/Raymarching%20Engine/DFs.cs)
 * Collection of C# analogs of the HLSL Signed Distance Functions for 4D shapes.
-
-
-
