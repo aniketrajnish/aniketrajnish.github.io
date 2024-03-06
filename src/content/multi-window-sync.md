@@ -1,5 +1,9 @@
 Windows GUI application developed using `PyQt5`. It demonstrates the synchronization of multiple windows using `pyqtSignal`. Inspired by the [work](https://twitter.com/_nonfigurativ_/status/1727322594570027343) of Bjørn Staal. 
 
+<a href="https://github.com/aniketrajnish/MultiWindowSync-PyQt/assets/58925008/3cc4e449-2636-42ba-b66a-2c666a3917fc" data-lightbox="t2m" data-title="t2m">
+    <img src="https://github.com/aniketrajnish/MultiWindowSync-PyQt/assets/58925008/3cc4e449-2636-42ba-b66a-2c666a3917fc" width="100%">
+</a>
+
 ## Usage
 * Clone the repository
   ```

@@ -1,325 +1,76 @@
-Created a Spongebob VR experience in Unreal Engine 5 with a team of 4 artists. I was responsible for the lighting, post-processing, animation state machines, rigging and the overall blueprinting of the project.
+## Comical Post Processing Effect
 
-  <center>
-  <video controls loop style="width: 90%; border: 3px solid black; border-radius: 15px;">
-    <source src="/assets/images/spongebobvr0.mp4" type="video/mp4">
-  </video>
-  </center>
+Chroma's art direction was to make the game look comical in a confomist environment, showing the contrast between the character and the world. To sell this idea, I developed a post processing effect that gives the game a comic book like look. Below is the video of the effect in action and also a breakdown of the effect. 
 
-**Proxy Pass**<br>
-This week I worked on-
-* Enhancing the visual aesthetics of the scene through lighting and post-processing effects to give it a blue underwater ambience.
-* Rigging and creating the animation state machine for the SpongeBob hands.
-* Creating the animation state machine for the breaking animation of the SpongeBob hands.
-* Setting up trigger volumes to initiate the breaking animation of the SpongeBob hands.
-* Creating parent materials for the scene and props to make them modular.
-* Placing the navmesh for teleportation.
+<center>
+<video controls loop style="width: 90%; border: 3px solid black; border-radius: 15px;">
+  <source src="/assets/images/capstone2.mp4" type="video/mp4">
+</video>
+</center>
 
-<table class="custom-table">
-    <tr>
-        <td>
-            <a href="/assets/images/sb/envlight1.png" data-lightbox="env-light" data-title="env light 1">
-                <img src="/assets/images/sb/envlight1.png" alt="env light 1">
-            </a>
-        </td>
-        <td>
-            <a href="/assets/images/sb/envlight2.png" data-lightbox="env-light" data-title="env light 2">
-                <img src="/assets/images/sb/envlight2.png" alt="env light 2">
-            </a>
-        </td>
-    </tr>
-    <tr>
-        <th colspan="2" style="text-align: center;">Environment Lighting</th>       
-    </tr>
-</table>
+* I first made a outline shader to make certain points of interset like pop out. Since we had a lots of points of interest I decided to create a post processing effect that gets applied to a custom stencil and then the outline shader is applied to the stencil, this way we can control which parts of the scene get the outline effect. This presented two disadvantages:
+    * The outline effect was rendering top of other objects and was not being occluded by them.
+    * The outline effect looked same on all objects.
+ To solve the first problem I implemented an occlussion mask that used the depth buffer to check if the pixel is occluded by another object and not render the outline there. I'm still working on the solution for the second problem.
 
-<table class="custom-table">
-    <tr>
-        <td>
-            <a href="/assets/images/sb/reeeg.png" data-lightbox="rig" data-title="Rig">
-                <img src="/assets/images/sb/reeeg.png" alt="Rig">
-            </a>
-        </td>        
-    </tr>
-    <tr>
-        <th style="text-align: center;">Rigged Spongebob hands</th>       
-    </tr>
-</table>
+* I then created a higlight overlay material by using a Fresnel effect as the opaciy mask and the the amount of highlight covered by the Fresnel effect is controlled by using World Position Offset. This overlay material is added on certain objects to give it a comical hit effect.
+* Then I took the shadow information from the scene as texture by subtracting specular and base color from the scene color, converted it to a mask and overlayed hatching lines over it.
+* Finally I did the same thing to make an emissive mask and overlayed a halftone pattern over it.
 
-<table class="custom-table">
-    <tr>
-        <td>
-            <a href="/assets/images/sb/abp_1.png" data-lightbox="abp-sb" data-title="ABP 1">
-                <img src="/assets/images/sb/abp_1.png" alt="ABP 1">
-            </a>
-        </td>
-        <td>
-            <a href="/assets/images/sb/abp_2.png" data-lightbox="abp-sb" data-title="ABP 2">
-                <img src="/assets/images/sb/abp_2.png" alt="ABP 2">
-            </a>
-        </td>
-    </tr>
-    <tr>
-        <th colspan="2" style="text-align: center;">Animation Blueprint</th>       
-    </tr>
-</table>
+## Glitch Post Processing Effect
 
-<table class="custom-table">
-    <tr>
-        <td>
-            <a href="/assets/images/sb/brktrigger.png" data-lightbox="break-trigger" data-title="Break Trigger">
-                <img src="/assets/images/sb/brktrigger.png" alt="break-trigger">
-            </a>
-        </td>        
-    </tr>
-    <tr>
-        <th style="text-align: center;">Break Trigger</th>       
-    </tr>
-</table>
+The goal was to establish a spiderverse-inspired glitchy look to some of the VFX associated with the main character's abilities. I developed a post processing effect that gives any object on a custom stencil a give a glitchy look. The VFX is yet to implemented in the game but the effect can be seen in the video below.
 
-<table class="custom-table">
-    <tr>
-        <td>
-            <a href="/assets/images/sb/mat.png" data-lightbox="parent-material" data-title="Parent Material">
-                <img src="/assets/images/sb/mat.png" alt="parent-material">
-            </a>
-        </td>        
-    </tr>
-    <tr>
-        <th style="text-align: center;">Parent Material</th>       
-    </tr>
-</table>
+<center>
+<video controls loop style="width: 90%; border: 3px solid black; border-radius: 15px;">
+    <source src="/assets/images/capstone4.mp4" type="video/mp4">
+</video>
+</center>
 
-<table class="custom-table">
-    <tr>
-        <td>
-            <a href="/assets/images/sb/navm.png" data-lightbox="navmesh" data-title="Navmesh">
-                <img src="/assets/images/sb/navm.png" alt="Navmesh">
-            </a>
-        </td>        
-    </tr>
-    <tr>
-        <th style="text-align: center;">Navmesh</th>       
-    </tr>
-</table>
+## Artist Tool - Auomated Maya Model Showcase
 
-**Clean Pass**<br>
-This week I worked on-
-* Fixing the physics collisions between objects.
-* Fixing the teleportation mechanic.
-* Doing a second pass on the lighting.
-* Implementing grabbing and snapping of props.
+Seeing the need of the artists to display their models often in a specified format by the leads, I developed a tool for them that automates this process and helps them diplay their models in the specified format just by one click of a button. 
 
-<table class="custom-table">
-    <tr>
-        <td>
-            <a href="/assets/images/sb/telep.png" data-lightbox="teleportation" data-title="Teleportation">
-                <img src="/assets/images/sb/telep.png" alt="Teleportation">
-            </a>
-        </td>        
-    </tr>
-    <tr>
-        <th style="text-align: center;">Fixing collision and teleprtation mechanic</th>       
-    </tr>
-</table>
+* The tool creates a camera animation that goes around the model.
+* The camera is keyframed at 45 degree intervals and the tool adjusts the camera position and rotation to make the model always in the view of the camera and centered.
+* The display mode is alternated between wireframe and smooth shaded, and both modes are displayed for each angle.
+* I made this tool open source and it can be found [here](https://github.com/aniketrajnish/Model-Showcase-Tool-Maya).
+    <center>
+    <video controls loop style="width: 90%; border: 3px solid black; border-radius: 15px;">
+    <source src="/assets/images/capstone3.mp4" type="video/mp4">
+    </video>
+    </center>
 
-<table class="custom-table">
-    <tr>
-        <td>
-            <a href="/assets/images/sb/light1.png" data-lightbox="clean-light-sb" data-title="clean light">
-                <img src="/assets/images/sb/light1.png" alt="clean light">
-            </a>
-        </td>
-        <td>
-            <a href="/assets/images/sb/light2.png" data-lightbox="clean-light-sb" data-title="clean light">
-                <img src="/assets/images/sb/light2.png" alt="clean light">
-            </a>
-        </td>
-    </tr>
-    <tr>
-        <th colspan="2" style="text-align: center;">Second Lighting Pass</th>       
-    </tr>
-</table>
+## UE5 Shockwave Tool
 
-<table class="custom-table">
-    <tr>
-        <td>
-            <a href="/assets/images/sb/grab.png" data-lightbox="grab-sb" data-title="grab">
-                <img src="/assets/images/sb/grab.png" alt="grab">
-            </a>
-        </td>
-        <td>
-            <a href="/assets/images/sb/snap.png" data-lightbox="snap-sb" data-title="snap">
-                <img src="/assets/images/sb/snap.png" alt="snap">
-            </a>
-        </td>
-    </tr>
-    <tr>
-        <th colspan="2" style="text-align: center;">Grab & Snap for Props</th>       
-    </tr>
-</table>
+I was presented with a situation where our team needed to create shockwave effects at various places in the game, like in the levels, from the enemies, in between the player reload animation, as a ripple etc. I proposed creating a tool that lets us create shockwave between multiple points and using that tool to create the shockwave effects for all the purposes.
+    <center>
+    <video controls loop style="width: 90%; border: 3px solid black; border-radius: 15px;">
+    <source src="/assets/images/capstone7.mp4" type="video/mp4">
+    </video>
+    </center>
 
-**Environment Final Pass**<br>
-This week I worked on-
-* Final pass on the lighting by simulating fake lighting using emissive materials.
-* A blueprint to open and close the cabinet.
-* Final pass on the animation blueprints to fix the hand breaking upon trigger.
-* Fixing the spatula grab pose using animation state machine.
-* Final pass on the modular parent material for the scene and props. 
+## Heatwave Effect
 
-<table class="custom-table">
-    <tr>
-        <td>
-            <a href="/assets/images/sb/light3.png" data-lightbox="fin-light" data-title="Final Lighting">
-                <img src="/assets/images/sb/light3.png" alt="Final Lighting">
-            </a>
-        </td>
-        <td>
-            <a href="/assets/images/sb/light4.png" data-lightbox="fin-light" data-title="Final Lighting">
-                <img src="/assets/images/sb/light4.png" alt="Final Lighting">
-            </a>
-        </td>
-        <td>
-            <a href="/assets/images/sb/light5.png" data-lightbox="fin-light" data-title="Final Lighting">
-                <img src="/assets/images/sb/light5.png" alt="Final Lighting">
-            </a>
-        </td>
-    </tr>
-    <tr>
-        <th colspan="3" style="text-align: center;">Final Lighting Pass</th>       
-    </tr>
-</table>
+I developed an algorithm that creates a heatwave distortion effect and extend this algorithm to create 3 different ways to add this effect to the level:
+* As a on-screen post processing effect that applies to the whole screen.
+* As a meaterial that can be applied to mesh of different shapes to govern the area of effect.
+* As a particle system to add more behavior to the effect.
+    <center>
+    <video controls loop style="width: 90%; border: 3px solid black; border-radius: 15px;">
+    <source src="/assets/images/capstone6.mp4" type="video/mp4">
+    </video>
+    </center>
 
-<table class="custom-table">
-    <tr>
-        <td>
-            <a href="/assets/images/sb/door.png" data-lightbox="door-open-close" data-title="Door Open & Close">
-                <img src="/assets/images/sb/door.png" alt="door-open-close">
-            </a>
-        </td>        
-    </tr>
-    <tr>
-        <th style="text-align: center;">Door Open & Close Blueprint</th>       
-    </tr>
-</table>
+## Optimized Alembic Curly Hair
 
-<table class="custom-table">
-    <tr>
-        <td>
-            <a href="/assets/images/sb/a1.png" data-lightbox="abp-fin-sb" data-title="ABP Fin 1">
-                <img src="/assets/images/sb/a1.png" alt="ABP Fin 1">
-            </a>
-        </td>
-        <td>
-            <a href="/assets/images/sb/a2.png" data-lightbox="abp-fin-sb" data-title="ABP Fin 2">
-                <img src="/assets/images/sb/a2.png" alt="ABP Fin 2">
-            </a>
-        </td>
-    </tr>
-    <tr>
-        <th colspan="2" style="text-align: center;">Final Pass - Animation Blueprint</th>       
-    </tr>
-</table>
-
-<table class="custom-table">
-    <tr>
-        <td>
-            <a href="/assets/images/sb/spat.png" data-lightbox="spat-fix" data-title="Spatuala Fix">
-                <img src="/assets/images/sb/spat.png" alt="spat-fix">
-            </a>
-        </td>        
-    </tr>
-    <tr>
-        <th style="text-align: center;">Spatula Fix</th>       
-    </tr>
-</table>
-
-<table class="custom-table">
-    <tr>
-        <td>
-            <a href="/assets/images/sb/mat1.png" data-lightbox="mat-fin-sb" data-title="Mat Fin 1">
-                <img src="/assets/images/sb/mat1.png" alt="Mat Fin 1">
-            </a>
-        </td>
-        <td>
-            <a href="/assets/images/sb/mat2.png" data-lightbox="mat-fin-sb" data-title="Mat Fin 2">
-                <img src="/assets/images/sb/mat2.png" alt="Mat Fin 2">
-            </a>
-        </td>
-    </tr>
-    <tr>
-        <th colspan="2" style="text-align: center;">Final Pass - Modular Parent Material</th>       
-    </tr>
-</table>
-
-**Character Final Pass**<br>
-This week I worked on-
-* Animation blueprint of all the characters.
-* Animation state machine of all the characters.
-* Added behaviour to the sauce bottle.
-* Added audio triggers in the scene.
-* Worked on Fluid VFX which somehow didn't work in VR. 
-
-<table class="custom-table">
-    <tr>
-        <td>
-            <a href="/assets/images/sb/abp_krabs.png" data-lightbox="char-abp-sb" data-title="Character ABP 1">
-                <img src="/assets/images/sb/abp_krabs.png" alt="Character ABP 1">
-            </a>
-        </td>
-        <td>
-            <a href="/assets/images/sb/abp_plankton.png" data-lightbox="char-abp-sb" data-title="Character ABP 2">
-                <img src="/assets/images/sb/abp_plankton.png" alt="Character ABP 2">
-            </a>
-        </td>
-        <td>
-            <a href="/assets/images/sb/plank2.png" data-lightbox="char-abp-sb" data-title="Character ABP 3">
-                <img src="/assets/images/sb/plank2.png" alt="Character ABP 3">
-            </a>
-        </td>
-    </tr>
-    <tr>
-        <th colspan="3" style="text-align: center;">Character Animation Blueprints & Animation State Machines</th>       
-    </tr>
-</table>
-
-<table class="custom-table">
-    <tr>
-        <td>
-            <a href="/assets/images/sb/aud.png" data-lightbox="aud-trigger-sb" data-title="Audio Trigger 1">
-                <img src="/assets/images/sb/aud.png" alt="Audio Trigger 1">
-            </a>
-        </td>
-        <td>
-            <a href="/assets/images/sb/aud2.png" data-lightbox="aud-trigger-sb" data-title="Audio Trigger 2">
-                <img src="/assets/images/sb/aud2.png" alt="Audio Trigger 2">
-            </a>
-        </td>
-    </tr>
-    <tr>
-        <th colspan="2" style="text-align: center;">Audio Triggers</th>       
-    </tr>
-</table>
-
-<table class="custom-table">
-    <tr>
-        <td>
-            <a href="/assets/images/sb/fluid_1.png" data-lightbox="fluid-sb" data-title="Fluid 1">
-                <img src="/assets/images/sb/fluid_1.png" alt="Fluid 1">
-            </a>
-        </td>
-        <td>
-            <a href="/assets/images/sb/fluid_2.png" data-lightbox="fluid-sb" data-title="Fluid 2">
-                <img src="/assets/images/sb/fluid_2.png" alt="Fluid 2">
-            </a>
-        </td>
-        <td>
-            <a href="/assets/images/sb/sos.png" data-lightbox="fluid-sb" data-title="Fluid 3">
-                <img src="/assets/images/sb/sos.png" alt="Fluid 3">
-            </a>
-        </td>
-    </tr>
-    <tr>
-        <th colspan="3" style="text-align: center;">Fluid VFX</th>       
-    </tr>
-</table>
+We had to implement curly hair for the main character of the game, keeping in mind that it shouldn't have a lot of performance overhead. I used the groom plugin in UE5 to import an alembic cache as a hair component. I optimized the hair by:
+* Dividing the hair into buns, modelling just one bun having fewer than 500 particles in blender and using GPU Instancing to render multiple copies of the buns. This sacrificed the variety of buns but it was not of importance to us. This gave us a performance boost of 4x (1x for each bun).
+* Giving the hair material just a simple gradient between two colors from top to bottom. The hair material was also changed to a masked material that subdivided each strand into 8 different strands, faking 4000 strands for each bun from the 500 strands giving us a performance boost of 8x.
+* Disabling hair physics and manually keyframing each bun, adding to the comical look of the game, and drastically reducing the performance overhead. This gave us a performance boost of ~2x.
+* In total we got a performance boost of 8x \* 4x \* ~2x = ~64x.
+    <center>
+    <video controls loop style="width: 90%; border: 3px solid black; border-radius: 15px;">
+        <source src="/assets/images/capstone5.mp4" type="video/mp4">
+    </video>
+    </center>

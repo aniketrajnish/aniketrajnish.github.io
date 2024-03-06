@@ -1,3 +1,7 @@
+<a href="https://github.com/aniketrajnish/Unity-Collider-Optimizer/assets/58925008/c68a1afb-6501-40c2-a9ac-f7fefd83fed7" data-lightbox="t2m" data-title="t2m">
+    <img src="https://github.com/aniketrajnish/Unity-Collider-Optimizer/assets/58925008/c68a1afb-6501-40c2-a9ac-f7fefd83fed7" width="100%">
+</a>
+
 ## Polygon Collider Optimizer
 
 <table class="custom-table">
