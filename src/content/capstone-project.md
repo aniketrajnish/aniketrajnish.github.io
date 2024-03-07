@@ -74,3 +74,12 @@ We had to implement curly hair for the main character of the game, keeping in mi
         <source src="/assets/images/capstone5.mp4" type="video/mp4">
     </video>
     </center>
+
+## Death Dissolve Effect
+
+I developed a death dissolve effect for the enemies in the game. 
+    <center>
+    <video controls loop style="width: 90%; border: 3px solid black; border-radius: 15px;">
+    <source src="/assets/images/capstone8.mp4" type="video/mp4">
+    </video>
+    </center>
