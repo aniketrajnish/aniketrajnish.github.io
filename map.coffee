@@ -29,6 +29,13 @@
     'github [300+ stars]' : 'https://github.com/aniketrajnish/MultiWindowSync-PyQt'
     'Windows x64 Installer' : 'https://github.com/aniketrajnish/MultiWindowSync-PyQt/releases/tag/v001'
 
+'capstone-project':
+  display: 'VFX - Capstone Project'
+  isMajor: true
+  line:    'My contributions to the FIEA Capstone Project - Chroma'
+  images:  ['capstone0.mp4']
+  tags:    ['Unreal Engine', 'Material Graph']
+
 'unity-4d-engine':
   display: '4D Engine - Unity'
   isMajor: true
@@ -84,13 +91,6 @@
   line:    'My participation in various gamejams'
   images:  ['gamejam1.mp4']
   tags:    ['C#', 'HLSL', 'Unity', 'GameMaker', 'GameJam', 'Game Design']
-
-'capstone-project':
-  display: 'Capstone Project'
-  isMajor: true
-  line:    'My contributions to the FIEA Capstone Project - Chroma'
-  images:  ['capstone0.mp4']
-  tags:    ['Unreal Engine', 'Material Graph']
 
 'spongebob-vr-project':
   display: 'Spongebob VR Project'
