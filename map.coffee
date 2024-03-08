@@ -99,6 +99,15 @@
   images:  ['spongebobvr0.mp4']
   tags:    ['C#', 'HLSL', 'Unity', 'VR', 'Game Design']
 
+'maya-auto-rigger':
+  display: 'Maya Auto Rigger'
+  isMajor: true
+  line:    'A WIP Auto Rigger for Maya built on PySide2/PyQt5'
+  images:  ['mayaautorigger0.mp4']
+  tags:    ['Python', 'Maya', 'pymel', 'PyQt5', 'PySide2']
+  links:
+    'github': 'https://github.com/aniketrajnish/Maya-Auto-Rigger-PySide2'
+
 'math-tools':
   display: 'Math Tools & Libraries'
   line:    'Mathematical tools, libraries and gists that I have worked upon'
