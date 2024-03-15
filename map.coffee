@@ -27,6 +27,7 @@
   tags:    ['Python', 'PyQt5', 'qtSignal']
   links:
     'github [300+ stars]' : 'https://github.com/aniketrajnish/MultiWindowSync-PyQt'
+    'youtube [100k+ views]' : 'https://youtu.be/TEZHHZeFiBQ?si=X_QZh2r-TimxEGYT'
     'Windows x64 Installer' : 'https://github.com/aniketrajnish/MultiWindowSync-PyQt/releases/tag/v001'
 
 'capstone-project':
