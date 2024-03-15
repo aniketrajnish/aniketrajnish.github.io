@@ -46,6 +46,27 @@
     github : 'https://github.com/aniketrajnish/4D-Engine-Unity'
     'unitypackage' : 'https://github.com/aniketrajnish/4D-Engine-Unity/releases/tag/v001'
 
+'spiderverse-pp':
+  display: 'Spiderverse Post Processing'
+  isMajor: true
+  line:    'Spiderverse inspired stylized post-processing effect for Unreal Engine and Unity'
+  images:  ['spiderversepp0.mp4']
+  tags:    ['C#', 'Unity', 'HLSL', 'Shader Graph', 'Unreal Engine', 'Material Graph']
+  links:
+    github : 'https://github.com/aniketrajnish/SpiderVersePostProcess-Unreal-Unity'
+    'unitypackage' : 'https://github.com/aniketrajnish/SpiderVersePostProcess-Unreal-Unity/releases/tag/v001-unity'
+    'unreal package' : 'https://github.com/aniketrajnish/SpiderVersePostProcess-Unreal-Unity/releases/tag/v001-unreal'
+
+'trippy-pp':
+  display: 'Trippy Post Processing'
+  isMajor: true
+  line:    'A trippy post-processing and render feature for Unity\'s URP'
+  images:  ['trippypp0.mp4']
+  tags:    ['C#', 'Unity', 'HLSL']
+  links:
+    github : 'https://github.com/aniketrajnish/TrippyPostProcessing-Unity'
+    'unitypackage' : 'https://github.com/aniketrajnish/TrippyPostProcessing-Unity/releases/tag/v001'
+
 'raymarching-engine-unity':
   display: 'Raymarching Engine - Unity'
   fontSize: '1px'
