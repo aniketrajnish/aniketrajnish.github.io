@@ -30,6 +30,13 @@
     'youtube [100k+ views]' : 'https://youtu.be/TEZHHZeFiBQ?si=X_QZh2r-TimxEGYT'
     'Windows x64 Installer' : 'https://github.com/aniketrajnish/MultiWindowSync-PyQt/releases/tag/v001'
 
+'hypercasual-games':
+  display: 'Hypercasual Games'
+  isMajor: true
+  line:    'Hypercasual Games and Prototypes I\'ve worked upon'
+  images:  ['hypercasual0.mp4']
+  tags:    ['C#', 'HLSL', 'Unity', 'Game Design']
+
 'capstone-project':
   display: 'VFX - Capstone Project'
   isMajor: true
@@ -99,13 +106,6 @@
   tags:    ['python', 'maya', 'pymel']
   links:
     'github': 'https://github.com/aniketrajnish/Alembic-to-FBX-File-Maya'    
-
-'hypercasual-games':
-  display: 'Hypercasual Games'
-  isMajor: true
-  line:    'Hypercasual Games and Prototypes I\'ve worked upon'
-  images:  ['hypercasual0.mp4']
-  tags:    ['C#', 'HLSL', 'Unity', 'Game Design']
 
 'gamejam-entries':
   display: 'Gamejam Entries'
