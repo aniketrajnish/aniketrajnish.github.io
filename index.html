@@ -95,6 +95,21 @@
       transition: background-color var(--transition), border-color var(--transition);
     }
 
+    .topbar-left {
+      display: flex;
+      align-items: center;
+      gap: 18px;
+    }
+
+    .profile-pic {
+      width: 75px;
+      height: 75px;
+      border-radius: 50%;
+      object-fit: cover;
+      box-shadow: 0 0 0 2px var(--accent);
+      transition: box-shadow var(--transition);
+    }
+
     .topbar-left h1 {
       color: var(--accent);
       margin: 0;
@@ -280,6 +295,7 @@
   <div class="panel">
     <div class="topbar">
       <div class="topbar-left">
+        <img src="pp.jpeg" alt="Aniket Rajnish Profile Picture" class="profile-pic">
         <h1>Aniket Rajnish</h1>
       </div>
       <div class="topbar-right">
