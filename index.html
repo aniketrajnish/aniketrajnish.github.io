@@ -1,114 +1,449 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>makra</title>
-  <link rel="icon" href="data:image/svg+xml,%3Csvg%20xmlns%3D%27http%3A//www.w3.org/2000/svg%27%20width%3D%2764%27%20height%3D%2764%27%20viewBox%3D%270%200%2064%2064%27%3E%3Ctext%20x%3D%2750%25%27%20y%3D%2750%25%27%20font-size%3D%2748%27%20text-anchor%3D%27middle%27%20dominant-baseline%3D%27central%27%3E%F0%9F%95%B7%EF%B8%8F%3C/text%3E%3C/svg%3E">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Aniket Rajnish</title>
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🕷️</text></svg>">
+  <link href="https://cdn.jsdelivr.net/gh/sugina-dev/latin-modern-web@1.0.1/style/latinmodern-sans.css" rel="stylesheet">
   <style>
     :root {
-      color-scheme: light dark;
-      --page-bg: #f4f4f4;
-      --panel-bg: #ffffff;
-      --chrome-bg: #ececec;
-      --border: #cfcfcf;
-      --text: #222222;
-      --link: LinkText;
-      --visited: VisitedText;
-      --panel-shadow: rgba(0, 0, 0, 0.04);
+      --bg: #F4F4F1;
+      --panel: #FFFFFF;
+      --header: #F7F7F7;
+      --line: #CFCFCF;
+      --fg: #222222;
+      --muted: #666666;
+      --accent: #2E8B57;
+      --font-family: 'Latin Modern Sans', sans-serif;
+      --transition: 0.3s ease;
     }
-    html, body { height: 100%; }
+
+    [data-theme="dark"] {
+      --bg: #121212;
+      --panel: #1E1E1E;
+      --header: #282828;
+      --line: #3A3A3A;
+      --fg: #E0E0E0;
+      --muted: #A0A0A0;
+      --accent: #3A8E54;
+    }
+    
     body {
+      background-color: var(--bg);
+      color: var(--fg);
+      font-family: var(--font-family);
       margin: 0;
-      background: var(--page-bg);
-      color: var(--text);
-      font: 16px/1.6 Arial, Helvetica, sans-serif;
+      padding: 2rem;
+      line-height: 1.35;
+      font-size: 14.5px;
+      transition: background-color var(--transition), color var(--transition);
     }
-    main {
-      box-sizing: border-box;
-      max-width: 760px;
-      min-height: 100%;
+
+    .container {
+      max-width: 880px;
       margin: 0 auto;
-      padding: 12px;
     }
-    main > p:first-of-type {
-      margin: 0 0 12px;
-      padding: 10px 14px;
-      background: var(--chrome-bg);
-      border: 1px solid var(--border);
-      letter-spacing: -0.02em;
-    }
-    main > p:last-of-type {
-      margin: 0;
-      padding: 18px 20px 20px;
-      background: var(--panel-bg);
-      border: 1px solid var(--border);
-      box-shadow: 0 1px 0 var(--panel-shadow);
-    }
+
     a {
-      color: var(--link);
+      color: var(--accent);
+      text-decoration: none;
+      transition: color var(--transition), opacity var(--transition);
+    }
+
+    a:hover {
       text-decoration: underline;
-      text-underline-offset: 1px;
+      opacity: 0.8;
     }
-    a:visited { color: var(--visited); }
-    small { opacity: .7; }
-    .spider {
-      display: inline-block;
-      margin-left: 4px;
-      vertical-align: baseline;
-      transition: transform .15s;
+
+    .panel {
+      background-color: var(--panel);
+      border: 1px solid var(--line);
+      margin-bottom: 1rem;
+      transition: transform var(--transition), box-shadow var(--transition), background-color var(--transition), border-color var(--transition);
     }
-    .spider:hover { transform: rotate(8deg) translateY(-1px); }
-    @media (prefers-color-scheme: dark) {
-      :root {
-        --page-bg: #121212;
-        --panel-bg: #1b1b1b;
-        --chrome-bg: #262626;
-        --border: #4d4d4d;
-        --text: #e5e5e5;
-        --panel-shadow: rgba(255, 255, 255, 0.06);
-      }
+
+    .panel:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
     }
-    @media (max-width: 640px) {
-      main {
-        padding: 8px;
+
+    [data-theme="dark"] .panel:hover {
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+    }
+
+    .panel-header {
+      background-color: var(--header);
+      padding: 10px 15px;
+      font-weight: bold;
+      font-size: 1.15em;
+      border-bottom: 1px solid var(--line);
+      transition: background-color var(--transition), border-color var(--transition);
+    }
+
+    .panel-body {
+      padding: 12px 15px;
+    }
+
+    .topbar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 15px;
+      background-color: var(--header);
+      border-bottom: 1px solid var(--line);
+      transition: background-color var(--transition), border-color var(--transition);
+    }
+
+    .topbar-left h1 {
+      color: var(--accent);
+      margin: 0;
+      font-size: 3em;
+      letter-spacing: -0.5px;
+      font-weight: normal;
+      transition: color var(--transition);
+    }
+
+    .topbar-right {
+      text-align: right;
+      font-size: 0.95em;
+    }
+
+    .topbar-right a {
+      color: var(--accent);
+    }
+
+    .topbar-subtitle {
+      padding: 10px 15px;
+      font-size: 1.15em;
+      color: var(--muted);
+      transition: color var(--transition);
+    }
+
+    .two-column {
+      display: flex;
+      gap: 12px;
+      align-items: flex-start;
+    }
+
+    .col-left {
+      flex: 0 0 65.5%;
+      width: 65.5%;
+    }
+
+    .col-right {
+      flex: 0 0 calc(34.5% - 12px);
+      width: calc(34.5% - 12px);
+    }
+
+    .exp-entry {
+      margin-bottom: 12px;
+    }
+
+    .exp-header {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 3px;
+    }
+
+    .exp-title {
+      font-weight: bold;
+    }
+
+    .exp-role {
+      font-style: italic;
+      margin-left: 10px;
+    }
+
+    .exp-date {
+      font-style: italic;
+      text-align: right;
+    }
+
+    .exp-body {
+      font-size: 0.95em;
+      line-height: 1.35;
+    }
+
+    .exp-body ul {
+      margin: 3px 0 0 0;
+      padding-left: 20px;
+    }
+
+    .exp-body li {
+      margin-bottom: 1.5px;
+    }
+
+    .edu-entry {
+      margin-bottom: 12px;
+    }
+
+    .edu-entry:last-child {
+      margin-bottom: 0;
+    }
+
+    .edu-title {
+      font-weight: bold;
+    }
+
+    .edu-degree {
+      font-style: italic;
+      margin: 2px 0;
+    }
+
+    .edu-details {
+      font-size: 0.85em;
+      color: var(--muted);
+      transition: color var(--transition);
+    }
+
+    .skills-section {
+      font-size: 0.95em;
+    }
+
+    .skills-section strong {
+      display: block;
+      margin-bottom: 2px;
+    }
+    
+    .skills-section p {
+      margin: 0 0 10px 0;
+    }
+
+    .achievements-list {
+      margin: 0;
+      padding-left: 20px;
+      font-size: 0.85em;
+    }
+
+    .achievements-list li {
+      margin-bottom: 2px;
+    }
+
+    .theme-toggle {
+      position: fixed;
+      bottom: 30px;
+      right: 30px;
+      background-color: var(--panel);
+      color: var(--fg);
+      border: 1px solid var(--line);
+      border-radius: 50%;
+      width: 50px;
+      height: 50px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+      transition: all var(--transition);
+      font-size: 1.2rem;
+      z-index: 1000;
+    }
+
+    [data-theme="dark"] .theme-toggle {
+      box-shadow: 0 2px 10px rgba(0,0,0,0.4);
+    }
+
+    .theme-toggle:hover {
+      transform: scale(1.1);
+    }
+    
+    @media (max-width: 768px) {
+      .two-column {
+        flex-direction: column;
       }
-      main > p:first-of-type {
-        padding: 10px 12px;
+      .col-left, .col-right {
+        flex: 1 1 auto;
+        width: 100%;
       }
-      main > p:last-of-type {
-        padding: 14px 16px 16px;
+      .topbar {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+      .topbar-right {
+        text-align: left;
+        margin-top: 10px;
+      }
+      .theme-toggle {
+        bottom: 20px;
+        right: 20px;
       }
     }
   </style>
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "Person",
-    "name": "makra",
-    "alternateName": "Aniket Rajnish",
-    "sameAs": [
-      "https://www.youtube.com/@makra2077",
-      "https://www.youtube.com/@makra42069",
-      "https://github.com/aniketrajnish",
-      "https://www.linkedin.com/in/makra2077/",
-      "https://www.instagram.com/aniketrajnis/",
-      "https://www.reddit.com/r/IndianGaming/comments/1ghv576/me_and_the_bois_on_our_usa_trip/",
-      "https://80.lv/articles/a-new-tool-for-optimizing-mesh-polygon-colliders-in-unity"
-    ]
-  }
-  </script>
 </head>
 <body>
-  <main>
-    <p>hi, I'm <a href="https://www.youtube.com/@makra2077" rel="me noopener" target="_blank">makra</a> <span class="spider" role="img" aria-label="spider">🕷️</span></p>
-    <p>maybe you know me as <a href="https://www.youtube.com/@makra42069" rel="me noopener" target="_blank">Makra</a>?<br>
-       or <a href="https://github.com/aniketrajnish" rel="me noopener" target="_blank">aniketrajnish</a>?<br>
-       or <a href="https://www.linkedin.com/in/makra2077/" rel="me noopener" target="_blank">Aniket Rajnish</a>?<br>
-       or <a href="https://www.instagram.com/aniketrajnis/" rel="me noopener" target="_blank">aniketrajnis</a>?<br>
-       or the guy from this <a href="https://www.reddit.com/r/IndianGaming/comments/1ghv576/me_and_the_bois_on_our_usa_trip/" rel="noopener" target="_blank">post</a>?<br>
-       or the guy from this <a href="https://80.lv/articles/a-new-tool-for-optimizing-mesh-polygon-colliders-in-unity" rel="noopener" target="_blank">article</a>?
-    </p>
-  </main>
+
+<button class="theme-toggle" id="theme-toggle" aria-label="Toggle Theme">🕷️</button>
+
+<div class="container">
+  
+  <div class="panel">
+    <div class="topbar">
+      <div class="topbar-left">
+        <h1>Aniket Rajnish</h1>
+      </div>
+      <div class="topbar-right">
+        <a href="mailto:rajnish.ankt@gmail.com">rajnish.ankt@gmail.com</a><br>
+        <a href="https://github.com/aniketrajnish">https://github.com/aniketrajnish</a><br>
+        Boston, MA (open for relocation)
+      </div>
+    </div>
+    <div class="topbar-subtitle">
+      Software Engineer / Technical Artist
+    </div>
+  </div>
+
+  <div class="panel">
+    <div class="panel-header">About Me</div>
+    <div class="panel-body">
+      I build tools and pipelines for sim-ready and sim-optimized assets used in robotics simulation and synthetic data generation. I am particularly driven by opportunities to eliminate repetitive manual work through robust, scalable systems. Much of my work sits behind NDAs and standard internal processes, though I am always happy to discuss it at a high level. Outside work, I love motorcycling, playing cricket, watching F1, cricket and MotoGP. I also am a hobby game developer and like building free indie games. <a href="https://makra.itch.io/just-another-casual-game" target="_blank">Here's</a> one I'm currently working on, and <a href="https://gitfront.io/r/aniketrajnish/U1mcjsAKhTQt/connect-the-dots/" target="_blank">this</a> is for the geeks.
+    </div>
+  </div>
+
+  <div class="two-column">
+    <div class="col-left">
+      <div class="panel">
+        <div class="panel-header">Work Experience</div>
+        <div class="panel-body">
+          
+          <div class="exp-entry">
+            <div class="exp-header">
+              <div><span class="exp-title">Amazon Robotics</span><span class="exp-role">Tech Art SDE</span></div>
+              <div class="exp-date">Aug 2024–Present</div>
+            </div>
+            <div class="exp-body">
+              <strong>Asset Pipeline:</strong>
+              <ul>
+                <li>Own the mesh processing layer of the CAD-to-USD pipeline used across several teams at AR.</li>
+                <li>Built an automated collider generation system supporting bounding shapes, optimal capsules for humanoid movement, convex hull & decomposition, optimal base shapes for SDF computation, and sphere approximation for robot arms. This eliminates any runtime overhead for collider computation & ensures all shapes are standardized across engines and validated beforehand.</li>
+                <li>Developed a novel parametric primitive decomposition pipeline that outperforms existing methods especially on hard-surface assets, saving ~1–2 hours of manual collider authoring per asset across 30k+ assets. Now exploring direct decomposition from BRep for lossless generation of shape parameters.</li>
+                <li>The pipeline ensures clean LOD workflows & assets are sim-ready and sim-optimized for a specific engine (e.g., Drake needs &lt;15k poly count).</li>
+                <li>Established partnership with <a href="https://rapidpipeline.com/en/3d-model-optimization/" target="_blank">RapidPipeline</a> & built a pipeline to integrate their tools org-wide, along with a suite of tools that simplify authoring context-dependent manual colliders needed for high-fidelity collisions.</li>
+              </ul>
+              <strong>Synthetic Data Generation:</strong>
+              <ul>
+                <li>Rearchitected the SDG framework into a self-serviceable, containerized, engine-agnostic pipeline by decoupling randomization, simulation, and rendering, enabling science teams to independently generate 1M+ datasets.</li>
+                <li>Built a GPU-accelerated writer library for niche scientific requirements such as damage maps and amodal segmentation, etc. using NVIDIA Warp.</li>
+                <li>Worked on optimizations that cut rendering compute costs by 4x and saving ~6 years in compute time.</li>
+                <li>Identified several bugs across Houdini & Isaac Sim, resolved some independently & worked with SideFX & NVIDIA to resolve the rest.</li>
+                <li>Developed a pipeline for PCG of 3D humanoids with varied topology, poses, clothes, props & features.</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="exp-entry">
+            <div class="exp-header">
+              <div><span class="exp-title">CSAIL Lab, MIT</span><span class="exp-role">Research Fellow</span></div>
+              <div class="exp-date">Jul 2024–Aug 2024</div>
+            </div>
+            <div class="exp-body">
+              Selected for <a href="https://sgi.mit.edu/" target="_blank">SGI</a> 2024 cohort, where I worked on efficient robot designs for Lightspeed Studios. Also developed a novel <a href="https://summergeometry.org/sgi2024/redundant-sdfs/" target="_blank">VDF-based approach</a> for extracting explicit meshes from implicit SDFs, addressing limitations of existing approaches.
+            </div>
+          </div>
+
+          <div class="exp-entry">
+            <div class="exp-header">
+              <div><span class="exp-title">Lockheed Martin</span><span class="exp-role">Technical Artist & Project Lead</span></div>
+              <div class="exp-date">Jan 2024–Apr 2024</div>
+            </div>
+            <div class="exp-body">
+              Contracted with a team of 8 people and led them to develop a VR experience that demonstrates Lockheed's JADO system and has a modular 3D asset gallery with a conversational AI companion.
+            </div>
+          </div>
+
+          <div class="exp-entry">
+            <div class="exp-header">
+              <div><span class="exp-title">CrazyLabs</span><span class="exp-role">Game Developer</span></div>
+              <div class="exp-date">Aug 2021–Aug 2022</div>
+            </div>
+            <div class="exp-body">
+              Contracted as a third-party game studio and led a team of four to deliver 6 prototypes, 30 concept pitches, and an unannounced title, reaching a CPI (cost-per-install) as low as $0.28.
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <div class="col-right">
+      <div class="panel">
+        <div class="panel-header">Education</div>
+        <div class="panel-body">
+          <div class="edu-entry">
+            <div class="edu-title">FIEA, University of Central Florida</div>
+            <div class="edu-degree">MS, Technical Art Track</div>
+            <div class="edu-details">2023–2024</div>
+            <div class="edu-details">GPA: 4.0/4.0</div>
+          </div>
+          <div class="edu-entry">
+            <div class="edu-title">IIT Gandhinagar</div>
+            <div class="edu-degree">B.Tech, Mechanical Engineering, Design & CSE Minor</div>
+            <div class="edu-details">2019–2023</div>
+            <div class="edu-details">GPA: 8.41/10</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="panel">
+        <div class="panel-header">Skills</div>
+        <div class="panel-body skills-section">
+          <strong>Languages:</strong>
+          <p>Python, C#, Rust, VEX, HLSL/GLSL</p>
+          
+          <strong>Engines & Tools:</strong>
+          <p>Isaac Sim/Lab, Unity, Unreal Engine, Blender, Houdini, Git, Warp, OmniGraph, USD, AWS, trimesh, PyQt, PyMEL, PyTorch, NumPy, SciPy</p>
+        </div>
+      </div>
+
+      <div class="panel">
+        <div class="panel-header">Achievements</div>
+        <div class="panel-body">
+          <ul class="achievements-list">
+            <li>Unity collider optimizer: covered by <a href="https://80.lv/articles/a-new-tool-for-optimizing-mesh-polygon-colliders-in-unity" target="_blank">80.lv</a>, 500+ stars on <a href="https://github.com/aniketrajnish/Unity-Collider-Optimizer" target="_blank">GitHub</a>, 10k+ users.</li>
+            <li>Recipient of the Gold Medal for Outstanding Innovation at IIT Gandhinagar.</li>
+            <li>Recipient of Director Fellowship Award at FIEA.</li>
+            <li>1 of 100 students selected from all over India for Chennai Mathematical Institute in 2019.</li>
+            <li>Ranked #2 Nationally, Indian Commerce Olympiad (Maths, Aptitude).</li>
+            <li>Top 0.4 percentile in JEE Mains & 0.3 percentile in JEE Advanced.</li>
+            <li>Ranked #22/10k, Brackeys Game Jam.</li>
+            <li>Ranked #1/300, Jamboost Game Jam.</li>
+            <li>Silver Medal at Inter IIT Tech Meet for Gamedev.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</div>
+
+<script>
+  const toggleBtn = document.getElementById('theme-toggle');
+  
+  // Check local storage or system preferences
+  const currentTheme = localStorage.getItem('theme');
+  const prefersDarkScheme = window.matchMedia('(prefers-color-scheme: dark)');
+
+  if (currentTheme === 'dark' || (!currentTheme && prefersDarkScheme.matches)) {
+    document.documentElement.setAttribute('data-theme', 'dark');
+    toggleBtn.textContent = '🕸️';
+  } else {
+    document.documentElement.setAttribute('data-theme', 'light');
+    toggleBtn.textContent = '🕷️';
+  }
+
+  toggleBtn.addEventListener('click', () => {
+    let theme = document.documentElement.getAttribute('data-theme');
+    if (theme === 'dark') {
+      document.documentElement.setAttribute('data-theme', 'light');
+      localStorage.setItem('theme', 'light');
+      toggleBtn.textContent = '🕷️';
+    } else {
+      document.documentElement.setAttribute('data-theme', 'dark');
+      localStorage.setItem('theme', 'dark');
+      toggleBtn.textContent = '🕸️';
+    }
+  });
+</script>
+
 </body>
 </html>
