@@ -285,6 +285,11 @@
       box-shadow: 0 2px 10px rgba(0,0,0,0.4);
     }
 
+    
+    .no-transition * {
+      transition: none !important;
+    }
+
     .theme-toggle:hover {
       transform: scale(1.1);
     }
@@ -458,34 +463,33 @@
 
 </div>
 
+
 <script>
-  const toggleBtn = document.getElementById('theme-toggle');
-  
-  // Check local storage or system preferences
-  const currentTheme = localStorage.getItem('theme');
-  const prefersDarkScheme = window.matchMedia('(prefers-color-scheme: dark)');
-
-  if (currentTheme === 'dark' || (!currentTheme && prefersDarkScheme.matches)) {
-    document.documentElement.setAttribute('data-theme', 'dark');
-    toggleBtn.textContent = '🕸️';
-  } else {
-    document.documentElement.setAttribute('data-theme', 'light');
-    toggleBtn.textContent = '🕷️';
-  }
-
-  toggleBtn.addEventListener('click', () => {
-    let theme = document.documentElement.getAttribute('data-theme');
-    if (theme === 'dark') {
-      document.documentElement.setAttribute('data-theme', 'light');
-      localStorage.setItem('theme', 'light');
-      toggleBtn.textContent = '🕷️';
-    } else {
-      document.documentElement.setAttribute('data-theme', 'dark');
-      localStorage.setItem('theme', 'dark');
-      toggleBtn.textContent = '🕸️';
+  (function() {
+    const toggleBtn = document.getElementById('theme-toggle');
+    const storageKey = 'theme';
+    const prefersDark = window.matchMedia('(prefers-color-scheme: dark)');
+    
+    function setTheme(theme, save = false) {
+      document.documentElement.setAttribute('data-theme', theme);
+      toggleBtn.textContent = theme === 'dark' ? '🕸️' : '🕷️';
+      if (save) localStorage.setItem(storageKey, theme);
     }
-  });
+
+    // Initial load: Add no-transition to body to prevent reflow flicker
+    const savedTheme = localStorage.getItem(storageKey);
+    const initialTheme = savedTheme || (prefersDark.matches ? 'dark' : 'light');
+    
+    // Applying theme immediately
+    setTheme(initialTheme);
+
+    toggleBtn.addEventListener('click', () => {
+      const current = document.documentElement.getAttribute('data-theme');
+      setTheme(current === 'dark' ? 'light' : 'dark', true);
+    });
+  })();
 </script>
+
 
 </body>
 </html>
