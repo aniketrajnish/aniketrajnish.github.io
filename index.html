@@ -290,6 +290,10 @@
       transition: none !important;
     }
 
+    .wide-br {
+      display: none;
+    }
+
     .theme-toggle:hover {
       transform: scale(1.1);
     }
@@ -317,6 +321,9 @@
     }
 
     @media (min-width: 1200px) {
+      .wide-br {
+        display: inline;
+      }
       .container {
         max-width: 1400px;
       }
@@ -363,7 +370,7 @@
   <div class="masonry-wrapper">
     <div class="panel about-panel">
       <div class="panel-header">About Me</div>
-    <div class="panel-body">
+    <div class="panel-body" style="font-size: 0.99em;">
       I build tools and pipelines for sim-ready and sim-optimized assets used in robotics simulation and synthetic data generation. I am particularly driven by opportunities to eliminate repetitive manual work through robust, scalable systems. Much of my work sits behind NDAs and standard internal processes, though I am always happy to discuss it at a high level. Outside work, I love motorcycling, following F1, cricket and MotoGP. I also build free indie games as a side quest. <a href="https://makra.itch.io/just-another-casual-game" target="_blank" rel="noopener noreferrer">Here's</a> one I'm currently working on, and <a href="https://gitfront.io/r/aniketrajnish/U1mcjsAKhTQt/connect-the-dots/" target="_blank" rel="noopener noreferrer">this</a> is for the geeks.
     </div>
   </div>
@@ -417,7 +424,7 @@
 
           <div class="exp-entry">
             <div class="exp-header">
-              <div><span class="exp-title">Lockheed Martin</span><span class="exp-role">Technical Artist & Project Lead</span></div>
+              <div><span class="exp-title">Lockheed Martin</span><span class="exp-role">Technical Artist & <br class="wide-br">Project Lead</span></div>
               <div class="exp-date">Jan 2024–Apr 2024</div>
             </div>
             <div class="exp-body">
