@@ -391,8 +391,8 @@
               <ul>
                 <li>Own the mesh processing layer of the CAD-to-USD pipeline used across several teams at AR.</li>
                 <li>Built an automated collider generation system supporting bounding shapes, capsules for humanoid movement, convex hull & decomposition, optimal base meshes for SDF computation, and sphere approximation for robot arms, eliminating runtime overhead for collider computation & ensuring all shapes are standardized and validated beforehand.</li>
-                <li>Authored a mesh optimization library with SOTA features like occlusion culling, small feature culling, hole filling, QEM decimation, and general mesh cleanups.</li>
                 <li>Developed a novel parametric primitive decomposition pipeline that outperforms existing methods especially on hard-surface assets, saving ~1–2 hours of manual collider authoring per asset across 30k+ assets. Now exploring direct decomposition from BRep for lossless generation of shape parameters.</li>
+                <li>Authored a mesh optimization library with SOTA features like occlusion culling, small feature culling, hole filling, QEM decimation, and general mesh cleanups.</li>
                 <li>The pipeline ensures clean LOD workflows & assets are sim-ready and sim-optimized for a specific engine (e.g., Drake needs &lt;15k poly count).</li>
                 <li>Established partnership with <a href="https://rapidpipeline.com/en/3d-model-optimization/" target="_blank" rel="noopener noreferrer">RapidPipeline</a> & built a pipeline to integrate their tools org-wide, along with a suite of tools that simplify authoring context-dependent manual colliders needed for high-fidelity collisions.</li>
               </ul>
